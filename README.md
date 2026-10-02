@@ -8,7 +8,7 @@
 
 </div>
 
-# LLMs for Marketing Research
+# Awesome LLMs for Marketing Research
 
 A curated list of **papers on large language models (LLMs) for marketing**, organized around consumer simulation, model and algorithm augmentation, and generative targeting.
 
@@ -24,7 +24,7 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 ## Contents
 
-- [LLMs for Marketing Research](#llms-for-marketing-research)
+- [Awesome LLMs for Marketing Research](#awesome-llms-for-marketing-research)
   - [Contents](#contents)
   - [Selected Foundational Papers](#selected-foundational-papers)
   - [🧑 1. Consumer Simulation](#-1-consumer-simulation)

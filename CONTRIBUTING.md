@@ -1,6 +1,6 @@
 # Contributing
 
-Help improve LLMs for Marketing by suggesting relevant papers or correcting citations.
+Help improve LLMs for Marketing Research by suggesting relevant papers or correcting citations.
 
 ## Adding a paper
 

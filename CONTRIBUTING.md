@@ -1,21 +1,26 @@
 # Contributing
 
-This collection covers the three categories numbered 3–5 in the research outline. Use the existing subsection that best matches a paper's primary contribution.
+Help improve the collection by suggesting relevant papers or correcting citations.
 
-For a proposed addition or correction:
+## Adding a paper
 
-1. Verify the title, author names, year, and paper URL against an author, publisher, arXiv, or SSRN source.
-2. Explain what is generated and how it enters the marketing research workflow in one or two original sentences.
-3. Identify the matching category and subsection. Label new additions as **Added reference** so their provenance remains distinct from the initial outline selection.
-4. Label grounding benchmarks, adjacent methods, methodological references, and unresolved scope questions explicitly. Use cross-references for overlapping contributions rather than duplicate entries.
-5. Link to the paper externally. Include a code or data link only when an official source verifies it. Keep paper PDFs, datasets, credentials, and unrelated files out of the repository.
-
-Suggested entry:
+1. Choose the best-fitting category and subsection: Consumer Simulation, Model and Algorithm Augmentation, or Generative Targeting. Distinguish core synthetic-data mechanisms from adjacent foundations or applications.
+2. Verify the title, author order, venue or source identifier, date, and paper link against primary sources.
+3. Add a reference using the format below. Bold the bracketed number, quote the title, and place the paper link at the end with the label [pdf]. Use the verified journal or workshop name, or the arXiv/SSRN identifier; omit the venue when none is established.
+4. Keep numbering continuous across all three categories, include each paper once, and update the category counts, paper anchors, and all affected survey references.
 
 ```markdown
-- **[Paper title](https://primary-paper-url)** <br>
-  Author names. **Year · source type · optional scope label.** <br>
-  Brief original description of the generated object and its research role. **Added reference: §X.Y.**
+<a id="paper-N"></a>
+
+**[N]** Author, First name, et al. "Full paper title." Venue or arXiv/SSRN identifier (YYYY-MM). [[pdf]](https://primary-paper-url)
 ```
 
-For a link that returns an access challenge or HTTP 403, record the restriction and look for an official alternative before reporting the paper as unavailable.
+Use YYYY-MM dates: the first online journal publication month when available; otherwise the conference/proceedings publication month, the listed preprint's first posting month, or the date on the author-hosted draft. If a month cannot be verified, keep the candidate in the survey's source gaps rather than inventing a date. Use author names and title from the linked version. Identify a workshop by its full name rather than its parent conference alone. Keep entries limited to citation details and an external paper link.
+
+## Corrections
+
+Include a primary source supporting a corrected title, author list, venue, date, or link. Link to papers externally rather than adding their full text to the repository.
+
+## Survey evidence
+
+Keep the README as a clean reference list. Put comparisons and source limitations in SURVEY.md, with numbered links to the matching README paper anchors supporting substantive claims. Retain primary-source links when they identify the inspected version or a correction. Distinguish inspected full text from abstract-only evidence, and distinguish predicted outcomes from observed behavior. Merge preprint and published versions of the same work; match effect claims to the inspected version.

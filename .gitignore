@@ -1,5 +1,10 @@
-# This repository tracks only the paper collection and contribution guidance.
+# Keep the collection, contribution guide, and original theme artwork.
 /*
 !/.gitignore
 !/README.md
 !/CONTRIBUTING.md
+!/SURVEY.md
+!/assets/
+/assets/*
+!/assets/research-landscape.svg
+!/assets/banner.png

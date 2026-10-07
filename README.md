@@ -2,9 +2,9 @@
 
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
-![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-74-4C70C8?style=for-the-badge)
+![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-73-4C70C8?style=for-the-badge)
 ![Generative Targeting](https://img.shields.io/badge/Generative_Targeting-28-D98757?style=for-the-badge)
-![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-14-9865C6?style=for-the-badge)
+![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-15-9865C6?style=for-the-badge)
 
 </div>
 
@@ -31,29 +31,34 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
     - [1.1 Capabilities and Opportunities](#11-capabilities-and-opportunities)
     - [1.2 Validity and Limitations](#12-validity-and-limitations)
     - [1.3 Methods and Improvements](#13-methods-and-improvements)
+    - [1.4 Benchmarks and Datasets](#14-benchmarks-and-datasets)
   - [✨ 2. Generative Targeting](#-2-generative-targeting)
     - [2.1 Market Effects and Limitations](#21-market-effects-and-limitations)
     - [2.2 Methods and Improvements](#22-methods-and-improvements)
+    - [2.3 Benchmarks and Datasets](#23-benchmarks-and-datasets)
   - [🔬 3. Model and Algorithm Augmentation](#-3-model-and-algorithm-augmentation)
     - [3.1 Performance and Limitations](#31-performance-and-limitations)
     - [3.2 Methods and Improvements](#32-methods-and-improvements)
+    - [3.3 Benchmarks and Datasets](#33-benchmarks-and-datasets)
   - [🤝 Contributing](#-contributing)
 
 ## Selected Foundational Papers
 
-A starting set across consumer simulation, generative targeting, and model and algorithm augmentation: four consumer-simulation papers and one paper from each subsection of the other two directions. Brand et al.'s working paper is included as an exception for its foundational framing of LLM-based market research. Entries are ordered from earliest to latest by the dates shown. Title links point to the corresponding entries in the full collection.
-
 - Brand, James, Ayelet Israeli, and Donald Ngwe. "[Using LLMs for Market Research](#paper-using-llms-for-market-research)." SSRN 4395751 (2023-03). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4395751)
-
-- Santurkar, Shibani, et al. "Whose Opinions Do Language Models Reflect?" ICML 2023, PMLR 202: 29971–30004 (2023-07). [[link]](https://proceedings.mlr.press/v202/santurkar23a.html)
 
 - Matz, Sandra C., et al. "[The potential of generative AI for personalized persuasion at scale](#paper-the-potential-of-generative-ai-for-personalized-persuasion-at-scale)." Scientific Reports 14: 4692 (2024-02). [[link]](https://doi.org/10.1038/s41598-024-53755-0)
 
 - Goli, Ali, and Amandeep Singh. "[Frontiers: Can Large Language Models Capture Human Preferences?](#paper-frontiers-can-large-language-models-capture-human-preferences)" Marketing Science 43(4): 709–722 (2024-04). [[link]](https://doi.org/10.1287/mksc.2023.0306)
 
+- Shumailov, Ilia, et al. "[AI models collapse when trained on recursively generated data](#paper-ai-models-collapse-when-trained-on-recursively-generated-data)." Nature 631(8022): 755–759 (2024-07). [[link]](https://doi.org/10.1038/s41586-024-07566-y)
+
 - Arora, Neeraj, Ishita Chakraborty, and Yohei Nishimura. "[AI–Human Hybrids for Marketing Research: Leveraging Large Language Models (LLMs) as Collaborators](#paper-ai-human-hybrids-for-marketing-research-leveraging-large-language-models-llms-as-collaborators)." Journal of Marketing 89(2): 43–70 (2024-08). [[link]](https://doi.org/10.1177/00222429241276529)
 
 - Ye, Zikun, Hema Yoganarasimhan, and Yufeng Zheng. "[LOLA: LLM-Assisted Online Learning Algorithm for Content Experiments](#paper-lola-llm-assisted-online-learning-algorithm-for-content-experiments)." Marketing Science 44(5): 995–1016 (2025-03). [[link]](https://pubsonline.informs.org/doi/10.1287/mksc.2024.0990)
+
+- Toubia, Olivier, et al. "[Database Report: Twin-2K-500: A Data Set for Building Digital Twins of over 2,000 People Based on Their Answers to over 500 Questions](#paper-database-report-twin-2k-500-a-data-set-for-building-digital-twins-of-over-2-000-people-based-on-their-answers-to-over-500-questions)." Marketing Science 44(6): 1446–1455 (2025-08). [[link]](https://doi.org/10.1287/mksc.2025.0262)
+
+- Singh, Anikait, et al. "[FSPO: Few-Shot Optimization of Synthetic Preferences Personalizes to Real Users](#paper-fspo-few-shot-optimization-of-synthetic-preferences-personalizes-to-real-users)." ICLR 2026 (2026-04). [[link]](https://proceedings.iclr.cc/paper_files/paper/2026/file/b2118ec72f6396c7e7bb2407e2d05eb4-Paper-Conference.pdf)
 
 
 ---
@@ -214,10 +219,6 @@ Evidence on behavioral fidelity, heterogeneity, representation, statistical and 
 
 - Kuric, Eduard, Peter Demcak, and Matus Krajcovic. "Distorted Perspectives of LLM-Simulated Preferences: Can AI Mislead Design?" arXiv:2605.18311 (2026-05). [[link]](https://arxiv.org/abs/2605.18311)
 
-<a id="paper-variance-reduction-in-output-from-generative-ai"></a>
-
-- Xie, Yu, and Yueqi Xie. "Variance reduction in output from generative AI." arXiv:2503.01033 (2025-03). [[link]](https://arxiv.org/abs/2503.01033)
-
 <a id="paper-fragile-preferences-a-deep-dive-into-order-effects-in-large-language-models"></a>
 
 - Yin, Haonan, Shai Vardi, and Vidyanand Choudhary. "Fragile preferences: A deep dive into order effects in large language models." PNAS Nexus 5(8): pgag246 (2026-08). [[link]](https://doi.org/10.1093/pnasnexus/pgag246)
@@ -266,13 +267,13 @@ Evidence on behavioral fidelity, heterogeneity, representation, statistical and 
 
 - Zeng, Yongchao, Calum Brown, and Mark Rounsevell. "Too human to model: the uncanny valley of large language models in simulating human systems." npj Complexity 3: 13 (2026-03). [[link]](https://doi.org/10.1038/s44260-026-00075-1)
 
+<a id="paper-this-human-study-did-not-involve-human-subjects-validating-llm-simulations-as-behavioral-evidence"></a>
+
+- Hullman, Jessica, et al. "This human study did not involve human subjects: Validating LLM simulations as behavioral evidence." arXiv:2602.15785 (2026-02). [[link]](https://arxiv.org/abs/2602.15785)
+
 ### 1.3 Methods and Improvements
 
 Methods that construct, ground, calibrate, fine-tune, validate, or improve simulated responses and research workflows. This includes human-data integration, supervised fine-tuning, inference correction, and selected transferable computer-science methods.
-
-<a id="paper-database-report-twin-2k-500-a-data-set-for-building-digital-twins-of-over-2-000-people-based-on-their-answers-to-over-500-questions"></a>
-
-- Toubia, Olivier, et al. "Database Report: Twin-2K-500: A Data Set for Building Digital Twins of over 2,000 People Based on Their Answers to over 500 Questions." Marketing Science 44(6): 1446–1455 (2025-08). [[link]](https://doi.org/10.1287/mksc.2025.0262)
 
 <a id="paper-twinface-generating-synthetic-faces-for-multimodal-consumer-digital-twins"></a>
 
@@ -298,10 +299,6 @@ Methods that construct, ground, calibrate, fine-tune, validate, or improve simul
 
 - Leng, Yan, Yunxin Sang, and Ashish Agarwal. "Reducing Disparity Between LLMs and Humans: Optimal LLM Sample Calibration." Marketing Science, forthcoming. [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802019)
 
-<a id="paper-how-ai-helps-scale-qualitative-customer-research"></a>
-
-- Korst, Jeremy, Stefano Puntoni, and Olivier Toubia. "How AI Helps Scale Qualitative Customer Research." Harvard Business Review (2026-04). [[link]](https://hbr.org/2026/04/how-ai-helps-scale-qualitative-customer-research)
-
 <a id="paper-llms-reproduce-human-purchase-intent-via-semantic-similarity-elicitation-of-likert-ratings"></a>
 
 - Maier, Benjamin F., et al. "LLMs Reproduce Human Purchase Intent via Semantic Similarity Elicitation of Likert Ratings." arXiv:2510.08338 (2025-10). [[link]](https://arxiv.org/abs/2510.08338)
@@ -317,10 +314,6 @@ Methods that construct, ground, calibrate, fine-tune, validate, or improve simul
 <a id="paper-the-challenge-of-using-llms-to-simulate-human-behavior-a-causal-inference-perspective"></a>
 
 - Gui, George, and Olivier Toubia. "The Challenge of Using LLMs to Simulate Human Behavior: A Causal Inference Perspective." SSRN 4650172 (2023-12). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4650172)
-
-<a id="paper-this-human-study-did-not-involve-human-subjects-validating-llm-simulations-as-behavioral-evidence"></a>
-
-- Hullman, Jessica, et al. "This human study did not involve human subjects: Validating LLM simulations as behavioral evidence." arXiv:2602.15785 (2026-02). [[link]](https://arxiv.org/abs/2602.15785)
 
 <a id="paper-using-llms-for-market-research"></a>
 
@@ -369,6 +362,32 @@ Methods that construct, ground, calibrate, fine-tune, validate, or improve simul
 <a id="paper-llm-saa-llm-persona-generated-distributions-for-decision-making"></a>
 
 - Baek, Jackie, et al. "LLM-SAA: LLM-persona Generated Distributions for Decision-making." arXiv:2602.06357 (2026-02). [[link]](https://arxiv.org/abs/2602.06357)
+
+<a id="paper-variance-reduction-in-output-from-generative-ai"></a>
+
+- Xie, Yu, and Yueqi Xie. "Variance reduction in output from generative AI." arXiv:2503.01033 (2025-03). [[link]](https://arxiv.org/abs/2503.01033)
+
+### 1.4 Benchmarks and Datasets
+
+<a id="paper-database-report-twin-2k-500-a-data-set-for-building-digital-twins-of-over-2-000-people-based-on-their-answers-to-over-500-questions"></a>
+
+- Toubia, Olivier, et al. "Database Report: Twin-2K-500: A Data Set for Building Digital Twins of over 2,000 People Based on Their Answers to over 500 Questions." Marketing Science 44(6): 1446–1455 (2025-08). [[link]](https://doi.org/10.1287/mksc.2025.0262)
+
+Human observations for grounding and evaluating simulated consumers, plus synthetic persona inputs. Public availability does not imply unrestricted reuse; access requirements and provider-stated licenses are listed below. Standalone resource listings are separate from the paper counts; the Twin-2K-500 paper is counted once and also cross-listed in Selected Foundational Papers.
+
+| Resource | Data and research use | Download, access and license |
+|---|---|---|
+| <a id="dataset-twin-2k-500"></a>[Twin-2K-500](https://huggingface.co/datasets/LLM-Digital-Twin/Twin-2K-500) | Human survey responses from 2,058 US participants across four waves, with separate LLM simulation outputs. Supports digital-twin grounding and held-out response prediction. Use `wave_split` with waves 1 to 3 for grounding and wave 4 for evaluation; `full_persona` includes wave-4 answers. | Public [files](https://huggingface.co/datasets/LLM-Digital-Twin/Twin-2K-500/tree/main); [CC BY 4.0](https://huggingface.co/datasets/LLM-Digital-Twin/Twin-2K-500#license). |
+| <a id="dataset-camera-conjoint"></a>[Camera conjoint data (bayesm)](https://search.r-project.org/CRAN/refmans/bayesm/html/camera.html) | Human digital-camera choices from 332 respondents, each completing 16 conjoint tasks. Provides observed choices and product attributes for comparing LLM-generated choices with human preferences and estimating choice models. | Included in the [CRAN package](https://cran.r-project.org/package=bayesm) as `camera`. Package license: [GPL (>= 2)](https://cran.r-project.org/web/packages/bayesm/DESCRIPTION); a separate data license is not stated. |
+| <a id="dataset-personahub"></a>[PersonaHub](https://huggingface.co/datasets/proj-persona/PersonaHub) | Synthetic personas and generated task samples for persona-driven data generation and input diversity. Profiles do not supply measured human consumer outcomes or establish representative consumer populations. | Public [files](https://huggingface.co/datasets/proj-persona/PersonaHub/tree/main); [CC BY-NC-SA 4.0](https://huggingface.co/datasets/proj-persona/PersonaHub). The card specifies research use and compliance with the generating models’ terms. |
+| <a id="dataset-opinionqa"></a>[OpinionQA](https://github.com/tatsu-lab/opinions_qa) | 1,498 multiple-choice questions from Pew American Trends Panel surveys, individual human responses and precomputed model responses. Supports comparisons of opinion distributions and demographic representation; survey opinions are not purchase or treatment-effect labels. | The author [repository](https://github.com/tatsu-lab/opinions_qa) links a [CodaLab data entry](https://worksheets.codalab.org/worksheets/0x6fb693719477478aac73fc07db333f69), which did not load in this check. A unified data license was not confirmed; verify the applicable Pew ATP terms before reuse. |
+| <a id="dataset-psych-101-training"></a>[Psych-101 (training)](https://huggingface.co/datasets/marcelbinz/Psych-101) | Natural-language transcripts of 160 human psychology experiments, 60,092 participants and 10,681,650 choices. The training corpus for [Centaur](#paper-a-foundation-model-to-predict-and-capture-human-cognition) supports learning and evaluating behavioral simulation across tasks; participants are not a representative consumer panel. | Public [training files](https://huggingface.co/datasets/marcelbinz/Psych-101/tree/main), under [Apache 2.0](https://huggingface.co/datasets/marcelbinz/Psych-101#licensing-information). Check task and participant overlap when constructing evaluation splits. |
+| <a id="dataset-psych-101-test"></a>[Psych-101-test](https://huggingface.co/datasets/marcelbinz/Psych-101-test) | The separately released Psych-101 test set supports held-out cognitive and behavioral evaluation. Keep it separate from training data and check task and participant overlap. | [Test files](https://huggingface.co/datasets/marcelbinz/Psych-101-test/tree/main) require login and agreement to share contact information. The card states [CC BY-ND 4.0](https://huggingface.co/datasets/marcelbinz/Psych-101-test#licensing-information) and separately instructs users not to redistribute outside that repository. |
+| <a id="dataset-choices13k"></a>[Choices13k](https://github.com/jcpeterson/choices13k) | Human choice frequencies for 13,006 two-option risky-choice problems, from [Peterson et al., Science](https://doi.org/10.1126/science.abe2629). Supports validating risk preferences and decision models; the observations concern experimental gambles rather than consumer purchases. | Public [original files](https://github.com/jcpeterson/choices13k). The original repository does not state a data license. The authors' [HURD distribution](https://github.com/jcpeterson/hurd#license) states CC BY-NC-SA 4.0 for its included data copy; that statement does not automatically license every file in the original repository. |
+| <a id="dataset-many-labs-2"></a>[Many Labs 2](https://osf.io/8cd4r/) | Replication data for 28 psychological effects, with 15,305 participants, 125 samples and 36 countries or territories. Supports checking cross-sample variation and experimental-effect replication; these samples do not establish population-representative consumer effects. | Public [OSF project](https://osf.io/8cd4r/) and [author analysis guide](https://github.com/ManyLabsOpenScience/ManyLabs2). The [university data record](https://pure.hud.ac.uk/en/datasets/many-labs-2-investigating-variation-in-replicability-across-sampl/) labels the data CC0 1.0; analysis code is GPL-3.0. OSF did not render in this check and payload downloads were not tested. |
+| <a id="dataset-eedi-neurips-2020"></a>[Eedi: NeurIPS 2020 Education Challenge](https://www.eedischool.com/projects/neurips-education-challenge) | Over 17 million human mathematics-answer records from 2018 to 2020, for learners roughly aged 7 to 18. Supports answer prediction, cognitive diagnosis and adaptive-question benchmarks. Learner responses are not an adult consumer survey. | Provider [download](https://dqanonymousdata.blob.core.windows.net/neurips-public/data.zip) and [challenge guide](https://arxiv.org/abs/2007.12061). The provider states [CC BY-NC-ND 4.0](https://www.eedischool.com/projects/neurips-education-challenge); question images are limited to model training and may not be printed or shared. Only metadata and terms were checked here. |
+
+Cross-disciplinary survey, behavioral and learner datasets support simulation validation across tasks. They do not all represent consumers or identify marketing treatment effects. Check task and participant overlap with training corpora before evaluating generalization.
 
 ---
 
@@ -436,6 +455,22 @@ Empirical and theoretical evidence on advertising, content, persuasion, and mark
 
 - Fainmesser, Itay P., Dominique Olie Lauga, and Elie Ofek. "Will it Click? Advertising Strategy with Generative AI." SSRN 6517138 (2026-04). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6517138)
 
+<a id="paper-applying-large-language-models-to-sponsored-search-advertising"></a>
+
+- Reisenbichler, Martin, Thomas Reutterer, and David A. Schweidel. "Applying Large Language Models to Sponsored Search Advertising." Marketing Science 45(1): 123–141 (2025-11). [[link]](https://doi.org/10.1287/mksc.2023.0611)
+
+<a id="paper-frontiers-supporting-content-marketing-with-natural-language-generation"></a>
+
+- Reisenbichler, Martin, et al. "Frontiers: Supporting Content Marketing with Natural Language Generation." Marketing Science 41(3): 441–452 (2022-02). [[link]](https://doi.org/10.1287/mksc.2022.1354)
+
+<a id="paper-the-promise-of-generative-ai-for-personalized-persuasion"></a>
+
+- Teeny, Jacob D., et al. "The Promise of Generative AI for Personalized Persuasion." Current Directions in Psychological Science (2026-05). [[link]](https://doi.org/10.1177/09637214261424859)
+
+<a id="paper-knowing-me-telling-me-information-design-in-gen-ai-enabled-communication-in-digital-marketing"></a>
+
+- Hu, Lin, Xueyan Yin, and Juan Feng. "Knowing Me, Telling Me: Information Design in Gen-AI Enabled Communication in Digital Marketing." SSRN 5229032 (2025-05). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5229032)
+
 ### 2.2 Methods and Improvements
 
 Methods for personalized content generation, preference modeling, feedback alignment, experimental optimization, and information design. This includes human-AI creative workflows and text or multimodal advertising generation.
@@ -480,21 +515,15 @@ Methods for personalized content generation, preference modeling, feedback align
 
 - Xu, Yexing, et al. "Design Your Ad: Personalized Advertising Image and Text Generation with Unified Autoregressive Models." CVPR 2026 (2026-06). [[link]](https://openaccess.thecvf.com/content/CVPR2026/papers/Xu_Design_Your_Ad_Personalized_Advertising_Image_and_Text_Generation_with_CVPR_2026_paper.pdf)
 
-<a id="paper-applying-large-language-models-to-sponsored-search-advertising"></a>
+### 2.3 Benchmarks and Datasets
 
-- Reisenbichler, Martin, Thomas Reutterer, and David A. Schweidel. "Applying Large Language Models to Sponsored Search Advertising." Marketing Science 45(1): 123–141 (2025-11). [[link]](https://doi.org/10.1287/mksc.2023.0611)
+Creative annotations, human persuasion ratings and advertising outcomes support different evaluation tasks. Dataset labels determine which effects can be assessed.
 
-<a id="paper-frontiers-supporting-content-marketing-with-natural-language-generation"></a>
-
-- Reisenbichler, Martin, et al. "Frontiers: Supporting Content Marketing with Natural Language Generation." Marketing Science 41(3): 441–452 (2022-02). [[link]](https://doi.org/10.1287/mksc.2022.1354)
-
-<a id="paper-the-promise-of-generative-ai-for-personalized-persuasion"></a>
-
-- Teeny, Jacob D., et al. "The Promise of Generative AI for Personalized Persuasion." Current Directions in Psychological Science (2026-05). [[link]](https://doi.org/10.1177/09637214261424859)
-
-<a id="paper-knowing-me-telling-me-information-design-in-gen-ai-enabled-communication-in-digital-marketing"></a>
-
-- Hu, Lin, Xueyan Yin, and Juan Feng. "Knowing Me, Telling Me: Information Design in Gen-AI Enabled Communication in Digital Marketing." SSRN 5229032 (2025-05). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5229032)
+| Resource | Data and research use | Download, access and license |
+|---|---|---|
+| <a id="dataset-pvp"></a>[PVP: Personalized Visual Persuasion](https://huggingface.co/datasets/holi-lab/PVP) | Images, persuasive strategies, viewer demographics and psychological traits, and human persuasiveness ratings (0 to 10). Supports profile-conditioned persuasion modeling; the supplied scores measure judged persuasiveness rather than causal conversion effects. | [Files](https://huggingface.co/datasets/holi-lab/PVP/tree/main) require login and agreement to share contact information. The card states [CC BY 4.0](https://huggingface.co/datasets/holi-lab/PVP#license). |
+| <a id="dataset-midas-persuasion"></a>[MIDAS Persuasion in Advertisements](https://github.com/midas-research/persuasion-advertisements) | Advertising images with persuasion-strategy annotations and test-set segmentation masks. Supports creative understanding, strategy classification and annotation-based evaluation; the release does not provide causal effectiveness labels for each image. | Public [dataset and annotation links](https://midas-research.github.io/persuasion-advertisements/); [CC BY-NC-SA 4.0](https://github.com/midas-research/persuasion-advertisements#readme). |
+| <a id="dataset-criteo-uplift"></a>[Criteo Uplift (corrected release)](https://ailab.criteo.com/criteo-uplift-prediction-dataset/) | Human advertising-trial data: 13,979,592 rows, 12 anonymized features, treatment assignment, exposure, visits and conversions. Supports uplift and heterogeneous-effect benchmarks. Privacy subsampling prevents recovery of original campaign incrementality; creative assets and generated treatments are absent. | Public [corrected-release files](https://huggingface.co/datasets/criteo/criteo-uplift/tree/main); [CC BY-NC-SA 4.0](https://huggingface.co/datasets/criteo/criteo-uplift). Use randomized treatment assignment rather than exposure as the assignment variable. |
 
 ---
 
@@ -517,6 +546,10 @@ Evidence on the performance, reproducibility, and limitations of LLM-augmented a
 <a id="paper-regurgitative-training-the-value-of-real-data-in-training-large-language-models"></a>
 
 - Zhang, Jinghui, et al. "Regurgitative Training: The Value of Real Data in Training Large Language Models." Management Science (2026-05). [[link]](https://doi.org/10.1287/mnsc.2024.07005)
+
+<a id="paper-ai-models-collapse-when-trained-on-recursively-generated-data"></a>
+
+- Shumailov, Ilia, et al. "AI models collapse when trained on recursively generated data." Nature 631(8022): 755–759 (2024-07). [[link]](https://doi.org/10.1038/s41586-024-07566-y)
 
 ### 3.2 Methods and Improvements
 
@@ -566,10 +599,21 @@ Methods that use LLM information or synthetic signals to improve choice designs,
 
 - Huang, Shaoqin, Hu Qin, and Yue Wang. "Mining novel customer needs for product design from user-generated content through large language model-enabled data augmentation and ensemble learning." International Journal of Production Research (2026-02). [[link]](https://doi.org/10.1080/00207543.2026.2625971)
 
+### 3.3 Benchmarks and Datasets
+
+Human interaction benchmarks and separately identified synthetic conversations for evaluating augmented learning and recommendation. For randomized advertising outcomes, see [Criteo Uplift](#dataset-criteo-uplift).
+
+| Resource | Data and research use | Download, access and license |
+|---|---|---|
+| <a id="dataset-movielens-32m"></a>[MovieLens 32M](https://grouplens.org/datasets/movielens/32m/) | Human movie ratings and tags: 32 million ratings from 200,948 users on 87,585 movies. A reference for preference prediction and evaluating LLM-augmented recommendation against human observations; ratings are observational feedback. | Public [download](https://files.grouplens.org/datasets/movielens/ml-32m.zip); [GroupLens terms](https://files.grouplens.org/datasets/movielens/ml-32m-README.html) require attribution and the same redistribution conditions. Commercial use requires prior permission. |
+| <a id="dataset-kuairec"></a>[KuaiRec](https://kuairec.com/) | Human short-video watch feedback, a densely observed small user/item matrix, larger interaction logs, and video captions/categories. Supports offline recommendation evaluation and comparison of LLM-derived content features with observed behavior. | Public [Zenodo files](https://zenodo.org/records/18164998); the author repository states [CC BY-SA 4.0](https://github.com/chongminggao/KuaiRec/blob/main/LICENSE). Preserve the distinction between the dense small matrix and larger logs. |
+| <a id="dataset-kuairand"></a>[KuaiRand](https://kuairand.com/) | Human short-video recommendation logs with randomly exposed items inserted into ordinary feeds and 12 feedback signals. Supports debiasing, policy evaluation and LLM-assisted recommendation; distinguish randomized exposures from ordinary policy logs. | Public [Zenodo files](https://zenodo.org/records/10439422) in Pure, 1K and 27K versions; the author repository states [CC BY-SA 4.0](https://github.com/chongminggao/KuaiRand/blob/main/LICENSE). |
+| <a id="dataset-recllmsim"></a>[RecLLMSim](https://github.com/wzf2000/RecLLMSim) | Task-oriented recommendation conversations in separate `real_human_user` and `LLM_agent_user` folders, with profiles and dialogue annotations. Supports synthetic conversation augmentation and evaluation on human conversations; keep the two sources and evaluation splits separate. | Public [repository files](https://github.com/wzf2000/RecLLMSim); repository license: [Apache 2.0](https://github.com/wzf2000/RecLLMSim/blob/main/LICENSE). A separate data-specific license is not stated. |
+
 ---
 
 <a id="contributing"></a>
 
 ## 🤝 Contributing
 
-Paper suggestions and citation corrections are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the reference format.
+Paper and dataset suggestions and citation corrections are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for reference formats and data-source requirements.

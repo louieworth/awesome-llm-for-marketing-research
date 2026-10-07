@@ -17,6 +17,13 @@ Help improve Awesome LLMs for Marketing Research by suggesting relevant papers o
 
 Use YYYY-MM dates: the first online journal publication month when available; otherwise the conference/proceedings publication month, the listed preprint's first posting month, or the date on the author-hosted draft. If a month cannot be verified, flag it for verification rather than inventing a date. Use author names and title from the linked version. Identify a workshop by its full name rather than its parent conference alone. Keep entries limited to citation details and an external paper link.
 
+## Adding a benchmark or dataset
+
+1. Place standalone resources under 1.4 Benchmarks and Datasets, 2.3 Benchmarks and Datasets, or 3.3 Benchmarks and Datasets according to their research use. These resource sections supplement the existing three, two, and two paper subsections. Dataset entries do not increase the paper counts.
+2. Link to the official data source, an actionable download location, and the provider's license or access terms. Distinguish data licensing from a repository or package license. State login, contact-sharing, noncommercial, research-use, or permission requirements, and identify an unspecified data license explicitly.
+3. Describe what observations or labels are supplied and the research task they support. Identify human observations, synthetic profiles or responses, and creative annotations separately. Do not equate persuasion ratings or strategy labels with causal marketing effects; respect documented training/test splits and leakage risks.
+4. Use a unique `dataset-` anchor and keep existing paper anchors unchanged. Cross-link a resource used across categories rather than duplicating it. Verify the release or version against its official documentation; keep raw dataset files outside the repository.
+
 ## Corrections
 
 Include a primary source supporting a corrected title, author list, venue, date, or link. Link to papers externally rather than adding their full text to the repository.

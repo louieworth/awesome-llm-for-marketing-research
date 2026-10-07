@@ -2,23 +2,23 @@
 
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
-![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-65-4C70C8?style=for-the-badge)
-![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-12-9865C6?style=for-the-badge)
+![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-74-4C70C8?style=for-the-badge)
 ![Generative Targeting](https://img.shields.io/badge/Generative_Targeting-28-D98757?style=for-the-badge)
+![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-14-9865C6?style=for-the-badge)
 
 </div>
 
 # Awesome LLMs for Marketing Research
 
-A curated list of **papers on large language models (LLMs) for marketing**, organized around consumer simulation, model and algorithm augmentation, and generative targeting.
+A curated list of **papers on large language models (LLMs) for marketing**, organized around consumer simulation, generative targeting, and model and algorithm augmentation.
 
-The collection prioritizes marketing and business-school research, with selected computer-science and social-science methods, validation studies, and reviews. It covers substantive uses of language and multimodal language models, including mixed-model methods, datasets for LLM-based simulation, and research on LLM limitations. Evidence on simulated consumers, downstream learning, and marketing outcomes is grouped by research direction; inclusion does not establish that LLM-generated data are valid substitutes for human observations.
+The collection prioritizes marketing and business-school research, with selected computer-science and social-science methods, validation studies, and reviews. It covers substantive uses of language and multimodal language models, including mixed-model methods, datasets for LLM-based simulation, and research on LLM limitations. Selected visual generative-AI studies of advertising effectiveness and marketing outcomes are also included. Evidence on simulated consumers, downstream learning, and marketing outcomes is grouped by research direction; inclusion does not establish that LLM-generated data are valid substitutes for human observations.
 
 Browse by research direction:
 
 - 🧑 **[1. Consumer Simulation](#consumer-simulation)** — consumer responses, behavioral fidelity, and market insights.
-- 🔬 **[2. Model and Algorithm Augmentation](#model-and-algorithm-augmentation)** — calibrated inference, synthetic training signals, and adaptive learning.
-- ✨ **[3. Generative Targeting](#generative-targeting)** — synthetic preferences, outcome alignment, and personalized marketing content.
+- ✨ **[2. Generative Targeting](#generative-targeting)** — personalized content, advertising effects, and marketing outcomes.
+- 🔬 **[3. Model and Algorithm Augmentation](#model-and-algorithm-augmentation)** — algorithm performance, synthetic training signals, and improved learning methods.
 
 Suggestions and corrections are welcome; see [Contributing](#contributing).
 
@@ -28,39 +28,33 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
   - [Contents](#contents)
   - [Selected Foundational Papers](#selected-foundational-papers)
   - [🧑 1. Consumer Simulation](#-1-consumer-simulation)
-    - [1.1 Grounding, Construction, and Calibration](#11-grounding-construction-and-calibration)
-    - [1.2 Behavioral Fidelity, Heterogeneity, and Statistical Validity](#12-behavioral-fidelity-heterogeneity-and-statistical-validity)
-    - [1.3 Preference Measurement and Market Research](#13-preference-measurement-and-market-research)
-    - [1.4 Simulated Experiments and Decision Support](#14-simulated-experiments-and-decision-support)
-    - [1.5 Reviews and Research Design](#15-reviews-and-research-design)
-  - [🔬 2. Model and Algorithm Augmentation](#-2-model-and-algorithm-augmentation)
-    - [2.1 Choice Design and Online Learning](#21-choice-design-and-online-learning)
-    - [2.2 Recommendation and Customer Text Training](#22-recommendation-and-customer-text-training)
-    - [2.3 Training Limits and Direct Prediction](#23-training-limits-and-direct-prediction)
-  - [✨ 3. Generative Targeting](#-3-generative-targeting)
-    - [3.1 Synthetic Preferences and Demonstration Learning](#31-synthetic-preferences-and-demonstration-learning)
-    - [3.2 Human Feedback and Personalized Generation](#32-human-feedback-and-personalized-generation)
-    - [3.3 Marketing Field Evidence and Creative Production](#33-marketing-field-evidence-and-creative-production)
-    - [3.4 Persuasion, Transparency, and Strategic Boundaries](#34-persuasion-transparency-and-strategic-boundaries)
+    - [1.1 Capabilities and Opportunities](#11-capabilities-and-opportunities)
+    - [1.2 Validity and Limitations](#12-validity-and-limitations)
+    - [1.3 Methods and Improvements](#13-methods-and-improvements)
+  - [✨ 2. Generative Targeting](#-2-generative-targeting)
+    - [2.1 Market Effects and Limitations](#21-market-effects-and-limitations)
+    - [2.2 Methods and Improvements](#22-methods-and-improvements)
+  - [🔬 3. Model and Algorithm Augmentation](#-3-model-and-algorithm-augmentation)
+    - [3.1 Performance and Limitations](#31-performance-and-limitations)
+    - [3.2 Methods and Improvements](#32-methods-and-improvements)
   - [🤝 Contributing](#-contributing)
 
 ## Selected Foundational Papers
 
-A starting set of early studies and selected published or forthcoming work on LLM-based consumer simulation, human cognition, market research, and persuasion. Entries are ordered by reference number and reuse the reference numbers in the full collection.
+A starting set across consumer simulation, generative targeting, and model and algorithm augmentation: four consumer-simulation papers and one paper from each subsection of the other two directions. Brand et al.'s working paper is included as an exception for its foundational framing of LLM-based market research. Entries are ordered from earliest to latest by the dates shown. Title links point to the corresponding entries in the full collection.
 
-**[[1]](#paper-1)** Toubia, Olivier, et al. "Database Report: Twin-2K-500: A Data Set for Building Digital Twins of over 2,000 People Based on Their Answers to over 500 Questions." Marketing Science 44(6): 1446–1455 (2025-08). [[link]](https://doi.org/10.1287/mksc.2025.0262)
+- Brand, James, Ayelet Israeli, and Donald Ngwe. "[Using LLMs for Market Research](#paper-using-llms-for-market-research)." SSRN 4395751 (2023-03). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4395751)
 
-**[[8]](#paper-8)** Leng, Yan, Yunxin Sang, and Ashish Agarwal. "Reducing Disparity Between LLMs and Humans: Optimal LLM Sample Calibration." Marketing Science, forthcoming. [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802019)
+- Santurkar, Shibani, et al. "Whose Opinions Do Language Models Reflect?" ICML 2023, PMLR 202: 29971–30004 (2023-07). [[link]](https://proceedings.mlr.press/v202/santurkar23a.html)
 
-**[[9]](#paper-9)** Goli, Ali, and Amandeep Singh. "Frontiers: Can Large Language Models Capture Human Preferences?" Marketing Science 43(4): 709–722 (2024-04). [[link]](https://doi.org/10.1287/mksc.2023.0306)
+- Matz, Sandra C., et al. "[The potential of generative AI for personalized persuasion at scale](#paper-the-potential-of-generative-ai-for-personalized-persuasion-at-scale)." Scientific Reports 14: 4692 (2024-02). [[link]](https://doi.org/10.1038/s41598-024-53755-0)
 
-**[[31]](#paper-31)** Ashokkumar, Ashwini, et al. "Large language models can predict the results of social science experiments." Nature 656: 115–122 (2026-07). [[link]](https://doi.org/10.1038/s41586-026-10742-x)
+- Goli, Ali, and Amandeep Singh. "[Frontiers: Can Large Language Models Capture Human Preferences?](#paper-frontiers-can-large-language-models-capture-human-preferences)" Marketing Science 43(4): 709–722 (2024-04). [[link]](https://doi.org/10.1287/mksc.2023.0306)
 
-**[[35]](#paper-35)** Binz, Marcel, et al. "A foundation model to predict and capture human cognition." Nature 644: 1002–1009 (2025-07). [[link]](https://doi.org/10.1038/s41586-025-09215-4)
+- Arora, Neeraj, Ishita Chakraborty, and Yohei Nishimura. "[AI–Human Hybrids for Marketing Research: Leveraging Large Language Models (LLMs) as Collaborators](#paper-ai-human-hybrids-for-marketing-research-leveraging-large-language-models-llms-as-collaborators)." Journal of Marketing 89(2): 43–70 (2024-08). [[link]](https://doi.org/10.1177/00222429241276529)
 
-**[[37]](#paper-37)** Aher, Gati V., Rosa I. Arriaga, and Adam Tauman Kalai. "Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies." ICML 2023, PMLR 202: 337–371 (2023-07). [[link]](https://proceedings.mlr.press/v202/aher23a.html)
+- Ye, Zikun, Hema Yoganarasimhan, and Yufeng Zheng. "[LOLA: LLM-Assisted Online Learning Algorithm for Content Experiments](#paper-lola-llm-assisted-online-learning-algorithm-for-content-experiments)." Marketing Science 44(5): 995–1016 (2025-03). [[link]](https://pubsonline.informs.org/doi/10.1287/mksc.2024.0990)
 
-**[[47]](#paper-47)** Wang, Mengxin, Dennis J. Zhang, and Heng Zhang. "Large Language Models for Market Research: A Data-Augmentation Approach." Marketing Science 45(4): 728–751 (2026-03). [[link]](https://doi.org/10.1287/mksc.2025.0009)
 
 ---
 
@@ -68,496 +62,511 @@ A starting set of early studies and selected published or forthcoming work on LL
 
 ## 🧑 1. Consumer Simulation
 
-### 1.1 Grounding, Construction, and Calibration
+### 1.1 Capabilities and Opportunities
 
-LLM-based consumer and population models grounded in surveys, interviews, interaction histories, or explicit calibration; selected social-science and NLP benchmarks provide methodological foundations.
+Demonstrations and research opportunities for LLM-based consumer and human simulation, including preference measurement, experimental prediction, and digital-twin applications. Selected cross-disciplinary studies establish capabilities and use cases.
 
-<a id="paper-1"></a>
+<a id="paper-llm-agents-grounded-in-self-reports-enable-general-purpose-simulation-of-individuals"></a>
 
-**[1]** Toubia, Olivier, et al. "Database Report: Twin-2K-500: A Data Set for Building Digital Twins of over 2,000 People Based on Their Answers to over 500 Questions." Marketing Science 44(6): 1446–1455 (2025-08). [[link]](https://doi.org/10.1287/mksc.2025.0262)
+- Park, Joon Sung, et al. "LLM Agents Grounded in Self-Reports Enable General-Purpose Simulation of Individuals." arXiv:2411.10109 (2024-11). [[link]](https://arxiv.org/abs/2411.10109)
 
-<a id="paper-2"></a>
+<a id="paper-out-of-one-many-using-language-models-to-simulate-human-samples"></a>
 
-**[2]** Park, Joon Sung, et al. "LLM Agents Grounded in Self-Reports Enable General-Purpose Simulation of Individuals." arXiv:2411.10109 (2024-11). [[link]](https://arxiv.org/abs/2411.10109)
+- Argyle, Lisa P., et al. "Out of One, Many: Using Language Models to Simulate Human Samples." Political Analysis 31(3): 337–351 (2023-02). [[link]](https://doi.org/10.1017/pan.2023.2)
 
-<a id="paper-3"></a>
+<a id="paper-synthetic-contact-with-ai-reduces-cross-partisan-animosity"></a>
 
-**[3]** Argyle, Lisa P., et al. "Out of One, Many: Using Language Models to Simulate Human Samples." Political Analysis 31(3): 337–351 (2023-02). [[link]](https://doi.org/10.1017/pan.2023.2)
+- Lira, Benjamin, Noah Castelo, Stefano Puntoni, and Olivier Toubia. "Synthetic Contact with AI Reduces Cross-Partisan Animosity." arXiv:2607.02181 (2026-07). [[link]](https://arxiv.org/abs/2607.02181)
 
+<a id="paper-large-language-models-can-predict-the-results-of-social-science-experiments"></a>
 
-<a id="paper-4"></a>
+- Ashokkumar, Ashwini, et al. "Large language models can predict the results of social science experiments." Nature 656: 115–122 (2026-07). [[link]](https://doi.org/10.1038/s41586-026-10742-x)
 
-**[4]** Deng, Yuting, et al. "AI-Moderated Interviews for Market Research and Digital Twins Calibration." arXiv:2609.29143 (2026-09). [[link]](https://arxiv.org/abs/2609.29143)
+<a id="paper-large-language-models-as-simulated-economic-agents-what-can-we-learn-from-homo-silicus"></a>
 
-<a id="paper-5"></a>
+- Horton, John J., Apostolos Filippas, and Benjamin S. Manning. "Large Language Models as Simulated Economic Agents: What Can We Learn from Homo Silicus?" arXiv:2301.07543 (2023-01). [[link]](https://arxiv.org/abs/2301.07543)
 
-**[5]** Kinzinger, Leonard, and Jochen Hartmann. "Synthetic Personalities: How Well Can LLMs Mimic Individual Respondents Using Socio-Economic Microdata?" arXiv:2606.04592 (2026-06). [[link]](https://arxiv.org/abs/2606.04592)
+<a id="paper-synthetic-consumer-insight-generation-with-large-language-models"></a>
 
-<a id="paper-6"></a>
+- France, Stephen L., and Pia A. Albinsson. "Synthetic Consumer Insight Generation with Large Language Models." arXiv:2607.05761 (2026-07). [[link]](https://arxiv.org/abs/2607.05761)
 
-**[6]** Fan, Grace Jiarui, et al. "SYN-DIGITS: A Synthetic Control Framework for Calibrated Digital Twin Simulation." arXiv:2604.07513 (2026-04). [[link]](https://arxiv.org/abs/2604.07513)
+<a id="paper-a-foundation-model-to-predict-and-capture-human-cognition"></a>
 
-<a id="paper-7"></a>
+- Binz, Marcel, et al. "A foundation model to predict and capture human cognition." Nature 644: 1002–1009 (2025-07). [[link]](https://doi.org/10.1038/s41586-025-09215-4)
 
-**[7]** Kolluri, Akaash, et al. "Finetuning LLMs for Human Behavior Prediction in Social Science Experiments." EMNLP 2025 (2025-11). [[link]](https://aclanthology.org/2025.emnlp-main.1530/)
+<a id="paper-large-language-models-outperform-humans-at-estimating-societys-everyday-norms"></a>
 
-<a id="paper-8"></a>
+- Eriksson, Kimmo, et al. "Large language models outperform humans at estimating society’s everyday norms." Communications AI & Computing 1: 15 (2026-09). [[link]](https://doi.org/10.1038/s44488-026-00018-8)
 
-**[8]** Leng, Yan, Yunxin Sang, and Ashish Agarwal. "Reducing Disparity Between LLMs and Humans: Optimal LLM Sample Calibration." Marketing Science, forthcoming. [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802019)
+<a id="paper-using-large-language-models-to-simulate-multiple-humans-and-replicate-human-subject-studies"></a>
 
-### 1.2 Behavioral Fidelity, Heterogeneity, and Statistical Validity
+- Aher, Gati V., Rosa I. Arriaga, and Adam Tauman Kalai. "Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies." ICML 2023, PMLR 202: 337–371 (2023-07). [[link]](https://proceedings.mlr.press/v202/aher23a.html)
 
-Evidence on individual responses, population distributions, subgroup representation, causal effects, and artifacts induced by prompts or model design.
+<a id="paper-frontiers-determining-the-validity-of-large-language-models-for-automated-perceptual-analysis"></a>
 
-<a id="paper-9"></a>
+- Li, Peiyao, et al. "Frontiers: Determining the Validity of Large Language Models for Automated Perceptual Analysis." Marketing Science 43(2): 254–266 (2024-01). [[link]](https://doi.org/10.1287/mksc.2023.0454)
 
-**[9]** Goli, Ali, and Amandeep Singh. "Frontiers: Can Large Language Models Capture Human Preferences?" Marketing Science 43(4): 709–722 (2024-04). [[link]](https://doi.org/10.1287/mksc.2023.0306)
+<a id="paper-customer-digital-twins-in-the-field-cross-sell-micro-personalization-at-scale"></a>
 
-<a id="paper-10"></a>
+- Casero, Emilio, et al. "Customer Digital Twins in the Field: Cross-Sell Micro-Personalization at Scale." Columbia Business School research record (2026-09). [[link]](https://business.columbia.edu/faculty/research/customer-digital-twins-field-cross-sell-micro-personalization-scale)
 
-**[10]** Peng, Tianyi, et al. "Digital twins are funhouse mirrors: Five systematic distortions." Science Advances 12(36): eaeh8260 (2026-09). [[link]](https://doi.org/10.1126/sciadv.aeh8260)
+<a id="paper-the-case-for-synthetic-data"></a>
 
-<a id="paper-11"></a>
+- Sambandam, Rajan, and Oded Netzer. "The Case for Synthetic Data." Quirk's Marketing Research Review (2025-11). [[link]](https://business.columbia.edu/faculty/research/case-synthetic-data)
 
-**[11]** Xie, Yueqi, et al. "Evaluating the statistical realism of LLM-generated social science data." PNAS 123(19): e2538145123 (2026-05). [[link]](https://doi.org/10.1073/pnas.2538145123)
+<a id="paper-can-ai-language-models-replace-human-participants"></a>
 
-<a id="paper-12"></a>
+- Dillion, Danica, et al. "Can AI language models replace human participants?" Trends in Cognitive Sciences 27(7): 597–600 (2023-05). [[link]](https://doi.org/10.1016/j.tics.2023.04.008)
 
-**[12]** Gao, Yuan, et al. "Take caution in using LLMs as human surrogates." PNAS 122(24): e2501660122 (2025-06). [[link]](https://doi.org/10.1073/pnas.2501660122)
+### 1.2 Validity and Limitations
 
-<a id="paper-13"></a>
+Evidence on behavioral fidelity, heterogeneity, representation, statistical and causal validity, and the limits of replacing human observations. Reviews and conceptual critiques are grouped here when validity is their main contribution.
 
-**[13]** Bisbee, James, et al. "Synthetic Replacements for Human Survey Data? The Perils of Large Language Models." Political Analysis 32(4): 401–416 (2024-05). [[link]](https://doi.org/10.1017/pan.2024.5)
+<a id="paper-a-large-scale-replication-of-scenario-based-experiments-in-psychology-and-management-using-large-language-models"></a>
 
-<a id="paper-14"></a>
+- Cui, Ziyan, Ning Li, and Huaikang Zhou. "A large-scale replication of scenario-based experiments in psychology and management using large language models." Nature Computational Science 5(8): 627–634 (2025-07). [[link]](https://doi.org/10.1038/s43588-025-00840-7)
 
-**[14]** Wang, Angelina, Jamie Morgenstern, and John P. Dickerson. "Large language models that replace human participants can harmfully misportray and flatten identity groups." Nature Machine Intelligence 7: 400–411 (2025-02). [[link]](https://doi.org/10.1038/s42256-025-00986-z)
+<a id="paper-measuring-the-digital-twin-separating-individuation-from-population-regularity-in-llm-survey-twins"></a>
 
-<a id="paper-15"></a>
+- Miller, Moses. "Measuring the Digital Twin: Separating Individuation from Population Regularity in LLM Survey Twins." Working paper, Reichman University (2026; month unverified), cited in Netzer and Sambandam, arXiv:2609.13995, p. 31; original manuscript unavailable. [[link]](https://arxiv.org/pdf/2609.13995#page=31)
 
-**[15]** Santurkar, Shibani, et al. "Whose Opinions Do Language Models Reflect?" ICML 2023, PMLR 202: 29971–30004 (2023-07). [[link]](https://proceedings.mlr.press/v202/santurkar23a.html)
+<a id="paper-llm-generated-persona-is-a-promise-with-a-catch"></a>
 
-<a id="paper-16"></a>
+- Li, Ang, Haozhe Chen, Hongseok Namkoong, and Tianyi Peng. "LLM Generated Persona is a Promise with a Catch." NeurIPS 2025, Position Paper Track, Advances in Neural Information Processing Systems 38 (2025-12). [[link]](https://proceedings.neurips.cc/paper_files/paper/2025/hash/5fc150b75e8b509735564de16bc3527b-Abstract-Position_Paper_Track.html)
 
-**[16]** Dominguez-Olmedo, Ricardo, Moritz Hardt, and Celestine Mendler-Dünner. "Questioning the Survey Responses of Large Language Models." NeurIPS 2024 (2024-12). [[link]](https://proceedings.neurips.cc/paper_files/paper/2024/hash/515c62809e0a29729d7eec26e2916fc0-Abstract-Conference.html)
+<a id="paper-on-the-reliability-of-individual-economic-rationality-measurements"></a>
 
-<a id="paper-17"></a>
+- Nitsch, Felix J., Luca M. Lüpken, Nils Lüschow, and Tobias Kalenscher. "On the reliability of individual economic rationality measurements." PNAS 119(31): e2202070119 (2022-07), consumer-choice measurement background. [[link]](https://doi.org/10.1073/pnas.2202070119)
 
-**[17]** Durmus, Esin, et al. "Towards Measuring the Representation of Subjective Global Opinions in Language Models." COLM 2024 (2024-10). [[link]](https://openreview.net/forum?id=zl16jLb91v)
+<a id="paper-whats-in-a-name-auditing-large-language-models-for-race-and-gender-bias"></a>
 
-<a id="paper-18"></a>
+- Salinas, Alejandro, Amit Haim, and Julian Nyarko. "What's in a Name? Auditing Large Language Models for Race and Gender Bias." arXiv:2402.14875 (2024-02). [[link]](https://arxiv.org/abs/2402.14875)
 
-**[18]** Tao, Yan, et al. "Cultural bias and cultural alignment of large language models." PNAS Nexus 3(9): pgae346 (2024-09). [[link]](https://doi.org/10.1093/pnasnexus/pgae346)
+<a id="paper-frontiers-can-large-language-models-capture-human-preferences"></a>
 
-<a id="paper-19"></a>
+- Goli, Ali, and Amandeep Singh. "Frontiers: Can Large Language Models Capture Human Preferences?" Marketing Science 43(4): 709–722 (2024-04). [[link]](https://doi.org/10.1287/mksc.2023.0306)
 
-**[19]** Salecha, Aadesh, et al. "Large language models display human-like social desirability biases in Big Five personality surveys." PNAS Nexus 3(12): pgae533 (2024-12). [[link]](https://doi.org/10.1093/pnasnexus/pgae533)
+<a id="paper-digital-twins-are-funhouse-mirrors-five-systematic-distortions"></a>
 
-<a id="paper-20"></a>
+- Peng, Tianyi, et al. "Digital twins are funhouse mirrors: Five systematic distortions." Science Advances 12(36): eaeh8260 (2026-09). [[link]](https://doi.org/10.1126/sciadv.aeh8260)
 
-**[20]** Zewail, Aliah, et al. "Moral stereotyping in large language models." PNAS 123(10): e2519941123 (2026-03). [[link]](https://doi.org/10.1073/pnas.2519941123)
+<a id="paper-evaluating-the-statistical-realism-of-llm-generated-social-science-data"></a>
 
-<a id="paper-21"></a>
+- Xie, Yueqi, et al. "Evaluating the statistical realism of LLM-generated social science data." PNAS 123(19): e2538145123 (2026-05). [[link]](https://doi.org/10.1073/pnas.2538145123)
 
-**[21]** Pataranutaporn, Pat, et al. "Simulating human well-being with large language models: Systematic validation and misestimation across 64,000 individuals from 64 countries." PNAS 122(48): e2519394122 (2025-11). [[link]](https://doi.org/10.1073/pnas.2519394122)
+<a id="paper-take-caution-in-using-llms-as-human-surrogates"></a>
 
-<a id="paper-22"></a>
+- Gao, Yuan, et al. "Take caution in using LLMs as human surrogates." PNAS 122(24): e2501660122 (2025-06). [[link]](https://doi.org/10.1073/pnas.2501660122)
 
-**[22]** Boelaert, Julien, et al. "Machine Bias. How Do Generative Language Models Answer Opinion Polls?" Sociological Methods & Research 54(3): 1156–1196 (2025-04). [[link]](https://doi.org/10.1177/00491241251330582)
+<a id="paper-synthetic-replacements-for-human-survey-data-the-perils-of-large-language-models"></a>
 
-<a id="paper-23"></a>
+- Bisbee, James, et al. "Synthetic Replacements for Human Survey Data? The Perils of Large Language Models." Political Analysis 32(4): 401–416 (2024-05). [[link]](https://doi.org/10.1017/pan.2024.5)
 
-**[23]** Brucks, Melanie, and Olivier Toubia. "Prompt architecture induces methodological artifacts in large language models." PLOS ONE 20(4): e0319159 (2025-04). [[link]](https://doi.org/10.1371/journal.pone.0319159)
+<a id="paper-large-language-models-that-replace-human-participants-can-harmfully-misportray-and-flatten-identity-groups"></a>
 
+- Wang, Angelina, Jamie Morgenstern, and John P. Dickerson. "Large language models that replace human participants can harmfully misportray and flatten identity groups." Nature Machine Intelligence 7: 400–411 (2025-02). [[link]](https://doi.org/10.1038/s42256-025-00986-z)
 
-<a id="paper-24"></a>
+<a id="paper-whose-opinions-do-language-models-reflect"></a>
 
-**[24]** Liu, Ryan, et al. "Large Language Models Assume People are More Rational than We Really are." ICLR 2025 (2025-04). [[link]](https://proceedings.iclr.cc/paper_files/paper/2025/hash/7cdb411d07bdf6cd43ddf1254fae98cd-Abstract-Conference.html)
+- Santurkar, Shibani, et al. "Whose Opinions Do Language Models Reflect?" ICML 2023, PMLR 202: 29971–30004 (2023-07). [[link]](https://proceedings.mlr.press/v202/santurkar23a.html)
 
-<a id="paper-25"></a>
+<a id="paper-questioning-the-survey-responses-of-large-language-models"></a>
 
-**[25]** Hu, Tiancheng, et al. "SimBench: Benchmarking the Ability of Large Language Models to Simulate Human Behaviors." ICLR 2026 (2026-04). [[link]](https://proceedings.iclr.cc/paper_files/paper/2026/hash/2fc4d6a6400addda7493b9db258c34e0-Abstract-Conference.html)
+- Dominguez-Olmedo, Ricardo, Moritz Hardt, and Celestine Mendler-Dünner. "Questioning the Survey Responses of Large Language Models." NeurIPS 2024 (2024-12). [[link]](https://proceedings.neurips.cc/paper_files/paper/2024/hash/515c62809e0a29729d7eec26e2916fc0-Abstract-Conference.html)
 
+<a id="paper-towards-measuring-the-representation-of-subjective-global-opinions-in-language-models"></a>
 
-<a id="paper-26"></a>
+- Durmus, Esin, et al. "Towards Measuring the Representation of Subjective Global Opinions in Language Models." COLM 2024 (2024-10). [[link]](https://openreview.net/forum?id=zl16jLb91v)
 
-**[26]** Kuric, Eduard, Peter Demcak, and Matus Krajcovic. "Distorted Perspectives of LLM-Simulated Preferences: Can AI Mislead Design?" arXiv:2605.18311 (2026-05). [[link]](https://arxiv.org/abs/2605.18311)
+<a id="paper-cultural-bias-and-cultural-alignment-of-large-language-models"></a>
 
+- Tao, Yan, et al. "Cultural bias and cultural alignment of large language models." PNAS Nexus 3(9): pgae346 (2024-09). [[link]](https://doi.org/10.1093/pnasnexus/pgae346)
 
-<a id="paper-27"></a>
+<a id="paper-large-language-models-display-human-like-social-desirability-biases-in-big-five-personality-surveys"></a>
 
-**[27]** Xie, Yu, and Yueqi Xie. "Variance reduction in output from generative AI." arXiv:2503.01033 (2025-03). [[link]](https://arxiv.org/abs/2503.01033)
+- Salecha, Aadesh, et al. "Large language models display human-like social desirability biases in Big Five personality surveys." PNAS Nexus 3(12): pgae533 (2024-12). [[link]](https://doi.org/10.1093/pnasnexus/pgae533)
 
-<a id="paper-28"></a>
+<a id="paper-moral-stereotyping-in-large-language-models"></a>
 
-**[28]** Yin, Haonan, Shai Vardi, and Vidyanand Choudhary. "Fragile preferences: A deep dive into order effects in large language models." PNAS Nexus 5(8): pgag246 (2026-08). [[link]](https://doi.org/10.1093/pnasnexus/pgag246)
+- Zewail, Aliah, et al. "Moral stereotyping in large language models." PNAS 123(10): e2519941123 (2026-03). [[link]](https://doi.org/10.1073/pnas.2519941123)
 
-### 1.3 Preference Measurement and Market Research
+<a id="paper-simulating-human-well-being-with-large-language-models-systematic-validation-and-misestimation-across-64-000-individuals-from-64-countries"></a>
 
-Measurement and validation of synthetic purchase intent and willingness to pay.
+- Pataranutaporn, Pat, et al. "Simulating human well-being with large language models: Systematic validation and misestimation across 64,000 individuals from 64 countries." PNAS 122(48): e2519394122 (2025-11). [[link]](https://doi.org/10.1073/pnas.2519394122)
 
+<a id="paper-machine-bias-how-do-generative-language-models-answer-opinion-polls"></a>
 
-<a id="paper-29"></a>
+- Boelaert, Julien, et al. "Machine Bias. How Do Generative Language Models Answer Opinion Polls?" Sociological Methods & Research 54(3): 1156–1196 (2025-04). [[link]](https://doi.org/10.1177/00491241251330582)
 
-**[29]** Maier, Benjamin F., et al. "LLMs Reproduce Human Purchase Intent via Semantic Similarity Elicitation of Likert Ratings." arXiv:2510.08338 (2025-10). [[link]](https://arxiv.org/abs/2510.08338)
+<a id="paper-prompt-architecture-induces-methodological-artifacts-in-large-language-models"></a>
 
-<a id="paper-30"></a>
+- Brucks, Melanie, and Olivier Toubia. "Prompt architecture induces methodological artifacts in large language models." PLOS ONE 20(4): e0319159 (2025-04). [[link]](https://doi.org/10.1371/journal.pone.0319159)
 
-**[30]** Oetzel, Sebastian, and Tobias Maiberger. "How price sensitive is AI? Benchmarking LLM-generated willingness to pay in pricing analytics." Journal of Marketing Analytics (2026-09). [[link]](https://doi.org/10.1057/s41270-026-00542-7)
+<a id="paper-large-language-models-assume-people-are-more-rational-than-we-really-are"></a>
 
+- Liu, Ryan, et al. "Large Language Models Assume People are More Rational than We Really are." ICLR 2025 (2025-04). [[link]](https://proceedings.iclr.cc/paper_files/paper/2025/hash/7cdb411d07bdf6cd43ddf1254fae98cd-Abstract-Conference.html)
 
-### 1.4 Simulated Experiments and Decision Support
+<a id="paper-simbench-benchmarking-the-ability-of-large-language-models-to-simulate-human-behaviors"></a>
 
-Digital twins and simulated consumers support downstream inference, experiments, and decisions, including statistical calibration, human sample allocation, preference estimation, and adaptive learning. Related behavioral and cognition studies assess the opportunities and limits of simulation-based decision support.
+- Hu, Tiancheng, et al. "SimBench: Benchmarking the Ability of Large Language Models to Simulate Human Behaviors." ICLR 2026 (2026-04). [[link]](https://proceedings.iclr.cc/paper_files/paper/2026/hash/2fc4d6a6400addda7493b9db258c34e0-Abstract-Conference.html)
 
-<a id="paper-31"></a>
+<a id="paper-distorted-perspectives-of-llm-simulated-preferences-can-ai-mislead-design"></a>
 
-**[31]** Ashokkumar, Ashwini, et al. "Large language models can predict the results of social science experiments." Nature 656: 115–122 (2026-07). [[link]](https://doi.org/10.1038/s41586-026-10742-x)
+- Kuric, Eduard, Peter Demcak, and Matus Krajcovic. "Distorted Perspectives of LLM-Simulated Preferences: Can AI Mislead Design?" arXiv:2605.18311 (2026-05). [[link]](https://arxiv.org/abs/2605.18311)
 
-<a id="paper-32"></a>
+<a id="paper-variance-reduction-in-output-from-generative-ai"></a>
 
-**[32]** Horton, John J., Apostolos Filippas, and Benjamin S. Manning. "Large Language Models as Simulated Economic Agents: What Can We Learn from Homo Silicus?" arXiv:2301.07543 (2023-01). [[link]](https://arxiv.org/abs/2301.07543)
+- Xie, Yu, and Yueqi Xie. "Variance reduction in output from generative AI." arXiv:2503.01033 (2025-03). [[link]](https://arxiv.org/abs/2503.01033)
 
-<a id="paper-33"></a>
+<a id="paper-fragile-preferences-a-deep-dive-into-order-effects-in-large-language-models"></a>
 
-**[33]** Li, Han, et al. "SimGym: A Framework for A/B Test Simulation in E-Commerce with Traffic-Grounded VLM Agents." arXiv:2605.19219 (2026-05). [[link]](https://arxiv.org/abs/2605.19219)
+- Yin, Haonan, Shai Vardi, and Vidyanand Choudhary. "Fragile preferences: A deep dive into order effects in large language models." PNAS Nexus 5(8): pgag246 (2026-08). [[link]](https://doi.org/10.1093/pnasnexus/pgag246)
 
-<a id="paper-34"></a>
+<a id="paper-how-price-sensitive-is-ai-benchmarking-llm-generated-willingness-to-pay-in-pricing-analytics"></a>
 
-**[34]** France, Stephen L., and Pia A. Albinsson. "Synthetic Consumer Insight Generation with Large Language Models." arXiv:2607.05761 (2026-07). [[link]](https://arxiv.org/abs/2607.05761)
+- Oetzel, Sebastian, and Tobias Maiberger. "How price sensitive is AI? Benchmarking LLM-generated willingness to pay in pricing analytics." Journal of Marketing Analytics (2026-09). [[link]](https://doi.org/10.1057/s41270-026-00542-7)
 
-<a id="paper-35"></a>
+<a id="paper-statistical-realism-is-not-evidence-that-llms-can-estimate-treatment-effects-in-social-science-experiments"></a>
 
-**[35]** Binz, Marcel, et al. "A foundation model to predict and capture human cognition." Nature 644: 1002–1009 (2025-07). [[link]](https://doi.org/10.1038/s41586-025-09215-4)
+- Li, Zonghan, and Feng Ji. "Statistical realism is not evidence that LLMs can estimate treatment effects in social science experiments." arXiv:2604.02458 (2026-04). [[link]](https://arxiv.org/abs/2604.02458)
 
-<a id="paper-36"></a>
+<a id="paper-when-synthetic-users-fail-a-cross-domain-benchmark-of-llm-simulated-human-survey-responses"></a>
 
-**[36]** Eriksson, Kimmo, et al. "Large language models outperform humans at estimating society’s everyday norms." Communications AI & Computing 1: 15 (2026-09). [[link]](https://doi.org/10.1038/s44488-026-00018-8)
+- Chen, Zihan, Di Zhu, and Lei Nico Zheng. "When Synthetic Users Fail: A Cross-Domain Benchmark of LLM-Simulated Human Survey Responses." arXiv:2607.26348 (2026-07). [[link]](https://arxiv.org/abs/2607.26348)
 
-<a id="paper-37"></a>
+<a id="paper-what-would-gpt-click-practical-effects-of-human-ai-behavioral-misalignment-and-the-cost-of-synthetic-participants-in-user-experience"></a>
 
-**[37]** Aher, Gati V., Rosa I. Arriaga, and Adam Tauman Kalai. "Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies." ICML 2023, PMLR 202: 337–371 (2023-07). [[link]](https://proceedings.mlr.press/v202/aher23a.html)
+- Kuric, Eduard, Peter Demcak, and Matus Krajcovic. "What Would GPT Click: Practical Effects of Human-AI Behavioral Misalignment and the Cost of Synthetic Participants in User Experience." arXiv:2605.18302 (2026-05). [[link]](https://arxiv.org/abs/2605.18302)
 
-<a id="paper-38"></a>
+<a id="paper-synthetic-data-and-digital-twins-the-hype-the-facts-the-promise"></a>
 
-**[38]** Arora, Neeraj, Ishita Chakraborty, and Yohei Nishimura. "AI–Human Hybrids for Marketing Research: Leveraging Large Language Models (LLMs) as Collaborators." Journal of Marketing 89(2): 43–70 (2024-08). [[link]](https://doi.org/10.1177/00222429241276529)
+- Toubia, Olivier. "Synthetic Data and Digital Twins: The Hype, The Facts, the Promise." SSRN 7065919 (2026-07). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7065919)
 
-<a id="paper-39"></a>
+<a id="paper-perils-and-opportunities-in-using-large-language-models-in-psychological-research"></a>
 
-**[39]** Gui, George, and Olivier Toubia. "The Challenge of Using LLMs to Simulate Human Behavior: A Causal Inference Perspective." SSRN 4650172 (2023-12). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4650172)
+- Abdurahman, Suhaib, et al. "Perils and opportunities in using large language models in psychological research." PNAS Nexus 3(7): pgae245 (2024-07). [[link]](https://doi.org/10.1093/pnasnexus/pgae245)
 
-<a id="paper-40"></a>
+<a id="paper-the-illusion-of-artificial-inclusion"></a>
 
-**[40]** Hullman, Jessica, et al. "This human study did not involve human subjects: Validating LLM simulations as behavioral evidence." arXiv:2602.15785 (2026-02). [[link]](https://arxiv.org/abs/2602.15785)
+- Agnew, William, et al. "The Illusion of Artificial Inclusion." CHI 2024 (2024-05). [[link]](https://doi.org/10.1145/3613904.3642703)
 
-<a id="paper-41"></a>
+<a id="paper-six-fallacies-in-substituting-large-language-models-for-human-participants"></a>
 
-**[41]** Li, Zonghan, and Feng Ji. "Statistical realism is not evidence that LLMs can estimate treatment effects in social science experiments." arXiv:2604.02458 (2026-04). [[link]](https://arxiv.org/abs/2604.02458)
+- Lin, Zhicheng. "Six Fallacies in Substituting Large Language Models for Human Participants." Advances in Methods and Practices in Psychological Science (2025-08). [[link]](https://doi.org/10.1177/25152459251357566)
 
-<a id="paper-42"></a>
+<a id="paper-large-language-models-as-human-proxies"></a>
 
-**[42]** Chen, Zihan, Di Zhu, and Lei Nico Zheng. "When Synthetic Users Fail: A Cross-Domain Benchmark of LLM-Simulated Human Survey Responses." arXiv:2607.26348 (2026-07). [[link]](https://arxiv.org/abs/2607.26348)
+- Karetnikov, Nikita, Iyad Rahwan, and Davor Svetinovic. "Large language models as human proxies." Nature Computational Science (2026-09). [[link]](https://doi.org/10.1038/s43588-026-01060-3)
 
-<a id="paper-43"></a>
+<a id="paper-synthetic-participants-generated-by-large-language-models-a-systematic-literature-review"></a>
 
-**[43]** Kuric, Eduard, Peter Demcak, and Matus Krajcovic. "What Would GPT Click: Practical Effects of Human-AI Behavioral Misalignment and the Cost of Synthetic Participants in User Experience." arXiv:2605.18302 (2026-05). [[link]](https://arxiv.org/abs/2605.18302)
+- Kuric, Eduard, Peter Demcak, and Matus Krajcovic. "Synthetic Participants Generated by Large Language Models: A Systematic Literature Review." Research Square (2026-03). [[link]](https://doi.org/10.21203/rs.3.rs-9057643/v1)
 
-<a id="paper-44"></a>
+<a id="paper-too-human-to-model-the-uncanny-valley-of-large-language-models-in-simulating-human-systems"></a>
 
-**[44]** Brand, James, Ayelet Israeli, and Donald Ngwe. "Using LLMs for Market Research." SSRN 4395751 (2023-03). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4395751)
+- Zeng, Yongchao, Calum Brown, and Mark Rounsevell. "Too human to model: the uncanny valley of large language models in simulating human systems." npj Complexity 3: 13 (2026-03). [[link]](https://doi.org/10.1038/s44260-026-00075-1)
 
-<a id="paper-45"></a>
+### 1.3 Methods and Improvements
 
-**[45]** Li, Peiyao, et al. "Frontiers: Determining the Validity of Large Language Models for Automated Perceptual Analysis." Marketing Science 43(2): 254–266 (2024-01). [[link]](https://doi.org/10.1287/mksc.2023.0454)
+Methods that construct, ground, calibrate, fine-tune, validate, or improve simulated responses and research workflows. This includes human-data integration, supervised fine-tuning, inference correction, and selected transferable computer-science methods.
 
-<a id="paper-46"></a>
+<a id="paper-database-report-twin-2k-500-a-data-set-for-building-digital-twins-of-over-2-000-people-based-on-their-answers-to-over-500-questions"></a>
 
-**[46]** Netzer, Oded, and Rajan Sambandam. "Synthetic Data in Marketing Research: How to Evaluate and When to Trust." arXiv:2609.13995 (2026-09). [[link]](https://arxiv.org/abs/2609.13995)
+- Toubia, Olivier, et al. "Database Report: Twin-2K-500: A Data Set for Building Digital Twins of over 2,000 People Based on Their Answers to over 500 Questions." Marketing Science 44(6): 1446–1455 (2025-08). [[link]](https://doi.org/10.1287/mksc.2025.0262)
 
-<a id="paper-47"></a>
+<a id="paper-twinface-generating-synthetic-faces-for-multimodal-consumer-digital-twins"></a>
 
-**[47]** Wang, Mengxin, Dennis J. Zhang, and Heng Zhang. "Large Language Models for Market Research: A Data-Augmentation Approach." Marketing Science 45(4): 728–751 (2026-03). [[link]](https://doi.org/10.1287/mksc.2025.0009)
+- Sherwin, R., M. Miller, Y. Zwebner, and J. Goldenberg. "Twinface: Generating synthetic faces for multimodal consumer digital twins." Working paper (2026; month unverified), cited in Toubia, SSRN 7065919; original manuscript unavailable and correspondence to "The Face of Digital Twins" unverified. [[link]](https://business.columbia.edu/faculty/research/synthetic-data-and-digital-twins-hype-facts-promise)
 
-<a id="paper-48"></a>
+<a id="paper-ai-moderated-interviews-for-market-research-and-digital-twins-calibration"></a>
 
-**[48]** Lu, Cheng, et al. "Generative Augmented Inference." ICML 2026, PMLR 306: 81730–81751 (2026-07). [[link]](https://proceedings.mlr.press/v306/lu26am.html)
+- Deng, Yuting, et al. "AI-Moderated Interviews for Market Research and Digital Twins Calibration." arXiv:2609.29143 (2026-09). [[link]](https://arxiv.org/abs/2609.29143)
 
-<a id="paper-49"></a>
+<a id="paper-synthetic-personalities-how-well-can-llms-mimic-individual-respondents-using-socio-economic-microdata"></a>
 
-**[49]** Ye, Zikun, and Hema Yoganarasimhan. "Rectification Difficulty and Optimal Sample Allocation in LLM-Augmented Surveys." arXiv:2604.17267 (2026-04). [[link]](https://arxiv.org/abs/2604.17267)
+- Kinzinger, Leonard, and Jochen Hartmann. "Synthetic Personalities: How Well Can LLMs Mimic Individual Respondents Using Socio-Economic Microdata?" arXiv:2606.04592 (2026-06). [[link]](https://arxiv.org/abs/2606.04592)
 
-<a id="paper-50"></a>
+<a id="paper-syn-digits-a-synthetic-control-framework-for-calibrated-digital-twin-simulation"></a>
 
-**[50]** Ye, Zikun, Jiameng Lyu, and Rui Tao. "Allocating Human Oversight in AI-Enabled Analytics." arXiv:2604.12497 (2026-04). [[link]](https://arxiv.org/abs/2604.12497)
+- Fan, Grace Jiarui, et al. "SYN-DIGITS: A Synthetic Control Framework for Calibrated Digital Twin Simulation." arXiv:2604.07513 (2026-04). [[link]](https://arxiv.org/abs/2604.07513)
 
-<a id="paper-51"></a>
+<a id="paper-finetuning-llms-for-human-behavior-prediction-in-social-science-experiments"></a>
 
-**[51]** Liu, Tianming, et al. "Distributionally Robust LLM Augmentation of Discrete Choice Models." SSRN 7500939 (2026-09). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7500939)
+- Kolluri, Akaash, et al. "Finetuning LLMs for Human Behavior Prediction in Social Science Experiments." EMNLP 2025 (2025-11). [[link]](https://aclanthology.org/2025.emnlp-main.1530/)
 
-<a id="paper-52"></a>
+<a id="paper-reducing-disparity-between-llms-and-humans-optimal-llm-sample-calibration"></a>
 
-**[52]** Krsteski, Stefan, et al. "Valid Survey Simulations with Limited Human Data: The Roles of Prompting, Fine-Tuning, and Rectification." ACL 2026, Long Papers: 10887–10906 (2026-07). [[link]](https://aclanthology.org/2026.acl-long.498/)
+- Leng, Yan, Yunxin Sang, and Ashish Agarwal. "Reducing Disparity Between LLMs and Humans: Optimal LLM Sample Calibration." Marketing Science, forthcoming. [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802019)
 
-<a id="paper-54"></a>
+<a id="paper-how-ai-helps-scale-qualitative-customer-research"></a>
 
-**[54]** Huang, Chengpiao, and Kaizheng Wang. "LLM-Powered Virtual Population for Demand Simulation and Pricing." arXiv:2606.16183 (2026-06). [[link]](https://arxiv.org/abs/2606.16183)
+- Korst, Jeremy, Stefano Puntoni, and Olivier Toubia. "How AI Helps Scale Qualitative Customer Research." Harvard Business Review (2026-04). [[link]](https://hbr.org/2026/04/how-ai-helps-scale-qualitative-customer-research)
 
-<a id="paper-55"></a>
+<a id="paper-llms-reproduce-human-purchase-intent-via-semantic-similarity-elicitation-of-likert-ratings"></a>
 
-**[55]** Alamdari, Parand A., Yanshuai Cao, and Kevin H. Wilson. "Jump Starting Bandits with LLM-Generated Prior Knowledge." EMNLP 2024: 19821–19833 (2024-11). [[link]](https://aclanthology.org/2024.emnlp-main.1107/)
+- Maier, Benjamin F., et al. "LLMs Reproduce Human Purchase Intent via Semantic Similarity Elicitation of Likert Ratings." arXiv:2510.08338 (2025-10). [[link]](https://arxiv.org/abs/2510.08338)
 
-<a id="paper-56"></a>
+<a id="paper-simgym-a-framework-for-a-b-test-simulation-in-e-commerce-with-traffic-grounded-vlm-agents"></a>
 
-**[56]** Bayley, Adam, et al. "Jump Start or False Start? A Theoretical and Empirical Evaluation of LLM-initialized Bandits." arXiv:2604.02527 (2026-04). [[link]](https://arxiv.org/abs/2604.02527)
+- Li, Han, et al. "SimGym: A Framework for A/B Test Simulation in E-Commerce with Traffic-Grounded VLM Agents." arXiv:2605.19219 (2026-05). [[link]](https://arxiv.org/abs/2605.19219)
 
-<a id="paper-57"></a>
+<a id="paper-ai-human-hybrids-for-marketing-research-leveraging-large-language-models-llms-as-collaborators"></a>
 
-**[57]** Casero, Emilio, et al. "Customer Digital Twins in the Field: Cross-Sell Micro-Personalization at Scale." Columbia Business School research record (2026-09). [[link]](https://business.columbia.edu/faculty/research/customer-digital-twins-field-cross-sell-micro-personalization-scale)
+- Arora, Neeraj, Ishita Chakraborty, and Yohei Nishimura. "AI–Human Hybrids for Marketing Research: Leveraging Large Language Models (LLMs) as Collaborators." Journal of Marketing 89(2): 43–70 (2024-08). [[link]](https://doi.org/10.1177/00222429241276529)
 
+<a id="paper-the-challenge-of-using-llms-to-simulate-human-behavior-a-causal-inference-perspective"></a>
 
-### 1.5 Reviews and Research Design
+- Gui, George, and Olivier Toubia. "The Challenge of Using LLMs to Simulate Human Behavior: A Causal Inference Perspective." SSRN 4650172 (2023-12). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4650172)
 
-Reviews, perspectives, and methodological guidance on using simulated participants as research evidence.
+<a id="paper-this-human-study-did-not-involve-human-subjects-validating-llm-simulations-as-behavioral-evidence"></a>
 
-<a id="paper-58"></a>
+- Hullman, Jessica, et al. "This human study did not involve human subjects: Validating LLM simulations as behavioral evidence." arXiv:2602.15785 (2026-02). [[link]](https://arxiv.org/abs/2602.15785)
 
-**[58]** Toubia, Olivier. "Synthetic Data and Digital Twins: The Hype, The Facts, the Promise." SSRN 7065919 (2026-07). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7065919)
+<a id="paper-using-llms-for-market-research"></a>
 
-<a id="paper-59"></a>
+- Brand, James, Ayelet Israeli, and Donald Ngwe. "Using LLMs for Market Research." SSRN 4395751 (2023-03). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4395751)
 
-**[59]** Abdurahman, Suhaib, et al. "Perils and opportunities in using large language models in psychological research." PNAS Nexus 3(7): pgae245 (2024-07). [[link]](https://doi.org/10.1093/pnasnexus/pgae245)
+<a id="paper-synthetic-data-in-marketing-research-how-to-evaluate-and-when-to-trust"></a>
 
-<a id="paper-60"></a>
+- Netzer, Oded, and Rajan Sambandam. "Synthetic Data in Marketing Research: How to Evaluate and When to Trust." arXiv:2609.13995 (2026-09). [[link]](https://arxiv.org/abs/2609.13995)
 
-**[60]** Dillion, Danica, et al. "Can AI language models replace human participants?" Trends in Cognitive Sciences 27(7): 597–600 (2023-05). [[link]](https://doi.org/10.1016/j.tics.2023.04.008)
+<a id="paper-large-language-models-for-market-research-a-data-augmentation-approach"></a>
 
-<a id="paper-61"></a>
+- Wang, Mengxin, Dennis J. Zhang, and Heng Zhang. "Large Language Models for Market Research: A Data-Augmentation Approach." Marketing Science 45(4): 728–751 (2026-03). [[link]](https://doi.org/10.1287/mksc.2025.0009)
 
-**[61]** Agnew, William, et al. "The Illusion of Artificial Inclusion." CHI 2024 (2024-05). [[link]](https://doi.org/10.1145/3613904.3642703)
+<a id="paper-generative-augmented-inference"></a>
 
-<a id="paper-62"></a>
+- Lu, Cheng, et al. "Generative Augmented Inference." ICML 2026, PMLR 306: 81730–81751 (2026-07). [[link]](https://proceedings.mlr.press/v306/lu26am.html)
 
-**[62]** Lin, Zhicheng. "Six Fallacies in Substituting Large Language Models for Human Participants." Advances in Methods and Practices in Psychological Science (2025-08). [[link]](https://doi.org/10.1177/25152459251357566)
+<a id="paper-rectification-difficulty-and-optimal-sample-allocation-in-llm-augmented-surveys"></a>
 
-<a id="paper-63"></a>
+- Ye, Zikun, and Hema Yoganarasimhan. "Rectification Difficulty and Optimal Sample Allocation in LLM-Augmented Surveys." arXiv:2604.17267 (2026-04). [[link]](https://arxiv.org/abs/2604.17267)
 
-**[63]** Lin, Zhicheng. "Large Language Models as Psychological Simulators: A Methodological Guide." Advances in Methods and Practices in Psychological Science 9(1) (2026-02). [[link]](https://doi.org/10.1177/25152459251410153)
+<a id="paper-allocating-human-oversight-in-ai-enabled-analytics"></a>
 
-<a id="paper-64"></a>
+- Ye, Zikun, Jiameng Lyu, and Rui Tao. "Allocating Human Oversight in AI-Enabled Analytics." arXiv:2604.12497 (2026-04). [[link]](https://arxiv.org/abs/2604.12497)
 
-**[64]** Karetnikov, Nikita, Iyad Rahwan, and Davor Svetinovic. "Large language models as human proxies." Nature Computational Science (2026-09). [[link]](https://doi.org/10.1038/s43588-026-01060-3)
+<a id="paper-distributionally-robust-llm-augmentation-of-discrete-choice-models"></a>
 
-<a id="paper-65"></a>
+- Liu, Tianming, et al. "Distributionally Robust LLM Augmentation of Discrete Choice Models." SSRN 7500939 (2026-09). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7500939)
 
-**[65]** Kuric, Eduard, Peter Demcak, and Matus Krajcovic. "Synthetic Participants Generated by Large Language Models: A Systematic Literature Review." Research Square (2026-03). [[link]](https://doi.org/10.21203/rs.3.rs-9057643/v1)
+<a id="paper-valid-survey-simulations-with-limited-human-data-the-roles-of-prompting-fine-tuning-and-rectification"></a>
 
-<a id="paper-66"></a>
+- Krsteski, Stefan, et al. "Valid Survey Simulations with Limited Human Data: The Roles of Prompting, Fine-Tuning, and Rectification." ACL 2026, Long Papers: 10887–10906 (2026-07). [[link]](https://aclanthology.org/2026.acl-long.498/)
 
-**[66]** Zeng, Yongchao, Calum Brown, and Mark Rounsevell. "Too human to model: the uncanny valley of large language models in simulating human systems." npj Complexity 3: 13 (2026-03). [[link]](https://doi.org/10.1038/s44260-026-00075-1)
+<a id="paper-llm-powered-virtual-population-for-demand-simulation-and-pricing"></a>
 
----
+- Huang, Chengpiao, and Kaizheng Wang. "LLM-Powered Virtual Population for Demand Simulation and Pricing." arXiv:2606.16183 (2026-06). [[link]](https://arxiv.org/abs/2606.16183)
 
-<a id="model-and-algorithm-augmentation"></a>
+<a id="paper-new-tools-new-rules-a-practical-guide-to-effective-and-responsible-generative-ai-use-for-surveys-and-experiments-in-research"></a>
 
-## 🔬 2. Model and Algorithm Augmentation
+- Blanchard, Simon J., Nofar Duani, Aaron M. Garvey, Oded Netzer, and Travis Tae Oh. "New Tools, New Rules: A Practical Guide to Effective and Responsible Generative AI Use for Surveys and Experiments in Research." Journal of Marketing 89(6): 119–139 (2025-06). [[link]](https://doi.org/10.1177/00222429251349882)
 
-### 2.1 Choice Design and Online Learning
+<a id="paper-large-language-models-as-psychological-simulators-a-methodological-guide"></a>
 
-LLM-based priors and choice models inform choice design; persona-generated distributions support decision-making, while direct content predictions support adaptive experimentation.
+- Lin, Zhicheng. "Large Language Models as Psychological Simulators: A Methodological Guide." Advances in Methods and Practices in Psychological Science 9(1) (2026-02). [[link]](https://doi.org/10.1177/25152459251410153)
 
-<a id="paper-53"></a>
+<a id="paper-llm-saa-llm-persona-generated-distributions-for-decision-making"></a>
 
-**[53]** Baek, Jackie, et al. "LLM-SAA: LLM-persona Generated Distributions for Decision-making." arXiv:2602.06357 (2026-02). [[link]](https://arxiv.org/abs/2602.06357)
-
-<a id="paper-67"></a>
-
-**[67]** Eggers, Felix, and Marco Vriens. "Using LLM-Based Priors to Optimize Choice Designs in Conjoint Experiments." SSRN 6719681 (2026-05). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6719681)
-
-
-<a id="paper-68"></a>
-
-**[68]** Ye, Zikun, Hema Yoganarasimhan, and Yufeng Zheng. "LOLA: LLM-Assisted Online Learning Algorithm for Content Experiments." Marketing Science 44(5): 995–1016 (2025-03). [[link]](https://pubsonline.informs.org/doi/10.1287/mksc.2024.0990)
-
-<a id="paper-77"></a>
-
-**[77]** Lee, Kevin. "Generative Brand Choice." (2025-05). [[link]](https://leekevin.io/jmp.pdf)
-
-### 2.2 Recommendation and Customer Text Training
-
-Selected CS and product-research bridges where generated requests, profiles, graph edges, or labeled texts train downstream models.
-
-<a id="paper-69"></a>
-
-**[69]** Mysore, Sheshera, Andrew McCallum, and Hamed Zamani. "Large Language Model Augmented Narrative Driven Recommendations." RecSys 2023: 777–783 (2023-09). [[link]](https://doi.org/10.1145/3604915.3608829)
-
-<a id="paper-70"></a>
-
-**[70]** Wei, Wei, et al. "LLMRec: Large Language Models with Graph Augmentation for Recommendation." WSDM 2024 (2024-03). [[link]](https://doi.org/10.1145/3616855.3635853)
-
-<a id="paper-71"></a>
-
-**[71]** Fioretti, Maria Lucia, et al. "How Powerful are LLMs to Support Multimodal Recommendation? A Reproducibility Study of LLMRec." RecSys 2025: 774–782 (2025-09). [[link]](https://doi.org/10.1145/3705328.3748154)
-
-<a id="paper-72"></a>
-
-**[72]** Liu, Qijiong, et al. "ONCE: Boosting Content-based Recommendation with Both Open- and Closed-source Large Language Models." WSDM 2024: 452–461 (2024-03). [[link]](https://doi.org/10.1145/3616855.3635845)
-
-<a id="paper-73"></a>
-
-**[73]** Luo, Sichun, et al. "Integrating Large Language Models Into Recommendation via Mutual Augmentation and Adaptive Aggregation." IEEE Journal of Selected Topics in Signal Processing 20(1): 77–89 (2026-01). [[link]](https://doi.org/10.1109/JSTSP.2026.3653160)
-
-<a id="paper-74"></a>
-
-**[74]** Huang, Shaoqin, Hu Qin, and Yue Wang. "Mining novel customer needs for product design from user-generated content through large language model-enabled data augmentation and ensemble learning." International Journal of Production Research (2026-02). [[link]](https://doi.org/10.1080/00207543.2026.2625971)
-
-<a id="paper-75"></a>
-
-**[75]** Li, Zhuoyan, et al. "Synthetic Data Generation with Large Language Models for Text Classification: Potential and Limitations." EMNLP 2023: 10443–10461 (2023-12). [[link]](https://aclanthology.org/2023.emnlp-main.647/)
-
-### 2.3 Training Limits and Direct Prediction
-
-Boundary evidence on recursive model training and the value of real data.
-
-<a id="paper-76"></a>
-
-**[76]** Zhang, Jinghui, et al. "Regurgitative Training: The Value of Real Data in Training Large Language Models." Management Science (2026-05). [[link]](https://doi.org/10.1287/mnsc.2024.07005)
+- Baek, Jackie, et al. "LLM-SAA: LLM-persona Generated Distributions for Decision-making." arXiv:2602.06357 (2026-02). [[link]](https://arxiv.org/abs/2602.06357)
 
 ---
 
 <a id="generative-targeting"></a>
 
-## ✨ 3. Generative Targeting
+## ✨ 2. Generative Targeting
 
-### 3.1 Synthetic Preferences and Demonstration Learning
+### 2.1 Market Effects and Limitations
 
-Generated preference pairs, model-rated examples, or synthetic labels help train and align content generation. Some evidence remains restricted to synthetic or offline evaluation.
+Empirical and theoretical evidence on advertising, content, persuasion, and market outcomes, including visual generative AI. Selected cross-disciplinary persuasion studies inform effectiveness and boundary conditions without establishing consumer-market validity.
 
-<a id="paper-78"></a>
+<a id="paper-frontiers-generative-ai-and-personalized-video-advertisements"></a>
 
-**[78]** Cheng, Mengjie, Elie Ofek, and Hema Yoganarasimhan. "Balancing Engagement and Polarization: Multi-Objective Alignment of News Content Using LLMs." arXiv:2504.13444 (2025-04). [[link]](https://arxiv.org/abs/2504.13444)
+- Kapoor, Anuj, and Madhav Kumar. "Frontiers: Generative AI and Personalized Video Advertisements." Marketing Science 44(4): 733–747 (2025-05). [[link]](https://doi.org/10.1287/mksc.2023.0494)
 
-<a id="paper-79"></a>
+<a id="paper-ai-in-disguise-quasi-experimental-analysis-of-a-large-scale-deployment-of-ai-generated-ads"></a>
 
-**[79]** Dey, Priyanka, et al. "GRAVITY: A Framework for Personalized Text Generation via Profile-Grounded Synthetic Preferences." EACL 2026, Long Papers: 7416–7436 (2026-03). [[link]](https://aclanthology.org/2026.eacl-long.348/)
+- Exner, Yannick, et al. "AI in Disguise—Quasi-Experimental Analysis of a Large-Scale Deployment of AI-Generated Ads." SSRN 5096969 (2025-03). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5096969)
 
-<a id="paper-80"></a>
+<a id="paper-the-impact-of-visual-generative-ai-on-advertising-effectiveness"></a>
 
-**[80]** Singh, Anikait, et al. "FSPO: Few-Shot Optimization of Synthetic Preferences Personalizes to Real Users." ICLR 2026 (2026-04). [[link]](https://proceedings.iclr.cc/paper_files/paper/2026/file/b2118ec72f6396c7e7bb2407e2d05eb4-Paper-Conference.pdf)
+- Lee, Hyesoo, et al. "The Impact of Visual Generative AI on Advertising Effectiveness." SSRN 5638311 (2025-11). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5638311)
 
-<a id="paper-81"></a>
+<a id="paper-large-language-models-and-creative-content-design-a-case-study-of-email-marketing-at-wine-access"></a>
 
-**[81]** Challapalli, Vedasamhitha, et al. "SLM4Offer: Personalized Marketing Offer Generation Using Contrastive Learning Based Fine-Tuning." arXiv:2508.15471 (2025-08). [[link]](https://arxiv.org/abs/2508.15471)
+- Dubé, Jean-Pierre, and Ariel Xu. "Large Language Models and Creative Content Design: a case study of email marketing at Wine Access." Quantitative Marketing and Economics 24: Article 1 (2026-01). [[link]](https://doi.org/10.1007/s11129-025-09303-9)
 
-<a id="paper-82"></a>
+<a id="paper-when-machines-persuade-better-than-humans-generative-ai-cognitive-constraints-and-promotional-effectiveness"></a>
 
-**[82]** Si, Harini, et al. "Long-Term Ad Memorability: Understanding & Generating Memorable Ads." WACV 2025 (2025-02). [[link]](https://openaccess.thecvf.com/content/WACV2025/html/Si_Long-Term_Ad_Memorability_Understanding__Generating_Memorable_Ads_WACV_2025_paper.html)
+- Gu, Wenying, et al. "When Machines Persuade Better Than Humans: Generative AI, Cognitive Constraints, and Promotional Effectiveness." SSRN 6294798 (2026-02). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6294798)
 
-### 3.2 Human Feedback and Personalized Generation
+<a id="paper-generative-ai-and-sales-productivity-field-experiments-in-online-retail"></a>
 
-Related generation methods grounded in real interactions, experiments, or estimated outcomes; synthetic demonstrations are not the main training input in every paper.
+- Fang, Lu, et al. "Generative AI and Sales Productivity: Field Experiments in Online Retail." arXiv:2510.12049 (2025-10). [[link]](https://arxiv.org/abs/2510.12049)
 
-<a id="paper-83"></a>
+<a id="paper-the-potential-of-generative-ai-for-personalized-persuasion-at-scale"></a>
 
-**[83]** Yin, Mingzhang, Ruijiang Gao, and Ziwei Cong. "Generative Personalization with Textual and Non-textual Data." SSRN 5329729 (2025-06). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5329729)
+- Matz, Sandra C., et al. "The potential of generative AI for personalized persuasion at scale." Scientific Reports 14: 4692 (2024-02). [[link]](https://doi.org/10.1038/s41598-024-53755-0)
 
-<a id="paper-84"></a>
+<a id="paper-we-need-to-understand-when-not-if-generative-ai-can-enhance-personalized-persuasion"></a>
 
-**[84]** Angelopoulos, Panagiotis, Kevin Lee, and Sanjog Misra. "Causal Alignment: Augmenting Language Models with A/B Tests." SSRN 4781850 (2024-04). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4781850)
+- Teeny, Jacob D., and Sandra C. Matz. "We need to understand “when” not “if” generative AI can enhance personalized persuasion." PNAS 121(43): e2418005121 (2024-10). [[link]](https://doi.org/10.1073/pnas.2418005121)
 
+<a id="paper-evaluating-the-persuasive-influence-of-political-microtargeting-with-large-language-models"></a>
 
-<a id="paper-85"></a>
+- Hackenburg, Kobi, and Helen Margetts. "Evaluating the persuasive influence of political microtargeting with large language models." PNAS 121(24): e2403116121 (2024-06). [[link]](https://doi.org/10.1073/pnas.2403116121)
 
-**[85]** Lee, Kevin, et al. "Offline-to-Online Creative Optimization with Generative Models and Adaptive Testing." arXiv:2607.23696 (2026-07). [[link]](https://arxiv.org/abs/2607.23696)
+<a id="paper-the-persuasive-effects-of-political-microtargeting-in-the-age-of-generative-artificial-intelligence"></a>
 
-<a id="paper-86"></a>
+- Simchon, Almog, Matthew Edwards, and Stephan Lewandowsky. "The persuasive effects of political microtargeting in the age of generative artificial intelligence." PNAS Nexus 3(2): pgae035 (2024-01). [[link]](https://doi.org/10.1093/pnasnexus/pgae035)
 
-**[86]** Ellickson, Paul B., et al. "Evaluating Novel Unstructured Treatments with Generative AI: A Causal Prediction Framework." Journal of Marketing Research (2026-08). [[link]](https://doi.org/10.1177/00222437261476639)
+<a id="paper-on-the-conversational-persuasiveness-of-gpt-4"></a>
 
-<a id="paper-87"></a>
+- Salvi, Francesco, et al. "On the conversational persuasiveness of GPT-4." Nature Human Behaviour 9: 1645–1653 (2025-05). [[link]](https://doi.org/10.1038/s41562-025-02194-6)
 
-**[87]** Xu, Yexing, et al. "Design Your Ad: Personalized Advertising Image and Text Generation with Unified Autoregressive Models." CVPR 2026 (2026-06). [[link]](https://openaccess.thecvf.com/content/CVPR2026/papers/Xu_Design_Your_Ad_Personalized_Advertising_Image_and_Text_Generation_with_CVPR_2026_paper.pdf)
+<a id="paper-llm-generated-ads-from-personalization-parity-to-persuasion-superiority"></a>
 
-### 3.3 Marketing Field Evidence and Creative Production
+- Meguellati, Elyas, et al. "LLM-Generated Ads: From Personalization Parity to Persuasion Superiority." arXiv:2512.03373 (2025-12). [[link]](https://arxiv.org/abs/2512.03373)
 
-Adjacent commercial applications test generated creatives and personalized delivery. Producing content alone does not establish synthetic training-data quality or incremental personalization value.
+<a id="paper-ads-that-talk-back-implications-and-perceptions-of-injecting-personalized-advertising-into-llm-chatbots"></a>
 
-<a id="paper-88"></a>
+- Tang, Brian Jay, et al. "Ads that Talk Back: Implications and Perceptions of Injecting Personalized Advertising into LLM Chatbots." Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies 9(4): Article 213 (2025-12). [[link]](https://doi.org/10.1145/3770640)
 
-**[88]** Kapoor, Anuj, and Madhav Kumar. "Frontiers: Generative AI and Personalized Video Advertisements." Marketing Science 44(4): 733–747 (2025-05). [[link]](https://doi.org/10.1287/mksc.2023.0494)
+<a id="paper-will-it-click-advertising-strategy-with-generative-ai"></a>
 
-<a id="paper-89"></a>
+- Fainmesser, Itay P., Dominique Olie Lauga, and Elie Ofek. "Will it Click? Advertising Strategy with Generative AI." SSRN 6517138 (2026-04). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6517138)
 
-**[89]** Reisenbichler, Martin, Thomas Reutterer, and David A. Schweidel. "Applying Large Language Models to Sponsored Search Advertising." Marketing Science 45(1): 123–141 (2025-11). [[link]](https://doi.org/10.1287/mksc.2023.0611)
+### 2.2 Methods and Improvements
 
-<a id="paper-90"></a>
+Methods for personalized content generation, preference modeling, feedback alignment, experimental optimization, and information design. This includes human-AI creative workflows and text or multimodal advertising generation.
 
-**[90]** Reisenbichler, Martin, et al. "Frontiers: Supporting Content Marketing with Natural Language Generation." Marketing Science 41(3): 441–452 (2022-02). [[link]](https://doi.org/10.1287/mksc.2022.1354)
+<a id="paper-balancing-engagement-and-polarization-multi-objective-alignment-of-news-content-using-llms"></a>
 
-<a id="paper-91"></a>
+- Cheng, Mengjie, Elie Ofek, and Hema Yoganarasimhan. "Balancing Engagement and Polarization: Multi-Objective Alignment of News Content Using LLMs." arXiv:2504.13444 (2025-04). [[link]](https://arxiv.org/abs/2504.13444)
 
-**[91]** Exner, Yannick, et al. "AI in Disguise—Quasi-Experimental Analysis of a Large-Scale Deployment of AI-Generated Ads." SSRN 5096969 (2025-03). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5096969)
+<a id="paper-gravity-a-framework-for-personalized-text-generation-via-profile-grounded-synthetic-preferences"></a>
 
-<a id="paper-92"></a>
+- Dey, Priyanka, et al. "GRAVITY: A Framework for Personalized Text Generation via Profile-Grounded Synthetic Preferences." EACL 2026, Long Papers: 7416–7436 (2026-03). [[link]](https://aclanthology.org/2026.eacl-long.348/)
 
-**[92]** Lee, Hyesoo, et al. "The Impact of Visual Generative AI on Advertising Effectiveness." SSRN 5638311 (2025-11). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5638311)
+<a id="paper-fspo-few-shot-optimization-of-synthetic-preferences-personalizes-to-real-users"></a>
 
-<a id="paper-93"></a>
+- Singh, Anikait, et al. "FSPO: Few-Shot Optimization of Synthetic Preferences Personalizes to Real Users." ICLR 2026 (2026-04). [[link]](https://proceedings.iclr.cc/paper_files/paper/2026/file/b2118ec72f6396c7e7bb2407e2d05eb4-Paper-Conference.pdf)
 
-**[93]** Dubé, Jean-Pierre, and Ariel Xu. "Large Language Models and Creative Content Design: a case study of email marketing at Wine Access." Quantitative Marketing and Economics 24: Article 1 (2026-01). [[link]](https://doi.org/10.1007/s11129-025-09303-9)
+<a id="paper-slm4offer-personalized-marketing-offer-generation-using-contrastive-learning-based-fine-tuning"></a>
 
-<a id="paper-94"></a>
+- Challapalli, Vedasamhitha, et al. "SLM4Offer: Personalized Marketing Offer Generation Using Contrastive Learning Based Fine-Tuning." arXiv:2508.15471 (2025-08). [[link]](https://arxiv.org/abs/2508.15471)
 
-**[94]** Gu, Wenying, et al. "When Machines Persuade Better Than Humans: Generative AI, Cognitive Constraints, and Promotional Effectiveness." SSRN 6294798 (2026-02). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6294798)
+<a id="paper-long-term-ad-memorability-understanding-generating-memorable-ads"></a>
 
-<a id="paper-95"></a>
+- Si, Harini, et al. "Long-Term Ad Memorability: Understanding & Generating Memorable Ads." WACV 2025 (2025-02). [[link]](https://openaccess.thecvf.com/content/WACV2025/html/Si_Long-Term_Ad_Memorability_Understanding__Generating_Memorable_Ads_WACV_2025_paper.html)
 
-**[95]** Fang, Lu, et al. "Generative AI and Sales Productivity: Field Experiments in Online Retail." arXiv:2510.12049 (2025-10). [[link]](https://arxiv.org/abs/2510.12049)
+<a id="paper-generative-personalization-with-textual-and-non-textual-data"></a>
 
+- Yin, Mingzhang, Ruijiang Gao, and Ziwei Cong. "Generative Personalization with Textual and Non-textual Data." SSRN 5329729 (2025-06). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5329729)
 
-### 3.4 Persuasion, Transparency, and Strategic Boundaries
+<a id="paper-causal-alignment-augmenting-language-models-with-a-b-tests"></a>
 
-Selected behavioral studies, transparency research, and economic models clarify the effects and limits of personalized generation. Political persuasion is adjacent evidence; strategic models and conceptual reviews are context rather than synthetic-data validation.
+- Angelopoulos, Panagiotis, Kevin Lee, and Sanjog Misra. "Causal Alignment: Augmenting Language Models with A/B Tests." SSRN 4781850 (2024-04). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4781850)
 
-<a id="paper-96"></a>
+<a id="paper-offline-to-online-creative-optimization-with-generative-models-and-adaptive-testing"></a>
 
-**[96]** Matz, Sandra C., et al. "The potential of generative AI for personalized persuasion at scale." Scientific Reports 14: 4692 (2024-02). [[link]](https://doi.org/10.1038/s41598-024-53755-0)
+- Lee, Kevin, et al. "Offline-to-Online Creative Optimization with Generative Models and Adaptive Testing." arXiv:2607.23696 (2026-07). [[link]](https://arxiv.org/abs/2607.23696)
 
-<a id="paper-97"></a>
+<a id="paper-evaluating-novel-unstructured-treatments-with-generative-ai-a-causal-prediction-framework"></a>
 
-**[97]** Teeny, Jacob D., et al. "The Promise of Generative AI for Personalized Persuasion." Current Directions in Psychological Science (2026-05). [[link]](https://doi.org/10.1177/09637214261424859)
+- Ellickson, Paul B., et al. "Evaluating Novel Unstructured Treatments with Generative AI: A Causal Prediction Framework." Journal of Marketing Research (2026-08). [[link]](https://doi.org/10.1177/00222437261476639)
 
-<a id="paper-98"></a>
+<a id="paper-design-your-ad-personalized-advertising-image-and-text-generation-with-unified-autoregressive-models"></a>
 
-**[98]** Teeny, Jacob D., and Sandra C. Matz. "We need to understand “when” not “if” generative AI can enhance personalized persuasion." PNAS 121(43): e2418005121 (2024-10). [[link]](https://doi.org/10.1073/pnas.2418005121)
+- Xu, Yexing, et al. "Design Your Ad: Personalized Advertising Image and Text Generation with Unified Autoregressive Models." CVPR 2026 (2026-06). [[link]](https://openaccess.thecvf.com/content/CVPR2026/papers/Xu_Design_Your_Ad_Personalized_Advertising_Image_and_Text_Generation_with_CVPR_2026_paper.pdf)
 
-<a id="paper-99"></a>
+<a id="paper-applying-large-language-models-to-sponsored-search-advertising"></a>
 
-**[99]** Hackenburg, Kobi, and Helen Margetts. "Evaluating the persuasive influence of political microtargeting with large language models." PNAS 121(24): e2403116121 (2024-06). [[link]](https://doi.org/10.1073/pnas.2403116121)
+- Reisenbichler, Martin, Thomas Reutterer, and David A. Schweidel. "Applying Large Language Models to Sponsored Search Advertising." Marketing Science 45(1): 123–141 (2025-11). [[link]](https://doi.org/10.1287/mksc.2023.0611)
 
-<a id="paper-100"></a>
+<a id="paper-frontiers-supporting-content-marketing-with-natural-language-generation"></a>
 
-**[100]** Simchon, Almog, Matthew Edwards, and Stephan Lewandowsky. "The persuasive effects of political microtargeting in the age of generative artificial intelligence." PNAS Nexus 3(2): pgae035 (2024-01). [[link]](https://doi.org/10.1093/pnasnexus/pgae035)
+- Reisenbichler, Martin, et al. "Frontiers: Supporting Content Marketing with Natural Language Generation." Marketing Science 41(3): 441–452 (2022-02). [[link]](https://doi.org/10.1287/mksc.2022.1354)
 
-<a id="paper-101"></a>
+<a id="paper-the-promise-of-generative-ai-for-personalized-persuasion"></a>
 
-**[101]** Salvi, Francesco, et al. "On the conversational persuasiveness of GPT-4." Nature Human Behaviour 9: 1645–1653 (2025-05). [[link]](https://doi.org/10.1038/s41562-025-02194-6)
+- Teeny, Jacob D., et al. "The Promise of Generative AI for Personalized Persuasion." Current Directions in Psychological Science (2026-05). [[link]](https://doi.org/10.1177/09637214261424859)
 
-<a id="paper-102"></a>
+<a id="paper-knowing-me-telling-me-information-design-in-gen-ai-enabled-communication-in-digital-marketing"></a>
 
-**[102]** Meguellati, Elyas, et al. "LLM-Generated Ads: From Personalization Parity to Persuasion Superiority." arXiv:2512.03373 (2025-12). [[link]](https://arxiv.org/abs/2512.03373)
+- Hu, Lin, Xueyan Yin, and Juan Feng. "Knowing Me, Telling Me: Information Design in Gen-AI Enabled Communication in Digital Marketing." SSRN 5229032 (2025-05). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5229032)
 
-<a id="paper-103"></a>
+---
 
-**[103]** Tang, Brian Jay, et al. "Ads that Talk Back: Implications and Perceptions of Injecting Personalized Advertising into LLM Chatbots." Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies 9(4): Article 213 (2025-12). [[link]](https://doi.org/10.1145/3770640)
+<a id="model-and-algorithm-augmentation"></a>
 
-<a id="paper-104"></a>
+## 🔬 3. Model and Algorithm Augmentation
 
-**[104]** Fainmesser, Itay P., Dominique Olie Lauga, and Elie Ofek. "Will it Click? Advertising Strategy with Generative AI." SSRN 6517138 (2026-04). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6517138)
+### 3.1 Performance and Limitations
 
-<a id="paper-105"></a>
+Evidence on the performance, reproducibility, and limitations of LLM-augmented algorithms and synthetic training data, including online-learning mismatch and repeated synthetic training.
 
-**[105]** Hu, Lin, Xueyan Yin, and Juan Feng. "Knowing Me, Telling Me: Information Design in Gen-AI Enabled Communication in Digital Marketing." SSRN 5229032 (2025-05). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5229032)
+<a id="paper-jump-start-or-false-start-a-theoretical-and-empirical-evaluation-of-llm-initialized-bandits"></a>
 
+- Bayley, Adam, et al. "Jump Start or False Start? A Theoretical and Empirical Evaluation of LLM-initialized Bandits." arXiv:2604.02527 (2026-04). [[link]](https://arxiv.org/abs/2604.02527)
+
+<a id="paper-how-powerful-are-llms-to-support-multimodal-recommendation-a-reproducibility-study-of-llmrec"></a>
+
+- Fioretti, Maria Lucia, et al. "How Powerful are LLMs to Support Multimodal Recommendation? A Reproducibility Study of LLMRec." RecSys 2025: 774–782 (2025-09). [[link]](https://doi.org/10.1145/3705328.3748154)
+
+<a id="paper-regurgitative-training-the-value-of-real-data-in-training-large-language-models"></a>
+
+- Zhang, Jinghui, et al. "Regurgitative Training: The Value of Real Data in Training Large Language Models." Management Science (2026-05). [[link]](https://doi.org/10.1287/mnsc.2024.07005)
+
+### 3.2 Methods and Improvements
+
+Methods that use LLM information or synthetic signals to improve choice designs, pricing and demand models, online learning, recommendation, customer-text models, and corrected prediction or measurement.
+
+<a id="paper-jump-starting-bandits-with-llm-generated-prior-knowledge"></a>
+
+- Alamdari, Parand A., Yanshuai Cao, and Kevin H. Wilson. "Jump Starting Bandits with LLM-Generated Prior Knowledge." EMNLP 2024: 19821–19833 (2024-11). [[link]](https://aclanthology.org/2024.emnlp-main.1107/)
+
+<a id="paper-large-language-models-an-applied-econometric-framework"></a>
+
+- Ludwig, Jens, Sendhil Mullainathan, and Ashesh Rambachan. "Large Language Models: An Applied Econometric Framework." Annual Review of Economics 18: 283–316 (2026-04). [[link]](https://doi.org/10.1146/annurev-economics-120925-105620)
+
+<a id="paper-automating-the-b2b-salesperson-pricing-decisions-a-human-machine-hybrid-approach"></a>
+
+- Karlinsky-Shichor, Yael, and Oded Netzer. "Automating the B2B Salesperson Pricing Decisions: A Human-Machine Hybrid Approach." Marketing Science 43(1): 138–157 (2023-06), pricing-automation background. [[link]](https://doi.org/10.1287/mksc.2023.1449)
+
+<a id="paper-using-llm-based-priors-to-optimize-choice-designs-in-conjoint-experiments"></a>
+
+- Eggers, Felix, and Marco Vriens. "Using LLM-Based Priors to Optimize Choice Designs in Conjoint Experiments." SSRN 6719681 (2026-05). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6719681)
+
+<a id="paper-lola-llm-assisted-online-learning-algorithm-for-content-experiments"></a>
+
+- Ye, Zikun, Hema Yoganarasimhan, and Yufeng Zheng. "LOLA: LLM-Assisted Online Learning Algorithm for Content Experiments." Marketing Science 44(5): 995–1016 (2025-03). [[link]](https://pubsonline.informs.org/doi/10.1287/mksc.2024.0990)
+
+<a id="paper-generative-brand-choice"></a>
+
+- Lee, Kevin. "Generative Brand Choice." (2025-05). [[link]](https://leekevin.io/jmp.pdf)
+
+<a id="paper-large-language-model-augmented-narrative-driven-recommendations"></a>
+
+- Mysore, Sheshera, Andrew McCallum, and Hamed Zamani. "Large Language Model Augmented Narrative Driven Recommendations." RecSys 2023: 777–783 (2023-09). [[link]](https://doi.org/10.1145/3604915.3608829)
+
+<a id="paper-llmrec-large-language-models-with-graph-augmentation-for-recommendation"></a>
+
+- Wei, Wei, et al. "LLMRec: Large Language Models with Graph Augmentation for Recommendation." WSDM 2024 (2024-03). [[link]](https://doi.org/10.1145/3616855.3635853)
+
+<a id="paper-once-boosting-content-based-recommendation-with-both-open-and-closed-source-large-language-models"></a>
+
+- Liu, Qijiong, et al. "ONCE: Boosting Content-based Recommendation with Both Open- and Closed-source Large Language Models." WSDM 2024: 452–461 (2024-03). [[link]](https://doi.org/10.1145/3616855.3635845)
+
+<a id="paper-integrating-large-language-models-into-recommendation-via-mutual-augmentation-and-adaptive-aggregation"></a>
+
+- Luo, Sichun, et al. "Integrating Large Language Models Into Recommendation via Mutual Augmentation and Adaptive Aggregation." IEEE Journal of Selected Topics in Signal Processing 20(1): 77–89 (2026-01). [[link]](https://doi.org/10.1109/JSTSP.2026.3653160)
+
+<a id="paper-mining-novel-customer-needs-for-product-design-from-user-generated-content-through-large-language-model-enabled-data-augmentation-and-ensemble-learning"></a>
+
+- Huang, Shaoqin, Hu Qin, and Yue Wang. "Mining novel customer needs for product design from user-generated content through large language model-enabled data augmentation and ensemble learning." International Journal of Production Research (2026-02). [[link]](https://doi.org/10.1080/00207543.2026.2625971)
+
+---
 
 <a id="contributing"></a>
 

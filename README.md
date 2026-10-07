@@ -10,9 +10,7 @@
 
 # Awesome LLMs for Marketing Research
 
-A curated list of **papers on large language models (LLMs) for marketing**, organized around consumer simulation, generative targeting, and model and algorithm augmentation.
-
-The collection prioritizes marketing and business-school research, with selected computer-science and social-science methods, validation studies, and reviews. It covers substantive uses of language and multimodal language models, including mixed-model methods, datasets for LLM-based simulation, and research on LLM limitations. Selected visual generative-AI studies of advertising effectiveness and marketing outcomes are also included. Evidence on simulated consumers, downstream learning, and marketing outcomes is grouped by research direction; inclusion does not establish that LLM-generated data are valid substitutes for human observations.
+A curated list of **papers on large language models (LLMs) for marketing**, organized around consumer simulation, generative targeting, and model and algorithm augmentation. The collection prioritizes marketing research, with selected computer-science and social-science methods, validation studies, and reviews.
 
 Browse by research direction:
 

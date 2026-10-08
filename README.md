@@ -2,7 +2,7 @@
 
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
-![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-73-4C70C8?style=for-the-badge)
+![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-75-4C70C8?style=for-the-badge)
 ![Generative Targeting](https://img.shields.io/badge/Generative_Targeting-28-D98757?style=for-the-badge)
 ![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-15-9865C6?style=for-the-badge)
 
@@ -371,7 +371,15 @@ Methods that construct, ground, calibrate, fine-tune, validate, or improve simul
 
 - Toubia, Olivier, et al. "Database Report: Twin-2K-500: A Data Set for Building Digital Twins of over 2,000 People Based on Their Answers to over 500 Questions." Marketing Science 44(6): 1446–1455 (2025-08). [[link]](https://doi.org/10.1287/mksc.2025.0262)
 
-Human observations for grounding and evaluating simulated consumers, plus synthetic persona inputs. Public availability does not imply unrestricted reuse; access requirements and provider-stated licenses are listed below. Standalone resource listings are separate from the paper counts; the Twin-2K-500 paper is counted once and also cross-listed in Selected Foundational Papers.
+<a id="paper-matraix-simulating-the-world-with-8-3-billion-persona-agents"></a>
+
+- Li, Xiaomin, et al. "MatrAIx: Simulating the World with 8.3 Billion Persona Agents." arXiv:2608.04205 (2026-08). [[link]](https://arxiv.org/abs/2608.04205)
+
+<a id="paper-agentpersonabench-benchmarking-persona-driven-user-simulation"></a>
+
+- Huang, Jintao, et al. "AgentPersonaBench: Benchmarking Persona-Driven User Simulation." arXiv:2610.04379 (2026-10). [[link]](https://arxiv.org/abs/2610.04379)
+
+Human observations for grounding and evaluating simulated consumers, plus synthetic persona inputs. Public availability does not imply unrestricted reuse; access requirements and provider-stated licenses are listed below. Standalone resource listings are separate from the paper counts; each paper citation above is counted once. Twin-2K-500 is also cross-listed in Selected Foundational Papers.
 
 | Resource | Data and research use | Download, access and license |
 |---|---|---|
@@ -384,6 +392,8 @@ Human observations for grounding and evaluating simulated consumers, plus synthe
 | <a id="dataset-choices13k"></a>[Choices13k](https://github.com/jcpeterson/choices13k) | Human choice frequencies for 13,006 two-option risky-choice problems, from [Peterson et al., Science](https://doi.org/10.1126/science.abe2629). Supports validating risk preferences and decision models; the observations concern experimental gambles rather than consumer purchases. | Public [original files](https://github.com/jcpeterson/choices13k). The original repository does not state a data license. The authors' [HURD distribution](https://github.com/jcpeterson/hurd#license) states CC BY-NC-SA 4.0 for its included data copy; that statement does not automatically license every file in the original repository. |
 | <a id="dataset-many-labs-2"></a>[Many Labs 2](https://osf.io/8cd4r/) | Replication data for 28 psychological effects, with 15,305 participants, 125 samples and 36 countries or territories. Supports checking cross-sample variation and experimental-effect replication; these samples do not establish population-representative consumer effects. | Public [OSF project](https://osf.io/8cd4r/) and [author analysis guide](https://github.com/ManyLabsOpenScience/ManyLabs2). The [university data record](https://pure.hud.ac.uk/en/datasets/many-labs-2-investigating-variation-in-replicability-across-sampl/) labels the data CC0 1.0; analysis code is GPL-3.0. OSF did not render in this check and payload downloads were not tested. |
 | <a id="dataset-eedi-neurips-2020"></a>[Eedi: NeurIPS 2020 Education Challenge](https://www.eedischool.com/projects/neurips-education-challenge) | Over 17 million human mathematics-answer records from 2018 to 2020, for learners roughly aged 7 to 18. Supports answer prediction, cognitive diagnosis and adaptive-question benchmarks. Learner responses are not an adult consumer survey. | Provider [download](https://dqanonymousdata.blob.core.windows.net/neurips-public/data.zip) and [challenge guide](https://arxiv.org/abs/2007.12061). The provider states [CC BY-NC-ND 4.0](https://www.eedischool.com/projects/neurips-education-challenge); question images are limited to model training and may not be printed or shared. Only metadata and terms were checked here. |
+| <a id="dataset-matraix-persona-1m"></a>[MatrAIx Persona 1M and Playground](https://github.com/MatrAIx-ai/MatrAIx-Persona-8B) | Public subset of 999,847 personas with 1,290 attributes: 599,847 derived from human-source records and 400,000 synthetic. Survey, chat, web and app environments support simulated-user evaluation of digital products. The subset is not population-representative, and extracted attributes can contain errors. | Public [data files](https://huggingface.co/datasets/MatrAIx2026/MatrAIx_Persona_1M_Public_Release/tree/main/data) under [noncommercial research-only terms](https://huggingface.co/datasets/MatrAIx2026/MatrAIx_Persona_1M_Public_Release#license-and-terms); upstream source terms also apply. The [MIT code license](https://github.com/MatrAIx-ai/MatrAIx-Persona-8B/blob/main/LICENSE) does not cover the dataset. The full 8.3-billion-persona corpus is not publicly distributed. |
+| <a id="dataset-agentpersonabench"></a>[AgentPersonaBench](https://github.com/MatrAIx-ai/AgentPersonaBench) | 2,460 tasks spanning 867 persona traits across survey, chat, web and desktop-app interactions, with verifiers and model evaluation results. Measures adherence to assigned persona traits rather than agreement with observed real-user responses. | Public [task files](https://github.com/MatrAIx-ai/AgentPersonaBench/tree/main/tasks) and [results](https://github.com/MatrAIx-ai/AgentPersonaBench/tree/main/leaderboard). Benchmark data: [CC BY 4.0](https://github.com/MatrAIx-ai/AgentPersonaBench/blob/main/LICENSE-DATA); evaluation code: [Apache 2.0](https://github.com/MatrAIx-ai/AgentPersonaBench/blob/main/LICENSE). |
 
 Cross-disciplinary survey, behavioral and learner datasets support simulation validation across tasks. They do not all represent consumers or identify marketing treatment effects. Check task and participant overlap with training corpora before evaluating generalization.
 

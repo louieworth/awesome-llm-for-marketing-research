@@ -8,3 +8,9 @@
 /assets/*
 !/assets/research-landscape.svg
 !/assets/banner.png
+
+# Strict method review and supporting papers.
+!/docs/
+/docs/*
+!/docs/consumer-simulation-review.md
+!/docs/consumer-simulation-method-supplement.md

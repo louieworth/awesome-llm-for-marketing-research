@@ -258,6 +258,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Miller, Moses. "Measuring the Digital Twin: Separating Individuation from Population Regularity in LLM Survey Twins." Working paper, Reichman University (2026) [[link]](https://arxiv.org/pdf/2609.13995#page=31)
 
+<a id="paper-seeing-is-not-perceiving-when-synthetic-consumers-can-and-cannot-pretest-visual-marketing"></a>
+
+- Tsai, Yi-Lin, and Yung-Hsiu Lai. "Seeing Is Not Perceiving: When Synthetic Consumers Can and Cannot Pretest Visual Marketing." arXiv:2609.25677 (2026-09). [[link]](https://arxiv.org/abs/2609.25677)
+
 ### 1.3 Methods and Improvements
 
 <a id="paper-a-foundation-model-to-predict-and-capture-human-cognition"></a>
@@ -424,6 +428,14 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Fainmesser, Itay P., Dominique Olie Lauga, and Elie Ofek. "Will it Click? Advertising Strategy with Generative AI." SSRN 6517138 (2026-04). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6517138)
 
+<a id="paper-the-impact-of-google-ai-overviews-on-publisher-traffic-and-user-experience-evidence-from-a-field-experiment"></a>
+
+- Agarwal, Saharsh, and Ananya Sen. "The Impact of Google AI Overviews on Publisher Traffic and User Experience: Evidence from a Field Experiment." SSRN 6513059 (2026-04). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6513059)
+
+<a id="paper-competition-and-diversity-in-generative-ai"></a>
+
+- Raghavan, Manish. "Competition and Diversity in Generative AI." Management Science (2026-10). [[link]](https://doi.org/10.1287/mnsc.2025.02761)
+
 ### 2.2 Methods and Improvements
 
 <a id="paper-long-term-ad-memorability-understanding-generating-memorable-ads"></a>
@@ -465,6 +477,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-offline-to-online-creative-optimization-with-generative-models-and-adaptive-testing"></a>
 
 - Lee, Kevin, et al. "Offline-to-Online Creative Optimization with Generative Models and Adaptive Testing." arXiv:2607.23696 (2026-07). [[link]](https://arxiv.org/abs/2607.23696)
+
+<a id="paper-leveraging-generative-artificial-intelligence-to-create-visual-content-in-digital-advertising"></a>
+
+- Daviet, Remi, and Yohei Nishimura. "Leveraging Generative Artificial Intelligence to Create Visual Content in Digital Advertising." Marketing Science 45(5): 893–912 (2026-09). [[link]](https://doi.org/10.1287/mksc.2024.1130)
 
 ### 2.3 Benchmarks and Datasets
 

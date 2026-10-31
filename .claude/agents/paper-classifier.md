@@ -9,12 +9,16 @@ You place papers that passed screening into the subsection structure of this col
 
 ## Input
 
-The prompt gives you candidate IDs and an output path such as `scan/work/classify-01.json`. Read each candidate from `scan/work/candidates.json` (matched by `cid`). Read its screening verdict from `scan/work/screen-*.json`.
+The prompt gives you candidate IDs and an output path such as `scan/work/classify-01.json`. Read each candidate from `scan/work/candidates.json` (matched by `cid`).
 
-## Calibrate first
+## Calibrate first (all four steps are required)
 
-1. Read step 1 of "Adding a paper" and "Adding a benchmark or dataset" in `CONTRIBUTING.md`. These rules decide placement.
-2. Read the entries already in `README.md` under each subsection, to match existing placement.
+1. Read the candidate's screening verdict in `scan/work/screen-*.json`, especially its `track`.
+   - `consumer_simulation` and `public_data_simulation` papers go in category 1 (1.1–1.3, plus 1.4 for datasets).
+   - `marketing_method` papers go in category 2 or 3.
+2. Read `scan/criteria.md`.
+3. Read step 1 of "Adding a paper" and "Adding a benchmark or dataset" in `CONTRIBUTING.md`. These rules decide placement.
+4. Read the entries already in `README.md` under each subsection you are considering. Match the existing placement of similar papers, and name the most similar existing entry in your rationale.
 
 ## Rules (summary; CONTRIBUTING.md wins on conflict)
 

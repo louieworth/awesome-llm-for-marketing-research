@@ -14,6 +14,8 @@ from common import (
 )
 
 CONFIDENCE_ZH = {"high": "高", "medium": "中", "low": "低"}
+TRACK_ZH = {"consumer_simulation": "A 消费者模拟", "public_data_simulation": "B 公开数据人类模拟",
+            "marketing_method": "C 营销方法（需商学院作者）"}
 
 
 def load_agent_files(pattern):
@@ -33,6 +35,28 @@ def fallback_meta(c):
             "date": c["date"][:7], "url": c["url"]}
 
 
+def apply_affiliation_rule(item):
+    """scan/criteria.md: category 2/3 papers need a business-school author.
+
+    Returns True when the item was excluded by the rule.
+    """
+    if (item.get("section") or "")[:1] not in ("2", "3") and item.get("track") != "marketing_method":
+        return False
+    if item["business_school"] is False:
+        item.update(status="excluded", decision="exclude",
+                    reason=f"第 2/3 类需商学院作者，作者单位：{affiliation_summary(item) or '未知'}。{item['reason']}")
+        return True
+    if item["business_school"] is None:
+        item["decision"] = "uncertain"
+        item["issues"] = item["issues"] + ["未能确认是否有商学院作者（第 2/3 类必需）"]
+    return False
+
+
+def affiliation_summary(item, limit=4):
+    seen = list(dict.fromkeys(a.get("affiliation") or "?" for a in item.get("affiliations", [])))
+    return "；".join(seen[:limit]) + ("…" if len(seen) > limit else "")
+
+
 def build(candidates_doc):
     screen = load_agent_files("screen-*.json")
     classify = load_agent_files("classify-*.json")
@@ -49,8 +73,9 @@ def build(candidates_doc):
         item = {
             "cid": cid, "title": c["title"], "ids": c["ids"], "norm_title": c["norm_title"],
             "source": c["source"], "url": c["url"], "date": c["date"],
-            "decision": s["decision"], "reason": s.get("reason", ""),
-            "llm_use": s.get("llm_use", ""), "evidence": s.get("evidence", "abstract-only"),
+            "decision": s["decision"], "reason": s.get("reason", ""), "track": s.get("track", ""),
+            "llm_use": s.get("llm_use", ""), "human_data": s.get("human_data", ""),
+            "evidence": s.get("evidence", "abstract-only"),
         }
         if s["decision"] == "exclude":
             item["status"] = "excluded"
@@ -74,6 +99,11 @@ def build(candidates_doc):
             item["evidence"] = v["evidence"]
         item["meta"] = meta
         item["dataset"] = v.get("dataset") if v else None
+        item["affiliations"] = v.get("affiliations", []) if v else []
+        item["business_school"] = v.get("business_school") if v else None
+        if apply_affiliation_rule(item):
+            items.append(item)
+            continue
 
         anchor = make_anchor(meta["title"])
         base, n = anchor, 2
@@ -102,6 +132,9 @@ def render_item(item):
     if item.get("dataset_section"):
         head += f" · +{item['dataset_section']}"
     lines = [head, f"  - 条目：{render_entry(item).removeprefix('- ')}", f"  - 理由：{item['reason']}"]
+    bs = {True: "有商学院作者 ✓", False: "无商学院作者", None: "商学院作者未确认"}[item.get("business_school")]
+    track = TRACK_ZH.get(item.get("track"), "")
+    lines.append(f"  - 路径：{track} · 作者单位：{affiliation_summary(item) or '未知'}（{bs}）")
     if item.get("classification"):
         lines.append(f"  - 分类：{item['classification']}（置信度：{CONFIDENCE_ZH.get(item['confidence'], item['confidence'])}）")
     lines.append(f"  - 核验：{item['verification']} · 证据：{item['evidence']}")

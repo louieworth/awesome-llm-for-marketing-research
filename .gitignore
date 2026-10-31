@@ -26,4 +26,5 @@
 /scan/*
 !/scan/proposals/
 !/scan/README.md
+!/scan/criteria.md
 __pycache__/

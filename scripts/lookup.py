@@ -30,7 +30,8 @@ def crossref_record(it):
         "doi": it.get("DOI"),
         "type": it.get("type"),
         "title": " ".join(" ".join(it.get("title") or []).split()),
-        "authors": [{"given": a.get("given", ""), "family": a.get("family") or a.get("name", "")}
+        "authors": [{"given": a.get("given", ""), "family": a.get("family") or a.get("name", ""),
+                     "affiliation": [x.get("name") for x in a.get("affiliation", []) if x.get("name")]}
                     for a in it.get("author", [])],
         "container": " ".join(it.get("container-title") or []),
         "volume": it.get("volume"), "issue": it.get("issue"), "page": it.get("page"),

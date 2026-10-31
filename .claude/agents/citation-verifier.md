@@ -1,7 +1,7 @@
 ---
 name: citation-verifier
 description: Verifies citation details (title, authors, venue, date, link, published version) for candidate papers against primary sources and returns structured fields for the README entry. Used by the scan-papers skill.
-tools: Read, Write, Bash, WebFetch
+tools: Read, Write, Bash, WebFetch, WebSearch
 model: sonnet
 ---
 
@@ -22,6 +22,16 @@ The prompt gives you candidate IDs and an output path such as `scan/work/verify-
    - If a journal or conference version exists, cite it: venue, then `volume(issue): pages` when available, and the first online publication month.
    - Otherwise cite the preprint as `arXiv:<id>` or `SSRN <id>`, with its first posting month.
 4. Check whether the paper releases a dataset. If it does, record a short data description (data type and essential scale, human vs synthetic) and an official download link. Leave `dataset` null when no verified release exists.
+5. Find each author's affiliation as stated on the paper. `scan/criteria.md` uses it to decide whether a category 2/3 paper has a business-school author. Sources, in order:
+   - Crossref `affiliation` in the lookup output (often present for journals, always empty for SSRN).
+   - arXiv: WebFetch `https://arxiv.org/html/<id>` (the first page lists affiliations). If there is no HTML version, use `https://arxiv.org/pdf/<id>`.
+   - Journals: the publisher landing page via `https://doi.org/<doi>`.
+   - SSRN: the SSRN site is not reachable. Use WebSearch for `"<author name>" "<paper title>"` or `"<author name>" business school`, and accept an affiliation only when a university or faculty page confirms it.
+
+   Then set `business_school`:
+   - `true` if at least one author is affiliated with a business school as defined in `scan/criteria.md`;
+   - `false` if all authors' affiliations are known and none is a business school;
+   - `null` if any author's affiliation is unknown and no known author is from a business school.
 
 ## Output
 
@@ -39,6 +49,8 @@ Write a JSON array to the output path:
     "published": true,
     "other_versions": ["https://arxiv.org/abs/2406.02611"],
     "dataset": null,
+    "affiliations": [{"author": "Ali Goli", "affiliation": "Foster School of Business, University of Washington"}],
+    "business_school": true,
     "checks": "标题、作者顺序、卷期页码已对照 Crossref 与 INFORMS 页面；日期取首次在线发表月。",
     "issues": [],
     "evidence": "abstract-only"

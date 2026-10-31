@@ -104,4 +104,12 @@ python3 scripts/apply_proposals.py --check
 - `crossref.journals`：期刊 ISSN 列表。
 - `lookback_days`：扫描窗口。下一次运行会自动从上次扫描日期往前 2 天开始，最长 `max_lookback_days`。
 
-收录和分类标准以 `CONTRIBUTING.md` 为准，agent 每次运行都会读它，所以只需改 CONTRIBUTING，不用改 agent。
+**收录规则**写在 [`scan/criteria.md`](criteria.md)，范围比 CONTRIBUTING 更窄，分三条路径：
+
+- A：消费者 digital twin。
+- B：用 OpinionQA 这类公开人类回答数据做的 LLM 人类模拟。
+- C：第 2、3 类营销方法，要求至少一位作者来自商学院。
+
+分类和引用格式以 `CONTRIBUTING.md` 为准。agent 每次运行都会读这两个文件，所以要调整规则，直接改文件即可，不用改 agent。
+
+作者单位由 citation-verifier 查找：arXiv 读 HTML 版首页，SSRN 用网页搜索。查不到时，第 2、3 类论文会进入「待定」。

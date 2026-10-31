@@ -78,7 +78,8 @@ def _date(*candidates):
 
 
 def _strip_jats(s):
-    return " ".join(html.unescape(re.sub(r"<[^>]+>", " ", s or "")).split())
+    s = html.unescape(html.unescape(s or ""))  # SSRN abstracts are often entity-escaped HTML
+    return " ".join(re.sub(r"<[^>]+>", " ", s).split())
 
 
 def fetch_crossref(cfg, filters, since, until):

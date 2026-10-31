@@ -14,3 +14,16 @@
 /docs/*
 !/docs/consumer-simulation-review.md
 !/docs/consumer-simulation-method-supplement.md
+
+# Paper-scan pipeline: agents, skills, scripts, and review records.
+!/.claude/
+/.claude/*
+!/.claude/agents/
+!/.claude/skills/
+!/.claude/settings.json
+!/scripts/
+!/scan/
+/scan/*
+!/scan/proposals/
+!/scan/README.md
+__pycache__/

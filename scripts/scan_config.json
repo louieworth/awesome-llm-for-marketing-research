@@ -1,0 +1,34 @@
+{
+  "lookback_days": 9,
+  "max_lookback_days": 35,
+  "max_screen": 80,
+  "llm_terms": ["large language model", "large language models", "LLM", "LLMs", "GPT-4", "GPT-4o", "ChatGPT", "language model agents", "generative AI"],
+  "llm_regex": "\\b(large language models?|LLMs?|GPT-?\\d\\w*|ChatGPT|Claude|Gemini|Llama|language[- ]model agents?|generative AI|GenAI|foundation models?)\\b",
+  "domain_terms": [
+    "marketing", "consumer", "consumers", "customer", "customers", "advertising", "advertisement", "brand", "brands",
+    "conjoint", "willingness to pay", "pricing", "market research", "survey responses", "survey research", "public opinion",
+    "synthetic respondents", "silicon sample", "silicon samples", "digital twin", "digital twins", "persona", "personas",
+    "human subjects", "homo silicus", "simulate human", "human behavior simulation", "discrete choice", "choice model",
+    "purchase", "persuasion", "personalization", "personalized content", "e-commerce", "demand estimation", "A/B test",
+    "online experiment", "economic agents", "product reviews", "recommender"
+  ],
+  "strong_terms": ["marketing", "consumer", "conjoint", "advertising", "synthetic respondents", "silicon sample", "digital twin", "homo silicus", "willingness to pay", "market research", "brand"],
+  "arxiv": {
+    "categories": ["cs.CL", "cs.AI", "cs.HC", "cs.CY", "cs.IR", "cs.LG", "cs.MA", "cs.SI", "cs.GT", "econ.GN", "econ.EM", "econ.TH", "stat.AP", "stat.ME", "q-fin.GN"]
+  },
+  "crossref": {
+    "mailto": "",
+    "max_records": 20000,
+    "journals": {
+      "Marketing Science": "0732-2399",
+      "Journal of Marketing Research": "0022-2437",
+      "Journal of Marketing": "0022-2429",
+      "Journal of Consumer Research": "0093-5301",
+      "Journal of Consumer Psychology": "1057-7408",
+      "Quantitative Marketing and Economics": "1570-7156",
+      "International Journal of Research in Marketing": "0167-8116",
+      "Journal of the Academy of Marketing Science": "0092-0703",
+      "Management Science": "0025-1909"
+    }
+  }
+}

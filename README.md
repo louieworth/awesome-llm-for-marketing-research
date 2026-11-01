@@ -4,7 +4,7 @@
 
 ![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-70-4C70C8?style=for-the-badge)
 ![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-26-D98757?style=for-the-badge)
-![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-18-9865C6?style=for-the-badge)
+![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-19-9865C6?style=for-the-badge)
 
 </div>
 
@@ -568,6 +568,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-using-llm-based-priors-to-optimize-choice-designs-in-conjoint-experiments"></a>
 
 - Eggers, Felix, and Marco Vriens. "Using LLM-Based Priors to Optimize Choice Designs in Conjoint Experiments." SSRN 6719681 (2026-05). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6719681)
+
+<a id="paper-hedonic-house-pricing-with-language-model-and-vision-features-evidence-from-quebec-real-estate-listings"></a>
+
+- Boucher, Simon-Pierre. "Hedonic House Pricing with Language-Model and Vision Features: Evidence from Quebec Real-Estate Listings." SSRN 7651058 (2026-10). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7651058)
 
 ### 3.3 Benchmarks and Datasets
 

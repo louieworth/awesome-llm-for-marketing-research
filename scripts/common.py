@@ -1,6 +1,7 @@
 """Shared helpers for the paper-scan pipeline. Standard library only."""
 
 import difflib
+import http.client
 import json
 import re
 import subprocess
@@ -228,7 +229,7 @@ def http_get(url, params=None, headers=None, retries=3, timeout=60):
                 time.sleep(5 * (attempt + 1))
                 continue
             raise
-        except urllib.error.URLError:
+        except (urllib.error.URLError, TimeoutError, ConnectionError, http.client.IncompleteRead):
             if attempt < retries - 1:
                 time.sleep(5 * (attempt + 1))
                 continue

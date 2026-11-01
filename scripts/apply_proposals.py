@@ -22,7 +22,7 @@ from common import (
     format_entry, is_known,
 )
 
-CHECKBOX = re.compile(r"^- \[([ xX])\] \*\*(C\d{3})\*\* · `?(\d\.\d|\?\.\?)`?[^\n]*?(?:· \+(\d\.\d))?\s*$", re.M)
+CHECKBOX = re.compile(r"^- \[([ xX])\] \*\*(C\d{3,4})\*\* · `?(\d\.\d|\?\.\?)`?[^\n]*?(?:· \+(\d\.\d))?\s*$", re.M)
 MARKER = re.compile(r"<!-- paper-scan:(\d{4}-\d{2}-\d{2}) -->")
 DATE = re.compile(r"\((\d{4})(?:-(\d{2}))?(?:,[^)]*)?\)")
 UNPUBLISHED = re.compile(

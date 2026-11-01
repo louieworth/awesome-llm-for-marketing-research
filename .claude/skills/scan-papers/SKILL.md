@@ -64,7 +64,7 @@ If an entry is clearly malformed because of a verifier mistake, fix that cid's f
 BRANCH="scan/$DATE"
 git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null && BRANCH="scan/$DATE-2"
 git checkout -b "$BRANCH"
-git add "scan/proposals/$DATE.json"
+git add scan/proposals/$DATE.*   # .json, plus .md when the sheet was too long for a PR body
 git commit -m "Paper scan $DATE: <N> proposed, <M> excluded"
 git push -u origin "$BRANCH"
 python3 scripts/gh_rest.py open-pr --head "$BRANCH" \

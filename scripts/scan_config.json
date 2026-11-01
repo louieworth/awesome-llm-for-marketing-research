@@ -107,17 +107,77 @@
   },
   "crossref": {
     "mailto": "",
-    "max_records": 20000,
+    "max_records": 60000,
     "journals": {
       "Marketing Science": "0732-2399",
       "Journal of Marketing Research": "0022-2437",
       "Journal of Marketing": "0022-2429",
       "Journal of Consumer Research": "0093-5301",
+      "Management Science": "0025-1909",
+      "Information Systems Research": "1047-7047",
+      "MIS Quarterly": "0276-7783",
+      "INFORMS Journal on Computing": "1091-9856",
+      "Operations Research": "0030-364X",
+      "Manufacturing & Service Operations Management": "1523-4614",
+      "Production and Operations Management": "1059-1478",
+      "Journal of Operations Management": "0272-6963",
+      "Organization Science": "1047-7039",
+      "Strategic Management Journal": "0143-2095",
+      "Academy of Management Journal": "0001-4273",
+      "Academy of Management Review": "0363-7425",
+      "Administrative Science Quarterly": "0001-8392",
+      "Journal of International Business Studies": "0047-2506",
+      "The Accounting Review": "0001-4826",
+      "Journal of Accounting and Economics": "0165-4101",
+      "Journal of Accounting Research": "0021-8456",
+      "Journal of Finance": "0022-1082",
+      "Journal of Financial Economics": "0304-405X",
+      "Review of Financial Studies": "0893-9454",
       "Journal of Consumer Psychology": "1057-7408",
       "Quantitative Marketing and Economics": "1570-7156",
       "International Journal of Research in Marketing": "0167-8116",
-      "Journal of the Academy of Marketing Science": "0092-0703",
-      "Management Science": "0025-1909"
+      "Journal of the Academy of Marketing Science": "0092-0703"
+    },
+    "abstract_fill_journals": [
+      "Research in Marketing",
+      "Academy of Marketing Science",
+      "Consumer Psychology",
+      "Quantitative Marketing",
+      "Consumer Research",
+      "Journal of Marketing",
+      "Academy of Management",
+      "Operations Management",
+      "Administrative Science",
+      "International Business Studies",
+      "Strategic Management"
+    ]
+  },
+  "backfill": {
+    "min_window_days": 60,
+    "ssrn_top_per_query": 1000,
+    "ssrn_queries": [
+      "large language model consumer",
+      "large language model marketing",
+      "LLM consumer preferences",
+      "LLM survey respondents simulation",
+      "synthetic respondents language model",
+      "silicon samples LLM",
+      "digital twin consumer language model",
+      "GPT market research",
+      "ChatGPT consumer behavior",
+      "LLM advertising",
+      "generative AI marketing",
+      "homo silicus",
+      "LLM conjoint willingness to pay",
+      "LLM simulate human subjects",
+      "LLM public opinion survey",
+      "LLM personalization recommendation"
+    ],
+    "focus": {
+      "human_sim": "\\b(simulat\\w*|digital twins?|synthetic (respondents?|participants?|consumers?|samples?|subjects?|panels?)|silicon (samples?|subjects?|participants?)|personas?|homo silicus|human (subjects?|participants?|respondents?)|survey (responses?|respondents?)|respondents?|replicat\\w*)\\b",
+      "consumer": "\\b(consumers?|customers?|shoppers?|marketing|purchas\\w*|brands?|willingness[- ]to[- ]pay|conjoint|products?|market research|advertis\\w*|pricing|preferences?|e-commerce|choices?)\\b",
+      "public_data": "\\b(OpinionQA|Twin-2K-500|World Values Survey|General Social Survey|American National Election|ANES|American Trends Panel|Pew Research|European Social Survey|Many Labs)\\b",
+      "marketing_core": "\\b(marketing|advertis\\w*|conjoint|willingness[- ]to[- ]pay|market research|brands?|consumer behaviou?r|consumers?)\\b"
     }
   }
 }

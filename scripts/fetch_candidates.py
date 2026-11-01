@@ -8,6 +8,7 @@ scan/work/candidates.json for the screening agents.
 
 import argparse
 import datetime as dt
+import hashlib
 import html
 import json
 import re
@@ -28,7 +29,30 @@ def _term(field, t):
     return f'{field}:"{t}"' if re.search(r"[\s\-/]", t) else f"{field}:{t}"
 
 
-def fetch_arxiv(cfg, terms, since, until):
+def fetch_arxiv(cfg, terms, since, until, chunk_days=45):
+    """arXiv API deep paging fails with HTTP 500 on large result sets, so query in date slices."""
+    out, lo = [], since
+    while lo <= until:
+        hi = min(lo + dt.timedelta(days=chunk_days - 1), until)
+        out += _fetch_arxiv_slice(cfg, terms, lo, hi)
+        lo = hi + dt.timedelta(days=1)
+    return out
+
+
+def _fetch_arxiv_slice(cfg, terms, since, until):
+    """One date slice; slices that ended before today are cached under scan/work/cache/."""
+    key = hashlib.md5(json.dumps([cfg["categories"], terms["llm_terms"], terms["domain_terms"]]).encode()).hexdigest()[:8]
+    cache = WORK_DIR / "cache" / f"arxiv_{since}_{until}_{key}.json"
+    if cache.exists():
+        return json.loads(cache.read_text())
+    out = _query_arxiv_slice(cfg, terms, since, until)
+    if until < dt.date.today():
+        cache.parent.mkdir(parents=True, exist_ok=True)
+        cache.write_text(json.dumps(out))
+    return out
+
+
+def _query_arxiv_slice(cfg, terms, since, until):
     cats = " OR ".join(f"cat:{c}" for c in cfg["categories"])
     llm = " OR ".join(_term("abs", t) for t in terms["llm_terms"])
     dom = " OR ".join(_term("abs", t) for t in terms["domain_terms"])
@@ -38,7 +62,7 @@ def fetch_arxiv(cfg, terms, since, until):
     while True:
         xml = http_get("https://export.arxiv.org/api/query", {
             "search_query": query, "start": start, "max_results": page,
-            "sortBy": "submittedDate", "sortOrder": "descending"})
+            "sortBy": "submittedDate", "sortOrder": "descending"}, retries=6)
         root = ET.fromstring(xml)
         entries = root.findall("a:entry", ATOM)
         total = int(root.findtext("os:totalResults", "0", ATOM))
@@ -82,15 +106,21 @@ def _strip_jats(s):
     return " ".join(re.sub(r"<[^>]+>", " ", s).split())
 
 
-def fetch_crossref(cfg, filters, since, until):
-    """All Crossref works matching filters whose DOI was created in [since, until]."""
+def fetch_crossref(cfg, filters, since, until, query=None, limit=None):
+    """Crossref works matching filters whose DOI was created in [since, until].
+
+    With `query`, results come in relevance order and stop after `limit`.
+    """
     out, cursor = [], "*"
     params = {"mailto": cfg["mailto"]} if cfg.get("mailto") else {}
+    if query:
+        params["query.bibliographic"] = query
+    limit = limit or cfg["max_records"]
     filt = ",".join(filters + [f"from-created-date:{since}", f"until-created-date:{until}"])
     select = "DOI,title,abstract,author,created,posted,published-online,published-print,container-title,volume,issue,page,type"
-    while cursor and len(out) < cfg["max_records"]:
+    while cursor and len(out) < limit:
         msg = http_json("https://api.crossref.org/works", {
-            "filter": filt, "rows": 1000, "cursor": cursor, "select": select, **params})["message"]
+            "filter": filt, "rows": min(1000, limit), "cursor": cursor, "select": select, **params})["message"]
         items = msg["items"]
         for it in items:
             title = " ".join(" ".join(it.get("title") or []).split())
@@ -115,6 +145,43 @@ def fetch_crossref(cfg, filters, since, until):
             break
         cursor = msg.get("next-cursor")
     return out
+
+
+def fill_abstracts(cands, cfg):
+    """Fill missing journal abstracts from OpenAlex (Crossref lacks them for some publishers)."""
+    wanted = [n.lower() for n in cfg["crossref"]["abstract_fill_journals"]]
+    todo = [c for c in cands if c["source"] == "journal" and not c["abstract"]
+            and any(w in c["venue"].lower() for w in wanted)]
+    by_doi = {next(i[4:] for i in c["ids"] if i.startswith("doi:")): c for c in todo}
+    dois, filled = list(by_doi), 0
+    for k in range(0, len(dois), 50):
+        batch = dois[k:k + 50]
+        try:
+            data = http_json("https://api.openalex.org/works", {
+                "filter": "doi:" + "|".join(batch), "per-page": 50, "select": "doi,abstract_inverted_index"})
+        except Exception as e:
+            print(f"openalex abstract fill stopped: {e}", file=sys.stderr)
+            break
+        for w in data["results"]:
+            c = by_doi.get((w.get("doi") or "").lower().removeprefix("https://doi.org/"))
+            if c and w.get("abstract_inverted_index"):
+                words = sorted((p, t) for t, ps in w["abstract_inverted_index"].items() for p in ps)
+                c["abstract"] = " ".join(t for _, t in words)
+                filled += 1
+        time.sleep(1.5)
+    return len(todo), filled
+
+
+def in_focus(c, focus):
+    """Backfill-only topical gate (scan/criteria.md tracks), applied before agent screening."""
+    title, text = c["title"], f"{c['title']} {c['abstract']}"
+    if focus["public_data"].search(text):
+        return True
+    if focus["human_sim"].search(text) and focus["consumer"].search(text):
+        return True
+    if focus["marketing_core"].search(title):
+        return True
+    return len({m.lower() for m in focus["marketing_core"].findall(c["abstract"])}) >= 2
 
 
 def score(c, cfg, llm_re):
@@ -176,19 +243,29 @@ def main():
             since = min(since, dt.date.fromisoformat(history["last_scan"]) - dt.timedelta(days=2))
         since = max(since, until - dt.timedelta(days=cfg["max_lookback_days"]))
 
-    raw, stats = [], {}
+    backfill = (until - since).days > cfg["backfill"]["min_window_days"]
+    raw, stats = [], {"mode": "backfill" if backfill else "weekly"}
     if "arxiv" not in args.skip:
         got = fetch_arxiv(cfg["arxiv"], cfg, since, until)
         stats["fetched_arxiv"] = len(got)
         raw += got
     if "ssrn" not in args.skip:
-        got = fetch_crossref(cfg["crossref"], ["prefix:10.2139"], since, until)
+        if backfill:  # all SSRN DOIs over years is ~10^5 records; use targeted relevance queries
+            got = []
+            for q in cfg["backfill"]["ssrn_queries"]:
+                got += fetch_crossref(cfg["crossref"], ["prefix:10.2139"], since, until,
+                                      query=q, limit=cfg["backfill"]["ssrn_top_per_query"])
+                time.sleep(1)
+            got = list({c["ids"][0]: c for c in got}.values())
+        else:
+            got = fetch_crossref(cfg["crossref"], ["prefix:10.2139"], since, until)
         stats["fetched_ssrn"] = len(got)
         raw += got
     if "journals" not in args.skip:
         issns = [f"issn:{i}" for i in cfg["crossref"]["journals"].values()]
         got = fetch_crossref(cfg["crossref"], issns, since, until)
         stats["fetched_journals"] = len(got)
+        stats["abstracts_missing"], stats["abstracts_filled"] = fill_abstracts(got, cfg)
         raw += got
 
     # Literal LLM mention everywhere; a marketing/behavior term too outside marketing journals.
@@ -202,6 +279,10 @@ def main():
             continue
         filtered.append(c)
     stats["keyword_match"] = len(filtered)
+    if backfill:
+        focus = {k: re.compile(v, re.I) for k, v in cfg["backfill"]["focus"].items()}
+        filtered = [c for c in filtered if c["source"] == "journal" or in_focus(c, focus)]
+        stats["focus_match"] = len(filtered)
 
     merged = merge_versions(filtered)
     fresh = []

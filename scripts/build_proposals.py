@@ -10,7 +10,8 @@ import json
 import sys
 
 from common import (
-    PROPOSALS_DIR, SECTIONS, WORK_DIR, collection_index, format_entry, make_anchor,
+    PROPOSALS_DIR, SECTIONS, WORK_DIR, collection_index, format_entry, ids_from_text, is_known, make_anchor,
+    normalize_title,
 )
 
 CONFIDENCE_ZH = {"high": "高", "medium": "中", "low": "低"}
@@ -61,7 +62,9 @@ def build(candidates_doc):
     screen = load_agent_files("screen-*.json")
     classify = load_agent_files("classify-*.json")
     verify = load_agent_files("verify-*.json")
-    used = set(collection_index()["anchors"])
+    affil = load_agent_files("affil-*.json")
+    collection = collection_index()
+    used = set(collection["anchors"])
     items, missing = [], []
 
     for c in candidates_doc["candidates"]:
@@ -83,7 +86,7 @@ def build(candidates_doc):
             continue
 
         item["status"] = "proposed"
-        cl = classify.get(cid, {})
+        cl = classify.get(cid) or s  # backfill screeners classify in the same pass
         item["section"] = cl.get("section")
         item["dataset_section"] = cl.get("dataset_section")
         item["classification"] = cl.get("rationale", "")
@@ -101,6 +104,14 @@ def build(candidates_doc):
         item["dataset"] = v.get("dataset") if v else None
         item["affiliations"] = v.get("affiliations", []) if v else []
         item["business_school"] = v.get("business_school") if v else None
+        if cid in affil:  # backfill: affiliations checked separately from script-only verification
+            item["affiliations"] = affil[cid].get("affiliations", [])
+            item["business_school"] = affil[cid].get("business_school")
+        if is_known(set(c["ids"]) | ids_from_text(meta["url"]), normalize_title(meta["title"]), collection):
+            item.update(status="excluded", decision="exclude",
+                        reason=f"README 已收录（核验后匹配到 {meta['venue'] or meta['url']}）。{item['reason']}")
+            items.append(item)
+            continue
         if apply_affiliation_rule(item):
             items.append(item)
             continue
@@ -181,10 +192,44 @@ def render_body(doc, over_cap):
     return "\n".join(out)
 
 
+def render_compact(doc, details_url, reason_chars=60):
+    """One checkbox line per paper, grouped by section, for scans too large for a PR body."""
+    items = [i for i in doc["items"] if i["decision"] != "exclude"]
+    n_exc = sum(i["decision"] == "exclude" for i in doc["items"])
+    full = render_body(doc, []).split("**审核方法**", 1)
+    out = [full[0].rstrip(), "",
+           f"完整理由、作者单位、核验明细和 {n_exc} 篇排除论文见 [{doc['scan_date']}.md]({details_url})。"
+           "每篇第二行是理由摘要，⚠️ 表示有待确认项，🏫 表示有商学院作者。", "",
+           "**审核方法**" + full[1].split("\n", 1)[0], ""]
+    for label, dec in (("✅ 建议收录", "include"), ("❓ 待定", "uncertain")):
+        group = sorted((i for i in items if i["decision"] == dec), key=lambda i: (i.get("section") or "9", i["cid"]))
+        if not group:
+            continue
+        out += [f"### {label}（{len(group)}）", ""]
+        current = None
+        for i in group:
+            if i.get("section") != current:
+                current = i.get("section")
+                out += [f"#### {section_label(current)}", ""]
+            meta = i["meta"]
+            flags = ("⚠️" if i.get("issues") else "") + ("🏫" if i.get("business_school") else "")
+            line = (f"- [ ] **{i['cid']}** · {i.get('section') or '?.?'} · [{meta['title']}]({meta['url']})"
+                    f" · {meta['venue'][:32]} {meta['date']} {flags}".rstrip())
+            if i.get("dataset_section"):
+                line += f" · +{i['dataset_section']}"
+            out.append(line)
+            if reason_chars:
+                r = i["reason"]
+                out.append(f"  {r[:reason_chars]}{'…' if len(r) > reason_chars else ''}")
+        out.append("")
+    return "\n".join(out)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--candidates", default=str(WORK_DIR / "candidates.json"))
     ap.add_argument("--body-out", default=str(WORK_DIR / "pr_body.md"))
+    ap.add_argument("--branch", help="review branch name, for the details link (default scan/<date>)")
     ap.add_argument("--list-passed", action="store_true",
                     help="print IDs screened include/uncertain (for classify and verify batches) and exit")
     args = ap.parse_args()
@@ -204,7 +249,14 @@ def main():
     path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n")
     body = render_body(doc, cand.get("over_cap", []))
     if len(body) > 60000:  # GitHub caps PR bodies at 65,536 characters
-        body = render_body(doc, [])[:60000] + "\n\n…（列表过长已截断，完整记录见 proposals JSON）\n"
+        details = PROPOSALS_DIR / f"{cand['scan_date']}.md"
+        details.write_text(body + "\n")
+        from gh_rest import repo_slug
+        url = f"https://github.com/{repo_slug()}/blob/{args.branch or 'scan/' + cand['scan_date']}/scan/proposals/{details.name}"
+        for chars in (60, 30, 0):
+            body = render_compact(doc, url, chars)
+            if len(body) <= 60000:
+                break
     open(args.body_out, "w").write(body)
     n = {d: sum(i["decision"] == d for i in items) for d in ("include", "uncertain", "exclude")}
     print(json.dumps({"proposals": str(path), "pr_body": args.body_out, "body_chars": len(body), **n}))

@@ -12,6 +12,10 @@
 
 A curated list of **papers on large language models (LLMs) for marketing**, organized around consumer simulation, content generation and personalization, and model and algorithm augmentation. The collection prioritizes marketing research, with selected computer-science and social-science methods, validation studies, and reviews.
 
+Curated by [Li Jiang](https://louieworth.github.io/) (McGill University) and [Xiao Liu](https://www.stern.nyu.edu/faculty/bio/xiao-liu) (New York University).
+
+Search and filter the collection, with short paper summaries, at **[louieworth.github.io/llm-marketing](https://louieworth.github.io/llm-marketing/)**.
+
 Browse by research direction:
 
 - 🧑 **[1. Consumer Simulation](#consumer-simulation)** — consumer responses, behavioral fidelity, and market insights.

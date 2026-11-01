@@ -6,17 +6,21 @@ classify-*.json and verify-*.json files.
 """
 
 import argparse
+import datetime as dt
+import html
 import json
+import re
 import sys
 
 from common import (
-    PROPOSALS_DIR, SECTIONS, WORK_DIR, collection_index, format_entry, ids_from_text, is_known, make_anchor,
-    normalize_title,
+    PROPOSALS_DIR, SECTIONS, WORK_DIR, collection_index, format_entry, ids_from_text, is_known, load_config,
+    make_anchor, normalize_title,
 )
 
 CONFIDENCE_ZH = {"high": "高", "medium": "中", "low": "低"}
 TRACK_ZH = {"consumer_simulation": "A 消费者模拟", "public_data_simulation": "B 公开数据人类模拟",
-            "marketing_method": "C 营销方法（需商学院作者）"}
+            "marketing_method": "C 营销方法", "utd": "UTD 期刊"}
+TIER_ZH = {1: "第一层 UTD 期刊", 2: "第二层 商学院作者", 3: "第三层 高影响力"}
 
 
 def load_agent_files(pattern):
@@ -36,20 +40,44 @@ def fallback_meta(c):
             "date": c["date"][:7], "url": c["url"]}
 
 
-def apply_affiliation_rule(item):
-    """scan/criteria.md: category 2/3 papers need a business-school author.
+def is_utd(venue, cfg):
+    """Journal name is the venue text before its volume number, e.g. 'Management Science 72(3): 1–20'."""
+    name = re.split(r"\s+\d", html.unescape(venue))[0].strip().lower().removeprefix("the ")
+    return name in {n.lower().removeprefix("the ") for n in cfg["journal_sets"]["utd24"]}
 
-    Returns True when the item was excluded by the rule.
+
+def influential(item, cfg):
+    cites = item.get("citations") or 0
+    try:
+        years = max(0.5, (dt.date.today() - dt.date.fromisoformat(item["date"][:10].ljust(10, "-")[:7] + "-01")).days / 365)
+    except ValueError:
+        years = 1.0
+    inf = cfg["influence"]
+    return cites >= inf["min_citations"] or cites / years >= inf["min_citations_per_year"]
+
+
+def apply_tier_rules(item, cfg):
+    """scan/criteria.md tiers. Returns True when the item was excluded.
+
+    Tier 1: UTD 24 journal papers pass regardless of affiliation.
+    Tier 2: other papers need a business-school author.
+    Tier 3: without one, only influential (citations) or screener-flagged notable papers pass.
     """
-    if (item.get("section") or "")[:1] not in ("2", "3") and item.get("track") != "marketing_method":
+    item["tier"] = 1 if is_utd(item["meta"]["venue"], cfg) else 2
+    if item["tier"] == 1 or item["business_school"] is True:
+        return False
+    if influential(item, cfg) or item.get("notable"):
+        item["tier"] = 3
+        why = f"引用 {item.get('citations') or 0}" if influential(item, cfg) else f"特别有价值：{item.get('notable_reason', '')}"
+        item["issues"] = item["issues"] + [f"无商学院作者，按第三层收录（{why}）"]
         return False
     if item["business_school"] is False:
         item.update(status="excluded", decision="exclude",
-                    reason=f"第 2/3 类需商学院作者，作者单位：{affiliation_summary(item) or '未知'}。{item['reason']}")
+                    reason=f"无商学院作者且影响力不足（引用 {item.get('citations') or 0}），"
+                           f"作者单位：{affiliation_summary(item) or '未知'}。{item['reason']}")
         return True
-    if item["business_school"] is None:
-        item["decision"] = "uncertain"
-        item["issues"] = item["issues"] + ["未能确认是否有商学院作者（第 2/3 类必需）"]
+    item["decision"] = "uncertain"
+    item["issues"] = item["issues"] + ["未能确认是否有商学院作者"]
     return False
 
 
@@ -63,6 +91,9 @@ def build(candidates_doc):
     classify = load_agent_files("classify-*.json")
     verify = load_agent_files("verify-*.json")
     affil = load_agent_files("affil-*.json")
+    cites_file = WORK_DIR / "citations.json"
+    cites = json.loads(cites_file.read_text()) if cites_file.exists() else {}
+    cfg = load_config()
     collection = collection_index()
     used = set(collection["anchors"])
     items, missing = [], []
@@ -79,6 +110,8 @@ def build(candidates_doc):
             "decision": s["decision"], "reason": s.get("reason", ""), "track": s.get("track", ""),
             "llm_use": s.get("llm_use", ""), "human_data": s.get("human_data", ""),
             "evidence": s.get("evidence", "abstract-only"),
+            "citations": cites.get(cid, c.get("citations")),
+            "notable": s.get("notable", False), "notable_reason": s.get("notable_reason", ""),
         }
         if s["decision"] == "exclude":
             item["status"] = "excluded"
@@ -112,7 +145,7 @@ def build(candidates_doc):
                         reason=f"README 已收录（核验后匹配到 {meta['venue'] or meta['url']}）。{item['reason']}")
             items.append(item)
             continue
-        if apply_affiliation_rule(item):
+        if apply_tier_rules(item, cfg):
             items.append(item)
             continue
 
@@ -145,7 +178,10 @@ def render_item(item):
     lines = [head, f"  - 条目：{render_entry(item).removeprefix('- ')}", f"  - 理由：{item['reason']}"]
     bs = {True: "有商学院作者 ✓", False: "无商学院作者", None: "商学院作者未确认"}[item.get("business_school")]
     track = TRACK_ZH.get(item.get("track"), "")
-    lines.append(f"  - 路径：{track} · 作者单位：{affiliation_summary(item) or '未知'}（{bs}）")
+    tier = TIER_ZH.get(item.get("tier"), "")
+    cites = item.get("citations")
+    lines.append(f"  - 路径：{track} · {tier} · 引用 {cites if cites is not None else '?'}"
+                 f" · 作者单位：{affiliation_summary(item) or '未知'}（{bs}）")
     if item.get("classification"):
         lines.append(f"  - 分类：{item['classification']}（置信度：{CONFIDENCE_ZH.get(item['confidence'], item['confidence'])}）")
     lines.append(f"  - 核验：{item['verification']} · 证据：{item['evidence']}")

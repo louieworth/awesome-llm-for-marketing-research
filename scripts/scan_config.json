@@ -179,5 +179,38 @@
       "public_data": "\\b(OpinionQA|Twin-2K-500|World Values Survey|General Social Survey|American National Election|ANES|American Trends Panel|Pew Research|European Social Survey|Many Labs)\\b",
       "marketing_core": "\\b(marketing|advertis\\w*|conjoint|willingness[- ]to[- ]pay|market research|brands?|consumer behaviou?r|consumers?)\\b"
     }
+  },
+  "journal_sets": {
+    "utd24": {
+      "Marketing Science": "0732-2399",
+      "Journal of Marketing Research": "0022-2437",
+      "Journal of Marketing": "0022-2429",
+      "Journal of Consumer Research": "0093-5301",
+      "Management Science": "0025-1909",
+      "Information Systems Research": "1047-7047",
+      "MIS Quarterly": "0276-7783",
+      "INFORMS Journal on Computing": "1091-9856",
+      "Operations Research": "0030-364X",
+      "Manufacturing & Service Operations Management": "1523-4614",
+      "Production and Operations Management": "1059-1478",
+      "Journal of Operations Management": "0272-6963",
+      "Organization Science": "1047-7039",
+      "Strategic Management Journal": "0143-2095",
+      "Academy of Management Journal": "0001-4273",
+      "Academy of Management Review": "0363-7425",
+      "Administrative Science Quarterly": "0001-8392",
+      "Journal of International Business Studies": "0047-2506",
+      "The Accounting Review": "0001-4826",
+      "Journal of Accounting and Economics": "0165-4101",
+      "Journal of Accounting Research": "0021-8456",
+      "Journal of Finance": "0022-1082",
+      "Journal of Financial Economics": "0304-405X",
+      "Review of Financial Studies": "0893-9454"
+    }
+  },
+  "genai_regex": "\\b(large language models?|LLMs?|GPT-?\\d\\w*|ChatGPT|Claude|Gemini|Llama|generative (AI|artificial intelligence|models?|agents?)|GenAI|AI[- ]generated|chatbots?|conversational (AI|agents?)|foundation models?|language models?|text-to-image|diffusion models?|AI agents?|agentic AI|synthetic (respondents?|consumers?|data))\\b",
+  "influence": {
+    "min_citations": 100,
+    "min_citations_per_year": 50
   }
 }

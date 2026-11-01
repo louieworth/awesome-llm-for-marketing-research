@@ -33,6 +33,15 @@ The prompt gives you candidate IDs (e.g. C001–C012) and an output path such as
 
 Be strict. A typical week has only a handful of includes. Do not infer relevance from the venue or from keywords alone. If a `public_data_simulation` paper does not name its human data source in the abstract, mark it `uncertain` rather than `include`.
 
+**UTD 24 journals (tier 1).** The venue may be one of the UTD 24 journals listed under `journal_sets.utd24` in `scripts/scan_config.json`. For those papers:
+
+- Mark `include` whenever an LLM or generative AI is the paper's research tool, research object or method component, even if it fits none of tracks A, B or C. Use `track: "utd"` in that case.
+- Mark `exclude` only if AI is mentioned in passing, or if the paper is about pre-LLM rule-based chatbots or classic machine learning.
+
+**Notable flag (tier 3).** Most papers without business-school authors are dropped later unless they are highly cited. If such a paper is exceptionally valuable for marketing research, set `notable: true` and write a one-sentence `notable_reason` in 简体中文. Examples: a dataset or benchmark the field widely uses, or a method marketing researchers clearly need. Use the flag sparingly, for perhaps one paper in fifty.
+
+LLM cultural or value-alignment studies are papers that use WVS, Pew or similar data to measure or align a model's own values. They are not track B. Mark them `include` with `track: "public_data_simulation"` only when they also simulate respondents' answers and evaluate that simulation against real people. Otherwise mark them `exclude`, unless you set `notable`.
+
 ## Output
 
 Write a JSON array to the output path, one object per candidate, in input order:

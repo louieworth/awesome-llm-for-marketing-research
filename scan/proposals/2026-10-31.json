@@ -1292,7 +1292,7 @@
    "reason": "用 LLM 和 VLM 把房源文本与照片转为结构化变量，提升享乐价格模型 R2 并估计隐含价格；LLM 使用实质，但房地产估价是否算营销定价需维护者判断。",
    "llm_use": "LLM extracts structured attributes from listing text; VLM extracts facade attributes as hedonic regressors",
    "evidence": "abstract-only",
-   "status": "approved",
+   "status": "rejected",
    "section": "3.2",
    "dataset_section": null,
    "classification": "用 LLM 和视觉模型从房源文本图片提取特征改进享乐定价预测，属定价/预测测量方法，归 3.2。",
@@ -1317,9 +1317,7 @@
     "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7651058"
    },
    "dataset": null,
-   "anchor": "paper-hedonic-house-pricing-with-language-model-and-vision-features-evidence-from-quebec-real-estate-listings",
-   "final_section": "3.2",
-   "final_dataset_section": null
+   "anchor": "paper-hedonic-house-pricing-with-language-model-and-vision-features-evidence-from-quebec-real-estate-listings"
   },
   {
    "cid": "C047",

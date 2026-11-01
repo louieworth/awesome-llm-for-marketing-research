@@ -2,8 +2,8 @@
 
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
-![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-70-4C70C8?style=for-the-badge)
-![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-26-D98757?style=for-the-badge)
+![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-71-4C70C8?style=for-the-badge)
+![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-29-D98757?style=for-the-badge)
 ![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-18-9865C6?style=for-the-badge)
 
 </div>
@@ -256,7 +256,7 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 <a id="paper-measuring-the-digital-twin-separating-individuation-from-population-regularity-in-llm-survey-twins"></a>
 
-- Miller, Moses. "Measuring the Digital Twin: Separating Individuation from Population Regularity in LLM Survey Twins." Working paper, Reichman University (2026) [[link]](https://arxiv.org/pdf/2609.13995#page=31)
+- Miller, Moses. "Measuring the Digital Twin: Separating Individuation from Population Regularity in LLM Survey Twins." Working paper, Reichman University (2026), no public copy yet; link goes to its citation in Netzer and Sambandam, arXiv 2609.13995 [[link]](https://arxiv.org/pdf/2609.13995#page=31)
 
 <a id="paper-seeing-is-not-perceiving-when-synthetic-consumers-can-and-cannot-pretest-visual-marketing"></a>
 

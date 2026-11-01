@@ -278,7 +278,7 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 <a id="paper-reducing-disparity-between-llms-and-humans-optimal-llm-sample-calibration"></a>
 
-- Leng, Yan, Yunxin Sang, and Ashish Agarwal. "Reducing Disparity Between LLMs and Humans: Optimal LLM Sample Calibration." Marketing Science, forthcoming; SSRN 4802019 (2024-04, first preprint posting). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802019)
+- Leng, Yan, Yunxin Sang, and Ashish Agarwal. "Frontiers: Reducing Disparity Between LLMs and Humans: Optimal LLM Sample Calibration." Marketing Science (2026-10). [[link]](https://doi.org/10.1287/mksc.2024.0983)
 
 <a id="paper-llms-reproduce-human-purchase-intent-via-semantic-similarity-elicitation-of-likert-ratings"></a>
 

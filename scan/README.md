@@ -4,7 +4,7 @@
 
 ```
 每周 routine：/scan-papers
-  fetch_candidates.py ── arXiv API + Crossref（SSRN 前缀 10.2139 + 营销期刊 ISSN）
+  fetch_candidates.py ── arXiv API + Crossref（SSRN 前缀 10.2139 + 营销期刊 ISSN），期刊缺摘要时用 OpenAlex、Semantic Scholar 补
      │                   去重：README、docs、以往扫描记录（main 和所有 origin/scan/* 分支）
      ▼
   paper-screener ×N    并行，判断收录 / 待定 / 排除，附中文理由
@@ -36,6 +36,7 @@ export.arxiv.org
 arxiv.org
 api.crossref.org
 api.openalex.org
+api.semanticscholar.org
 doi.org
 papers.ssrn.com
 ```

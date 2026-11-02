@@ -35,6 +35,7 @@ GitHub 触发 routine：/apply-approved
 export.arxiv.org
 arxiv.org
 api.crossref.org
+api.openalex.org
 doi.org
 papers.ssrn.com
 ```

@@ -3,7 +3,7 @@
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
 ![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-70-4C70C8?style=for-the-badge)
-![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-26-D98757?style=for-the-badge)
+![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-27-D98757?style=for-the-badge)
 ![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-18-9865C6?style=for-the-badge)
 
 </div>
@@ -399,6 +399,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-the-promise-of-generative-ai-for-personalized-persuasion"></a>
 
 - Teeny, Jacob D., et al. "The Promise of Generative AI for Personalized Persuasion." Current Directions in Psychological Science (2026-05). [[link]](https://doi.org/10.1177/09637214261424859)
+
+<a id="paper-frontiers-chatgpt-referrals-to-e-commerce-websites-how-do-llms-compare-against-traditional-channels"></a>
+
+- Kaiser, Maximilian, and Christian Schulze. "Frontiers: ChatGPT Referrals to E-Commerce Websites: How Do LLMs Compare Against Traditional Channels?" Marketing Science 45(4): 699–715 (2026-07). [[link]](https://doi.org/10.1287/mksc.2025.0489)
 
 <a id="paper-ai-in-disguise-quasi-experimental-analysis-of-a-large-scale-deployment-of-ai-generated-ads"></a>
 

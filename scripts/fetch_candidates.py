@@ -14,6 +14,8 @@ import json
 import re
 import sys
 import time
+import urllib.error
+import urllib.request
 import xml.etree.ElementTree as ET
 
 from common import (
@@ -21,6 +23,7 @@ from common import (
     is_known, load_config, normalize_title, scan_history,
 )
 
+S2_URL = "https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,citationCount"
 ATOM = {"a": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom",
         "os": "http://a9.com/-/spec/opensearch/1.1/"}
 
@@ -147,13 +150,17 @@ def fetch_crossref(cfg, filters, since, until, query=None, limit=None):
     return out
 
 
+def doi_of(c):
+    return next(i[4:] for i in c["ids"] if i.startswith("doi:"))
+
+
 def fill_abstracts(cands, cfg):
-    """Fill missing journal abstracts from OpenAlex (Crossref lacks them for some publishers)."""
+    """Fill missing journal abstracts from OpenAlex, then Semantic Scholar (Crossref lacks them for some publishers)."""
     wanted = [n.lower() for n in cfg["crossref"]["abstract_fill_journals"]]
     todo = [c for c in cands if c["source"] == "journal" and not c["abstract"]
             and any(w in c["venue"].lower() for w in wanted)]
-    by_doi = {next(i[4:] for i in c["ids"] if i.startswith("doi:")): c for c in todo}
-    dois, filled = list(by_doi), 0
+    by_doi = {doi_of(c): c for c in todo}
+    dois = list(by_doi)
     for k in range(0, len(dois), 50):
         batch = dois[k:k + 50]
         try:
@@ -167,9 +174,42 @@ def fill_abstracts(cands, cfg):
             if c and w.get("abstract_inverted_index"):
                 words = sorted((p, t) for t, ps in w["abstract_inverted_index"].items() for p in ps)
                 c["abstract"] = " ".join(t for _, t in words)
-                filled += 1
         time.sleep(1.5)
-    return len(todo), filled
+    rest = [c for c in todo if not c["abstract"]]
+    if rest:
+        try:
+            s2_fill(rest)
+        except Exception as e:
+            print(f"semantic scholar abstract fill stopped: {e}", file=sys.stderr)
+    return len(todo), sum(bool(c["abstract"]) for c in todo)
+
+
+def s2_fill(cands):
+    """Remaining abstracts (and citations) from Semantic Scholar, 500 DOIs per request."""
+    todo = [c for c in cands if not c["abstract"] or c.get("citations") is None]
+    for k in range(0, len(todo), 500):
+        batch = todo[k:k + 500]
+        body = json.dumps({"ids": [f"DOI:{doi_of(c)}" for c in batch]}).encode()
+        for attempt in range(8):
+            try:
+                req = urllib.request.Request(S2_URL, data=body, headers={"Content-Type": "application/json"})
+                res = json.loads(urllib.request.urlopen(req, timeout=120).read())
+                break
+            except urllib.error.HTTPError as e:
+                if e.code != 429:
+                    raise
+                time.sleep(5 * (attempt + 1))
+        else:
+            print("semantic scholar abstract fill stopped: repeated 429s", file=sys.stderr)
+            return
+        for c, r in zip(batch, res):
+            if not r:
+                continue
+            if not c["abstract"] and r.get("abstract"):
+                c["abstract"] = r["abstract"]
+            if c.get("citations") is None:
+                c["citations"] = r.get("citationCount")
+        time.sleep(2)
 
 
 def in_focus(c, focus):

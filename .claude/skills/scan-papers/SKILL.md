@@ -19,7 +19,9 @@ Produces one review PR per run. The maintainer approves papers in the PR; `/appl
 python3 scripts/fetch_candidates.py --until "$DATE"
 ```
 
-The script prints a stats JSON. If `to_screen` is 0, report the stats and stop: no branch, no PR. If the request fails with HTTP 403 `host_not_allowed`, the cloud environment's network allowlist is missing a host (see `scan/README.md`). Report that and stop.
+The script prints a stats JSON. If `to_screen` is 0, report the stats and stop: no branch, no PR. If the arXiv or Crossref requests fail with HTTP 403 (`host_not_allowed` or a tunnel failure), the cloud environment's network allowlist is missing a host (see `scan/README.md`). Report that and stop.
+
+The abstract fill (OpenAlex, then Semantic Scholar) is optional. If the script prints `openalex abstract fill stopped` or `semantic scholar abstract fill stopped`, do not stop: continue with the candidates as fetched (screeners judge papers without an abstract from the title), and add one line to the PR body naming the blocked host and the `abstracts_missing` count.
 
 ## 2. Screen (parallel)
 

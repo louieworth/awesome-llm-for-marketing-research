@@ -1,0 +1,27 @@
+name: Update website
+
+# When the README changes, ask louieworth.github.io-source to rebuild, so
+# louieworth.github.io/llm-marketing/ picks up the new list within a minute or two.
+# Needs a SITE_DISPATCH_TOKEN secret: a fine-grained token for
+# louieworth/louieworth.github.io-source with Contents read and write.
+# Without it, the site still picks up changes on its daily rebuild.
+
+on:
+  push:
+    branches: [main]
+    paths: [README.md]
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ask the website to rebuild
+        env:
+          GH_TOKEN: ${{ secrets.SITE_DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::notice::SITE_DISPATCH_TOKEN is not set, so the website will update on its daily rebuild."
+            exit 0
+          fi
+          gh api repos/louieworth/louieworth.github.io-source/dispatches -f event_type=collection-updated

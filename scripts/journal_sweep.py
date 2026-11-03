@@ -16,23 +16,16 @@ import re
 import sys
 import time
 import urllib.error
-import urllib.request
 
 from common import (
     WORK_DIR, collection_index, history_index, http_json, is_known, load_config, normalize_title, scan_history,
 )
-from fetch_candidates import fetch_crossref
-
-S2_URL = "https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,citationCount"
-
-
-def _doi(c):
-    return next(i[4:] for i in c["ids"] if i.startswith("doi:"))
+from fetch_candidates import doi_of, fetch_crossref, s2_fill
 
 
 def openalex_fill(cands):
     """Abstracts and citation counts from OpenAlex, 50 DOIs per request."""
-    by = {_doi(c): c for c in cands}
+    by = {doi_of(c): c for c in cands}
     dois = list(by)
     for k in range(0, len(dois), 50):
         batch = dois[k:k + 50]
@@ -58,34 +51,6 @@ def openalex_fill(cands):
             if inv and not c["abstract"]:
                 c["abstract"] = " ".join(t for _, t in sorted((p, t) for t, ps in inv.items() for p in ps))
         time.sleep(1.2)
-
-
-def s2_fill(cands):
-    """Remaining abstracts (and citations) from Semantic Scholar, 500 DOIs per request."""
-    todo = [c for c in cands if not c["abstract"] or c.get("citations") is None]
-    for k in range(0, len(todo), 500):
-        batch = todo[k:k + 500]
-        body = json.dumps({"ids": [f"DOI:{_doi(c)}" for c in batch]}).encode()
-        for attempt in range(8):
-            try:
-                req = urllib.request.Request(S2_URL, data=body, headers={"Content-Type": "application/json"})
-                res = json.loads(urllib.request.urlopen(req, timeout=120).read())
-                break
-            except urllib.error.HTTPError as e:
-                if e.code != 429:
-                    raise
-                time.sleep(5 * (attempt + 1))
-        else:
-            print("semantic scholar: giving up after repeated 429s", file=sys.stderr)
-            return
-        for c, r in zip(batch, res):
-            if not r:
-                continue
-            if not c["abstract"] and r.get("abstract"):
-                c["abstract"] = r["abstract"]
-            if c.get("citations") is None:
-                c["citations"] = r.get("citationCount")
-        time.sleep(2)
 
 
 def main():

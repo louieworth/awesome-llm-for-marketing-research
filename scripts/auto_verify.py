@@ -72,6 +72,11 @@ def clean(s):
 def from_crossref(rec, published):
     dates = [rec.get(k) for k in ("published_online", "published_print", "posted", "created") if rec.get(k)]
     date = next((d for d in dates if len(d) >= 7), dates[0] if dates else "")
+    # Crossref often lacks published-online for journals (e.g. INFORMS, Elsevier); the DOI
+    # registration date then tracks the first online posting better than the print issue.
+    created = rec.get("created") or ""
+    if rec.get("type") == "journal-article" and not rec.get("published_online") and len(created) >= 7:
+        date = min(date[:7], created[:7]) if len(date) >= 7 else created
     doi = rec["doi"]
     ssrn = re.match(r"10\.2139/ssrn\.(\d+)", doi or "", re.I)
     return {

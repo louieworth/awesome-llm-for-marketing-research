@@ -400,13 +400,13 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Dubé, Jean-Pierre, and Ariel Xu. "Large Language Models and Creative Content Design: a case study of email marketing at Wine Access." Quantitative Marketing and Economics 24: Article 1 (2026-01). [[link]](https://doi.org/10.1007/s11129-025-09303-9)
 
+<a id="paper-frontiers-chatgpt-referrals-to-e-commerce-websites-how-do-llms-compare-against-traditional-channels"></a>
+
+- Kaiser, Maximilian, and Christian Schulze. "Frontiers: ChatGPT Referrals to E-Commerce Websites: How Do LLMs Compare Against Traditional Channels?" Marketing Science 45(4): 699–715 (2026-04). [[link]](https://doi.org/10.1287/mksc.2025.0489)
+
 <a id="paper-the-promise-of-generative-ai-for-personalized-persuasion"></a>
 
 - Teeny, Jacob D., et al. "The Promise of Generative AI for Personalized Persuasion." Current Directions in Psychological Science (2026-05). [[link]](https://doi.org/10.1177/09637214261424859)
-
-<a id="paper-frontiers-chatgpt-referrals-to-e-commerce-websites-how-do-llms-compare-against-traditional-channels"></a>
-
-- Kaiser, Maximilian, and Christian Schulze. "Frontiers: ChatGPT Referrals to E-Commerce Websites: How Do LLMs Compare Against Traditional Channels?" Marketing Science 45(4): 699–715 (2026-07). [[link]](https://doi.org/10.1287/mksc.2025.0489)
 
 <a id="paper-ai-in-disguise-quasi-experimental-analysis-of-a-large-scale-deployment-of-ai-generated-ads"></a>
 

@@ -19,7 +19,7 @@ The prompt gives you candidate IDs and an output path such as `scan/work/verify-
    - The arXiv record: authors, first posting date, `journal_ref`, DOI, and comments.
 2. If needed, confirm on the landing page with WebFetch: `https://arxiv.org/abs/<id>`, the SSRN abstract page, or `https://doi.org/<doi>`. Use the author names and title exactly as the linked version shows them.
 3. Pick the canonical version, following CONTRIBUTING.md. Merge preprint and published versions of the same work.
-   - If a journal or conference version exists, cite it: venue, then `volume(issue): pages` when available, and the first online publication month.
+   - If a journal or conference version exists, cite it: venue, then `volume(issue): pages` when available, and the first online publication month. Crossref often has no `published-online` date for journals (INFORMS, Elsevier); then use the publisher's "Published online" date or the DOI's Crossref `created` date, not the print issue month.
    - Otherwise cite the preprint as `arXiv:<id>` or `SSRN <id>`, with its first posting month.
 4. Check whether the paper releases a dataset. If it does, record a short data description (data type and essential scale, human vs synthetic) and an official download link. Leave `dataset` null when no verified release exists.
 5. Find each author's affiliation as stated on the paper. `scan/criteria.md` uses it to decide whether a category 2/3 paper has a business-school author. Sources, in order:

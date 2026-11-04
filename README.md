@@ -2,7 +2,7 @@
 
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
-![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-71-4C70C8?style=for-the-badge)
+![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-72-4C70C8?style=for-the-badge)
 ![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-30-D98757?style=for-the-badge)
 ![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-18-9865C6?style=for-the-badge)
 
@@ -107,6 +107,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-synthetic-consumer-insight-generation-with-large-language-models"></a>
 
 - France, Stephen L., and Pia A. Albinsson. "Synthetic Consumer Insight Generation with Large Language Models." arXiv:2607.05761 (2026-07). [[link]](https://arxiv.org/abs/2607.05761)
+
+<a id="paper-synthetic-consumer-panels-without-microdata-iterative-proportional-fitting-from-open-aggregate-statistics"></a>
+
+- Dubach, Philipp D. "Synthetic Consumer Panels Without Microdata: Iterative Proportional Fitting from Open Aggregate Statistics." SSRN 7122180 (2026-07). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7122180)
 
 <a id="paper-customer-digital-twins-in-the-field-cross-sell-micro-personalization-at-scale"></a>
 

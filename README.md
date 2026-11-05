@@ -3,7 +3,7 @@
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
 ![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-74-4C70C8?style=for-the-badge)
-![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-29-D98757?style=for-the-badge)
+![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-30-D98757?style=for-the-badge)
 ![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-18-9865C6?style=for-the-badge)
 
 </div>
@@ -411,6 +411,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-large-language-models-and-creative-content-design-a-case-study-of-email-marketing-at-wine-access"></a>
 
 - Dubé, Jean-Pierre, and Ariel Xu. "Large Language Models and Creative Content Design: a case study of email marketing at Wine Access." Quantitative Marketing and Economics 24: Article 1 (2026-01). [[link]](https://doi.org/10.1007/s11129-025-09303-9)
+
+<a id="paper-frontiers-chatgpt-referrals-to-e-commerce-websites-how-do-llms-compare-against-traditional-channels"></a>
+
+- Kaiser, Maximilian, and Christian Schulze. "Frontiers: ChatGPT Referrals to E-Commerce Websites: How Do LLMs Compare Against Traditional Channels?" Marketing Science 45(4): 699–715 (2026-04). [[link]](https://doi.org/10.1287/mksc.2025.0489)
 
 <a id="paper-the-promise-of-generative-ai-for-personalized-persuasion"></a>
 

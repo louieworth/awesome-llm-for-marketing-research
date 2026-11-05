@@ -1,0 +1,3980 @@
+{
+ "scan_date": "2026-11-05",
+ "window": [
+  "2022-12-01",
+  "2026-11-05"
+ ],
+ "stats": {
+  "mode": "transformer-backfill",
+  "fetched_arxiv": 5100,
+  "fetched_ssrn": 1454,
+  "fetched_journals_transformer_only": 13,
+  "rescreen": 2,
+  "already_in_collection": 0,
+  "already_screened": 2,
+  "new": 75,
+  "to_screen": 75,
+  "keyword_match": 76
+ },
+ "items": [
+  {
+   "cid": "C001",
+   "title": "AI for Customer Journeys: A Transformer Approach",
+   "ids": [
+    "doi:10.1177/00222437251347268"
+   ],
+   "norm_title": "ai for customer journeys a transformer approach",
+   "source": "journal",
+   "url": "https://doi.org/10.1177/00222437251347268",
+   "date": "2025-09-25",
+   "decision": "include",
+   "reason": "JMR 论文，提出基于 transformer 的顾客旅程预测框架，transformer 是核心方法，符合 UTD 层规则。",
+   "track": "utd",
+   "llm_use": "自研 transformer 建模顾客触点序列并加入异质性多头自注意力",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 12,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "顾客旅程预测与定向属于预测/测量类模型方法，归 3.2。",
+   "confidence": "high",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.1177/00222437251347268",
+   "issues": [],
+   "meta": {
+    "title": "AI for Customer Journeys: A Transformer Approach",
+    "authors": [
+     {
+      "given": "Zipei",
+      "family": "Lu"
+     },
+     {
+      "given": "P.K.",
+      "family": "Kannan"
+     }
+    ],
+    "venue": "Journal of Marketing Research 63(1): 1–26",
+    "date": "2025-09",
+    "url": "https://doi.org/10.1177/00222437251347268"
+   },
+   "dataset": null,
+   "affiliations": [],
+   "business_school": null,
+   "tier": 1,
+   "anchor": "paper-ai-for-customer-journeys-a-transformer-approach"
+  },
+  {
+   "cid": "C002",
+   "title": "Modeling Dynamic Consumer Preferences from Few-Shot Data: A Meta-Learning Approach",
+   "ids": [
+    "doi:10.1177/00222437261458290"
+   ],
+   "norm_title": "modeling dynamic consumer preferences from few shot data a meta learning approach",
+   "source": "journal",
+   "url": "https://doi.org/10.1177/00222437261458290",
+   "date": "2026-06-03",
+   "decision": "include",
+   "reason": "JMR 论文，用含 transformer 的元学习框架做小样本消费者偏好预测与个性化推荐，transformer 是方法组件。",
+   "track": "utd",
+   "llm_use": "transformer 架构嵌入元学习框架 MetaTP，建模会话内消费序列",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 1,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "偏好预测与推荐方法，归 3.2。",
+   "confidence": "high",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.1177/00222437261458290",
+   "issues": [],
+   "meta": {
+    "title": "Modeling Dynamic Consumer Preferences from Few-Shot Data: A Meta-Learning Approach",
+    "authors": [
+     {
+      "given": "Mingzhang",
+      "family": "Yin"
+     },
+     {
+      "given": "Khaled",
+      "family": "Boughanmi"
+     },
+     {
+      "given": "Anirban",
+      "family": "Mukherjee"
+     }
+    ],
+    "venue": "Journal of Marketing Research",
+    "date": "2026-06",
+    "url": "https://doi.org/10.1177/00222437261458290"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Mingzhang Yin",
+     "affiliation": "University of Florida"
+    },
+    {
+     "author": "Khaled Boughanmi",
+     "affiliation": "Cornell University"
+    },
+    {
+     "author": "Anirban Mukherjee",
+     "affiliation": "Avyayam Holdings, Singapore"
+    }
+   ],
+   "business_school": null,
+   "tier": 1,
+   "anchor": "paper-modeling-dynamic-consumer-preferences-from-few-shot-data-a-meta-learning-approach"
+  },
+  {
+   "cid": "C003",
+   "title": "Sequential Search Transformer: A Deep Structural Econometric Model",
+   "ids": [
+    "doi:10.1287/mnsc.2024.04540"
+   ],
+   "norm_title": "sequential search transformer a deep structural econometric model",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/mnsc.2024.04540",
+   "date": "2026-09-16",
+   "decision": "include",
+   "reason": "Management Science 论文，提出把 transformer 与序贯搜索理论结合的结构计量模型，用点击流预测搜索购买并做政策评估。",
+   "track": "utd",
+   "llm_use": "序贯搜索 transformer（SST）作为深度结构计量模型，建模搜索与购买决策",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 0,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "消费者选择/搜索与推荐方法，归 3.2。",
+   "confidence": "high",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.1287/mnsc.2024.04540",
+   "issues": [],
+   "meta": {
+    "title": "Sequential Search Transformer: A Deep Structural Econometric Model",
+    "authors": [
+     {
+      "given": "Yicheng",
+      "family": "Song"
+     },
+     {
+      "given": "Tianshu",
+      "family": "Sun"
+     }
+    ],
+    "venue": "Management Science",
+    "date": "2026-09",
+    "url": "https://doi.org/10.1287/mnsc.2024.04540"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Yicheng Song",
+     "affiliation": "Carlson School of Management, University of Minnesota, Minneapolis, Minnesota 55455"
+    },
+    {
+     "author": "Tianshu Sun",
+     "affiliation": "Cheung Kong Graduate School of Business, Beijing 100006, China"
+    }
+   ],
+   "business_school": null,
+   "tier": 1,
+   "anchor": "paper-sequential-search-transformer-a-deep-structural-econometric-model"
+  },
+  {
+   "cid": "C004",
+   "title": "Is Relevancy Everything? A Deep-Learning Approach to Understand the Effect of Image-Text Congruence",
+   "ids": [
+    "doi:10.1287/mnsc.2022.01896"
+   ],
+   "norm_title": "is relevancy everything a deep learning approach to understand the effect of image text congruence",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/mnsc.2022.01896",
+   "date": "2025-05-09",
+   "decision": "include",
+   "reason": "Management Science 论文，用含 BERT 的深度学习模型度量商品图文一致性，再研究其对消费者偏好的 U 形影响，BERT 是测量工具的组件。",
+   "track": "utd",
+   "llm_use": "BERT 与宽残差网络构成双分支模型，度量图文一致性",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 26,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "用 transformer 做图文内容测量并用于消费者选择分析，归 3.2。",
+   "confidence": "medium",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.1287/mnsc.2022.01896",
+   "issues": [],
+   "meta": {
+    "title": "Is Relevancy Everything? A Deep-Learning Approach to Understand the Effect of Image-Text Congruence",
+    "authors": [
+     {
+      "given": "Jingcun",
+      "family": "Cao"
+     },
+     {
+      "given": "Xiaolin",
+      "family": "Li"
+     },
+     {
+      "given": "Lingling",
+      "family": "Zhang"
+     }
+    ],
+    "venue": "Management Science 71(12): 10579–10602",
+    "date": "2025-05",
+    "url": "https://doi.org/10.1287/mnsc.2022.01896"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Jingcun Cao",
+     "affiliation": "Faculty of Business and Economics, The University of Hong Kong (HKU), Hong Kong, Hong Kong SAR"
+    },
+    {
+     "author": "Xiaolin Li",
+     "affiliation": "Department of Management, The London School of Economics and Political Science, Holborn, London WC2A 2AE, United Kingdom"
+    },
+    {
+     "author": "Lingling Zhang",
+     "affiliation": "Department of Marketing, China Europe International Business School, Pudong, Shanghai 201206, China"
+    }
+   ],
+   "business_school": null,
+   "tier": 1,
+   "anchor": "paper-is-relevancy-everything-a-deep-learning-approach-to-understand-the-effect-of-image-text-congruence"
+  },
+  {
+   "cid": "C005",
+   "title": "Brand Visibility in Packaging: A Deep Learning Approach for Logo Detection, Saliency-Map Prediction, and Logo Placement Analysis",
+   "ids": [
+    "arxiv:2403.02336"
+   ],
+   "norm_title": "brand visibility in packaging a deep learning approach for logo detection saliency map prediction and logo placement analysis",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2403.02336",
+   "date": "2024-03-04",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 23），作者单位：School of Electrical and Computer Engineering, College of Engineering, University of Tehran；Faculty of Electrical Engineering, K. N. Toosi University of Technology；Department of Computer Engineering, Faculty of Engineering, Golestan University。为包装 logo 注意力测量提出含 transformer 的视觉显著性框架，营销问题成立，但主要是计算机视觉工程，transformer 只是其中一个模块。",
+   "track": "marketing_method",
+   "llm_use": "基于 transformer 的包装显著性预测模型，结合文本图",
+   "human_data": "自采眼动/显著性数据集（摘要未详述）",
+   "evidence": "abstract-only",
+   "citations": 23,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "品牌注意力测量方法，若收录归 3.2。",
+   "confidence": "low",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref 标题匹配到已发表版本 10.1007/s42452-025-07043-9",
+   "issues": [],
+   "meta": {
+    "title": "Brand visibility in packaging: a deep learning approach for logo detection, saliency-map prediction, and logo placement analysis",
+    "authors": [
+     {
+      "given": "Alireza",
+      "family": "Hosseini"
+     },
+     {
+      "given": "Kiana",
+      "family": "Hooshanfar"
+     },
+     {
+      "given": "Pouria",
+      "family": "Omrani"
+     },
+     {
+      "given": "Reza",
+      "family": "Toosi"
+     },
+     {
+      "given": "Ramin",
+      "family": "Toosi"
+     },
+     {
+      "given": "Zahra",
+      "family": "Ebrahimian"
+     },
+     {
+      "given": "Mohammad Ali",
+      "family": "Akhaee"
+     }
+    ],
+    "venue": "Discover Applied Sciences 7(6)",
+    "date": "2025-05",
+    "url": "https://doi.org/10.1007/s42452-025-07043-9"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Alireza Hosseini",
+     "affiliation": "School of Electrical and Computer Engineering, College of Engineering, University of Tehran"
+    },
+    {
+     "author": "Kiana Hooshanfar",
+     "affiliation": "School of Electrical and Computer Engineering, College of Engineering, University of Tehran"
+    },
+    {
+     "author": "Pouria Omrani",
+     "affiliation": "Faculty of Electrical Engineering, K. N. Toosi University of Technology"
+    },
+    {
+     "author": "Reza Toosi",
+     "affiliation": "Department of Computer Engineering, Faculty of Engineering, Golestan University"
+    },
+    {
+     "author": "Ramin Toosi",
+     "affiliation": "School of Electrical and Computer Engineering, College of Engineering, University of Tehran"
+    },
+    {
+     "author": "Zahra Ebrahimian",
+     "affiliation": "School of Electrical and Computer Engineering, College of Engineering, University of Tehran"
+    },
+    {
+     "author": "Mohammad Ali Akhaee",
+     "affiliation": "School of Electrical and Computer Engineering, College of Engineering, University of Tehran"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C006",
+   "title": "SeqUDA-Rec: Sequential User Behavior Enhanced Recommendation via Global Unsupervised Data Augmentation for Personalized Content Marketing",
+   "ids": [
+    "arxiv:2509.17361"
+   ],
+   "norm_title": "sequda rec sequential user behavior enhanced recommendation via global unsupervised data augmentation for personalized content marketing",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2509.17361",
+   "date": "2025-09-22",
+   "decision": "exclude",
+   "reason": "通用序列推荐工程（图对比学习加 GAN 增强），只在广告数据集上比 NDCG，没有营销或消费者行为问题。",
+   "track": "none",
+   "llm_use": "Transformer 编码器用于序列推荐",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C007",
+   "title": "Predicting Instructor Performance in Online Education: An Interpretable Hierarchical Transformer with Contextual Attention",
+   "ids": [
+    "doi:10.1287/isre.2021.0310"
+   ],
+   "norm_title": "predicting instructor performance in online education an interpretable hierarchical transformer with contextual attention",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/isre.2021.0310",
+   "date": "2025-02-14",
+   "decision": "include",
+   "reason": "ISR 论文，用可解释的层次化 transformer 处理课程文本预测评分，并做随机实验验证，transformer 是核心方法。",
+   "track": "utd",
+   "llm_use": "自研层次化 transformer 加上下文注意力，用课程文本预测讲师和课程评分",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 8,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "基于文本的评分预测与可解释性方法，归 3.2。",
+   "confidence": "high",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.1287/isre.2021.0310",
+   "issues": [],
+   "meta": {
+    "title": "Predicting Instructor Performance in Online Education: An Interpretable Hierarchical Transformer with Contextual Attention",
+    "authors": [
+     {
+      "given": "Wen",
+      "family": "Wang"
+     },
+     {
+      "given": "Mi",
+      "family": "Zhou"
+     },
+     {
+      "given": "Beibei",
+      "family": "Li"
+     },
+     {
+      "given": "Honglei",
+      "family": "Zhuang"
+     }
+    ],
+    "venue": "Information Systems Research 36(4): 2327–2343",
+    "date": "2025-02",
+    "url": "https://doi.org/10.1287/isre.2021.0310"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Wen Wang",
+     "affiliation": "University of Maryland, College Park, Maryland 20742"
+    },
+    {
+     "author": "Mi Zhou",
+     "affiliation": "UBC Sauder School of Business, Vancouver, British Columbia V6T 1Z2, Canada"
+    },
+    {
+     "author": "Beibei Li",
+     "affiliation": "Carnegie Mellon University, Pittsburgh, Pennsylvania 15213"
+    },
+    {
+     "author": "Honglei Zhuang",
+     "affiliation": "Google Research, Mountain View, California 94043"
+    }
+   ],
+   "business_school": null,
+   "tier": 1,
+   "anchor": "paper-predicting-instructor-performance-in-online-education-an-interpretable-hierarchical-transformer-with-contextual-attention"
+  },
+  {
+   "cid": "C008",
+   "title": "Leveraging World Events to Predict E-Commerce Consumer Demand under Anomaly",
+   "ids": [
+    "arxiv:2405.13995",
+    "doi:10.1145/3488560.3498452"
+   ],
+   "norm_title": "leveraging world events to predict e commerce consumer demand under anomaly",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2405.13995",
+   "date": "2024-05-22",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 19），作者单位：Technion；Ben-Gurion University of the Negev (work done at eBay)；Technion (Faculty of Computer Science)。用 transformer 构建事件嵌入来预测 eBay 消费者需求，是需求预测方法，有营销应用但偏运营预测，且来自 arXiv，需看作者单位。",
+   "track": "marketing_method",
+   "llm_use": "用 transformer 把世界事件文本嵌入为日向量，用于异常期电商需求预测",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 19,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "需求预测方法，归 3.2。",
+   "confidence": "medium",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.1145/3488560.3498452",
+   "issues": [],
+   "meta": {
+    "title": "Leveraging World Events to Predict E-Commerce Consumer Demand under Anomaly",
+    "authors": [
+     {
+      "given": "Dan",
+      "family": "Kalifa"
+     },
+     {
+      "given": "Uriel",
+      "family": "Singer"
+     },
+     {
+      "given": "Ido",
+      "family": "Guy"
+     },
+     {
+      "given": "Guy D.",
+      "family": "Rosin"
+     },
+     {
+      "given": "Kira",
+      "family": "Radinsky"
+     }
+    ],
+    "venue": "Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining: 430–438",
+    "date": "2022-02",
+    "url": "https://doi.org/10.1145/3488560.3498452"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Dan Kalifa",
+     "affiliation": "Technion"
+    },
+    {
+     "author": "Uriel Singer",
+     "affiliation": "Technion"
+    },
+    {
+     "author": "Ido Guy",
+     "affiliation": "Ben-Gurion University of the Negev (work done at eBay)"
+    },
+    {
+     "author": "Guy D. Rosin",
+     "affiliation": "Technion"
+    },
+    {
+     "author": "Kira Radinsky",
+     "affiliation": "Technion (Faculty of Computer Science)"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C009",
+   "title": "AI-Integrated Decision Support System for Real-Time Market Growth Forecasting and Multi-Source Content Diffusion Analytics",
+   "ids": [
+    "arxiv:2511.09962"
+   ],
+   "norm_title": "ai integrated decision support system for real time market growth forecasting and multi source content diffusion analytics",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2511.09962",
+   "date": "2025-11-13",
+   "decision": "uncertain",
+   "reason": "决策支持系统用 GNN 与时序 transformer 预测内容扩散和营销影响，营销主题成立，但摘要偏工程且 transformer 只是组件之一。",
+   "track": "marketing_method",
+   "llm_use": "图神经网络加时序 transformer 预测 AIGC 内容扩散与营销 ROI",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 2,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "营销内容扩散预测方法，若收录归 3.2。",
+   "confidence": "low",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref 标题匹配到已发表版本 10.71465/fbf726",
+   "issues": [],
+   "meta": {
+    "title": "AI-Integrated Decision Support System for Real-Time Market Growth Forecasting and Multi-Source Content Diffusion Analytics",
+    "authors": [
+     {
+      "given": "",
+      "family": "Ziqing Yin"
+     },
+     {
+      "given": "",
+      "family": "Xuanjing Chen"
+     },
+     {
+      "given": "",
+      "family": "Xi Zhang"
+     }
+    ],
+    "venue": "Frontiers in Business and Finance 3(1): 162–171",
+    "date": "2026-03",
+    "url": "https://doi.org/10.71465/fbf726"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Xuanjing Chen",
+     "affiliation": "Columbia Business School, Columbia University"
+    },
+    {
+     "author": "Xi Zhang",
+     "affiliation": "Booth School of Business, University of Chicago (邮箱为 chicagobooth 校友邮箱)"
+    }
+   ],
+   "business_school": true,
+   "tier": 2,
+   "anchor": "paper-ai-integrated-decision-support-system-for-real-time-market-growth-forecasting-and-multi-source-content-diffusion-analytics"
+  },
+  {
+   "cid": "C010",
+   "title": "HT-GNN: Hyper-Temporal Graph Neural Network for Customer Lifetime Value Prediction in Baidu Ads",
+   "ids": [
+    "arxiv:2601.13013"
+   ],
+   "norm_title": "ht gnn hyper temporal graph neural network for customer lifetime value prediction in baidu ads",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2601.13013",
+   "date": "2026-01-19",
+   "decision": "exclude",
+   "reason": "Baidu 广告 LTV 预测的 GNN 工程模型，transformer 只是其中一个编码器模块，营销问题不突出。",
+   "track": "none",
+   "llm_use": "transformer 时序编码器是 HT-GNN 三个模块之一",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C011",
+   "title": "Interpretable Deep Learning for Forecasting Online Advertising Costs: Insights from the Competitive Bidding Landscape",
+   "ids": [
+    "arxiv:2302.05762"
+   ],
+   "norm_title": "interpretable deep learning for forecasting online advertising costs insights from the competitive bidding landscape",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2302.05762",
+   "date": "2023-02-11",
+   "decision": "exclude",
+   "reason": "广告 CPC 时间序列预测，TFT 只是众多模型之一，不是方法核心。",
+   "track": "none",
+   "llm_use": "Temporal Fusion Transformer 只是比较的预测模型之一",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C012",
+   "title": "Detecting Human Trafficking: Automated Classification of Online Customer Reviews of Massage Businesses",
+   "ids": [
+    "doi:10.1287/msom.2023.1196"
+   ],
+   "norm_title": "detecting human trafficking automated classification of online customer reviews of massage businesses",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/msom.2023.1196",
+   "date": "2023-02-22",
+   "decision": "include",
+   "reason": "MSOM（UTD 24）论文，将 BERT 嵌入作为分类模型的核心组件，用于顾客评论文本分类。",
+   "track": "utd",
+   "llm_use": "用 BERT 嵌入训练分类器，识别 Yelp 评论中的人口贩运风险",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 29,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "顾客评论文本分类方法，属于 3.2 的客户文本测量类方法。",
+   "confidence": "medium",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.1287/msom.2023.1196",
+   "issues": [],
+   "meta": {
+    "title": "Detecting Human Trafficking: Automated Classification of Online Customer Reviews of Massage Businesses",
+    "authors": [
+     {
+      "given": "Ruoting",
+      "family": "Li"
+     },
+     {
+      "given": "Margaret",
+      "family": "Tobey"
+     },
+     {
+      "given": "Maria E.",
+      "family": "Mayorga"
+     },
+     {
+      "given": "Sherrie",
+      "family": "Caltagirone"
+     },
+     {
+      "given": "Osman Y.",
+      "family": "Özaltın"
+     }
+    ],
+    "venue": "Manufacturing &amp; Service Operations Management 25(3): 1051–1065",
+    "date": "2023-02",
+    "url": "https://doi.org/10.1287/msom.2023.1196"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Ruoting Li",
+     "affiliation": "Edward P. Fitts Department of Industrial and Systems Engineering, North Carolina State University, Raleigh, North Carolina 27695;"
+    },
+    {
+     "author": "Margaret Tobey",
+     "affiliation": "Operations Research Graduate Program, North Carolina State University, Raleigh, North Carolina 27695;"
+    },
+    {
+     "author": "Maria E. Mayorga",
+     "affiliation": "Edward P. Fitts Department of Industrial and Systems Engineering, North Carolina State University, Raleigh, North Carolina 27695;"
+    },
+    {
+     "author": "Sherrie Caltagirone",
+     "affiliation": "Global Emancipation Network, Clermont, Florida 34715"
+    },
+    {
+     "author": "Osman Y. Özaltın",
+     "affiliation": "Edward P. Fitts Department of Industrial and Systems Engineering, North Carolina State University, Raleigh, North Carolina 27695;"
+    }
+   ],
+   "business_school": null,
+   "tier": 1,
+   "anchor": "paper-detecting-human-trafficking-automated-classification-of-online-customer-reviews-of-massage-businesses"
+  },
+  {
+   "cid": "C013",
+   "title": "EdgeNet : Encoder-decoder generative Network for Auction Design in E-commerce Online Advertising",
+   "ids": [
+    "arxiv:2305.06158"
+   ],
+   "norm_title": "edgenet encoder decoder generative network for auction design in e commerce online advertising",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2305.06158",
+   "date": "2023-05-09",
+   "decision": "exclude",
+   "reason": "面向平台收益的神经拍卖机制设计，属于广告系统工程，没有明确的营销或消费者行为问题，期刊也不在 UTD 24。",
+   "track": "none",
+   "llm_use": "transformer 编码器用于电商广告拍卖设计",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C014",
+   "title": "Deterministic-Allocation and Anonymous Joint Advertising in E-commerce Platforms",
+   "ids": [
+    "arxiv:2506.02435"
+   ],
+   "norm_title": "deterministic allocation and anonymous joint advertising in e commerce platforms",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2506.02435",
+   "date": "2025-06-03",
+   "decision": "exclude",
+   "reason": "自动化机制设计的架构论文，关注平台收益与分配约束，缺少营销研究问题，属于通用广告系统工程。",
+   "track": "none",
+   "llm_use": "JTransNet（基于 transformer）用于联合广告拍卖",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C015",
+   "title": "Optimal Return-to-Go Guided Decision Transformer for Auto-Bidding in Advertisement",
+   "ids": [
+    "arxiv:2506.21956",
+    "doi:10.1145/3701716.3715564"
+   ],
+   "norm_title": "optimal return to go guided decision transformer for auto bidding in advertisement",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2506.21956",
+   "date": "2025-06-27",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 5），作者单位：Kuaishou Technology。用 Decision Transformer 做广告自动出价，涉及广告，但主要是出价算法工程，营销贡献不明确。",
+   "track": "marketing_method",
+   "llm_use": "Decision Transformer 用于广告自动出价",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 5,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "广告投放决策方法，暂放 3.2，若保留需确认营销价值。",
+   "confidence": "low",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.1145/3701716.3715564",
+   "issues": [],
+   "meta": {
+    "title": "Optimal Return-to-Go Guided Decision Transformer for Auto-Bidding in Advertisement",
+    "authors": [
+     {
+      "given": "Hao",
+      "family": "Jiang"
+     },
+     {
+      "given": "Yongxiang",
+      "family": "Tang"
+     },
+     {
+      "given": "Yanxiang",
+      "family": "Zeng"
+     },
+     {
+      "given": "Pengjia",
+      "family": "Yuan"
+     },
+     {
+      "given": "Yanhua",
+      "family": "Cheng"
+     },
+     {
+      "given": "Teng",
+      "family": "Sha"
+     },
+     {
+      "given": "Xialong",
+      "family": "Liu"
+     },
+     {
+      "given": "Peng",
+      "family": "Jiang"
+     }
+    ],
+    "venue": "Companion Proceedings of the ACM on Web Conference 2025: 1033–1037",
+    "date": "2025-05",
+    "url": "https://doi.org/10.1145/3701716.3715564"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Hao Jiang",
+     "affiliation": "Kuaishou Technology"
+    },
+    {
+     "author": "Yongxiang Tang",
+     "affiliation": "Kuaishou Technology"
+    },
+    {
+     "author": "Yanxiang Zeng",
+     "affiliation": "Kuaishou Technology"
+    },
+    {
+     "author": "Pengjia Yuan",
+     "affiliation": "Kuaishou Technology"
+    },
+    {
+     "author": "Yanhua Cheng",
+     "affiliation": "Kuaishou Technology"
+    },
+    {
+     "author": "Teng Sha",
+     "affiliation": "Kuaishou Technology"
+    },
+    {
+     "author": "Xialong Liu",
+     "affiliation": "Kuaishou Technology"
+    },
+    {
+     "author": "Peng Jiang",
+     "affiliation": "Kuaishou Technology"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C016",
+   "title": "A Firm’s Operational Risk: Data Set and Empirical Evidence",
+   "ids": [
+    "doi:10.1287/msom.2025.0134"
+   ],
+   "norm_title": "a firms operational risk data set and empirical evidence",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/msom.2025.0134",
+   "date": "2025-10-13",
+   "decision": "include",
+   "reason": "MSOM（UTD 24）论文，transformer 是文本测量的核心工具，并发布了 13 万公司年度的风险评分数据集。",
+   "track": "utd",
+   "llm_use": "在 10-K 风险披露文本上训练 64 个 transformer 模型，对运营风险打分",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 5,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": "3.3",
+   "classification": "用 transformer 做文本测量的方法，并发布可复用的风险评分数据集。",
+   "confidence": "medium",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.1287/msom.2025.0134",
+   "issues": [],
+   "meta": {
+    "title": "A Firm’s Operational Risk: Data Set and Empirical Evidence",
+    "authors": [
+     {
+      "given": "Vivek",
+      "family": "Astvansh"
+     },
+     {
+      "given": "Joseph J.",
+      "family": "Simpson"
+     }
+    ],
+    "venue": "Manufacturing &amp; Service Operations Management 28(1): 326–341",
+    "date": "2025-10",
+    "url": "https://doi.org/10.1287/msom.2025.0134"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Vivek Astvansh",
+     "affiliation": "Desautels Faculty of Management, McGill University, Montreal, Quebec H3A 1G5, Canada; and Bensadoun School of Retail Management, McGill University, Montreal, Quebec H3A 1G5, Canada; and Luddy School of Informatics, Computing, and Engineering, Indiana University Bloomington, Bloomington, Indiana 47408; and Environmental Resilience Institute, Indiana University Bloomington, Bloomington, Indiana 47408"
+    },
+    {
+     "author": "Joseph J. Simpson",
+     "affiliation": "Department of Management, Pamplin College of Business, Virginia Polytechnic Institute and State University, Blacksburg, Virginia 24061"
+    }
+   ],
+   "business_school": null,
+   "tier": 1,
+   "anchor": "paper-a-firms-operational-risk-data-set-and-empirical-evidence",
+   "dataset_anchor": "dataset-a-firms-operational-risk-data-set-and-empirical-evidence"
+  },
+  {
+   "cid": "C017",
+   "title": "An Improving Column Is All You Need: Enhancing Column Generation for Parallel Machine Scheduling via Transformers",
+   "ids": [
+    "doi:10.1287/ijoc.2024.1005"
+   ],
+   "norm_title": "an improving column is all you need enhancing column generation for parallel machine scheduling via transformers",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/ijoc.2024.1005",
+   "date": "2026-06-30",
+   "decision": "include",
+   "reason": "INFORMS JOC（UTD 24）论文，transformer 是并行机调度列生成方法的核心组件，主题偏运筹。",
+   "track": "utd",
+   "llm_use": "带指针层的 transformer 用于列生成中的列识别",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 2,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "UTD 24 的 transformer 方法论文，与营销关系弱，暂放 3.2。",
+   "confidence": "low",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.1287/ijoc.2024.1005",
+   "issues": [],
+   "meta": {
+    "title": "An Improving Column Is All You Need: Enhancing Column Generation for Parallel Machine Scheduling via Transformers",
+    "authors": [
+     {
+      "given": "Amira",
+      "family": "Hijazi"
+     },
+     {
+      "given": "Osman Y.",
+      "family": "Özaltın"
+     },
+     {
+      "given": "Reha",
+      "family": "Uzsoy"
+     }
+    ],
+    "venue": "INFORMS Journal on Computing",
+    "date": "2026-06",
+    "url": "https://doi.org/10.1287/ijoc.2024.1005"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Amira Hijazi",
+     "affiliation": "NSF AI Institute for Advances in Optimization (AI4OPT), Georgia Institute of Technology, Atlanta, Georgia 30308"
+    },
+    {
+     "author": "Osman Y. Özaltın",
+     "affiliation": "Edward P. Fitts Department of Industrial and Systems Engineering, North Carolina State University, Raleigh, North Carolina 27695"
+    },
+    {
+     "author": "Reha Uzsoy",
+     "affiliation": "Edward P. Fitts Department of Industrial and Systems Engineering, North Carolina State University, Raleigh, North Carolina 27695"
+    }
+   ],
+   "business_school": null,
+   "tier": 1,
+   "anchor": "paper-an-improving-column-is-all-you-need-enhancing-column-generation-for-parallel-machine-scheduling-via-transformers"
+  },
+  {
+   "cid": "C018",
+   "title": "Advertising Creative Mining with Transformers",
+   "ids": [
+    "doi:10.2139/ssrn.4545324",
+    "ssrn:4545324"
+   ],
+   "norm_title": "advertising creative mining with transformers",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4545324",
+   "date": "2023-08-18",
+   "decision": "uncertain",
+   "reason": "标题显示用 transformer 做广告创意挖掘，但摘要为空，无法判断方法与营销贡献。",
+   "track": "marketing_method",
+   "llm_use": "transformer 用于广告创意挖掘（摘要缺失）",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "广告创意分析方法，暂放 3.2。",
+   "confidence": "low",
+   "verified": true,
+   "published": false,
+   "verification": "自动核验：Crossref SSRN DOI 10.2139/ssrn.4545324",
+   "issues": [
+    "未能确认是否有商学院作者"
+   ],
+   "meta": {
+    "title": "Advertising Creative Mining with Transformers",
+    "authors": [
+     {
+      "given": "Wei",
+      "family": "Feng"
+     },
+     {
+      "given": "Blaine",
+      "family": "Guo"
+     },
+     {
+      "given": "Zheng",
+      "family": "Zhang"
+     },
+     {
+      "given": "Yaoyu",
+      "family": "Li"
+     },
+     {
+      "given": "Xinqiang",
+      "family": "Pang"
+     },
+     {
+      "given": "Weizhen",
+      "family": "Wang"
+     },
+     {
+      "given": "Jingjing",
+      "family": "Lv"
+     },
+     {
+      "given": "Xin",
+      "family": "Zhu"
+     },
+     {
+      "given": "Zhangang",
+      "family": "Lin"
+     },
+     {
+      "given": "Jinghe",
+      "family": "Hu"
+     },
+     {
+      "given": "Jingping",
+      "family": "Shao"
+     }
+    ],
+    "venue": "SSRN 4545324",
+    "date": "2023-08",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4545324"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Wei Feng",
+     "affiliation": "未在论文中核实（同组其他论文为 JD.com 广告团队）"
+    },
+    {
+     "author": "Zhangang Lin",
+     "affiliation": "JD.com（据其他 JD 论文作者页，未在本文核实）"
+    },
+    {
+     "author": "Jingping Shao",
+     "affiliation": "Marketing and Commercialization Center, JD.com（据其他 JD 论文作者页，未在本文核实）"
+    }
+   ],
+   "business_school": null,
+   "tier": 2,
+   "anchor": "paper-advertising-creative-mining-with-transformers"
+  },
+  {
+   "cid": "C019",
+   "title": "KETCH: A Knowledge-Enhanced Transformer-Based Approach to Suicidal Ideation Detection from Social Media Content",
+   "ids": [
+    "doi:10.1287/isre.2021.0619"
+   ],
+   "norm_title": "ketch a knowledge enhanced transformer based approach to suicidal ideation detection from social media content",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/isre.2021.0619",
+   "date": "2024-05-31",
+   "decision": "include",
+   "reason": "ISR（UTD 24）论文，自研 transformer 模型是核心方法，主题为公共健康，与营销无关。",
+   "track": "utd",
+   "llm_use": "知识增强的 transformer 模型检测社交媒体中的自杀意念",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 26,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "UTD 24 的 transformer 文本分类方法，暂放 3.2。",
+   "confidence": "low",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.1287/isre.2021.0619",
+   "issues": [],
+   "meta": {
+    "title": "KETCH: A Knowledge-Enhanced Transformer-Based Approach to Suicidal Ideation Detection from Social Media Content",
+    "authors": [
+     {
+      "given": "Dongsong",
+      "family": "Zhang"
+     },
+     {
+      "given": "Lina",
+      "family": "Zhou"
+     },
+     {
+      "given": "Jie",
+      "family": "Tao"
+     },
+     {
+      "given": "Tingshao",
+      "family": "Zhu"
+     },
+     {
+      "given": "Guodong (Gordon)",
+      "family": "Gao"
+     }
+    ],
+    "venue": "Information Systems Research 36(1): 572–599",
+    "date": "2024-05",
+    "url": "https://doi.org/10.1287/isre.2021.0619"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Dongsong Zhang",
+     "affiliation": "Department of Business Information Systems & Operations Management, Belk College of Business, The University of North Carolina at Charlotte, Charlotte, North Carolina 28223; and The School of Data Science, The University of North Carolina at Charlotte, Charlotte, North Carolina 28223"
+    },
+    {
+     "author": "Lina Zhou",
+     "affiliation": "Department of Business Information Systems & Operations Management, Belk College of Business, The University of North Carolina at Charlotte, Charlotte, North Carolina 28223; and The School of Data Science, The University of North Carolina at Charlotte, Charlotte, North Carolina 28223"
+    },
+    {
+     "author": "Jie Tao",
+     "affiliation": "Charles F. Dolan School of Business, Fairfield University, Fairfield, Connecticut 06824"
+    },
+    {
+     "author": "Tingshao Zhu",
+     "affiliation": "Institute of Psychology, Chinese Academy of Sciences, Beijing 100101, China; and Department of Psychology, University of Chinese Academy of Sciences, Beijing 101408, China"
+    },
+    {
+     "author": "Guodong (Gordon) Gao",
+     "affiliation": "Johns Hopkins Carey Business School, Baltimore, Maryland 21202"
+    }
+   ],
+   "business_school": null,
+   "tier": 1,
+   "anchor": "paper-ketch-a-knowledge-enhanced-transformer-based-approach-to-suicidal-ideation-detection-from-social-media-content"
+  },
+  {
+   "cid": "C020",
+   "title": "Sentiment Analysis Based on RoBERTa for Amazon Review: An Empirical Study on Decision Making",
+   "ids": [
+    "arxiv:2411.00796"
+   ],
+   "norm_title": "sentiment analysis based on roberta for amazon review an empirical study on decision making",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2411.00796",
+   "date": "2024-10-18",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 3），作者单位：UFR de mathématiques et informatique (UFR27), University of Paris 1 Panthéon-Sorbonne (Master of Science thesis)。用现成 RoBERTa 分析亚马逊评论情感并联系 eWOM 与消费者行为，属于顾客文本分析，但方法较常规，营销贡献偏弱。",
+   "track": "marketing_method",
+   "llm_use": "用 RoBERTa 对 Amazon 评论做情感打分",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 3,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "顾客评论文本测量，放 3.2。",
+   "confidence": "low",
+   "verified": true,
+   "published": false,
+   "verification": "自动核验：arXiv API（首次提交月）",
+   "issues": [
+    "作者姓/名由 arXiv 全名自动拆分"
+   ],
+   "meta": {
+    "title": "Sentiment Analysis Based on RoBERTa for Amazon Review: An Empirical Study on Decision Making",
+    "authors": [
+     {
+      "given": "Xinli",
+      "family": "Guo"
+     }
+    ],
+    "venue": "arXiv:2411.00796",
+    "date": "2024-10",
+    "url": "https://arxiv.org/abs/2411.00796"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Xinli Guo",
+     "affiliation": "UFR de mathématiques et informatique (UFR27), University of Paris 1 Panthéon-Sorbonne (Master of Science thesis)"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C021",
+   "title": "Sentiment Analysis of Movie Reviews Using BERT",
+   "ids": [
+    "arxiv:2502.18841"
+   ],
+   "norm_title": "sentiment analysis of movie reviews using bert",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2502.18841",
+   "date": "2025-02-26",
+   "decision": "exclude",
+   "reason": "通用情感分析模型改进，针对电影评论，没有具体营销研究问题。",
+   "track": "none",
+   "llm_use": "BERT-BiLSTM 做电影评论情感分类",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C022",
+   "title": "Measuring Information Richness in Product Images: Implications for Online Sales",
+   "ids": [
+    "arxiv:2508.04541"
+   ],
+   "norm_title": "measuring information richness in product images implications for online sales",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2508.04541",
+   "date": "2025-08-06",
+   "decision": "include",
+   "reason": "以 ViT 嵌入构建商品图集信息丰富度指标，并用在线实验检验其对消费者购买决策的影响，属于营销测量方法。",
+   "track": "marketing_method",
+   "llm_use": "用 Vision Transformer 的 patch 嵌入加 k-means 度量商品图片信息丰富度",
+   "human_data": "在线实验验证 k-value 与人类感知一致",
+   "evidence": "abstract-only",
+   "citations": 0,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "基于 transformer 的视觉内容测量并检验购买影响，归入 3.2 测量方法。",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "自动核验：arXiv API（首次提交月）",
+   "issues": [
+    "作者姓/名由 arXiv 全名自动拆分"
+   ],
+   "meta": {
+    "title": "Measuring Information Richness in Product Images: Implications for Online Sales",
+    "authors": [
+     {
+      "given": "Zhu",
+      "family": "Yuting"
+     },
+     {
+      "given": "Cao",
+      "family": "Xinyu"
+     },
+     {
+      "given": "Su",
+      "family": "Yuzhuo"
+     },
+     {
+      "given": "Ma",
+      "family": "Yongbin"
+     }
+    ],
+    "venue": "arXiv:2508.04541",
+    "date": "2025-08",
+    "url": "https://arxiv.org/abs/2508.04541"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Yuting Zhu",
+     "affiliation": "National University of Singapore（NUS Business School 市场营销系助理教授，据 NUS 商学院教师目录/CV）"
+    },
+    {
+     "author": "Xinyu Cao",
+     "affiliation": "The Chinese University of Hong Kong（CUHK Business School 市场营销系副教授，据 CUHK 商学院教师页）"
+    }
+   ],
+   "business_school": true,
+   "tier": 2,
+   "anchor": "paper-measuring-information-richness-in-product-images-implications-for-online-sales"
+  },
+  {
+   "cid": "C023",
+   "title": "Realizing Native INT8 Compute for Diffusion Transformers on Consumer GPUs: A Fused INT8 GEMM Kernel for Ideogram 4.0",
+   "ids": [
+    "arxiv:2606.14598"
+   ],
+   "norm_title": "realizing native int8 compute for diffusion transformers on consumer gpus a fused int8 gemm kernel for ideogram 4 0",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2606.14598",
+   "date": "2026-06-12",
+   "decision": "exclude",
+   "reason": "GPU 量化内核的工程优化，与营销或消费者研究无关。",
+   "track": "none",
+   "llm_use": "扩散 transformer 的 INT8 推理优化",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C024",
+   "title": "Comparative Analysis of Deep Learning Models for Brand Logo Classification in Real-World Scenarios",
+   "ids": [
+    "arxiv:2305.12242"
+   ],
+   "norm_title": "comparative analysis of deep learning models for brand logo classification in real world scenarios",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2305.12242",
+   "date": "2023-05-20",
+   "decision": "exclude",
+   "reason": "纯计算机视觉的 logo 分类基准比较，没有提出营销或消费者行为问题。",
+   "track": "none",
+   "llm_use": "ViT 与 CNN 比较做品牌 logo 图像分类",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C025",
+   "title": "Demystifying Visual Features of Movie Posters for Multi-Label Genre Identification",
+   "ids": [
+    "arxiv:2309.12022"
+   ],
+   "norm_title": "demystifying visual features of movie posters for multi label genre identification",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2309.12022",
+   "date": "2023-09-21",
+   "decision": "exclude",
+   "reason": "电影海报类型识别是视觉分类任务，营销应用只在背景中提及，论文并未检验。",
+   "track": "none",
+   "llm_use": "深度 transformer 网络由海报图像识别电影类型",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C026",
+   "title": "Leveraging AI and NLP for Bank Marketing: A Systematic Review and Gap Analysis",
+   "ids": [
+    "arxiv:2411.14463"
+   ],
+   "norm_title": "leveraging ai and nlp for bank marketing a systematic review and gap analysis",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2411.14463",
+   "date": "2024-11-17",
+   "decision": "exclude",
+   "reason": "银行营销 AI/NLP 的文献综述，transformer 只是做文献聚类的辅助工具，不是研究方法或对象。",
+   "track": "none",
+   "llm_use": "Sentence Transformers 仅用于文献语义映射",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C027",
+   "title": "AI Tailoring: Evaluating Influence of Image Features on Fashion Product Popularity",
+   "ids": [
+    "arxiv:2411.14737"
+   ],
+   "norm_title": "ai tailoring evaluating influence of image features on fashion product popularity",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2411.14737",
+   "date": "2024-11-22",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 3），作者单位：John A. Paulson School of Engineering and Applied Sciences, Harvard University；Center for Computational Science & Engineering, Massachusetts Institute of Technology。用 Transformer 预测时尚产品需求并识别影响消费者偏好的图像特征，用扩散模型编辑做消融，并以问卷验证，属于产品偏好与需求预测方法。",
+   "track": "marketing_method",
+   "llm_use": "基于 Transformer 的模型结合随机森林，由商品图像预测时尚产品流行度",
+   "human_data": "市场销售数据及人类偏好排序问卷",
+   "evidence": "abstract-only",
+   "citations": 3,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "属于需求/流行度预测与产品特征测量方法，归入 3.2。",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "自动核验：arXiv API（首次提交月）",
+   "issues": [
+    "作者姓/名由 arXiv 全名自动拆分"
+   ],
+   "meta": {
+    "title": "AI Tailoring: Evaluating Influence of Image Features on Fashion Product Popularity",
+    "authors": [
+     {
+      "given": "Xiaomin",
+      "family": "Li"
+     },
+     {
+      "given": "Junyi",
+      "family": "Sha"
+     }
+    ],
+    "venue": "arXiv:2411.14737",
+    "date": "2024-11",
+    "url": "https://arxiv.org/abs/2411.14737"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Xiaomin Li",
+     "affiliation": "John A. Paulson School of Engineering and Applied Sciences, Harvard University"
+    },
+    {
+     "author": "Junyi Sha",
+     "affiliation": "Center for Computational Science & Engineering, Massachusetts Institute of Technology"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C028",
+   "title": "Leveraging Hypernetworks and Learnable Kernels for Consumer Energy Forecasting Across Diverse Consumer Types",
+   "ids": [
+    "arxiv:2502.05104",
+    "doi:10.1109/tpwrd.2024.3486010"
+   ],
+   "norm_title": "leveraging hypernetworks and learnable kernels for consumer energy forecasting across diverse consumer types",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2502.05104",
+   "date": "2025-02-07",
+   "decision": "exclude",
+   "reason": "居民/建筑用电量预测，与营销无关，transformer 也只是基线。",
+   "track": "none",
+   "llm_use": "transformer 仅作为能耗预测的基线",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C029",
+   "title": "LiDDA: Data Driven Attribution at LinkedIn",
+   "ids": [
+    "arxiv:2505.09861"
+   ],
+   "norm_title": "lidda data driven attribution at linkedin",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2505.09861",
+   "date": "2025-05-14",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 3），作者单位：LinkedIn Corporation。在 LinkedIn 大规模部署基于 transformer 的数据驱动营销归因，把转化功劳分配给各营销触点，属于广告归因测量方法。",
+   "track": "marketing_method",
+   "llm_use": "统一的 transformer 归因模型，处理成员级、聚合级数据和宏观因素",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 3,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "营销归因属于测量与预测方法，归入 3.2。",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "自动核验：arXiv API（首次提交月）",
+   "issues": [
+    "作者姓/名由 arXiv 全名自动拆分"
+   ],
+   "meta": {
+    "title": "LiDDA: Data Driven Attribution at LinkedIn",
+    "authors": [
+     {
+      "given": "John",
+      "family": "Bencina"
+     },
+     {
+      "given": "Erkut",
+      "family": "Aykutlug"
+     },
+     {
+      "given": "Yue",
+      "family": "Chen"
+     },
+     {
+      "given": "Zerui",
+      "family": "Zhang"
+     },
+     {
+      "given": "Stephanie",
+      "family": "Sorenson"
+     },
+     {
+      "given": "Shao",
+      "family": "Tang"
+     },
+     {
+      "given": "Changshuai",
+      "family": "Wei"
+     }
+    ],
+    "venue": "arXiv:2505.09861",
+    "date": "2025-05",
+    "url": "https://arxiv.org/abs/2505.09861"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "John Bencina",
+     "affiliation": "LinkedIn Corporation"
+    },
+    {
+     "author": "Erkut Aykutlug",
+     "affiliation": "LinkedIn Corporation"
+    },
+    {
+     "author": "Yue Chen",
+     "affiliation": "LinkedIn Corporation"
+    },
+    {
+     "author": "Zerui Zhang",
+     "affiliation": "LinkedIn Corporation"
+    },
+    {
+     "author": "Stephanie Sorenson",
+     "affiliation": "LinkedIn Corporation"
+    },
+    {
+     "author": "Shao Tang",
+     "affiliation": "LinkedIn Corporation"
+    },
+    {
+     "author": "Changshuai Wei",
+     "affiliation": "LinkedIn Corporation"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C030",
+   "title": "Analysis of Anonymous User Interaction Relationships and Prediction of Advertising Feedback Based on Graph Neural Network",
+   "ids": [
+    "arxiv:2506.13787"
+   ],
+   "norm_title": "analysis of anonymous user interaction relationships and prediction of advertising feedback based on graph neural network",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2506.13787",
+   "date": "2025-06-11",
+   "decision": "exclude",
+   "reason": "主体是通用的图神经网络 CTR 预测架构，transformer 只是其中一个组件，也没有提出明确的营销问题。",
+   "track": "none",
+   "llm_use": "图神经网络中的 Transformer 编码器模块用于广告反馈预测",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C031",
+   "title": "FinTRec: Transformer Based Unified Contextual Ads Targeting and Personalization for Financial Applications",
+   "ids": [
+    "arxiv:2511.14865"
+   ],
+   "norm_title": "fintrec transformer based unified contextual ads targeting and personalization for financial applications",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2511.14865",
+   "date": "2025-11-18",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 4），作者单位：Capital One, AI Foundations；Capital One, AI Foundations (now NVIDIA)。提出统一的 transformer 序列推荐框架做金融服务的广告定向与个性化，并用线上 A/B 测试相关性评估，核心是 transformer，属于推荐与广告方法。",
+   "track": "marketing_method",
+   "llm_use": "自研 transformer 建模金融用户跨渠道长序列交互，用于广告定向与个性化推荐",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 4,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "广告定向与个性化推荐方法，归入 3.2。",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "自动核验：arXiv API（首次提交月）",
+   "issues": [
+    "作者姓/名由 arXiv 全名自动拆分"
+   ],
+   "meta": {
+    "title": "FinTRec: Transformer Based Unified Contextual Ads Targeting and Personalization for Financial Applications",
+    "authors": [
+     {
+      "given": "Dwipam",
+      "family": "Katariya"
+     },
+     {
+      "given": "Snehita",
+      "family": "Varma"
+     },
+     {
+      "given": "Akshat",
+      "family": "Shreemali"
+     },
+     {
+      "given": "Benjamin",
+      "family": "Wu"
+     },
+     {
+      "given": "Kalanand",
+      "family": "Mishra"
+     },
+     {
+      "given": "Pranab",
+      "family": "Mohanty"
+     }
+    ],
+    "venue": "arXiv:2511.14865",
+    "date": "2025-11",
+    "url": "https://arxiv.org/abs/2511.14865"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Dwipam Katariya",
+     "affiliation": "Capital One, AI Foundations"
+    },
+    {
+     "author": "Snehita Varma",
+     "affiliation": "Capital One, AI Foundations"
+    },
+    {
+     "author": "Akshat Shreemali",
+     "affiliation": "Capital One, AI Foundations"
+    },
+    {
+     "author": "Benjamin Wu",
+     "affiliation": "Capital One, AI Foundations (now NVIDIA)"
+    },
+    {
+     "author": "Kalanand Mishra",
+     "affiliation": "Capital One, AI Foundations"
+    },
+    {
+     "author": "Pranab Mohanty",
+     "affiliation": "Capital One, AI Foundations"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C032",
+   "title": "CTR Prediction on Alibaba's Taobao Advertising Dataset Using Traditional and Deep Learning Models",
+   "ids": [
+    "arxiv:2511.21963"
+   ],
+   "norm_title": "ctr prediction on alibaba s taobao advertising dataset using traditional and deep learning models",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2511.21963",
+   "date": "2025-11-26",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 0），作者单位：Department of Biostatistics, Data Science in Health, University of California, Los Angeles。在淘宝广告数据集上用 transformer 建模行为序列预测 CTR，属于广告方法，但更像通用的 CTR 预测实验，营销层面的贡献不够清楚。",
+   "track": "marketing_method",
+   "llm_use": "自研 transformer 建模用户行为序列，预测淘宝广告点击率",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 0,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "广告点击预测方法，归入 3.2。",
+   "confidence": "low",
+   "verified": true,
+   "published": false,
+   "verification": "自动核验：arXiv API（首次提交月）",
+   "issues": [
+    "作者姓/名由 arXiv 全名自动拆分"
+   ],
+   "meta": {
+    "title": "CTR Prediction on Alibaba's Taobao Advertising Dataset Using Traditional and Deep Learning Models",
+    "authors": [
+     {
+      "given": "Hongyu",
+      "family": "Yang"
+     },
+     {
+      "given": "Chunxi",
+      "family": "Wen"
+     },
+     {
+      "given": "Jiyin",
+      "family": "Zhang"
+     },
+     {
+      "given": "Nanfei",
+      "family": "Shen"
+     },
+     {
+      "given": "Shijiao",
+      "family": "Zhang"
+     },
+     {
+      "given": "Xiyan",
+      "family": "Han"
+     }
+    ],
+    "venue": "arXiv:2511.21963",
+    "date": "2025-11",
+    "url": "https://arxiv.org/abs/2511.21963"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Hongyu Yang",
+     "affiliation": "Department of Biostatistics, Data Science in Health, University of California, Los Angeles"
+    },
+    {
+     "author": "Chunxi Wen",
+     "affiliation": "Department of Biostatistics, Data Science in Health, University of California, Los Angeles"
+    },
+    {
+     "author": "Jiyin Zhang",
+     "affiliation": "Department of Biostatistics, Data Science in Health, University of California, Los Angeles"
+    },
+    {
+     "author": "Nanfei Shen",
+     "affiliation": "Department of Biostatistics, Data Science in Health, University of California, Los Angeles"
+    },
+    {
+     "author": "Shijiao Zhang",
+     "affiliation": "Department of Biostatistics, Data Science in Health, University of California, Los Angeles"
+    },
+    {
+     "author": "Xiyan Han",
+     "affiliation": "Department of Biostatistics, Data Science in Health, University of California, Los Angeles"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C033",
+   "title": "Deep Learning Statistical Arbitrage",
+   "ids": [
+    "doi:10.1287/mnsc.2022.03132"
+   ],
+   "norm_title": "deep learning statistical arbitrage",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/mnsc.2022.03132",
+   "date": "2025-12-04",
+   "decision": "include",
+   "reason": "Management Science 属于 UTD 24，论文的核心方法组件是卷积 transformer，按 UTD 规则纳入，主题是金融统计套利。",
+   "track": "utd",
+   "llm_use": "卷积 transformer 提取残差组合的时间序列信号，用于统计套利",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "UTD 期刊的 transformer 预测方法论文，主题偏金融，按预测方法归入 3.2。",
+   "confidence": "medium",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.1287/mnsc.2022.03132",
+   "issues": [],
+   "meta": {
+    "title": "Deep Learning Statistical Arbitrage",
+    "authors": [
+     {
+      "given": "Jorge",
+      "family": "Guijarro-Ordonez"
+     },
+     {
+      "given": "Markus",
+      "family": "Pelger"
+     },
+     {
+      "given": "Greg",
+      "family": "Zanotti"
+     }
+    ],
+    "venue": "Management Science 72(9): 7502–7549",
+    "date": "2025-12",
+    "url": "https://doi.org/10.1287/mnsc.2022.03132"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Jorge Guijarro-Ordonez",
+     "affiliation": "Department of Mathematics, Stanford University, Stanford, California 94305"
+    },
+    {
+     "author": "Markus Pelger",
+     "affiliation": "Department of Management Science & Engineering, Stanford University, Stanford, California 94305"
+    },
+    {
+     "author": "Greg Zanotti",
+     "affiliation": "Department of Management Science & Engineering, Stanford University, Stanford, California 94305"
+    }
+   ],
+   "business_school": null,
+   "tier": 1,
+   "anchor": "paper-deep-learning-statistical-arbitrage"
+  },
+  {
+   "cid": "C034",
+   "title": "Predicting Consumer Choice from Raw Eye-Movement Data Using the RETINA Deep Learning Architecture",
+   "ids": [
+    "doi:10.2139/ssrn.4341410",
+    "ssrn:4341410"
+   ],
+   "norm_title": "predicting consumer choice from raw eye movement data using the retina deep learning architecture",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4341410",
+   "date": "2023-01-30",
+   "decision": "include",
+   "reason": "提出 RETINA（基于 Transformer）从原始眼动数据预测消费者选择，并与 BERT、LSTM 等方法对比，属于消费者选择预测方法。",
+   "track": "marketing_method",
+   "llm_use": "Transformer 与度量学习直接处理原始眼动时序，预测消费者多属性选择",
+   "human_data": "112 名受访者在四款笔记本电脑间的选择与眼动数据",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "Transformer 为核心组件的消费者选择预测方法，归入 3.2。",
+   "confidence": "high",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref 标题匹配到已发表版本 10.1007/s10618-023-00989-7",
+   "issues": [],
+   "meta": {
+    "title": "Predicting consumer choice from raw eye-movement data using the RETINA deep learning architecture",
+    "authors": [
+     {
+      "given": "Moshe",
+      "family": "Unger"
+     },
+     {
+      "given": "Michel",
+      "family": "Wedel"
+     },
+     {
+      "given": "Alexander",
+      "family": "Tuzhilin"
+     }
+    ],
+    "venue": "Data Mining and Knowledge Discovery 38(3): 1069–1100",
+    "date": "2023-12",
+    "url": "https://doi.org/10.1007/s10618-023-00989-7"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Michel Wedel",
+     "affiliation": "Robert H. Smith School of Business, University of Maryland"
+    },
+    {
+     "author": "Alexander Tuzhilin",
+     "affiliation": "NYU Stern School of Business"
+    }
+   ],
+   "business_school": true,
+   "tier": 2,
+   "anchor": "paper-predicting-consumer-choice-from-raw-eye-movement-data-using-the-retina-deep-learning-architecture"
+  },
+  {
+   "cid": "C035",
+   "title": "Understanding the impact of trade policy effect uncertainty on firm‐level innovation investment",
+   "ids": [
+    "doi:10.1002/joom.1285"
+   ],
+   "norm_title": "understanding the impact of trade policy effect uncertainty on firm level innovation investment",
+   "source": "journal",
+   "url": "https://doi.org/10.1002/joom.1285",
+   "date": "2023-12-04",
+   "decision": "include",
+   "reason": "发表于 Journal of Operations Management（UTD 24），以 BERT 作为核心测量工具，符合 UTD 规则。",
+   "track": "utd",
+   "llm_use": "用 BERT 从年报 MD&A 文本构造企业层面贸易政策效应不确定性指标",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 77,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "UTD 期刊中以 Transformer 做文本测量的方法应用，归入 3.2。",
+   "confidence": "medium",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.1002/joom.1285",
+   "issues": [],
+   "meta": {
+    "title": "Understanding the impact of trade policy effect uncertainty on firm‐level innovation investment",
+    "authors": [
+     {
+      "given": "Daniel",
+      "family": "Chen"
+     },
+     {
+      "given": "Nan",
+      "family": "Hu"
+     },
+     {
+      "given": "Peng",
+      "family": "Liang"
+     },
+     {
+      "given": "Morgan",
+      "family": "Swink"
+     }
+    ],
+    "venue": "Journal of Operations Management 70(2): 316–340",
+    "date": "2023-12",
+    "url": "https://doi.org/10.1002/joom.1285"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Daniel Chen",
+     "affiliation": "Hankamer School of Business Baylor University  Waco Texas USA"
+    },
+    {
+     "author": "Nan Hu",
+     "affiliation": "School of Computing and Information Systems Singapore Management University  Singapore Singapore"
+    },
+    {
+     "author": "Peng Liang",
+     "affiliation": "International Institute of Finance, School of Management The University of Science and Technology of China  Hefei China"
+    },
+    {
+     "author": "Morgan Swink",
+     "affiliation": "Neeley School of Business Texas Christian University  Fort Worth Texas USA"
+    }
+   ],
+   "business_school": null,
+   "tier": 1,
+   "anchor": "paper-understanding-the-impact-of-trade-policy-effect-uncertainty-on-firm-level-innovation-investment"
+  },
+  {
+   "cid": "C036",
+   "title": "Simplifying CLIP: Unleashing the Power of Large-Scale Models on Consumer-level Computers",
+   "ids": [
+    "arxiv:2411.14789"
+   ],
+   "norm_title": "simplifying clip unleashing the power of large scale models on consumer level computers",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2411.14789",
+   "date": "2024-11-22",
+   "decision": "exclude",
+   "reason": "CLIP 的轻量化训练研究，“consumer-level”仅指消费级硬件，与营销无关。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C037",
+   "title": "NNN: Next-Generation Neural Networks for Marketing Measurement",
+   "ids": [
+    "arxiv:2504.06212"
+   ],
+   "norm_title": "nnn next generation neural networks for marketing measurement",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2504.06212",
+   "date": "2025-04-08",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 0），作者单位：Google。提出 Transformer 版的营销组合测量方法 NNN，替代传统 MMM，并在模拟与真实数据上评估，属于营销测量方法。",
+   "track": "marketing_method",
+   "llm_use": "基于 Transformer 的神经网络用嵌入表示渠道与创意，做营销测量与销售归因",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 0,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "Transformer 核心的营销测量/归因方法，归入 3.2。",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "自动核验：arXiv API（首次提交月）",
+   "issues": [
+    "作者姓/名由 arXiv 全名自动拆分"
+   ],
+   "meta": {
+    "title": "NNN: Next-Generation Neural Networks for Marketing Measurement",
+    "authors": [
+     {
+      "given": "Thomas",
+      "family": "Mulc"
+     },
+     {
+      "given": "Mike",
+      "family": "Anderson"
+     },
+     {
+      "given": "Paul",
+      "family": "Cubre"
+     },
+     {
+      "given": "Huikun",
+      "family": "Zhang"
+     },
+     {
+      "given": "Ivy",
+      "family": "Liu"
+     },
+     {
+      "given": "Saket",
+      "family": "Kumar"
+     }
+    ],
+    "venue": "arXiv:2504.06212",
+    "date": "2025-04",
+    "url": "https://arxiv.org/abs/2504.06212"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Thomas Mulc",
+     "affiliation": "Google"
+    },
+    {
+     "author": "Mike Anderson",
+     "affiliation": "Google"
+    },
+    {
+     "author": "Paul Cubre",
+     "affiliation": "Google"
+    },
+    {
+     "author": "Huikun Zhang",
+     "affiliation": "Google"
+    },
+    {
+     "author": "Ivy Liu",
+     "affiliation": "Google"
+    },
+    {
+     "author": "Saket Kumar",
+     "affiliation": "Google"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C038",
+   "title": "Sentiment Analysis of Social Media Data for Predicting Consumer Behavior Trends Using Machine Learning",
+   "ids": [
+    "arxiv:2510.19656"
+   ],
+   "norm_title": "sentiment analysis of social media data for predicting consumer behavior trends using machine learning",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2510.19656",
+   "date": "2025-10-22",
+   "decision": "exclude",
+   "reason": "在 Sentiment140 上比较 SVM、LSTM、BERT 等常规情感分类，无营销方法创新，BERT 只是基线之一。",
+   "track": "none",
+   "llm_use": "BERT 作为多种情感分类器之一",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C039",
+   "title": "TERRA: A Transformer-Enabled Recursive R-learner for Longitudinal Heterogeneous Treatment Effect Estimation",
+   "ids": [
+    "arxiv:2510.22407"
+   ],
+   "norm_title": "terra a transformer enabled recursive r learner for longitudinal heterogeneous treatment effect estimation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2510.22407",
+   "date": "2025-10-25",
+   "decision": "exclude",
+   "reason": "通用的纵向异质性处理效应估计方法，营销仅作为应用场景之一被提及，无具体营销问题。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C040",
+   "title": "Cross-Lingual Sponsored Search via Dual-Encoder and Graph Neural Networks for Context-Aware Query Translation in Advertising Platforms",
+   "ids": [
+    "arxiv:2510.22957"
+   ],
+   "norm_title": "cross lingual sponsored search via dual encoder and graph neural networks for context aware query translation in advertising platforms",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2510.22957",
+   "date": "2025-10-27",
+   "decision": "uncertain",
+   "reason": "用多语言 Transformer 编码器做赞助搜索查询翻译并报告 CTR/CVR 提升，属广告方向，但偏工程，营销研究贡献不明确。",
+   "track": "marketing_method",
+   "llm_use": "mBERT/XLM-R 双编码器加图神经网络，做广告平台跨语言查询翻译",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 1,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "广告场景的 Transformer 方法，若保留则归入 3.2。",
+   "confidence": "low",
+   "verified": true,
+   "published": false,
+   "verification": "自动核验：arXiv API（首次提交月）",
+   "issues": [
+    "作者姓/名由 arXiv 全名自动拆分",
+    "未能确认是否有商学院作者"
+   ],
+   "meta": {
+    "title": "Cross-Lingual Sponsored Search via Dual-Encoder and Graph Neural Networks for Context-Aware Query Translation in Advertising Platforms",
+    "authors": [
+     {
+      "given": "Ziyang",
+      "family": "Gao"
+     },
+     {
+      "given": "Yuanliang",
+      "family": "Qu"
+     },
+     {
+      "given": "Yi",
+      "family": "Han"
+     }
+    ],
+    "venue": "arXiv:2510.22957",
+    "date": "2025-10",
+    "url": "https://arxiv.org/abs/2510.22957"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Ziyang Gao",
+     "affiliation": "Technical University of Munich（论文未印院系）"
+    },
+    {
+     "author": "Yuanliang Qu",
+     "affiliation": "Stevens Institute of Technology（论文未印院系）"
+    },
+    {
+     "author": "Yi Han",
+     "affiliation": "Meta"
+    }
+   ],
+   "business_school": null,
+   "tier": 2,
+   "anchor": "paper-cross-lingual-sponsored-search-via-dual-encoder-and-graph-neural-networks-for-context-aware-query-translation-in-advertising-platforms"
+  },
+  {
+   "cid": "C041",
+   "title": "Knowledge-informed Bidding with Dual-process Control for Online Advertising",
+   "ids": [
+    "arxiv:2603.04920"
+   ],
+   "norm_title": "knowledge informed bidding with dual process control for online advertising",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2603.04920",
+   "date": "2026-03-05",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 0），作者单位：Alibaba Health。用 Decision Transformer 做在线广告竞价优化，属广告方向，但偏算法工程，营销研究贡献不明确。",
+   "track": "marketing_method",
+   "llm_use": "Decision Transformer 优化在线广告多步竞价序列",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 0,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "广告竞价的 Transformer 方法，若保留则归入 3.2。",
+   "confidence": "low",
+   "verified": true,
+   "published": false,
+   "verification": "自动核验：arXiv API（首次提交月）",
+   "issues": [
+    "作者姓/名由 arXiv 全名自动拆分"
+   ],
+   "meta": {
+    "title": "Knowledge-informed Bidding with Dual-process Control for Online Advertising",
+    "authors": [
+     {
+      "given": "Huixiang",
+      "family": "Luo"
+     },
+     {
+      "given": "Longyu",
+      "family": "Gao"
+     },
+     {
+      "given": "Yaqi",
+      "family": "Liu"
+     },
+     {
+      "given": "Qianqian",
+      "family": "Chen"
+     },
+     {
+      "given": "Pingchun",
+      "family": "Huang"
+     },
+     {
+      "given": "Tianning",
+      "family": "Li"
+     }
+    ],
+    "venue": "arXiv:2603.04920",
+    "date": "2026-03",
+    "url": "https://arxiv.org/abs/2603.04920"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Huixiang Luo",
+     "affiliation": "Alibaba Health"
+    },
+    {
+     "author": "Longyu Gao",
+     "affiliation": "Alibaba Health"
+    },
+    {
+     "author": "Yaqi Liu",
+     "affiliation": "Alibaba Health"
+    },
+    {
+     "author": "Qianqian Chen",
+     "affiliation": "Alibaba Health"
+    },
+    {
+     "author": "Pingchun Huang",
+     "affiliation": "Alibaba Health"
+    },
+    {
+     "author": "Tianning Li",
+     "affiliation": "Alibaba Health"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C042",
+   "title": "CAAC: Co-attentive Actionability Classification for Assessing Patient Education Videos",
+   "ids": [
+    "doi:10.1287/ijoc.2023.0493"
+   ],
+   "norm_title": "caac co attentive actionability classification for assessing patient education videos",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/ijoc.2023.0493",
+   "date": "2026-06-09",
+   "decision": "include",
+   "reason": "发表于 INFORMS Journal on Computing（UTD 24），以 Transformer 模型为核心方法，符合 UTD 规则。",
+   "track": "utd",
+   "llm_use": "基于 Transformer 的多模态共注意力模型评估健康视频的可操作性",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 0,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "UTD 期刊中以 Transformer 为方法的内容测量研究，归入 3.2。",
+   "confidence": "medium",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.1287/ijoc.2023.0493",
+   "issues": [],
+   "meta": {
+    "title": "CAAC: Co-attentive Actionability Classification for Assessing Patient Education Videos",
+    "authors": [
+     {
+      "given": "Krishna",
+      "family": "Pothugunta"
+     },
+     {
+      "given": "Xiao",
+      "family": "Liu"
+     },
+     {
+      "given": "Anjana",
+      "family": "Susarla"
+     },
+     {
+      "given": "Rema",
+      "family": "Padman"
+     }
+    ],
+    "venue": "INFORMS Journal on Computing 38(4): 1075–1089",
+    "date": "2026-06",
+    "url": "https://doi.org/10.1287/ijoc.2023.0493"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Krishna Pothugunta",
+     "affiliation": "Department of Information Technology, Analytics and Operations, Mendoza College of Business, University of Notre Dame, Notre Dame, Indiana 46556"
+    },
+    {
+     "author": "Xiao Liu",
+     "affiliation": "Department of Information Systems, W. P. Carey School of Business, Arizona State University, Tempe, Arizona 85287"
+    },
+    {
+     "author": "Anjana Susarla",
+     "affiliation": "Department of Accounting and Information Systems, Eli Broad College of Business, Michigan State University, East Lansing, Michigan 48824"
+    },
+    {
+     "author": "Rema Padman",
+     "affiliation": "Heinz College of Information Systems and Public Policy, Carnegie Mellon University, Pittsburgh, Pennsylvania 15213"
+    }
+   ],
+   "business_school": null,
+   "tier": 1,
+   "anchor": "paper-caac-co-attentive-actionability-classification-for-assessing-patient-education-videos"
+  },
+  {
+   "cid": "C043",
+   "title": "Distributional sentiment modeling and anomaly detection for consumer complaint assessment",
+   "ids": [
+    "arxiv:2609.31653"
+   ],
+   "norm_title": "distributional sentiment modeling and anomaly detection for consumer complaint assessment",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2609.31653",
+   "date": "2026-09-14",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 0），作者单位：School of Mathematical and Statistical Sciences, Western University；Department of Population Health Science and Policy / Institute for Health Care Delivery Science, Icahn School of Medicine at Mount Sinai；Asian Institute of Digital Finance, National University of Singapore。用 Transformer 对消费者投诉文本测量情感并做异常检测，属顾客文本，但重点在风险监控，营销价值不明确。",
+   "track": "marketing_method",
+   "llm_use": "Transformer 分类器给消费者投诉文本打负面情感分，再做分布建模",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 0,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "顾客文本测量方法，若保留则归入 3.2。",
+   "confidence": "low",
+   "verified": true,
+   "published": false,
+   "verification": "自动核验：arXiv API（首次提交月）",
+   "issues": [
+    "作者姓/名由 arXiv 全名自动拆分"
+   ],
+   "meta": {
+    "title": "Distributional sentiment modeling and anomaly detection for consumer complaint assessment",
+    "authors": [
+     {
+      "given": "Peiheng",
+      "family": "Gao"
+     },
+     {
+      "given": "Chen",
+      "family": "Yang"
+     },
+     {
+      "given": "Shimin",
+      "family": "Zhang"
+     }
+    ],
+    "venue": "arXiv:2609.31653",
+    "date": "2026-09",
+    "url": "https://arxiv.org/abs/2609.31653"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Peiheng Gao",
+     "affiliation": "School of Mathematical and Statistical Sciences, Western University"
+    },
+    {
+     "author": "Chen Yang",
+     "affiliation": "Department of Population Health Science and Policy / Institute for Health Care Delivery Science, Icahn School of Medicine at Mount Sinai"
+    },
+    {
+     "author": "Shimin Zhang",
+     "affiliation": "Asian Institute of Digital Finance, National University of Singapore"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C044",
+   "title": "Severity-Channel Conditioning: An Injection-Level Study for Consumer-Device Deblurring",
+   "ids": [
+    "arxiv:2610.24599"
+   ],
+   "norm_title": "severity channel conditioning an injection level study for consumer device deblurring",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2610.24599",
+   "date": "2026-10-17",
+   "decision": "exclude",
+   "reason": "手机图像去模糊的计算机视觉研究，“consumer-device”指设备，与营销无关。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C045",
+   "title": "Integrating Offline Reinforcement Learning with Transformers for Sequential Recommendation",
+   "ids": [
+    "arxiv:2307.14450"
+   ],
+   "norm_title": "integrating offline reinforcement learning with transformers for sequential recommendation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2307.14450",
+   "date": "2023-07-26",
+   "decision": "exclude",
+   "reason": "通用序列推荐的离线 RL 工程论文，没有营销或消费者行为问题。",
+   "track": "none",
+   "llm_use": "预训练 transformer 初始化离线 RL 推荐策略",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C046",
+   "title": "Effective Slogan Generation with Noise Perturbation",
+   "ids": [
+    "arxiv:2310.04472"
+   ],
+   "norm_title": "effective slogan generation with noise perturbation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2310.04472",
+   "date": "2023-10-06",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 3），作者单位：UNIST（论文未印院系）；Graduate School of Artificial Intelligence and Department of Computer Science and Engineering, UNIST。用预训练 T5 并加入噪声扰动生成品牌口号，并做真人评价，属于广告创意生成方法。",
+   "track": "marketing_method",
+   "llm_use": "T5 transformer 加噪声扰动生成品牌广告口号",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 3,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "2.2",
+   "dataset_section": null,
+   "classification": "品牌口号的个性化/创意生成方法，归 2.2；其 1:N 数据集不是主要贡献。",
+   "confidence": "medium",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref 标题匹配到已发表版本 10.1145/3583780.3615193",
+   "issues": [],
+   "meta": {
+    "title": "Effective Slogan Generation with Noise Perturbation",
+    "authors": [
+     {
+      "given": "Jongeun",
+      "family": "Kim"
+     },
+     {
+      "given": "MinChung",
+      "family": "Kim"
+     },
+     {
+      "given": "Taehwan",
+      "family": "Kim"
+     }
+    ],
+    "venue": "Proceedings of the 32nd ACM International Conference on Information and Knowledge Management: 3998–4002",
+    "date": "2023-10",
+    "url": "https://doi.org/10.1145/3583780.3615193"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Jongeun Kim",
+     "affiliation": "UNIST（论文未印院系）"
+    },
+    {
+     "author": "MinChung Kim",
+     "affiliation": "UNIST（论文未印院系）"
+    },
+    {
+     "author": "Taehwan Kim",
+     "affiliation": "Graduate School of Artificial Intelligence and Department of Computer Science and Engineering, UNIST"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C047",
+   "title": "Retentive Decision Transformer with Adaptive Masking for Reinforcement Learning based Recommendation Systems",
+   "ids": [
+    "arxiv:2403.17634"
+   ],
+   "norm_title": "retentive decision transformer with adaptive masking for reinforcement learning based recommendation systems",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2403.17634",
+   "date": "2024-03-26",
+   "decision": "exclude",
+   "reason": "通用 RL 推荐架构改进，摘要没有营销或消费者行为问题。",
+   "track": "none",
+   "llm_use": "Retentive Decision Transformer 做 RL 推荐",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C048",
+   "title": "Predicting potentially abusive clauses in Chilean terms of services with natural language processing",
+   "ids": [
+    "arxiv:2502.00865",
+    "doi:10.1007/s10506-025-09462-w"
+   ],
+   "norm_title": "predicting potentially abusive clauses in chilean terms of services with natural language processing",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2502.00865",
+   "date": "2025-02-02",
+   "decision": "exclude",
+   "reason": "法律文本 NLP 与数据集，关注消费者合同合规，不属于营销方法或消费者模拟。",
+   "track": "none",
+   "llm_use": "评测 transformer 模型检测服务条款中的滥用条款",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C049",
+   "title": "NFTs as a Data-Rich Test Bed: Conspicuous Consumption and its Determinants",
+   "ids": [
+    "arxiv:2503.17457"
+   ],
+   "norm_title": "nfts as a data rich test bed conspicuous consumption and its determinants",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2503.17457",
+   "date": "2025-03-21",
+   "decision": "exclude",
+   "reason": "核心是炫耀性消费的理论模型，ViT 只是数据特征提取，不是核心方法组件。",
+   "track": "none",
+   "llm_use": "现成 vision transformer 提取 NFT 图像嵌入，仅作数据特征",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C050",
+   "title": "OnePiece: Bringing Context Engineering and Reasoning to Industrial Cascade Ranking System",
+   "ids": [
+    "arxiv:2509.18091"
+   ],
+   "norm_title": "onepiece bringing context engineering and reasoning to industrial cascade ranking system",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2509.18091",
+   "date": "2025-09-22",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 40），作者单位：Renmin University of China；Shopee；University of Science and Technology of China；National University of Singapore。Shopee 个性化搜索的 transformer 排序框架，有 GMV 和广告收入线上收益，但偏工业推荐系统工程，营销贡献是否足够不明。",
+   "track": "marketing_method",
+   "llm_use": "纯 Transformer 主干做检索与排序，引入上下文工程和推理",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 40,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "推荐方法，按规则归 3.2。",
+   "confidence": "low",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref 标题匹配到已发表版本 10.1145/3770855.3818456",
+   "issues": [],
+   "meta": {
+    "title": "OnePiece: Bringing Context Engineering and Reasoning to Industrial Cascade Ranking System",
+    "authors": [
+     {
+      "given": "Sunhao",
+      "family": "Dai"
+     },
+     {
+      "given": "Jiakai",
+      "family": "Tang"
+     },
+     {
+      "given": "Jiahua",
+      "family": "Wu"
+     },
+     {
+      "given": "Kun",
+      "family": "Wang"
+     },
+     {
+      "given": "Yuxuan",
+      "family": "Zhu"
+     },
+     {
+      "given": "Bingjun",
+      "family": "Chen"
+     },
+     {
+      "given": "Bangyang",
+      "family": "Hong"
+     },
+     {
+      "given": "Yu",
+      "family": "Zhao"
+     },
+     {
+      "given": "Cong",
+      "family": "Fu"
+     },
+     {
+      "given": "Kangle",
+      "family": "Wu"
+     },
+     {
+      "given": "Yabo",
+      "family": "Ni"
+     },
+     {
+      "given": "Anxiang",
+      "family": "Zeng"
+     },
+     {
+      "given": "Wenjie",
+      "family": "Wang"
+     },
+     {
+      "given": "Xu",
+      "family": "Chen"
+     },
+     {
+      "given": "Jun",
+      "family": "Xu"
+     },
+     {
+      "given": "See-Kiong",
+      "family": "Ng"
+     }
+    ],
+    "venue": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2: 7117–7128",
+    "date": "2026-08",
+    "url": "https://doi.org/10.1145/3770855.3818456"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Sunhao Dai",
+     "affiliation": "Renmin University of China"
+    },
+    {
+     "author": "Jiakai Tang",
+     "affiliation": "Renmin University of China"
+    },
+    {
+     "author": "Jiahua Wu",
+     "affiliation": "Shopee"
+    },
+    {
+     "author": "Kun Wang",
+     "affiliation": "Shopee"
+    },
+    {
+     "author": "Yuxuan Zhu",
+     "affiliation": "Shopee"
+    },
+    {
+     "author": "Bingjun Chen",
+     "affiliation": "Shopee"
+    },
+    {
+     "author": "Bangyang Hong",
+     "affiliation": "Shopee"
+    },
+    {
+     "author": "Yu Zhao",
+     "affiliation": "Shopee"
+    },
+    {
+     "author": "Cong Fu",
+     "affiliation": "Shopee"
+    },
+    {
+     "author": "Kangle Wu",
+     "affiliation": "Shopee"
+    },
+    {
+     "author": "Yabo Ni",
+     "affiliation": "Shopee"
+    },
+    {
+     "author": "Anxiang Zeng",
+     "affiliation": "Shopee"
+    },
+    {
+     "author": "Wenjie Wang",
+     "affiliation": "University of Science and Technology of China"
+    },
+    {
+     "author": "Xu Chen",
+     "affiliation": "Renmin University of China"
+    },
+    {
+     "author": "Jun Xu",
+     "affiliation": "Renmin University of China"
+    },
+    {
+     "author": "See-Kiong Ng",
+     "affiliation": "National University of Singapore"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C051",
+   "title": "Q-Regularized Generative Auto-Bidding: From Suboptimal Trajectories to Optimal Policies",
+   "ids": [
+    "arxiv:2601.02754",
+    "doi:10.1145/3770854.3783950"
+   ],
+   "norm_title": "q regularized generative auto bidding from suboptimal trajectories to optimal policies",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2601.02754",
+   "date": "2026-01-06",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 1），作者单位：School of Cyber Science and Engineering, Wuhan University; Taobao & Tmall Group of Alibaba；Taobao & Tmall Group of Alibaba；School of Cyber Science and Engineering, Wuhan University。电商广告自动出价，核心为 Decision Transformer 加 Q 正则，有 Ad GMV/ROI 线上实验，但偏通用 RL 工程，营销问题是否足够不明。",
+   "track": "marketing_method",
+   "llm_use": "Decision Transformer 主干做广告自动出价",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 1,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "广告投放决策的算法增强，归 3.2。",
+   "confidence": "low",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.1145/3770854.3783950",
+   "issues": [],
+   "meta": {
+    "title": "Q-Regularized Generative Auto-Bidding: From Suboptimal Trajectories to Optimal Policies",
+    "authors": [
+     {
+      "given": "Mingming",
+      "family": "Zhang"
+     },
+     {
+      "given": "Na",
+      "family": "Li"
+     },
+     {
+      "given": "Feiqing",
+      "family": "Zhuang"
+     },
+     {
+      "given": "Hongyang",
+      "family": "Zheng"
+     },
+     {
+      "given": "Jiangbing",
+      "family": "Zhou"
+     },
+     {
+      "given": "Wuyin",
+      "family": "Wang"
+     },
+     {
+      "given": "Shengjie",
+      "family": "Sun"
+     },
+     {
+      "given": "Xiaowei",
+      "family": "Chen"
+     },
+     {
+      "given": "Junxiong",
+      "family": "Zhu"
+     },
+     {
+      "given": "Lixin",
+      "family": "Zou"
+     },
+     {
+      "given": "Chenliang",
+      "family": "Li"
+     }
+    ],
+    "venue": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1: 2573–2583",
+    "date": "2026-04",
+    "url": "https://doi.org/10.1145/3770854.3783950"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Mingming Zhang",
+     "affiliation": "School of Cyber Science and Engineering, Wuhan University; Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Na Li",
+     "affiliation": "School of Cyber Science and Engineering, Wuhan University; Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Zhuang Feiqing",
+     "affiliation": "Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Hongyang Zheng",
+     "affiliation": "Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Jiangbing Zhou",
+     "affiliation": "Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Wang Wuyin",
+     "affiliation": "Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Sheng-jie Sun",
+     "affiliation": "Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "XiaoWei Chen",
+     "affiliation": "Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Junxiong Zhu",
+     "affiliation": "Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Lixin Zou",
+     "affiliation": "School of Cyber Science and Engineering, Wuhan University"
+    },
+    {
+     "author": "Chenliang Li",
+     "affiliation": "School of Cyber Science and Engineering, Wuhan University"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C052",
+   "title": "Affective Music Recommendation: A Rollout-Based World Model for Offline Preference Optimization",
+   "ids": [
+    "arxiv:2605.28810"
+   ],
+   "norm_title": "affective music recommendation a rollout based world model for offline preference optimization",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2605.28810",
+   "date": "2026-05-27",
+   "decision": "uncertain",
+   "reason": "用 transformer 世界模型模拟听众对音乐的反应并做 DPO 推荐，涉及用户偏好，但场景偏健康与临床，营销相关性不明。",
+   "track": "marketing_method",
+   "llm_use": "自研因果 transformer 世界模型，预测听众参与度与情绪反应",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 0,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "推荐与偏好预测方法，归 3.2。",
+   "confidence": "low",
+   "verified": true,
+   "published": false,
+   "verification": "自动核验：arXiv API（首次提交月）",
+   "issues": [
+    "作者姓/名由 arXiv 全名自动拆分"
+   ],
+   "meta": {
+    "title": "Affective Music Recommendation: A Rollout-Based World Model for Offline Preference Optimization",
+    "authors": [
+     {
+      "given": "Audrey",
+      "family": "Chan"
+     },
+     {
+      "given": "Aaron",
+      "family": "Labbé"
+     },
+     {
+      "given": "Jacob",
+      "family": "Lavoie"
+     },
+     {
+      "given": "Jordan",
+      "family": "Bannister"
+     },
+     {
+      "given": "Arsène Fansi",
+      "family": "Tchango"
+     },
+     {
+      "given": "Guillaume",
+      "family": "Lajoie"
+     },
+     {
+      "given": "Laurent",
+      "family": "Charlin"
+     }
+    ],
+    "venue": "arXiv:2605.28810",
+    "date": "2026-05",
+    "url": "https://arxiv.org/abs/2605.28810"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Laurent Charlin",
+     "affiliation": "Department of Decision Sciences, HEC Montréal (paper prints Mila)"
+    }
+   ],
+   "business_school": true,
+   "tier": 2,
+   "anchor": "paper-affective-music-recommendation-a-rollout-based-world-model-for-offline-preference-optimization"
+  },
+  {
+   "cid": "C053",
+   "title": "Ad Headline Generation using Self-Critical Masked Language Model",
+   "ids": [
+    "arxiv:2607.06818",
+    "doi:10.18653/v1/2021.naacl-industry.33"
+   ],
+   "norm_title": "ad headline generation using self critical masked language model",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2607.06818",
+   "date": "2021-06-01",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 26），作者单位：Amazon (only an amazon.com email is printed)。用 transformer MLM 加 RL 为电商卖家生成广告标题，并与人工标题比较质量，属于广告内容生成。",
+   "track": "marketing_method",
+   "llm_use": "基于 Transformer 的 masked LM 加策略梯度 RL 生成商品广告标题",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 26,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "2.2",
+   "dataset_section": null,
+   "classification": "广告创意生成与优化方法，归 2.2。",
+   "confidence": "medium",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.18653/v1/2021.naacl-industry.33",
+   "issues": [],
+   "meta": {
+    "title": "Ad Headline Generation using Self-Critical Masked Language Model",
+    "authors": [
+     {
+      "given": "Yashal Shakti",
+      "family": "Kanungo"
+     },
+     {
+      "given": "Sumit",
+      "family": "Negi"
+     },
+     {
+      "given": "Aruna",
+      "family": "Rajan"
+     }
+    ],
+    "venue": "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies: Industry Papers: 263–271",
+    "date": "2021-06",
+    "url": "https://doi.org/10.18653/v1/2021.naacl-industry.33"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Yashal Shakti Kanungo",
+     "affiliation": "Amazon (only an amazon.com email is printed)"
+    },
+    {
+     "author": "Sumit Negi",
+     "affiliation": "Amazon (only an amazon.com email is printed)"
+    },
+    {
+     "author": "Aruna Rajan",
+     "affiliation": "Amazon (only an amazon.com email is printed)"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C054",
+   "title": "From Prediction to Incrementality: Causal Optimization for Large-Scale Targeting and Recommendation",
+   "ids": [
+    "arxiv:2608.10182"
+   ],
+   "norm_title": "from prediction to incrementality causal optimization for large scale targeting and recommendation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2608.10182",
+   "date": "2026-08-10",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 0），作者单位：LinkedIn, Seattle；LinkedIn, Sunnyvale。面向营销活动与通知的增量效应定向框架，transformer 是因果估计核心组件，并在 LinkedIn 做 A/B 测试。",
+   "track": "marketing_method",
+   "llm_use": "带 Transformer 主干的因果神经网络估计个体处理效应，并编码序列上下文",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 0,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "营销定向与异质处理效应的预测方法，归 3.2。",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "自动核验：arXiv API（首次提交月）",
+   "issues": [
+    "作者姓/名由 arXiv 全名自动拆分"
+   ],
+   "meta": {
+    "title": "From Prediction to Incrementality: Causal Optimization for Large-Scale Targeting and Recommendation",
+    "authors": [
+     {
+      "given": "Changshuai",
+      "family": "Wei"
+     },
+     {
+      "given": "John",
+      "family": "Bencina"
+     },
+     {
+      "given": "Phuc",
+      "family": "Nguyen"
+     },
+     {
+      "given": "Andre Assuncao Silva T",
+      "family": "Ribeiro"
+     },
+     {
+      "given": "Benjamin",
+      "family": "Zelditch"
+     }
+    ],
+    "venue": "arXiv:2608.10182",
+    "date": "2026-08",
+    "url": "https://arxiv.org/abs/2608.10182"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Changshuai Wei",
+     "affiliation": "LinkedIn, Seattle"
+    },
+    {
+     "author": "John Bencina",
+     "affiliation": "LinkedIn, Sunnyvale"
+    },
+    {
+     "author": "Phuc Nguyen",
+     "affiliation": "LinkedIn, Sunnyvale"
+    },
+    {
+     "author": "Andre Assuncao Silva T Ribeiro",
+     "affiliation": "LinkedIn, Sunnyvale"
+    },
+    {
+     "author": "Benjamin Zelditch",
+     "affiliation": "LinkedIn, Sunnyvale"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C055",
+   "title": "Persona-aware Generative Model for Code-mixed Language",
+   "ids": [
+    "arxiv:2309.02915"
+   ],
+   "norm_title": "persona aware generative model for code mixed language",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2309.02915",
+   "date": "2023-09-06",
+   "decision": "exclude",
+   "reason": "代码混合文本生成的 NLP 工作，与营销或消费者模拟无关。",
+   "track": "none",
+   "llm_use": "Transformer 编码器-解码器生成带 persona 的混合语码文本",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C056",
+   "title": "Know in AdVance: Linear-Complexity Forecasting of Ad Campaign Performance with Evolving User Interest",
+   "ids": [
+    "arxiv:2405.10681"
+   ],
+   "norm_title": "know in advance linear complexity forecasting of ad campaign performance with evolving user interest",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2405.10681",
+   "date": "2024-05-17",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 2），作者单位：National Institute of Informatics, Tokyo；Tencent；University of Science and Technology of China。提出以 Transformer 编码竞价序列、预测实时竞价广告活动成本与收益的框架，并在腾讯广告平台上线、A/B 测试 ARPU 提升 4.5%，属广告预测方法。",
+   "track": "marketing_method",
+   "llm_use": "Transformer Encoder 将每场广告竞价压缩为嵌入，并结合 SSM 预测广告活动表现",
+   "human_data": "Tencent 广告平台真实竞价数据与 A/B 测试",
+   "evidence": "abstract-only",
+   "citations": 2,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "广告活动效果预测属于预测类营销方法，归入 3.2。",
+   "confidence": "medium",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref 标题匹配到已发表版本 10.1145/3637528.3671528",
+   "issues": [],
+   "meta": {
+    "title": "Know in AdVance: Linear-Complexity Forecasting of Ad Campaign Performance with Evolving User Interest",
+    "authors": [
+     {
+      "given": "Xiaoyu",
+      "family": "Wang"
+     },
+     {
+      "given": "Yonghui",
+      "family": "Guo"
+     },
+     {
+      "given": "Hui",
+      "family": "Sheng"
+     },
+     {
+      "given": "Peili",
+      "family": "Lv"
+     },
+     {
+      "given": "Chi",
+      "family": "Zhou"
+     },
+     {
+      "given": "Wei",
+      "family": "Huang"
+     },
+     {
+      "given": "Shiqin",
+      "family": "Ta"
+     },
+     {
+      "given": "Dongbo",
+      "family": "Huang"
+     },
+     {
+      "given": "Xiujin",
+      "family": "Yang"
+     },
+     {
+      "given": "Lan",
+      "family": "Xu"
+     },
+     {
+      "given": "Hao",
+      "family": "Zhou"
+     },
+     {
+      "given": "Yusheng",
+      "family": "Ji"
+     }
+    ],
+    "venue": "Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining: 5926–5937",
+    "date": "2024-08",
+    "url": "https://doi.org/10.1145/3637528.3671528"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "XiaoYu Wang",
+     "affiliation": "National Institute of Informatics, Tokyo"
+    },
+    {
+     "author": "YongHui Guo",
+     "affiliation": "Tencent"
+    },
+    {
+     "author": "Hui Sheng",
+     "affiliation": "Tencent"
+    },
+    {
+     "author": "Peili Lv",
+     "affiliation": "Tencent"
+    },
+    {
+     "author": "Chi Zhou",
+     "affiliation": "Tencent"
+    },
+    {
+     "author": "Wei Huang",
+     "affiliation": "Tencent"
+    },
+    {
+     "author": "ShiQin Ta",
+     "affiliation": "Tencent"
+    },
+    {
+     "author": "Dongbo Huang",
+     "affiliation": "Tencent"
+    },
+    {
+     "author": "XiuJin Yang",
+     "affiliation": "Tencent"
+    },
+    {
+     "author": "Lan Xu",
+     "affiliation": "Tencent"
+    },
+    {
+     "author": "Hao Zhou",
+     "affiliation": "University of Science and Technology of China"
+    },
+    {
+     "author": "Yusheng Ji",
+     "affiliation": "National Institute of Informatics, Tokyo"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C057",
+   "title": "polyGen: A Learning Framework for Atomic-level Polymer Structure Generation",
+   "ids": [
+    "arxiv:2504.17656"
+   ],
+   "norm_title": "polygen a learning framework for atomic level polymer structure generation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2504.17656",
+   "date": "2025-04-24",
+   "decision": "exclude",
+   "reason": "材料科学中的聚合物结构生成，与营销或消费者无关。",
+   "track": "none",
+   "llm_use": "扩散 transformer 生成聚合物结构",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C058",
+   "title": "A Multi-Agent, Laxity-Based Aggregation Strategy for Cost-Effective Electric Vehicle Charging and Local Transformer Overload Prevention",
+   "ids": [
+    "arxiv:2504.17575",
+    "doi:10.3390/su17093847"
+   ],
+   "norm_title": "a multi agent laxity based aggregation strategy for cost effective electric vehicle charging and local transformer overload prevention",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2504.17575",
+   "date": "2025-04-24",
+   "decision": "exclude",
+   "reason": "这里的 transformer 指电力变压器，研究的是电动车充电调度，与机器学习和营销无关。",
+   "track": "none",
+   "llm_use": "电力变压器（非机器学习含义）",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C059",
+   "title": "LeDiFlow: Learned Distribution-guided Flow Matching to Accelerate Image Generation",
+   "ids": [
+    "arxiv:2505.20723"
+   ],
+   "norm_title": "lediflow learned distribution guided flow matching to accelerate image generation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2505.20723",
+   "date": "2025-05-27",
+   "decision": "exclude",
+   "reason": "通用图像生成加速方法，没有营销或消费者问题。",
+   "track": "none",
+   "llm_use": "transformer 架构用于流匹配图像生成",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C060",
+   "title": "A Visualization Framework for Exploring Multi-Agent-Based Simulations Case Study of an Electric Vehicle Home Charging Ecosystem",
+   "ids": [
+    "arxiv:2506.20400",
+    "doi:10.1007/978-3-032-03101-3_26"
+   ],
+   "norm_title": "a visualization framework for exploring multi agent based simulations case study of an electric vehicle home charging ecosystem",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2506.20400",
+   "date": "2025-06-25",
+   "decision": "exclude",
+   "reason": "电动车充电多智能体仿真的可视化仪表盘，transformer 指电力设备，与营销无关。",
+   "track": "none",
+   "llm_use": "电力变压器（非机器学习含义）",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C061",
+   "title": "Language Models for Adult Service Website Text Analysis",
+   "ids": [
+    "arxiv:2507.10743"
+   ],
+   "norm_title": "language models for adult service website text analysis",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2507.10743",
+   "date": "2025-07-14",
+   "decision": "exclude",
+   "reason": "面向打击人口贩卖的执法文本分析，不涉及营销或消费者行为问题。",
+   "track": "none",
+   "llm_use": "自研与微调 transformer 分析成人服务网站广告文本",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C062",
+   "title": "Dynamic Lagging for Time-Series Forecasting in E-Commerce Finance: Mitigating Information Loss with A Hybrid ML Architecture",
+   "ids": [
+    "arxiv:2509.20244"
+   ],
+   "norm_title": "dynamic lagging for time series forecasting in e commerce finance mitigating information loss with a hybrid ml architecture",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2509.20244",
+   "date": "2025-09-24",
+   "decision": "exclude",
+   "reason": "电商财务时间序列预测，方法是经典统计与集成学习，transformer 仅被顺带提及，也不属于营销问题。",
+   "track": "none",
+   "llm_use": "Transformer 仅作为对比基线被提及",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C063",
+   "title": "Escaping Local Optima in the Waddington Landscape: A Two-Stage TRPO-PPO Approach for Single-Cell Perturbation Analysis",
+   "ids": [
+    "arxiv:2510.13018"
+   ],
+   "norm_title": "escaping local optima in the waddington landscape a two stage trpo ppo approach for single cell perturbation analysis",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2510.13018",
+   "date": "2025-10-14",
+   "decision": "exclude",
+   "reason": "单细胞扰动分析的强化学习方法，属生物学，与营销无关。",
+   "track": "none",
+   "llm_use": "transformer 仅在背景中提及",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C064",
+   "title": "Autoregressive deep learning for real-time simulation of soft tissue dynamics during virtual neurosurgery",
+   "ids": [
+    "arxiv:2601.13676"
+   ],
+   "norm_title": "autoregressive deep learning for real time simulation of soft tissue dynamics during virtual neurosurgery",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2601.13676",
+   "date": "2026-01-20",
+   "decision": "exclude",
+   "reason": "神经外科虚拟仿真，与营销无关。",
+   "track": "none",
+   "llm_use": "Universal Physics Transformer 做脑组织形变代理模型",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C065",
+   "title": "FluidWorld: Reaction-Diffusion Dynamics as a Predictive Substrate for World Models",
+   "ids": [
+    "arxiv:2603.21315"
+   ],
+   "norm_title": "fluidworld reaction diffusion dynamics as a predictive substrate for world models",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2603.21315",
+   "date": "2026-03-22",
+   "decision": "exclude",
+   "reason": "世界模型的视频预测研究，与营销无关。",
+   "track": "none",
+   "llm_use": "transformer 仅作对比基线",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C066",
+   "title": "PoreDiT: A Scalable Generative Model for Large-Scale Digital Rock Reconstruction",
+   "ids": [
+    "arxiv:2604.10171"
+   ],
+   "norm_title": "poredit a scalable generative model for large scale digital rock reconstruction",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2604.10171",
+   "date": "2026-04-11",
+   "decision": "exclude",
+   "reason": "岩石物理的数字岩心重建，与营销无关。",
+   "track": "none",
+   "llm_use": "3D Swin Transformer 生成数字岩心",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C067",
+   "title": "Generative Auto-Bidding with Unified Modeling and Exploration",
+   "ids": [
+    "arxiv:2605.19457",
+    "doi:10.1145/3805712.3809661"
+   ],
+   "norm_title": "generative auto bidding with unified modeling and exploration",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2605.19457",
+   "date": "2026-05-19",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 3），作者单位：School of Cyber Science and Engineering, Wuhan University; Taobao & Tmall Group of Alibaba；Taobao & Tmall Group of Alibaba；School of Cyber Science and Engineering, Wuhan University。用 Decision Transformer 做广告自动出价,并在淘宝广告平台线上部署,transformer 是核心组件,属于广告方法。",
+   "track": "marketing_method",
+   "llm_use": "Decision Transformer 建模历史出价动作与状态转移,用于广告自动出价",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 3,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "广告出价属于在线学习/决策类算法方法,归入 3.2。",
+   "confidence": "medium",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.1145/3805712.3809661",
+   "issues": [],
+   "meta": {
+    "title": "Generative Auto-Bidding with Unified Modeling and Exploration",
+    "authors": [
+     {
+      "given": "Mingming",
+      "family": "Zhang"
+     },
+     {
+      "given": "Feiqing",
+      "family": "Zhuang"
+     },
+     {
+      "given": "Na",
+      "family": "Li"
+     },
+     {
+      "given": "Shengjie",
+      "family": "Sun"
+     },
+     {
+      "given": "Xiaowei",
+      "family": "Chen"
+     },
+     {
+      "given": "Junxiong",
+      "family": "Zhu"
+     },
+     {
+      "given": "Fei",
+      "family": "Xiao"
+     },
+     {
+      "given": "Keping",
+      "family": "Yang"
+     },
+     {
+      "given": "Lixin",
+      "family": "Zou"
+     },
+     {
+      "given": "Chenliang",
+      "family": "Li"
+     }
+    ],
+    "venue": "Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval: 2442–2452",
+    "date": "2026-07",
+    "url": "https://doi.org/10.1145/3805712.3809661"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Mingming Zhang",
+     "affiliation": "School of Cyber Science and Engineering, Wuhan University; Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Feiqing Zhuang",
+     "affiliation": "Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Na Li",
+     "affiliation": "School of Cyber Science and Engineering, Wuhan University; Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Shengjie Sun",
+     "affiliation": "Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Xiaowei Chen",
+     "affiliation": "Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Junxiong Zhu",
+     "affiliation": "Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Fei Xiao",
+     "affiliation": "Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Keping Yang",
+     "affiliation": "Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Lixin Zou",
+     "affiliation": "School of Cyber Science and Engineering, Wuhan University"
+    },
+    {
+     "author": "Chenliang Li",
+     "affiliation": "School of Cyber Science and Engineering, Wuhan University"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C068",
+   "title": "When Does Recurrence Become an Algorithm? Convergence Selection in Weight-Tied Looped Transformers",
+   "ids": [
+    "arxiv:2607.20594"
+   ],
+   "norm_title": "when does recurrence become an algorithm convergence selection in weight tied looped transformers",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2607.20594",
+   "date": "2026-07-22",
+   "decision": "exclude",
+   "reason": "研究循环 transformer 在群字问题上的算法学习,与营销无关。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C069",
+   "title": "Belief-Guided Decision Making with Uncertainty Gating in the Game of Go",
+   "ids": [
+    "arxiv:2607.26946"
+   ],
+   "norm_title": "belief guided decision making with uncertainty gating in the game of go",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2607.26946",
+   "date": "2026-07-29",
+   "decision": "exclude",
+   "reason": "围棋决策架构,transformer 仅为记忆模块,与营销无关。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C070",
+   "title": "TAPESTRY: A Single Backbone for Video Generation and Robot Control",
+   "ids": [
+    "arxiv:2610.36823"
+   ],
+   "norm_title": "tapestry a single backbone for video generation and robot control",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2610.36823",
+   "date": "2026-10-27",
+   "decision": "exclude",
+   "reason": "视频扩散 transformer 用于机器人控制,与营销无关。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C071",
+   "title": "RankFormer: Listwise Learning-to-Rank Using Listwide Labels",
+   "ids": [
+    "arxiv:2306.05808",
+    "doi:10.1145/3580305.3599892"
+   ],
+   "norm_title": "rankformer listwise learning to rank using listwide labels",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2306.05808",
+   "date": "2023-06-09",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 28），作者单位：Amazon, Luxembourg; Ghent University (no faculty printed; the paper names no business faculty)；Amazon, Luxembourg。提出以 Transformer 为核心的电商搜索排序模型,用 Amazon Search 数据和线上实验验证,属于推荐/排序方法。",
+   "track": "marketing_method",
+   "llm_use": "以 Transformer 为核心的 RankFormer 排序模型,利用整列表反馈,在亚马逊搜索数据上验证",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 28,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "电商排序与推荐方法,归入 3.2。",
+   "confidence": "medium",
+   "verified": true,
+   "published": true,
+   "verification": "自动核验：Crossref DOI 10.1145/3580305.3599892",
+   "issues": [],
+   "meta": {
+    "title": "RankFormer: Listwise Learning-to-Rank Using Listwide Labels",
+    "authors": [
+     {
+      "given": "Maarten",
+      "family": "Buyl"
+     },
+     {
+      "given": "Paul",
+      "family": "Missault"
+     },
+     {
+      "given": "Pierre-Antoine",
+      "family": "Sondag"
+     }
+    ],
+    "venue": "Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining: 3762–3773",
+    "date": "2023-08",
+    "url": "https://doi.org/10.1145/3580305.3599892"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Maarten Buyl",
+     "affiliation": "Amazon, Luxembourg; Ghent University (no faculty printed; the paper names no business faculty)"
+    },
+    {
+     "author": "Paul Missault",
+     "affiliation": "Amazon, Luxembourg"
+    },
+    {
+     "author": "Pierre-Antoine Sondag",
+     "affiliation": "Amazon, Luxembourg"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C072",
+   "title": "Beyond Relevance: An Adaptive Exploration-Based Framework for Personalized Recommendations",
+   "ids": [
+    "arxiv:2503.19525"
+   ],
+   "norm_title": "beyond relevance an adaptive exploration based framework for personalized recommendations",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2503.19525",
+   "date": "2025-03-25",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 4），作者单位：Faculty of Engineering, Free University of Bozen-Bolzano。推荐框架以 sentence-transformer 嵌入为基础,但仅用 MovieLens 和模拟用户,营销贡献不明确,transformer 也只是嵌入组件。",
+   "track": "marketing_method",
+   "llm_use": "sentence-transformer 嵌入表示物品并在线聚类,用于探索式推荐",
+   "human_data": "MovieLens;300 名模拟用户",
+   "evidence": "abstract-only",
+   "citations": 4,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "若保留,属推荐方法,归 3.2。",
+   "confidence": "low",
+   "verified": true,
+   "published": false,
+   "verification": "自动核验：arXiv API（首次提交月）",
+   "issues": [
+    "作者姓/名由 arXiv 全名自动拆分"
+   ],
+   "meta": {
+    "title": "Beyond Relevance: An Adaptive Exploration-Based Framework for Personalized Recommendations",
+    "authors": [
+     {
+      "given": "Edoardo",
+      "family": "Bianchi"
+     }
+    ],
+    "venue": "arXiv:2503.19525",
+    "date": "2025-03",
+    "url": "https://arxiv.org/abs/2503.19525"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Edoardo Bianchi",
+     "affiliation": "Faculty of Engineering, Free University of Bozen-Bolzano"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C073",
+   "title": "BnSentMix: A Diverse Bengali-English Code-Mixed Dataset for Sentiment Analysis",
+   "ids": [
+    "arxiv:2408.08964"
+   ],
+   "norm_title": "bnsentmix a diverse bengali english code mixed dataset for sentiment analysis",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2408.08964",
+   "date": "2024-08-16",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 35），作者单位：Department of Computer Science and Engineering, Islamic University of Technology。发布含电商评论的孟加拉语混合文本情感数据集并训练 transformer 编码器,但数据主要来自社交媒体,营销应用不够明确。",
+   "track": "marketing_method",
+   "llm_use": "在孟加拉-英语混合语料上继续预训练 transformer 编码器作情感分类基线",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": 35,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": "3.3",
+   "classification": "客户文本情感分析数据集与方法,归 3.2,数据集可入 3.3。",
+   "confidence": "low",
+   "verified": true,
+   "published": false,
+   "verification": "自动核验：arXiv API（首次提交月）",
+   "issues": [
+    "作者姓/名由 arXiv 全名自动拆分"
+   ],
+   "meta": {
+    "title": "BnSentMix: A Diverse Bengali-English Code-Mixed Dataset for Sentiment Analysis",
+    "authors": [
+     {
+      "given": "Sadia",
+      "family": "Alam"
+     },
+     {
+      "given": "Md Farhan",
+      "family": "Ishmam"
+     },
+     {
+      "given": "Navid Hasin",
+      "family": "Alvee"
+     },
+     {
+      "given": "Md Shahnewaz",
+      "family": "Siddique"
+     },
+     {
+      "given": "Md Azam",
+      "family": "Hossain"
+     },
+     {
+      "given": "Abu Raihan Mostofa",
+      "family": "Kamal"
+     }
+    ],
+    "venue": "arXiv:2408.08964",
+    "date": "2024-08",
+    "url": "https://arxiv.org/abs/2408.08964"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Sadia Alam",
+     "affiliation": "Department of Computer Science and Engineering, Islamic University of Technology"
+    },
+    {
+     "author": "Md Farhan Ishmam",
+     "affiliation": "Department of Computer Science and Engineering, Islamic University of Technology"
+    },
+    {
+     "author": "Navid Hasin Alvee",
+     "affiliation": "Department of Computer Science and Engineering, Islamic University of Technology"
+    },
+    {
+     "author": "Md Shahnewaz Siddique",
+     "affiliation": "Department of Computer Science and Engineering, Islamic University of Technology"
+    },
+    {
+     "author": "Md Azam Hossain",
+     "affiliation": "Department of Computer Science and Engineering, Islamic University of Technology"
+    },
+    {
+     "author": "Abu Raihan Mostofa Kamal",
+     "affiliation": "Department of Computer Science and Engineering, Islamic University of Technology"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C074",
+   "title": "Detecting Financial Fraud with Hybrid Deep Learning: A Mix-of-Experts Approach to Sequential and Anomalous Patterns",
+   "ids": [
+    "arxiv:2504.03750"
+   ],
+   "norm_title": "detecting financial fraud with hybrid deep learning a mix of experts approach to sequential and anomalous patterns",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2504.03750",
+   "date": "2025-04-01",
+   "decision": "exclude",
+   "reason": "信用卡欺诈检测的混合深度学习模型,属金融风控,不涉及营销问题。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C075",
+   "title": "Inverse Learning of Latent Risk-Neutral Densities from Irregular Option Quotes",
+   "ids": [
+    "arxiv:2607.27188"
+   ],
+   "norm_title": "inverse learning of latent risk neutral densities from irregular option quotes",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2607.27188",
+   "date": "2026-07-29",
+   "decision": "exclude",
+   "reason": "期权报价的风险中性密度反演,属金融,与营销无关。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  }
+ ]
+}

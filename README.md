@@ -2,7 +2,7 @@
 
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
-![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-72-4C70C8?style=for-the-badge)
+![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-74-4C70C8?style=for-the-badge)
 ![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-29-D98757?style=for-the-badge)
 ![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-18-9865C6?style=for-the-badge)
 
@@ -270,6 +270,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Tsai, Yi-Lin, and Yung-Hsiu Lai. "Seeing Is Not Perceiving: When Synthetic Consumers Can and Cannot Pretest Visual Marketing." arXiv:2609.25677 (2026-09). [[link]](https://arxiv.org/abs/2609.25677)
 
+<a id="paper-decision-models-as-scalable-economic-surrogates-that-capture-human-variation"></a>
+
+- Saxena, Maxime, Fabio Caccioli, and R. Maria del Rio-Chanona. "Decision Models as Scalable Economic Surrogates that Capture Human Variation." arXiv:2611.05553 (2026-11). [[link]](https://arxiv.org/abs/2611.05553)
+
 ### 1.3 Methods and Improvements
 
 <a id="paper-a-foundation-model-to-predict-and-capture-human-cognition"></a>
@@ -315,6 +319,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-distributionally-robust-llm-augmentation-of-discrete-choice-models"></a>
 
 - Liu, Tianming, et al. "Distributionally Robust LLM Augmentation of Discrete Choice Models." SSRN 7500939 (2026-09). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7500939)
+
+<a id="paper-designing-behavioral-profiles-for-language-model-simulation-of-out-of-distribution-human-behavior"></a>
+
+- Na, Robin, Kehang Zhu, Logan Cross, and Michiel A. Bakker. "Designing Behavioral Profiles for Language Model Simulation of Out-of-Distribution Human Behavior." arXiv:2611.00661 (2026-10). [[link]](https://arxiv.org/abs/2611.00661)
 
 ### 1.4 Benchmarks and Datasets
 

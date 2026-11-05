@@ -35,8 +35,8 @@ Be strict. A typical week has only a handful of includes. Do not infer relevance
 
 **UTD 24 journals (tier 1).** The venue may be one of the UTD 24 journals listed under `journal_sets.utd24` in `scripts/scan_config.json`. For those papers:
 
-- Mark `include` whenever an LLM or generative AI is the paper's research tool, research object or method component, even if it fits none of tracks A, B or C. Use `track: "utd"` in that case.
-- Mark `exclude` only if AI is mentioned in passing, or if the paper is about pre-LLM rule-based chatbots or classic machine learning.
+- Mark `include` whenever an LLM, a transformer model or generative AI is the paper's research tool, research object or method component, even if it fits none of tracks A, B or C. Use `track: "utd"` in that case.
+- Mark `exclude` only if AI is mentioned in passing, or if the paper is about pre-LLM rule-based chatbots or classic machine learning. Transformer models count as LLMs, not as classic machine learning, including transformers trained on marketing data such as customer journeys or consumption sequences.
 
 **Notable flag (tier 3).** Most papers without business-school authors are dropped later unless they are highly cited. If such a paper is exceptionally valuable for marketing research, set `notable: true` and write a one-sentence `notable_reason` in 简体中文. Examples: a dataset or benchmark the field widely uses, or a method marketing researchers clearly need. Use the flag sparingly, for perhaps one paper in fifty.
 

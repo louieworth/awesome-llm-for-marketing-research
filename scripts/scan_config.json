@@ -11,9 +11,11 @@
     "GPT-4o",
     "ChatGPT",
     "language model agents",
-    "generative AI"
+    "generative AI",
+    "transformer",
+    "transformers"
   ],
-  "llm_regex": "\\b(large language models?|LLMs?|GPT-?\\d\\w*|ChatGPT|Claude|Gemini|Llama|language[- ]model agents?|generative AI|GenAI|foundation models?)\\b",
+  "llm_regex": "\\b(large language models?|LLMs?|GPT-?\\d\\w*|ChatGPT|Claude|Gemini|Llama|language[- ]model agents?|generative AI|GenAI|foundation models?|transformers?)\\b",
   "domain_terms": [
     "marketing",
     "consumer",
@@ -208,7 +210,7 @@
       "Review of Financial Studies": "0893-9454"
     }
   },
-  "genai_regex": "\\b(large language models?|LLMs?|GPT-?\\d\\w*|ChatGPT|Claude|Gemini|Llama|generative (AI|artificial intelligence|models?|agents?)|GenAI|AI[- ]generated|chatbots?|conversational (AI|agents?)|foundation models?|language models?|text-to-image|diffusion models?|AI agents?|agentic AI|synthetic (respondents?|consumers?|data))\\b",
+  "genai_regex": "\\b(large language models?|LLMs?|GPT-?\\d\\w*|ChatGPT|Claude|Gemini|Llama|generative (AI|artificial intelligence|models?|agents?)|GenAI|AI[- ]generated|chatbots?|conversational (AI|agents?)|foundation models?|transformers?|language models?|text-to-image|diffusion models?|AI agents?|agentic AI|synthetic (respondents?|consumers?|data))\\b",
   "influence": {
     "min_citations": 100,
     "min_citations_per_year": 50

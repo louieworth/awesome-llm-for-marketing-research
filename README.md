@@ -3,7 +3,7 @@
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
 ![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-74-4C70C8?style=for-the-badge)
-![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-29-D98757?style=for-the-badge)
+![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-30-D98757?style=for-the-badge)
 ![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-18-9865C6?style=for-the-badge)
 
 </div>
@@ -465,6 +465,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-fspo-few-shot-optimization-of-synthetic-preferences-personalizes-to-real-users"></a>
 
 - Singh, Anikait, et al. "FSPO: Few-Shot Optimization of Synthetic Preferences Personalizes to Real Users." ICLR 2026 (2026-04). [[link]](https://proceedings.iclr.cc/paper_files/paper/2026/file/b2118ec72f6396c7e7bb2407e2d05eb4-Paper-Conference.pdf)
+
+<a id="paper-align-generative-artificial-intelligence-with-human-preferences-online-review-management"></a>
+
+- Wang, Yanan, and Yong Ge. "Align Generative Artificial Intelligence with Human Preferences: A Novel Large Language Model Fine-Tuning Method for Online Review Management." Information Systems Research (2026-04). [[link]](https://doi.org/10.1287/isre.2024.1518)
 
 <a id="paper-design-your-ad-personalized-advertising-image-and-text-generation-with-unified-autoregressive-models"></a>
 

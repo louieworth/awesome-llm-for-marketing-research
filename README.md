@@ -262,10 +262,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Netzer, Oded, and Rajan Sambandam. "Synthetic Data in Marketing Research: How to Evaluate and When to Trust." arXiv:2609.13995 (2026-09). [[link]](https://arxiv.org/abs/2609.13995)
 
-<a id="paper-measuring-the-digital-twin-separating-individuation-from-population-regularity-in-llm-survey-twins"></a>
-
-- Miller, Moses. "Measuring the Digital Twin: Separating Individuation from Population Regularity in LLM Survey Twins." Working paper, Reichman University (2026), no public copy yet; link goes to its citation in Netzer and Sambandam, arXiv 2609.13995 [[link]](https://arxiv.org/pdf/2609.13995#page=31)
-
 <a id="paper-seeing-is-not-perceiving-when-synthetic-consumers-can-and-cannot-pretest-visual-marketing"></a>
 
 - Tsai, Yi-Lin, and Yung-Hsiu Lai. "Seeing Is Not Perceiving: When Synthetic Consumers Can and Cannot Pretest Visual Marketing." arXiv:2609.25677 (2026-09). [[link]](https://arxiv.org/abs/2609.25677)
@@ -273,6 +269,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-decision-models-as-scalable-economic-surrogates-that-capture-human-variation"></a>
 
 - Saxena, Maxime, Fabio Caccioli, and R. Maria del Rio-Chanona. "Decision Models as Scalable Economic Surrogates that Capture Human Variation." arXiv:2611.05553 (2026-11). [[link]](https://arxiv.org/abs/2611.05553)
+
+<a id="paper-measuring-the-digital-twin-separating-individuation-from-population-regularity-in-llm-survey-twins"></a>
+
+- Miller, Moses. "Measuring the Digital Twin: Separating Individuation from Population Regularity in LLM Survey Twins." Working paper, Reichman University (2026), no public copy yet; link goes to its citation in Netzer and Sambandam, arXiv 2609.13995 [[link]](https://arxiv.org/pdf/2609.13995#page=31)
 
 ### 1.3 Methods and Improvements
 
@@ -416,6 +416,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Teeny, Jacob D., et al. "The Promise of Generative AI for Personalized Persuasion." Current Directions in Psychological Science (2026-05). [[link]](https://doi.org/10.1177/09637214261424859)
 
+<a id="paper-competition-and-diversity-in-generative-ai"></a>
+
+- Raghavan, Manish. "Competition and Diversity in Generative AI." Management Science (2026-10). [[link]](https://doi.org/10.1287/mnsc.2025.02761)
+
 <a id="paper-ai-in-disguise-quasi-experimental-analysis-of-a-large-scale-deployment-of-ai-generated-ads"></a>
 
 - Exner, Yannick, et al. "AI in Disguise—Quasi-Experimental Analysis of a Large-Scale Deployment of AI-Generated Ads." SSRN 5096969 (2025-03). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5096969)
@@ -448,10 +452,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Agarwal, Saharsh, and Ananya Sen. "The Impact of Google AI Overviews on Publisher Traffic and User Experience: Evidence from a Field Experiment." SSRN 6513059 (2026-04). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6513059)
 
-<a id="paper-competition-and-diversity-in-generative-ai"></a>
-
-- Raghavan, Manish. "Competition and Diversity in Generative AI." Management Science (2026-10). [[link]](https://doi.org/10.1287/mnsc.2025.02761)
-
 ### 2.2 Methods and Improvements
 
 <a id="paper-long-term-ad-memorability-understanding-generating-memorable-ads"></a>
@@ -478,6 +478,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Ellickson, Paul B., et al. "Evaluating Novel Unstructured Treatments with Generative AI: A Causal Prediction Framework." Journal of Marketing Research (2026-08). [[link]](https://doi.org/10.1177/00222437261476639)
 
+<a id="paper-leveraging-generative-artificial-intelligence-to-create-visual-content-in-digital-advertising"></a>
+
+- Daviet, Remi, and Yohei Nishimura. "Leveraging Generative Artificial Intelligence to Create Visual Content in Digital Advertising." Marketing Science 45(5): 893–912 (2026-09). [[link]](https://doi.org/10.1287/mksc.2024.1130)
+
 <a id="paper-causal-alignment-augmenting-language-models-with-a-b-tests"></a>
 
 - Angelopoulos, Panagiotis, Kevin Lee, and Sanjog Misra. "Causal Alignment: Augmenting Language Models with A/B Tests." SSRN 4781850 (2024-04). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4781850)
@@ -497,10 +501,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-offline-to-online-creative-optimization-with-generative-models-and-adaptive-testing"></a>
 
 - Lee, Kevin, et al. "Offline-to-Online Creative Optimization with Generative Models and Adaptive Testing." arXiv:2607.23696 (2026-07). [[link]](https://arxiv.org/abs/2607.23696)
-
-<a id="paper-leveraging-generative-artificial-intelligence-to-create-visual-content-in-digital-advertising"></a>
-
-- Daviet, Remi, and Yohei Nishimura. "Leveraging Generative Artificial Intelligence to Create Visual Content in Digital Advertising." Marketing Science 45(5): 893–912 (2026-09). [[link]](https://doi.org/10.1287/mksc.2024.1130)
 
 ### 2.3 Benchmarks and Datasets
 

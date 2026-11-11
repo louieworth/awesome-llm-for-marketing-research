@@ -1,0 +1,276 @@
+{
+ "scan_date": "2026-11-02",
+ "window": [
+  "2026-10-24",
+  "2026-11-02"
+ ],
+ "stats": {
+  "mode": "weekly",
+  "fetched_arxiv": 120,
+  "fetched_ssrn": 2487,
+  "fetched_journals": 71,
+  "abstracts_missing": 10,
+  "abstracts_filled": 0,
+  "keyword_match": 68,
+  "already_in_collection": 1,
+  "already_screened": 55,
+  "new": 12,
+  "to_screen": 12,
+  "over_cap": 0
+ },
+ "items": [
+  {
+   "cid": "C001",
+   "title": "Same Question, Different Answers: Auditing Persona-Dependent Variation in Six LLMs on Smoking-Cessation Advice",
+   "ids": [
+    "arxiv:2610.42039"
+   ],
+   "norm_title": "same question different answers auditing persona dependent variation in six llms on smoking cessation advice",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2610.42039",
+   "date": "2026-10-30",
+   "decision": "exclude",
+   "reason": "审计 LLM 对不同用户人设给出的戒烟建议差异，研究的是 LLM 产品输出，并非模拟消费者或人类回答，也不是营销方法。",
+   "track": "none",
+   "llm_use": "6 LLMs audited with persona prompts on smoking-cessation advice",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C002",
+   "title": "ChatGPT as a Surveillance Assistant? An Exploratory Case Study of AI-Assisted Surveillance Risks",
+   "ids": [
+    "arxiv:2610.40890"
+   ],
+   "norm_title": "chatgpt as a surveillance assistant an exploratory case study of ai assisted surveillance risks",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2610.40890",
+   "date": "2026-10-29",
+   "decision": "exclude",
+   "reason": "评估 ChatGPT 被用于监控任务的安全风险，属于 LLM 安全研究，与营销或人类模拟无关。",
+   "track": "none",
+   "llm_use": "ChatGPT probed with surveillance prompts",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C003",
+   "title": "LLM Recommenders Produce Demographic Inequality Through Content Preferences",
+   "ids": [
+    "arxiv:2610.41854"
+   ],
+   "norm_title": "llm recommenders produce demographic inequality through content preferences",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2610.41854",
+   "date": "2026-10-30",
+   "decision": "exclude",
+   "reason": "考察 LLM 推荐器在内容排序中产生的人口统计不平等，LLM 是被审计的推荐系统，并非模拟受访者，也不是营销方法组件。",
+   "track": "none",
+   "llm_use": "LLMs act as content recommenders/rankers",
+   "human_data": "1,000 survey respondents' tweets (not used as simulation target)",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C004",
+   "title": "P-ContextBench: From Personal Fact Recall to Personalized Agent Behavior",
+   "ids": [
+    "arxiv:2610.40959"
+   ],
+   "norm_title": "p contextbench from personal fact recall to personalized agent behavior",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2610.40959",
+   "date": "2026-10-29",
+   "decision": "exclude",
+   "reason": "构建个人助理 agent 的个人情境理解基准，合成的 digital humans 只是测试材料，没有与真人数据对比，也不涉及消费者模拟。",
+   "track": "none",
+   "llm_use": "LLMs evaluated on personal-context benchmark with synthetic digital humans",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C005",
+   "title": "Reversing Polarization through Tolerance-Aware Recommendation and Adaptive Diversification",
+   "ids": [
+    "arxiv:2610.40289"
+   ],
+   "norm_title": "reversing polarization through tolerance aware recommendation and adaptive diversification",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2610.40289",
+   "date": "2026-10-29",
+   "decision": "exclude",
+   "reason": "主要是意见动力学的 agent-based 推荐设计，LLM agent 仅作稳健性检验，没有对比真人数据，属于一般推荐系统研究。",
+   "track": "none",
+   "llm_use": "100 LLM-driven agents as robustness check in recommender polarization simulation",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C006",
+   "title": "RoleHear: Pseudo-Labeling for Semi-Supervised Role-Attributed Streaming Speech Recognition",
+   "ids": [
+    "arxiv:2610.33765"
+   ],
+   "norm_title": "rolehear pseudo labeling for semi supervised role attributed streaming speech recognition",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2610.33765",
+   "date": "2026-10-24",
+   "decision": "exclude",
+   "reason": "流式语音识别的角色标注技术论文，客服通话仅为数据场景，不属于任何收录路径。",
+   "track": "none",
+   "llm_use": "multimodal LLM supplies silver role labels",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C007",
+   "title": "Recovering Business Rules as Cascade Lookups for Enterprise Field Prediction",
+   "ids": [
+    "arxiv:2610.34258",
+    "doi:10.1007/978-3-032-37682-4_6"
+   ],
+   "norm_title": "recovering business rules as cascade lookups for enterprise field prediction",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2610.34258",
+   "date": "2026-10-25",
+   "decision": "exclude",
+   "reason": "用 LLM 从企业销售订单历史中恢复配置规则做字段预测，属于企业数据工程，不是营销内容生成或营销算法增强。",
+   "track": "none",
+   "llm_use": "LLM agent discovers business keys for rule recovery",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C008",
+   "title": "The Hidden Costs of Forgetting: A Study of Trajectory Deletion in Software Engineering Agents",
+   "ids": [
+    "arxiv:2610.35496"
+   ],
+   "norm_title": "the hidden costs of forgetting a study of trajectory deletion in software engineering agents",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2610.35496",
+   "date": "2026-10-26",
+   "decision": "exclude",
+   "reason": "软件工程 agent 的轨迹删减实证研究，与营销无关。",
+   "track": "none",
+   "llm_use": "SWE agents trajectory reduction",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C009",
+   "title": "Peers4U: Designing Learner-Centered Virtual Peers for Children's Multimodal Mathematics Learning",
+   "ids": [
+    "arxiv:2610.37238"
+   ],
+   "norm_title": "peers4u designing learner centered virtual peers for children s multimodal mathematics learning",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2610.37238",
+   "date": "2026-10-27",
+   "decision": "exclude",
+   "reason": "面向儿童数学学习的 LLM 虚拟同伴系统设计，属教育 HCI，不在收录范围。",
+   "track": "none",
+   "llm_use": "LLM-driven virtual peers for children's math learning",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C010",
+   "title": "Latent Residual Reasoning for Ranking in Generative Recommendation",
+   "ids": [
+    "arxiv:2610.36890"
+   ],
+   "norm_title": "latent residual reasoning for ranking in generative recommendation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2610.36890",
+   "date": "2026-10-27",
+   "decision": "exclude",
+   "reason": "生成式推荐排序模型的工程方法论文，属于通用推荐系统，被排除。",
+   "track": "none",
+   "llm_use": "latent reasoning for generative recommendation ranking",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C011",
+   "title": "Exploring AI Peer in Collaborative Mathematics Learning",
+   "ids": [
+    "arxiv:2610.38990"
+   ],
+   "norm_title": "exploring ai peer in collaborative mathematics learning",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2610.38990",
+   "date": "2026-10-28",
+   "decision": "exclude",
+   "reason": "通过专家访谈研究数学协作学习中的 AI 同伴感知，是教育场景，与消费者模拟或营销无关。",
+   "track": "none",
+   "llm_use": "LLM-based peer agent with Big Five persona",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C012",
+   "title": "CoFiBreak: A Coarse-to-Fine Diversity Reward for Effective Multi-Turn Jailbreak",
+   "ids": [
+    "arxiv:2610.40926"
+   ],
+   "norm_title": "cofibreak a coarse to fine diversity reward for effective multi turn jailbreak",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2610.40926",
+   "date": "2026-10-29",
+   "decision": "exclude",
+   "reason": "多轮越狱红队攻击的 RL 奖励设计，属于 LLM 安全，与营销无关。",
+   "track": "none",
+   "llm_use": "RL-trained attacker LLM for jailbreak",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  }
+ ]
+}

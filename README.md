@@ -492,7 +492,7 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 <a id="paper-generative-personalization-with-textual-and-non-textual-data"></a>
 
-- Yin, Mingzhang, Ruijiang Gao, and Ziwei Cong. "Generative Personalization with Textual and Non-textual Data." SSRN 5329729 (2025-06). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5329729)
+- Yin, Mingzhang, Ruijiang Gao, and Ziwei Cong. "Personalizing Language Models for Generative Targeting." SSRN 5329729 (2025-06). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5329729)
 
 <a id="paper-slm4offer-personalized-marketing-offer-generation-using-contrastive-learning-based-fine-tuning"></a>
 

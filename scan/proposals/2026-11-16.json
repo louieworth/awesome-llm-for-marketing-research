@@ -1,0 +1,2392 @@
+{
+ "scan_date": "2026-11-16",
+ "window": [
+  "2026-11-07",
+  "2026-11-16"
+ ],
+ "stats": {
+  "mode": "weekly",
+  "fetched_arxiv": 127,
+  "fetched_ssrn": 2178,
+  "fetched_journals": 61,
+  "abstracts_missing": 7,
+  "abstracts_filled": 0,
+  "keyword_match": 76,
+  "already_in_collection": 0,
+  "already_screened": 1,
+  "new": 75,
+  "to_screen": 75,
+  "over_cap": 0
+ },
+ "items": [
+  {
+   "cid": "C001",
+   "title": "Uncertainty Calibration for Evaluating LLM Digital Twins",
+   "ids": [
+    "doi:10.2139/ssrn.7682466",
+    "ssrn:7682466"
+   ],
+   "norm_title": "uncertainty calibration for evaluating llm digital twins",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7682466",
+   "date": "2026-11-11",
+   "decision": "include",
+   "reason": "用 conformal prediction 为 LLM digital twin 的预测做不确定性校准，并在 Twin-2K-500 公开数据上对比真人回答，属于用公开人类数据评估 LLM 模拟的研究。",
+   "track": "public_data_simulation",
+   "llm_use": "GPT-4.1 mini, DeepSeek V4 Flash, GPT-5.1 act as digital twins answering survey questions; conformal prediction for uncertainty",
+   "human_data": "Twin-2K-500 (2,000+ US respondents, 500+ questions)",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "1.3",
+   "dataset_section": null,
+   "classification": "核心是为 LLM digital twin 引入基于 conformal prediction 的预测级不确定性校准评估方法并在 Twin-2K-500 上验证，属计算评估方法而归 1.3；最接近的 1.2 条目是 Miller 的 Measuring the Digital Twin，但本文以评估框架为主而非纯效度检验。",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "标题、作者顺序、SSRN DOI 与创建日期（2026-11-11）已对照 Crossref；Goli 的商学院单位来自其个人 CV 的网络搜索，Huang 与 He 的单位未查到；论文使用已有的 Twin-2K-500 数据，未发布新数据集。",
+   "issues": [
+    "SSRN 页面无法访问，Goli 的单位（Rochester Simon 或 UW Foster）需以论文页为准"
+   ],
+   "meta": {
+    "title": "Uncertainty Calibration for Evaluating LLM Digital Twins",
+    "authors": [
+     {
+      "given": "Kang",
+      "family": "Huang"
+     },
+     {
+      "given": "Hangfeng",
+      "family": "He"
+     },
+     {
+      "given": "Ali",
+      "family": "Goli"
+     }
+    ],
+    "venue": "SSRN 7682466",
+    "date": "2026-11",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7682466"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Ali Goli",
+     "affiliation": "Simon Business School, University of Rochester (per personal CV, 2025-present; previously Foster School of Business, University of Washington)"
+    }
+   ],
+   "business_school": true,
+   "tier": 2,
+   "anchor": "paper-uncertainty-calibration-for-evaluating-llm-digital-twins"
+  },
+  {
+   "cid": "C002",
+   "title": "CHO-Bench: How Do Context Hints Affect Ad Rankings in LLM Advertising?",
+   "ids": [
+    "arxiv:2611.11955"
+   ],
+   "norm_title": "cho bench how do context hints affect ad rankings in llm advertising",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.11955",
+   "date": "2026-11-09",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 0），作者单位：National University of Singapore; PyroWis AI, Singapore；National University of Singapore。基于营销框架用 LLM 生成广告上下文提示以优化广告排序，并建立 CHO-Bench 基准，属于营销内容生成方法。",
+   "track": "marketing_method",
+   "llm_use": "LLMs generate ad context hints from marketing frameworks (What/Who/When) to improve ad ranking in LLM advertising",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "2.2",
+   "dataset_section": "2.3",
+   "classification": "基于营销框架生成广告上下文提示以优化排序属创意优化方法（类似 Offline-to-Online Creative Optimization），并发布 CHO-Bench 基准故同时列入 2.3，而非 2.1 的市场效应证据。",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "标题、作者顺序、首次提交日期（2026-11-09）已对照 arXiv 摘要页，单位来自 arXiv HTML；lookup 脚本因 429 失败，改用 WebFetch；论文称基准数据将公开，但未给出链接。",
+   "issues": [
+    "论文称 CHO-Bench 数据将公开，但无可验证的下载链接，暂不能列入 1.4/2.3 数据集",
+    "单位仅写 National University of Singapore，未标明院系，商学院判断依据是作者为计算机方向"
+   ],
+   "meta": {
+    "title": "CHO-Bench: How Do Context Hints Affect Ad Rankings in LLM Advertising?",
+    "authors": [
+     {
+      "given": "Shiqi",
+      "family": "Zhang"
+     },
+     {
+      "given": "Yang",
+      "family": "Fei"
+     },
+     {
+      "given": "Xiaokui",
+      "family": "Xiao"
+     }
+    ],
+    "venue": "arXiv:2611.11955",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.11955"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Shiqi Zhang",
+     "affiliation": "National University of Singapore; PyroWis AI, Singapore"
+    },
+    {
+     "author": "Yang Fei",
+     "affiliation": "National University of Singapore"
+    },
+    {
+     "author": "Xiaokui Xiao",
+     "affiliation": "National University of Singapore"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C003",
+   "title": "Threshold Divergence in Zero-Shot LLM Purchase-Intent Prediction: A Comparison with a SMOTE-Balanced Random Forest",
+   "ids": [
+    "doi:10.2139/ssrn.7690498",
+    "ssrn:7690498"
+   ],
+   "norm_title": "threshold divergence in zero shot llm purchase intent prediction a comparison with a smote balanced random forest",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7690498",
+   "date": "2026-11-14",
+   "decision": "uncertain",
+   "reason": "比较零样本 LLM 与随机森林的购买意向预测，并提示合成受访者的阈值偏差，但 LLM 部分只用研究者构造的合成向量，没有真人对照，是否算消费者模拟存疑。",
+   "track": "consumer_simulation",
+   "llm_use": "Six LLMs zero-shot classify purchase intent from synthetic behavioural vectors, compared with SMOTE random forest",
+   "human_data": "Online Shoppers Purchasing Intention dataset (12,330 sessions) for the RF; LLM test uses 75 researcher-constructed vectors",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "比较零样本 LLM 与随机森林并揭示 LLM 合成受访者的阈值偏差，是局限性/效度检验而无新方法，归 1.2 而非 3.1。",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "标题、作者、SSRN DOI 与创建日期（2026-11-14）已对照 Crossref；使用公开的 Online Shoppers Purchasing Intention 数据和研究者自建的 75 个合成向量，未发布数据集。",
+   "issues": [
+    "作者单位无法核实（SSRN 不可访问，网络搜索无结果）",
+    "未能确认是否有商学院作者"
+   ],
+   "meta": {
+    "title": "Threshold Divergence in Zero-Shot LLM Purchase-Intent Prediction: A Comparison with a SMOTE-Balanced Random Forest",
+    "authors": [
+     {
+      "given": "Md. Abu Jafor",
+      "family": "Siddique"
+     }
+    ],
+    "venue": "SSRN 7690498",
+    "date": "2026-11",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7690498"
+   },
+   "dataset": null,
+   "affiliations": [],
+   "business_school": null,
+   "tier": 2,
+   "anchor": "paper-threshold-divergence-in-zero-shot-llm-purchase-intent-prediction-a-comparison-with-a-smote-balanced-random-forest"
+  },
+  {
+   "cid": "C004",
+   "title": "Optimal Cache Duration and Pricing for Large Language Model Serving",
+   "ids": [
+    "doi:10.2139/ssrn.7682318",
+    "ssrn:7682318"
+   ],
+   "norm_title": "optimal cache duration and pricing for large language model serving",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7682318",
+   "date": "2026-11-10",
+   "decision": "exclude",
+   "reason": "研究 LLM 服务的缓存时长与定价的运营优化，LLM 只是被定价的产品，不属于任何路径。",
+   "track": "none",
+   "llm_use": "LLM serving is the object (KV cache duration and pricing)",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C005",
+   "title": "Monetization of Generative AI: Advertising, User Engagement, and Market Outcomes",
+   "ids": [
+    "doi:10.2139/ssrn.7681558",
+    "ssrn:7681558"
+   ],
+   "norm_title": "monetization of generative ai advertising user engagement and market outcomes",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7681558",
+   "date": "2026-11-09",
+   "decision": "exclude",
+   "reason": "用 DID 研究 ChatGPT 上线广告后的用户活跃度变化，LLM 只是被研究的平台产品，没有用于模拟消费者或营销方法。",
+   "track": "none",
+   "llm_use": "ChatGPT is the studied product",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C006",
+   "title": "Can Advertising Fund Free AI? Evidence from ChatGPT's International Advertising Rollout",
+   "ids": [
+    "doi:10.2139/ssrn.7682618",
+    "ssrn:7682618"
+   ],
+   "norm_title": "can advertising fund free ai evidence from chatgpt s international advertising rollout",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7682618",
+   "date": "2026-11-09",
+   "decision": "exclude",
+   "reason": "评估 ChatGPT 广告上线对电商引流价值的影响，LLM 仅作为被研究的广告渠道，不属于任何路径。",
+   "track": "none",
+   "llm_use": "ChatGPT is the studied product",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C007",
+   "title": "ShopMind: A Mental World Model for Personalized and Realistic E-commerce User Simulation",
+   "ids": [
+    "arxiv:2611.11897"
+   ],
+   "norm_title": "shopmind a mental world model for personalized and realistic e commerce user simulation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.11897",
+   "date": "2026-11-09",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 0），作者单位：School of Intelligence Science and Technology, Peking University；Alibaba Group。提出 ShopMind，用 LLM 模拟电商消费者的心理状态与行为，并在个性化、行为真实性和 CTR 预测上评估，属于消费者模拟。",
+   "track": "consumer_simulation",
+   "llm_use": "LLM-based mental world model simulates e-commerce consumers' beliefs, intentions and behaviour",
+   "human_data": "e-commerce user behaviour data (not named in abstract)",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.3",
+   "dataset_section": null,
+   "classification": "提出 ShopMind 心智世界模型及 MSR 重建模型，是明确的新模型/算法并有实验验证，归 1.3 而非 1.1。",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "标题、作者顺序、首次发布日期（2026-11-09）已对照 arXiv 记录，单位来自 arXiv HTML 首页；论文仅提供匿名代码库，未公开合成数据集。",
+   "issues": [],
+   "meta": {
+    "title": "ShopMind: A Mental World Model for Personalized and Realistic E-commerce User Simulation",
+    "authors": [
+     {
+      "given": "Peixuan",
+      "family": "Hou"
+     },
+     {
+      "given": "Bin",
+      "family": "Chen"
+     },
+     {
+      "given": "Li",
+      "family": "He"
+     },
+     {
+      "given": "Jian",
+      "family": "Xu"
+     },
+     {
+      "given": "Xiuli",
+      "family": "Ma"
+     },
+     {
+      "given": "Guojie",
+      "family": "Song"
+     }
+    ],
+    "venue": "arXiv:2611.11897",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.11897"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Peixuan Hou",
+     "affiliation": "School of Intelligence Science and Technology, Peking University"
+    },
+    {
+     "author": "Bin Chen",
+     "affiliation": "School of Intelligence Science and Technology, Peking University"
+    },
+    {
+     "author": "Li He",
+     "affiliation": "Alibaba Group"
+    },
+    {
+     "author": "Jian Xu",
+     "affiliation": "Alibaba Group"
+    },
+    {
+     "author": "Xiuli Ma",
+     "affiliation": "School of Intelligence Science and Technology, Peking University"
+    },
+    {
+     "author": "Guojie Song",
+     "affiliation": "School of Intelligence Science and Technology, Peking University"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C008",
+   "title": "Large Language Models as Digital Twins: a Distribution-Aware Questionnaire-Based Evaluation",
+   "ids": [
+    "arxiv:2611.16586"
+   ],
+   "norm_title": "large language models as digital twins a distribution aware questionnaire based evaluation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.16586",
+   "date": "2026-11-12",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 0），作者单位：Institute of Informatics and Telematics (IIT), CNR, Pisa; Department of Computer Science, University of Pisa；Institute of Informatics and Telematics (IIT), CNR, Pisa。让 LLM 依据用户帖子扮演个体填写大五问卷，并与 MyPersonality 数据中的真实得分对比，属于评估 LLM 个体 digital twin 的研究。",
+   "track": "public_data_simulation",
+   "llm_use": "GPT-4, Gemma, Llama 3.1, Mistral answer BFI-2-60 as a specific user given their social-media posts",
+   "human_data": "MyPersonality dataset (users' actual Big Five scores)",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "检验 LLM 能否依据用户帖子复现个体大五问卷作答，属个体层面效度研究，没有新方法，归 1.2。",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "标题、作者顺序、提交日期（2026-11-12）已对照 arXiv 摘要页；机构取自 arXiv HTML 首页；无期刊版本，无自有数据集（使用第三方 MyPersonality 数据）；lookup.py 因 429 无结果，改用 WebFetch 核对。",
+   "issues": [],
+   "meta": {
+    "title": "Large Language Models as Digital Twins: a Distribution-Aware Questionnaire-Based Evaluation",
+    "authors": [
+     {
+      "given": "Francesco",
+      "family": "Di Cursi"
+     },
+     {
+      "given": "Chiara",
+      "family": "Boldrini"
+     },
+     {
+      "given": "Andrea",
+      "family": "Passarella"
+     },
+     {
+      "given": "Marco",
+      "family": "Conti"
+     }
+    ],
+    "venue": "arXiv:2611.16586",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.16586"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Francesco Di Cursi",
+     "affiliation": "Institute of Informatics and Telematics (IIT), CNR, Pisa; Department of Computer Science, University of Pisa"
+    },
+    {
+     "author": "Chiara Boldrini",
+     "affiliation": "Institute of Informatics and Telematics (IIT), CNR, Pisa"
+    },
+    {
+     "author": "Andrea Passarella",
+     "affiliation": "Institute of Informatics and Telematics (IIT), CNR, Pisa"
+    },
+    {
+     "author": "Marco Conti",
+     "affiliation": "Institute of Informatics and Telematics (IIT), CNR, Pisa"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C009",
+   "title": "The Workplace GenAI Usage Divide: A Genetics-Informed Cognitive and Metacognitive Account",
+   "ids": [
+    "doi:10.1287/isre.2025.2709"
+   ],
+   "norm_title": "the workplace genai usage divide a genetics informed cognitive and metacognitive account",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/isre.2025.2709",
+   "date": "2026-11-13",
+   "decision": "include",
+   "reason": "发表于 ISR（UTD 24），研究员工使用生成式 AI 的差异及其遗传与元认知机制，GenAI 是研究对象，按第一层收录。",
+   "track": "utd",
+   "llm_use": "Generative AI usage at work is the research object (ISR paper)",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "2.1",
+   "dataset_section": null,
+   "classification": "ISR 论文用基因、问卷和使用日志的实证证据解释员工 GenAI 使用差异，无合适类别，勉强按使用行为证据放入 2.1，而非 3.1 的算法评估。",
+   "confidence": "low",
+   "verified": true,
+   "published": true,
+   "verification": "标题、作者顺序、机构及在线发表日期（2026-11-13）取自 Crossref；SSRN 版本（10.2139/ssrn.7683987）为同一论文的预印本，已合并；INFORMS 页面未单独访问。",
+   "issues": [
+    "卷期页码尚未分配（在线首发，Crossref 无卷期页）",
+    "SSRN 预印本编号 7683987 仅来自 Crossref DOI，未核对 SSRN 页面"
+   ],
+   "meta": {
+    "title": "The Workplace GenAI Usage Divide: A Genetics-Informed Cognitive and Metacognitive Account",
+    "authors": [
+     {
+      "given": "Shuhua",
+      "family": "Sun"
+     },
+     {
+      "given": "Shiyang",
+      "family": "Gong"
+     },
+     {
+      "given": "Yinliang (Ricky)",
+      "family": "Tan"
+     }
+    ],
+    "venue": "Information Systems Research",
+    "date": "2026-11",
+    "url": "https://doi.org/10.1287/isre.2025.2709"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Shuhua Sun",
+     "affiliation": "Tulane University Freeman School of Business"
+    },
+    {
+     "author": "Shiyang Gong",
+     "affiliation": "Beijing Normal University, Business School"
+    },
+    {
+     "author": "Yinliang (Ricky) Tan",
+     "affiliation": "China Europe International Business School"
+    }
+   ],
+   "business_school": true,
+   "tier": 1,
+   "anchor": "paper-the-workplace-genai-usage-divide-a-genetics-informed-cognitive-and-metacognitive-account"
+  },
+  {
+   "cid": "C010",
+   "title": "THEATRON: A Benchmark for Evaluating Persona Persistence in Long-Horizon LLM Decision-Making",
+   "ids": [
+    "arxiv:2611.11487"
+   ],
+   "norm_title": "theatron a benchmark for evaluating persona persistence in long horizon llm decision making",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.11487",
+   "date": "2026-11-08",
+   "decision": "exclude",
+   "reason": "评测 LLM 金融人设在长周期交易决策中的稳定性，属于金融多智能体场景，没有与真人数据对比，也不是营销方法。",
+   "track": "none",
+   "llm_use": "LLM personas make sequential financial trading decisions",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C011",
+   "title": "Not Your Average Clever Hans: Latent Representation of Psychological Constructs in Large Language Models",
+   "ids": [
+    "doi:10.2139/ssrn.7682438",
+    "ssrn:7682438"
+   ],
+   "norm_title": "not your average clever hans latent representation of psychological constructs in large language models",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7682438",
+   "date": "2026-11-09",
+   "decision": "uncertain",
+   "reason": "为把 LLM 当作心理实验被试（silicon sample）提供构念效度方法，但摘要未说明与公开真人回答数据对比，是否属于 B 路径不确定。",
+   "track": "public_data_simulation",
+   "llm_use": "Probing latent representations of 66 psychological constructs in 16 open-weight LLMs to support silicon-sample research",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "检验 LLM 潜在层是否对心理构念有稳定表征、满足构念效度，属 silicon sample 的效度研究，归 1.2 而非 1.3。",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "标题与作者顺序已对照 Crossref（SSRN DOI 10.2139/ssrn.7682438，创建日期 2026-11-09）；无已发表版本，未发现数据集。",
+   "issues": [
+    "作者机构无法核实（Crossref 为空，网络搜索未找到该论文或作者页面），business_school 待定",
+    "未能确认是否有商学院作者"
+   ],
+   "meta": {
+    "title": "Not Your Average Clever Hans: Latent Representation of Psychological Constructs in Large Language Models",
+    "authors": [
+     {
+      "given": "Jack",
+      "family": "Chen"
+     },
+     {
+      "given": "Zelin",
+      "family": "Zhou"
+     },
+     {
+      "given": "Chunlin",
+      "family": "An"
+     },
+     {
+      "given": "Lexi",
+      "family": "Chen"
+     }
+    ],
+    "venue": "SSRN 7682438",
+    "date": "2026-11",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7682438"
+   },
+   "dataset": null,
+   "affiliations": [],
+   "business_school": null,
+   "tier": 2,
+   "anchor": "paper-not-your-average-clever-hans-latent-representation-of-psychological-constructs-in-large-language-models"
+  },
+  {
+   "cid": "C012",
+   "title": "The Infrastructure of Trust in Agentic Commerce: A Comparative Analysis of Blockchain-Based and Centralized Architectures for Consumer Agents",
+   "ids": [
+    "doi:10.2139/ssrn.7682213",
+    "ssrn:7682213"
+   ],
+   "norm_title": "the infrastructure of trust in agentic commerce a comparative analysis of blockchain based and centralized architectures for consumer agents",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7682213",
+   "date": "2026-11-11",
+   "decision": "exclude",
+   "reason": "从竞争法、消费者保护和隐私法角度比较代理商务的区块链与中心化架构，没有用 LLM 做模拟或营销方法。",
+   "track": "none",
+   "llm_use": "AI agents in commerce are the legal-analysis topic",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C013",
+   "title": "Five-Month Stability of AI Brand Consistency and Presence: A Pre-Registered Third Wave on a Retiring Six-Model Panel (AIAS™ v0.41)",
+   "ids": [
+    "doi:10.2139/ssrn.7685100",
+    "ssrn:7685100"
+   ],
+   "norm_title": "five month stability of ai brand consistency and presence a pre registered third wave on a retiring six model panel aiastm v0 41",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7685100",
+   "date": "2026-11-13",
+   "decision": "exclude",
+   "reason": "测量品牌在 LLM 回答中的一致性与出现率，LLM 只是被审计的产品或市场，既不模拟消费者也不是营销方法组件，属于一律排除项。",
+   "track": "none",
+   "llm_use": "LLM outputs are the measured object (brand consistency and presence in LLM answers)",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C014",
+   "title": "Who Should Be on the Panel? Task-Conditioned Persona Selection for LLM Trading Agents",
+   "ids": [
+    "arxiv:2611.18150"
+   ],
+   "norm_title": "who should be on the panel task conditioned persona selection for llm trading agents",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.18150",
+   "date": "2026-11-13",
+   "decision": "exclude",
+   "reason": "面向股票交易的 LLM 多智能体系统，与消费者模拟或营销方法无关。",
+   "track": "none",
+   "llm_use": "LLM multi-agent trading system with personas",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C015",
+   "title": "When AI Says Thank You: A Large-Scale Randomized Field Experiment on Generative AI for Charity",
+   "ids": [
+    "doi:10.2139/ssrn.7686322",
+    "ssrn:7686322"
+   ],
+   "norm_title": "when ai says thank you a large scale randomized field experiment on generative ai for charity",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7686322",
+   "date": "2026-11-14",
+   "decision": "uncertain",
+   "reason": "在 1,259,594 名消费者的随机现场实验中检验 AI 生成的认可信息（基于三种伦理理论）对复购的影响，属于营销内容生成。作者单位待后续核查。",
+   "track": "marketing_method",
+   "llm_use": "Generative AI writes theory-guided (utilitarian, deontological, virtue-ethics) purchase recognition messages",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "2.1",
+   "dataset_section": null,
+   "classification": "大规模随机现场实验检验 AI 生成认可信息对复购的市场结果效应，类似 Dubé 与 Xu 的 Wine Access 案例，归 2.1 而非 2.2。",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "标题与作者顺序已对照 Crossref（SSRN DOI 10.2139/ssrn.7686322，创建日期 2026-11-14）；无已发表版本，未发现数据集。",
+   "issues": [
+    "作者机构无法核实（Crossref 为空；搜索只找到同名 Yifan Yu 在 HKU Business School/Foster 的主页，但无法确认是本文作者），business_school 待定",
+    "未能确认是否有商学院作者"
+   ],
+   "meta": {
+    "title": "When AI Says Thank You: A Large-Scale Randomized Field Experiment on Generative AI for Charity",
+    "authors": [
+     {
+      "given": "Lin",
+      "family": "Jia"
+     },
+     {
+      "given": "Xiayu",
+      "family": "Hu"
+     },
+     {
+      "given": "Juan",
+      "family": "Wang"
+     },
+     {
+      "given": "Wendao",
+      "family": "Xue"
+     },
+     {
+      "given": "Yifan",
+      "family": "Yu"
+     }
+    ],
+    "venue": "SSRN 7686322",
+    "date": "2026-11",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7686322"
+   },
+   "dataset": null,
+   "affiliations": [],
+   "business_school": null,
+   "tier": 2,
+   "anchor": "paper-when-ai-says-thank-you-a-large-scale-randomized-field-experiment-on-generative-ai-for-charity"
+  },
+  {
+   "cid": "C016",
+   "title": "Slim Foundation Models for Latency-Critical Recommendation Serving",
+   "ids": [
+    "arxiv:2611.11013"
+   ],
+   "norm_title": "slim foundation models for latency critical recommendation serving",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.11013",
+   "date": "2026-11-07",
+   "decision": "exclude",
+   "reason": "面向延迟的 CTR 预测推理压缩，属于通用推荐系统工程，不在收录范围。",
+   "track": "none",
+   "llm_use": "Pruned LLaMA3-8B embeddings for CTR prediction",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C017",
+   "title": "Imperfectly Imperfect: Evaluating Graded Cognitive Diversity in LLM Persona Simulations",
+   "ids": [
+    "arxiv:2611.10508"
+   ],
+   "norm_title": "imperfectly imperfect evaluating graded cognitive diversity in llm persona simulations",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.10508",
+   "date": "2026-11-07",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 0），作者单位：University of New South Wales, Sydney；Aurecon Group, Melbourne。评估 LLM 人格设定智能体能否复现 473 名真人的认知反思与行为分布，属于人类模拟效度研究；但摘要未说明真人数据是否公开，也非消费者情境。",
+   "track": "public_data_simulation",
+   "llm_use": "LLM persona agents simulate cognitive reflection, Need for Cognition and Big Five answers and behaviours",
+   "human_data": "473-adult cohort (newly collected; public availability unclear)",
+   "evidence": "full-text",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "评估 LLM 人格智能体能否复现真人认知多样性与行为分布，是群体层面效度研究，归 1.2 而非 1.3。",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "标题、作者及单位已对照 arXiv 摘要页与 HTML 版；arXiv 备注称已被 NeurIPS 2026 Evaluations & Datasets 接收，但 Crossref 无记录，故按预印本引用；GitHub 仓库已核实仅发布合成人设数据。",
+   "issues": [
+    "arXiv 备注称 NeurIPS 2026 已接收，但无正式会议版本信息（卷页）可核实",
+    "仅合成人设数据公开，人类数据未公开，是否列入数据集小节需维护者判断"
+   ],
+   "meta": {
+    "title": "Imperfectly Imperfect: Evaluating Graded Cognitive Diversity in LLM Persona Simulations",
+    "authors": [
+     {
+      "given": "Sion",
+      "family": "Weatherhead"
+     },
+     {
+      "given": "Ben",
+      "family": "Newell"
+     },
+     {
+      "given": "Aaron",
+      "family": "Belbasis"
+     },
+     {
+      "given": "Flora",
+      "family": "Salim"
+     }
+    ],
+    "venue": "arXiv:2611.10508",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.10508"
+   },
+   "dataset": {
+    "description": "5,000 synthetic LLM persona profiles plus 150-profile configuration panel (synthetic; human responses from 473 adults are not public)",
+    "url": "https://github.com/sion-w/CogSuite"
+   },
+   "affiliations": [
+    {
+     "author": "Sion Weatherhead",
+     "affiliation": "University of New South Wales, Sydney"
+    },
+    {
+     "author": "Ben Newell",
+     "affiliation": "University of New South Wales, Sydney"
+    },
+    {
+     "author": "Aaron Belbasis",
+     "affiliation": "Aurecon Group, Melbourne"
+    },
+    {
+     "author": "Flora Salim",
+     "affiliation": "University of New South Wales, Sydney"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C018",
+   "title": "Measuring Generative AI Content in Political Campaigns: Evidence of Rising Adoption and Non-Disclosure",
+   "ids": [
+    "arxiv:2611.11658"
+   ],
+   "norm_title": "measuring generative ai content in political campaigns evidence of rising adoption and non disclosure",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.11658",
+   "date": "2026-11-08",
+   "decision": "exclude",
+   "reason": "测量政治竞选中生成式 AI 内容的使用与披露，AI 只是被测量的对象，不涉及消费者模拟或营销方法。",
+   "track": "none",
+   "llm_use": "Detects generative AI content in campaign materials",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C019",
+   "title": "When AI thinks about culture: comparing language-based and empirical measures of individualism–collectivism",
+   "ids": [
+    "doi:10.1057/s41267-026-00913-3"
+   ],
+   "norm_title": "when ai thinks about culture comparing language based and empirical measures of individualism collectivism",
+   "source": "journal",
+   "url": "https://doi.org/10.1057/s41267-026-00913-3",
+   "date": "2026-11-09",
+   "decision": "include",
+   "reason": "发表于 UTD 24 期刊 JIBS，以 LLM 为研究对象，比较 LLM 生成的国家层面个人主义-集体主义估计与调查指数，满足第一层。",
+   "track": "utd",
+   "llm_use": "Five LLMs generate country-level individualism-collectivism estimates compared with survey-based index",
+   "human_data": "nationally representative survey-based I-C index",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "将 LLM 生成的国家个人主义-集体主义估计与调查指数对比并揭示系统偏差，属效度与偏差研究，类似 Tao 等的 Cultural bias 条目，归 1.2。",
+   "confidence": "medium",
+   "verified": true,
+   "published": true,
+   "verification": "标题、作者顺序、首次在线日期（2026-11-09）已对照 Crossref；Springer 页面无法访问，未取得作者单位。",
+   "issues": [
+    "作者单位无法核实（Crossref 为空，Springer 站点不可访问）",
+    "卷期页码尚未分配（在线首发）"
+   ],
+   "meta": {
+    "title": "When AI thinks about culture: comparing language-based and empirical measures of individualism–collectivism",
+    "authors": [
+     {
+      "given": "Plamen",
+      "family": "Akaliyski"
+     },
+     {
+      "given": "Wolfgang",
+      "family": "Messner"
+     }
+    ],
+    "venue": "Journal of International Business Studies",
+    "date": "2026-11",
+    "url": "https://doi.org/10.1057/s41267-026-00913-3"
+   },
+   "dataset": null,
+   "affiliations": [],
+   "business_school": null,
+   "tier": 1,
+   "anchor": "paper-when-ai-thinks-about-culture-comparing-language-based-and-empirical-measures-of-individualism-collectivism"
+  },
+  {
+   "cid": "C020",
+   "title": "Agent Psychonomicus: Psychological Mechanisms Emerge In Cognitive Agents Simulated By Large Language Models",
+   "ids": [
+    "doi:10.2139/ssrn.7683658",
+    "ssrn:7683658"
+   ],
+   "norm_title": "agent psychonomicus psychological mechanisms emerge in cognitive agents simulated by large language models",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7683658",
+   "date": "2026-11-10",
+   "decision": "uncertain",
+   "reason": "用 LLM 认知智能体模拟 60 项已发表心理实验的被试，并与大规模预注册复现结果对照，可能属于路径 B；但摘要未点名具体公开数据集，作者单位也需核查。",
+   "track": "public_data_simulation",
+   "llm_use": "Ensemble of 12 LLM agents (MVCA) simulates participants in 60 published experiments",
+   "human_data": "60 published experiments and preregistered large replications (dataset not named)",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "1.3",
+   "dataset_section": null,
+   "classification": "核心贡献是提出 Agent psychonomicus/MVCA 这一检验心理机制各环节的认知智能体模型，并用 60 项实验及预注册复现做验证，属方法创新归 1.3 而非 1.2。",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "标题、作者顺序已对照 Crossref（DOI 10.2139/ssrn.7683658，创建于 2026-11-10）；SSRN 不可访问，检索未找到作者单位。",
+   "issues": [
+    "作者单位无法核实",
+    "月份取自 Crossref 创建日期，SSRN 实际发布日期未核实",
+    "未能确认是否有商学院作者"
+   ],
+   "meta": {
+    "title": "Agent Psychonomicus: Psychological Mechanisms Emerge In Cognitive Agents Simulated By Large Language Models",
+    "authors": [
+     {
+      "given": "Jack",
+      "family": "Chen"
+     },
+     {
+      "given": "Weiheng",
+      "family": "Xiao"
+     },
+     {
+      "given": "Lexi",
+      "family": "Chen"
+     }
+    ],
+    "venue": "SSRN 7683658",
+    "date": "2026-11",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7683658"
+   },
+   "dataset": null,
+   "affiliations": [],
+   "business_school": null,
+   "tier": 2,
+   "anchor": "paper-agent-psychonomicus-psychological-mechanisms-emerge-in-cognitive-agents-simulated-by-large-language-models"
+  },
+  {
+   "cid": "C021",
+   "title": "Large Language Models in Asset Pricing: A Literature Review",
+   "ids": [
+    "doi:10.2139/ssrn.7683739",
+    "ssrn:7683739"
+   ],
+   "norm_title": "large language models in asset pricing a literature review",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7683739",
+   "date": "2026-11-10",
+   "decision": "exclude",
+   "reason": "资产定价中 LLM 应用的文献综述，不涉及消费者模拟或营销方法。",
+   "track": "none",
+   "llm_use": "Literature review of LLMs in asset pricing",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C022",
+   "title": "From Counterfactual Edits to Human Narratives: LLM-Driven Interpretations for Recommender System Explanations",
+   "ids": [
+    "arxiv:2611.13914",
+    "doi:10.1145/3799682.3839968"
+   ],
+   "norm_title": "from counterfactual edits to human narratives llm driven interpretations for recommender system explanations",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.13914",
+   "date": "2026-11-10",
+   "decision": "exclude",
+   "reason": "推荐系统反事实解释的 LLM 摘要，属于通用推荐系统论文，不在收录范围。",
+   "track": "none",
+   "llm_use": "LLMs summarize counterfactual explanations for recommenders",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C023",
+   "title": "Edge-Native Multimodal RAG: Hardware-Aware Quantization and Architectural Optimization for Consumer GPUs",
+   "ids": [
+    "arxiv:2611.14924"
+   ],
+   "norm_title": "edge native multimodal rag hardware aware quantization and architectural optimization for consumer gpus",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.14924",
+   "date": "2026-11-11",
+   "decision": "exclude",
+   "reason": "消费级 GPU 上的 RAG 量化工程，与营销研究无关。",
+   "track": "none",
+   "llm_use": "Quantized multimodal RAG on consumer GPUs",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C024",
+   "title": "Alternating Methods for Large-Scale AC Optimal Power Flow with Unit Commitment",
+   "ids": [
+    "doi:10.1287/opre.2025.1935"
+   ],
+   "norm_title": "alternating methods for large scale ac optimal power flow with unit commitment",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/opre.2025.1935",
+   "date": "2026-11-12",
+   "decision": "exclude",
+   "reason": "发表于 Operations Research，但研究电网机组组合与最优潮流的优化算法，没有使用 LLM 或 transformer。",
+   "track": "none",
+   "llm_use": "None",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C025",
+   "title": "Wrongdoers or Saviors? CEO Activism, Media Partisanship, and the Media’s Construction of CEO Infamy and Celebrity",
+   "ids": [
+    "doi:10.1287/orsc.2024.19062"
+   ],
+   "norm_title": "wrongdoers or saviors ceo activism media partisanship and the medias construction of ceo infamy and celebrity",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/orsc.2024.19062",
+   "date": "2026-11-13",
+   "decision": "include",
+   "reason": "发表于 Organization Science（UTD 24），把 LLM 标注系统作为核心测量方法，用于构建 CEO 臭名/名人度变量，符合第一层 UTD 期刊收录规则。",
+   "track": "utd",
+   "llm_use": "LLM-based annotation system for CEO-directed sentiment, role attributions and narratives in 91,608 media articles",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "UTD 期刊论文，LLM 标注系统用于从媒体文本中测量情感与叙事，属客户/文本测量方法，归 3.2（与已有文本测量类条目一致）。",
+   "confidence": "medium",
+   "verified": true,
+   "published": true,
+   "verification": "标题、作者顺序、在线日期（2026-11-13）已对照 Crossref；INFORMS 页面无法访问，单位来自 Crossref，商学院归属依据系名推断。",
+   "issues": [
+    "Crossref 作者名为 'G. Alessandra Alessandra Rizzi'（疑似重复），此处按 G. Alessandra Rizzi 记录，需对照 INFORMS 页面确认",
+    "单位仅列系名，未明确写商学院名称，business_school 为推断",
+    "卷期页码尚未分配（在线首发）"
+   ],
+   "meta": {
+    "title": "Wrongdoers or Saviors? CEO Activism, Media Partisanship, and the Media’s Construction of CEO Infamy and Celebrity",
+    "authors": [
+     {
+      "given": "G. Alessandra",
+      "family": "Rizzi"
+     },
+     {
+      "given": "Vilmos F.",
+      "family": "Misangyi"
+     }
+    ],
+    "venue": "Organization Science",
+    "date": "2026-11",
+    "url": "https://doi.org/10.1287/orsc.2024.19062"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "G. Alessandra Rizzi",
+     "affiliation": "Management and Leadership, Texas Christian University, Fort Worth (Crossref; Neeley School of Business inferred, not stated)"
+    },
+    {
+     "author": "Vilmos F. Misangyi",
+     "affiliation": "Department of Management & Organization, The Pennsylvania State University (Crossref; Smeal College of Business inferred, not stated)"
+    }
+   ],
+   "business_school": true,
+   "tier": 1,
+   "anchor": "paper-wrongdoers-or-saviors-ceo-activism-media-partisanship-and-the-medias-construction-of-ceo-infamy-and-celebrity"
+  },
+  {
+   "cid": "C026",
+   "title": "Nudging the Frontier: A Randomized Controlled Trial Evaluating Generative AI Chatbots and Policy Retention Dynamics in Digital Microinsurance",
+   "ids": [
+    "doi:10.2139/ssrn.7684679",
+    "ssrn:7684679"
+   ],
+   "norm_title": "nudging the frontier a randomized controlled trial evaluating generative ai chatbots and policy retention dynamics in digital microinsurance",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7684679",
+   "date": "2026-11-13",
+   "decision": "uncertain",
+   "reason": "仅是尚未实施的 RCT 研究方案，没有实证结果；主题是用生成式 AI 聊天机器人做保单续保沟通，勉强属营销沟通与留存，但是否达到第 2/3 类要求不明确。",
+   "track": "marketing_method",
+   "llm_use": "Generative AI chatbot for renewal communication in digital microinsurance (proposed RCT)",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "2.1",
+   "dataset_section": null,
+   "classification": "为评估生成式 AI 聊天机器人对续保留存效果的 RCT 方案，关注市场结果证据而非生成方法，归 2.1 而非 2.2；无实证结果，边界案例。",
+   "confidence": "low",
+   "verified": true,
+   "published": false,
+   "verification": "标题与作者顺序已对照 Crossref（DOI 10.2139/ssrn.7684679，创建日期 2026-11-13）；仅有摘要，无已发表版本；该文为试验方案，不含数据集。",
+   "issues": [
+    "作者单位无法核实（Crossref 为空，网络搜索无结果）",
+    "未能确认是否有商学院作者"
+   ],
+   "meta": {
+    "title": "Nudging the Frontier: A Randomized Controlled Trial Evaluating Generative AI Chatbots and Policy Retention Dynamics in Digital Microinsurance",
+    "authors": [
+     {
+      "given": "Isaac",
+      "family": "Nketsiah"
+     },
+     {
+      "given": "Kweku Awumey",
+      "family": "Isaac"
+     },
+     {
+      "given": "Aaron",
+      "family": "Yorke"
+     }
+    ],
+    "venue": "SSRN 7684679",
+    "date": "2026-11",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7684679"
+   },
+   "dataset": null,
+   "affiliations": [],
+   "business_school": null,
+   "tier": 2,
+   "anchor": "paper-nudging-the-frontier-a-randomized-controlled-trial-evaluating-generative-ai-chatbots-and-policy-retention-dynamics-in-digital-microinsurance"
+  },
+  {
+   "cid": "C027",
+   "title": "Leak Rate, Not Loss: Measuring What Actually Escapes When a Local Model Pseudonymizes Text for Frontier LLMs",
+   "ids": [
+    "doi:10.2139/ssrn.7688838",
+    "ssrn:7688838"
+   ],
+   "norm_title": "leak rate not loss measuring what actually escapes when a local model pseudonymizes text for frontier llms",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7688838",
+   "date": "2026-11-13",
+   "decision": "exclude",
+   "reason": "研究文本脱敏与隐私泄露率基准，属于通用 LLM 数据保护工程，与消费者模拟或营销方法无关。",
+   "track": "none",
+   "llm_use": "Local pseudonymization in front of frontier LLM APIs",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C028",
+   "title": "Personalization of Basic and Moral Values Guiding LLM-Controlled Assistant Robots",
+   "ids": [
+    "arxiv:2611.18230"
+   ],
+   "norm_title": "personalization of basic and moral values guiding llm controlled assistant robots",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.18230",
+   "date": "2026-11-13",
+   "decision": "exclude",
+   "reason": "研究助理机器人的价值观个性化与模型对齐，样本仅 22 人，不是消费者模拟，也不是对人类回答分布的模拟评估。",
+   "track": "none",
+   "llm_use": "LLMs prompted as assistant robots, benchmarked against value profiles",
+   "human_data": "N=22 users' value questionnaires",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C029",
+   "title": "Ostinato: Fast CPU-GPU MoE Inference for Local Agents via Resident Experts in Every Forward Pass",
+   "ids": [
+    "arxiv:2611.11533"
+   ],
+   "norm_title": "ostinato fast cpu gpu moe inference for local agents via resident experts in every forward pass",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.11533",
+   "date": "2026-11-08",
+   "decision": "exclude",
+   "reason": "CPU-GPU MoE 推理系统优化论文，属通用 LLM 工程，与营销无关。",
+   "track": "none",
+   "llm_use": "MoE inference engine",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C030",
+   "title": "Algorithmic Consensus? Geopolitical Rivalry and Elite Alignment in Large Language Models",
+   "ids": [
+    "doi:10.2139/ssrn.7681466",
+    "ssrn:7681466"
+   ],
+   "norm_title": "algorithmic consensus geopolitical rivalry and elite alignment in large language models",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7681466",
+   "date": "2026-11-09",
+   "decision": "exclude",
+   "reason": "用 Pew 等数据测量模型自身的外交政策立场及其与精英的一致性，属于价值观/立场测评，并非模拟受访者并评估与真人分布的一致性，故不属 B 路径。",
+   "track": "none",
+   "llm_use": "14 LLMs answer foreign-policy attitude batteries, Pew and Chicago Council questions",
+   "human_data": "Pew, Chicago Council surveys",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C031",
+   "title": "From Words to Portfolios: Disentangling Narrative and Reality in Mutual Fund Differentiation",
+   "ids": [
+    "doi:10.2139/ssrn.7682021",
+    "ssrn:7682021"
+   ],
+   "norm_title": "from words to portfolios disentangling narrative and reality in mutual fund differentiation",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7682021",
+   "date": "2026-11-09",
+   "decision": "exclude",
+   "reason": "金融领域的共同基金差异化度量，非 UTD 期刊，不属于消费者模拟、公开数据人类模拟或营销方法三条路径。",
+   "track": "none",
+   "llm_use": "Transformer portfolio embeddings and LLM embeddings of fund prospectuses",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C032",
+   "title": "SlipStream: Enabling HBF for GPU Systems by Mitigating the Latency and SRAM Overheads",
+   "ids": [
+    "arxiv:2611.14776"
+   ],
+   "norm_title": "slipstream enabling hbf for gpu systems by mitigating the latency and sram overheads",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.14776",
+   "date": "2026-11-10",
+   "decision": "exclude",
+   "reason": "GPU 内存与预取的硬件系统论文，与营销无关。",
+   "track": "none",
+   "llm_use": "LLM inference prefetching hardware",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C033",
+   "title": "The Second Bride in the Bath: A Roadmap for a Monopolization Case Against Google in AI",
+   "ids": [
+    "doi:10.2139/ssrn.7689738",
+    "ssrn:7689738"
+   ],
+   "norm_title": "the second bride in the bath a roadmap for a monopolization case against google in ai",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7689738",
+   "date": "2026-11-11",
+   "decision": "exclude",
+   "reason": "关于谷歌在 AI 领域垄断的反垄断法律分析，只是把 AI 产品当作被研究的市场，没有使用 LLM 作研究方法。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C034",
+   "title": "Adaptive Touch Optimization: The Fourth Dimension of Touchpoint Design",
+   "ids": [
+    "doi:10.2139/ssrn.7688479",
+    "ssrn:7688479"
+   ],
+   "norm_title": "adaptive touch optimization the fourth dimension of touchpoint design",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7688479",
+   "date": "2026-11-13",
+   "decision": "uncertain",
+   "reason": "提出基于实时旅程信号、由 agent 自适应调整触点内容的概念框架，主题属营销，但纯概念、无实证，LLM 的实质作用不明确。",
+   "track": "marketing_method",
+   "llm_use": "Agentic execution of approved content/layout variants within customer touchpoints (conceptual blueprint)",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "2.2",
+   "dataset_section": null,
+   "classification": "提出由 agent 依据实时旅程信号自适应调整触点内容的概念框架，属个性化内容优化与信息设计，归 2.2 而非 3.2。",
+   "confidence": "low",
+   "verified": true,
+   "published": false,
+   "verification": "标题与作者顺序已对照 Crossref（DOI 10.2139/ssrn.7688479，创建日期 2026-11-13）；无已发表版本，无数据集。",
+   "issues": [
+    "作者单位无法核实（Crossref 为空，网络搜索无结果）",
+    "未能确认是否有商学院作者"
+   ],
+   "meta": {
+    "title": "Adaptive Touch Optimization: The Fourth Dimension of Touchpoint Design",
+    "authors": [
+     {
+      "given": "Uwe",
+      "family": "Seebacher"
+     },
+     {
+      "given": "Bernd",
+      "family": "Trummer"
+     }
+    ],
+    "venue": "SSRN 7688479",
+    "date": "2026-11",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7688479"
+   },
+   "dataset": null,
+   "affiliations": [],
+   "business_school": null,
+   "tier": 2,
+   "anchor": "paper-adaptive-touch-optimization-the-fourth-dimension-of-touchpoint-design"
+  },
+  {
+   "cid": "C035",
+   "title": "Towards Identity-Preserving LLM Agents under Model Transition",
+   "ids": [
+    "arxiv:2611.10628"
+   ],
+   "norm_title": "towards identity preserving llm agents under model transition",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.10628",
+   "date": "2026-11-07",
+   "decision": "exclude",
+   "reason": "研究 LLM agent 更换底层模型后的行为漂移与合规，属通用 agent 论文，与营销无关。",
+   "track": "none",
+   "llm_use": "Open-weight LLM agents under backend model swap",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C036",
+   "title": "Cultivating Faculty’s AI Literacy through the Use of Open-Access Platform",
+   "ids": [
+    "doi:10.2139/ssrn.7682478",
+    "ssrn:7682478"
+   ],
+   "norm_title": "cultivating facultys ai literacy through the use of open access platform",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7682478",
+   "date": "2026-11-09",
+   "decision": "exclude",
+   "reason": "高校教师 AI 素养教育研究，与消费者模拟或营销方法无关。",
+   "track": "none",
+   "llm_use": "Open-source LLM platform for faculty AI literacy",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C037",
+   "title": "Inference Validation for Regulated AI: A Governed Decision Pipeline for LLM Serving",
+   "ids": [
+    "arxiv:2611.12737"
+   ],
+   "norm_title": "inference validation for regulated ai a governed decision pipeline for llm serving",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.12737",
+   "date": "2026-11-09",
+   "decision": "exclude",
+   "reason": "讨论受监管行业中 LLM 推理服务的验证流水线，属于工程基础设施，与营销研究无关。",
+   "track": "none",
+   "llm_use": "LLM serving infrastructure",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C038",
+   "title": "Competing Influence in LLM Populations: Budget Timing and Baseline Drift",
+   "ids": [
+    "arxiv:2611.11867"
+   ],
+   "norm_title": "competing influence in llm populations budget timing and baseline drift",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.11867",
+   "date": "2026-11-09",
+   "decision": "exclude",
+   "reason": "在 LLM 智能体网络中模拟竞争性舆论宣传，没有与公开真人回答数据对比，也不是消费者模拟，不属于任何路径。",
+   "track": "none",
+   "llm_use": "persona-conditioned LLM agents exchange opinions in a network",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C039",
+   "title": "LLM Competition and the Aggregator Economy",
+   "ids": [
+    "doi:10.2139/ssrn.7683780",
+    "ssrn:7683780"
+   ],
+   "norm_title": "llm competition and the aggregator economy",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7683780",
+   "date": "2026-11-10",
+   "decision": "exclude",
+   "reason": "博弈论模型研究 LLM 聚合平台与供应商的竞争，LLM 只是被研究的产品市场，按规则排除。",
+   "track": "none",
+   "llm_use": "LLM aggregators as the studied market",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C040",
+   "title": "Who (or what) are they prompting? How CS students conceptualize and use LLMs",
+   "ids": [
+    "arxiv:2611.14798",
+    "doi:10.1145/3857222.3860114"
+   ],
+   "norm_title": "who or what are they prompting how cs students conceptualize and use llms",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.14798",
+   "date": "2026-11-10",
+   "decision": "exclude",
+   "reason": "计算机教育研究，调查学生如何理解和使用 LLM，与营销及人类模拟无关。",
+   "track": "none",
+   "llm_use": "survey of CS students about LLM use",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C041",
+   "title": "Data Quality Challenges in Multimodal Tourism Recommender Systems",
+   "ids": [
+    "arxiv:2611.13972"
+   ],
+   "norm_title": "data quality challenges in multimodal tourism recommender systems",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.13972",
+   "date": "2026-11-10",
+   "decision": "exclude",
+   "reason": "旅游推荐系统的多模态数据质量讨论，属于推荐系统工程，LLM 仅顺带提及。",
+   "track": "none",
+   "llm_use": "LLM hallucination mentioned as a data quality issue",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C042",
+   "title": "When Evaluators of AI Agents Disagree: An Empirical Study of Native Scoring, LLM Judges, and Commit-Boundary Checks on tau2-bench",
+   "ids": [
+    "arxiv:2611.14581"
+   ],
+   "norm_title": "when evaluators of ai agents disagree an empirical study of native scoring llm judges and commit boundary checks on tau2 bench",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.14581",
+   "date": "2026-11-10",
+   "decision": "exclude",
+   "reason": "评估 AI agent 的评测方法比较（tau2-bench），属通用 agent 论文，与营销无关。",
+   "track": "none",
+   "llm_use": "LLM judges evaluating tool-calling agents",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C043",
+   "title": "Generative AI and the Spatial Restructuring of Corporate White-Collar Hiring: Evidence from China",
+   "ids": [
+    "doi:10.2139/ssrn.7685658",
+    "ssrn:7685658"
+   ],
+   "norm_title": "generative ai and the spatial restructuring of corporate white collar hiring evidence from china",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7685658",
+   "date": "2026-11-11",
+   "decision": "exclude",
+   "reason": "以 ChatGPT 发布作为冲击，研究企业招聘的空间分布，LLM 只是被研究的外生变量，不是方法或模拟工具。",
+   "track": "none",
+   "llm_use": "ChatGPT release as an exogenous shock",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C044",
+   "title": "Smart Model Routing for Order-of-Magnitude LLM Cost Reduction",
+   "ids": [
+    "arxiv:2611.15911"
+   ],
+   "norm_title": "smart model routing for order of magnitude llm cost reduction",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.15911",
+   "date": "2026-11-11",
+   "decision": "exclude",
+   "reason": "LLM 模型路由的成本优化，属于通用 LLM 工程，与营销研究无关。",
+   "track": "none",
+   "llm_use": "LLM routing for cost reduction",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C045",
+   "title": "Generated Texts and Simulated LLM Readers Do Not Replace Human Disagreement in Emotion Recognition",
+   "ids": [
+    "doi:10.2139/ssrn.7686105",
+    "ssrn:7686105"
+   ],
+   "norm_title": "generated texts and simulated llm readers do not replace human disagreement in emotion recognition",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7686105",
+   "date": "2026-11-12",
+   "decision": "exclude",
+   "reason": "检验 LLM 模拟标注者能否替代人类在情绪识别中的分歧，对象是文本标注而非消费者或问卷受访者，不符合 A/B 路径。",
+   "track": "none",
+   "llm_use": "persona-conditioned LLM readers as simulated annotators",
+   "human_data": "Japanese and English emotion corpora with human annotator label distributions",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C046",
+   "title": "Advancing Quantization for R&R Models with Microscaling Formats",
+   "ids": [
+    "arxiv:2611.17501"
+   ],
+   "norm_title": "advancing quantization for r r models with microscaling formats",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.17501",
+   "date": "2026-11-12",
+   "decision": "exclude",
+   "reason": "广告排序模型的低精度量化推理优化，属于系统工程，不是营销方法。",
+   "track": "none",
+   "llm_use": "none (quantization of ads ranking models)",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C047",
+   "title": "Scalable Conversational Assessment: Chat-Based Exams with a Two-Agent LLM Pipeline",
+   "ids": [
+    "arxiv:2611.17220"
+   ],
+   "norm_title": "scalable conversational assessment chat based exams with a two agent llm pipeline",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.17220",
+   "date": "2026-11-12",
+   "decision": "exclude",
+   "reason": "教育场景的对话式考试系统，与营销无关。",
+   "track": "none",
+   "llm_use": "two-agent LLM conversational exams",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C048",
+   "title": "Towards Green Text Generation: Memory-Based Speculative Decoding",
+   "ids": [
+    "arxiv:2611.16714"
+   ],
+   "norm_title": "towards green text generation memory based speculative decoding",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.16714",
+   "date": "2026-11-12",
+   "decision": "exclude",
+   "reason": "推测解码的节能文本生成，属于 LLM 推理效率，与营销无关。",
+   "track": "none",
+   "llm_use": "speculative decoding draft model",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C049",
+   "title": "Amicus Brief of Pamela Samuelson and Christopher Jon Sprigman in Support of Neither Party in OpenAI Copyright Infringement Litigation, 1:25-md-03143-SHS-OTW, United States District Court, Southern District of New York",
+   "ids": [
+    "doi:10.2139/ssrn.7697759",
+    "ssrn:7697759"
+   ],
+   "norm_title": "amicus brief of pamela samuelson and christopher jon sprigman in support of neither party in openai copyright infringement litigation 1 25 md 03143 shs otw united states district court southern district of new york",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7697759",
+   "date": "2026-11-13",
+   "decision": "exclude",
+   "reason": "这是一份关于生成式 AI 版权诉讼的法庭意见书（amicus brief），讨论市场稀释理论，没有用 LLM 模拟消费者，也不是营销方法。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C050",
+   "title": "Groundhog: A Benchmark for Safe Caching in Tool-Calling LLM Agents",
+   "ids": [
+    "doi:10.2139/ssrn.7688298",
+    "ssrn:7688298"
+   ],
+   "norm_title": "groundhog a benchmark for safe caching in tool calling llm agents",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7688298",
+   "date": "2026-11-13",
+   "decision": "exclude",
+   "reason": "这是关于工具调用型 LLM agent 缓存安全的基准，属于通用 agent 工程，与营销研究无关。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C051",
+   "title": "MeReader: An Offline, Privacy-Preserving, Progress-Aware AI Assistant for Narrative eBook Reading",
+   "ids": [
+    "arxiv:2611.18513",
+    "doi:10.1007/978-3-032-37936-8_22"
+   ],
+   "norm_title": "mereader an offline privacy preserving progress aware ai assistant for narrative ebook reading",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.18513",
+   "date": "2026-11-13",
+   "decision": "exclude",
+   "reason": "这是离线电子书阅读 RAG 助手，属于通用系统工程，与营销无关。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C052",
+   "title": "Voice-Based Conversational Agents as AI Care Assistants: Evaluating Personalization, Intervention Delivery Fidelity, and Privacy Expectations in Older Adults' Care",
+   "ids": [
+    "arxiv:2611.18385"
+   ],
+   "norm_title": "voice based conversational agents as ai care assistants evaluating personalization intervention delivery fidelity and privacy expectations in older adults care",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.18385",
+   "date": "2026-11-13",
+   "decision": "exclude",
+   "reason": "这是面向老年人照护的语音对话 agent 的人机交互研究，与消费者模拟或营销方法无关。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C053",
+   "title": "Contagious Fingerprints: When LLMs Inherit Another Model's Identity",
+   "ids": [
+    "arxiv:2611.18104"
+   ],
+   "norm_title": "contagious fingerprints when llms inherit another model s identity",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.18104",
+   "date": "2026-11-13",
+   "decision": "exclude",
+   "reason": "研究 LLM 指纹被继承与 API 中转审计，是模型安全问题，不属于任何收录路径。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C054",
+   "title": "PerfArena: Ranking LLMs by Code Performance",
+   "ids": [
+    "arxiv:2611.18030"
+   ],
+   "norm_title": "perfarena ranking llms by code performance",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.18030",
+   "date": "2026-11-13",
+   "decision": "exclude",
+   "reason": "这是 LLM 生成代码性能的排名基准，与营销无关。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C055",
+   "title": "G-CAST: Governed Continual Self-Training for E-Commerce Agents under Evolving Demands",
+   "ids": [
+    "arxiv:2611.17814"
+   ],
+   "norm_title": "g cast governed continual self training for e commerce agents under evolving demands",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.17814",
+   "date": "2026-11-13",
+   "decision": "exclude",
+   "reason": "这是电商购物 agent 的持续自训练系统（阿里 1688），属于通用 agent 工程，没有模拟消费者，也不是营销内容生成方法。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C056",
+   "title": "Antidistillation is Cheap: Lightweight Distillation-Resistance via Stylistic Corruption",
+   "ids": [
+    "arxiv:2611.17772"
+   ],
+   "norm_title": "antidistillation is cheap lightweight distillation resistance via stylistic corruption",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.17772",
+   "date": "2026-11-13",
+   "decision": "exclude",
+   "reason": "这是防模型蒸馏的技术论文，与营销无关。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C057",
+   "title": "What LLM Agents See and What Users Say",
+   "ids": [
+    "arxiv:2611.17639"
+   ],
+   "norm_title": "what llm agents see and what users say",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.17639",
+   "date": "2026-11-13",
+   "decision": "exclude",
+   "reason": "研究 AI 评分器在阿联酋虚拟资产监管问答上的指令与运行敏感性，属于评测稳健性，不涉及消费者模拟或营销方法。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C058",
+   "title": "Instruction and Run Sensitivity in AI Grading of Regulatory Answers",
+   "ids": [
+    "doi:10.2139/ssrn.7687044",
+    "ssrn:7687044"
+   ],
+   "norm_title": "instruction and run sensitivity in ai grading of regulatory answers",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7687044",
+   "date": "2026-11-14",
+   "decision": "exclude",
+   "reason": "这是 LLM agent 在行动前核实用户与工具信息的通用 agent 研究，与营销无关。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C059",
+   "title": "INTENT: Out-of-Sample, Out-of-Time, and Cold-Start Evaluation on User Event Sequences",
+   "ids": [
+    "arxiv:2611.13069"
+   ],
+   "norm_title": "intent out of sample out of time and cold start evaluation on user event sequences",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.13069",
+   "date": "2026-11-09",
+   "decision": "exclude",
+   "reason": "这是银行用户事件序列预测的通用评测基准，偏推荐系统/序列建模工程，不是营销内容生成或营销方法，也没有消费者模拟。",
+   "track": "none",
+   "llm_use": "transformer 用于银行用户事件序列的下一步行为预测基准",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C060",
+   "title": "AI as Shared Business Infrastructure: Firm Growth and the Distribution of Gains",
+   "ids": [
+    "doi:10.2139/ssrn.7685026",
+    "ssrn:7685026"
+   ],
+   "norm_title": "ai as shared business infrastructure firm growth and the distribution of gains",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7685026",
+   "date": "2026-11-11",
+   "decision": "exclude",
+   "reason": "这是评估电商平台嵌入生成式 AI 后商家销售增长的因果研究，生成式 AI 只是被研究的采纳对象，没有用 LLM 模拟消费者，也不是营销方法组件。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C061",
+   "title": "Mind the Accuracy-Approval Gap: How Users Evaluate Sycophantic AI in Everyday Tasks",
+   "ids": [
+    "arxiv:2611.16722"
+   ],
+   "norm_title": "mind the accuracy approval gap how users evaluate sycophantic ai in everyday tasks",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.16722",
+   "date": "2026-11-12",
+   "decision": "exclude",
+   "reason": "研究用户如何评价谄媚型 AI 助手（基准测试加用户实验），LLM 只是被研究对象，不涉及消费者模拟或营销方法。",
+   "track": "none",
+   "llm_use": "LLM personas with sycophancy settings studied in user studies",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C062",
+   "title": "Should I Buy It? How Prices Next Door Sway AI Shopping Verdicts",
+   "ids": [
+    "doi:10.2139/ssrn.7690278",
+    "ssrn:7690278"
+   ],
+   "norm_title": "should i buy it how prices next door sway ai shopping verdicts",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7690278",
+   "date": "2026-11-14",
+   "decision": "exclude",
+   "reason": "审计 AI 购物助手的购买建议如何受相邻商品价格影响，LLM 是被研究的产品，没有模拟消费者，也不是营销方法的组件。",
+   "track": "none",
+   "llm_use": "LLM shopping assistants audited for price-context effects on purchase verdicts",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C063",
+   "title": "Multimodal Graph Learning: A Survey of Models, Benchmarks, and Frontiers",
+   "ids": [
+    "arxiv:2611.12990"
+   ],
+   "norm_title": "multimodal graph learning a survey of models benchmarks and frontiers",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.12990",
+   "date": "2026-11-08",
+   "decision": "exclude",
+   "reason": "多模态图学习综述，属通用机器学习，与营销或人类模拟无关。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C064",
+   "title": "RecoGEM: A Serving System for Production-Scale Generative Recommendation",
+   "ids": [
+    "arxiv:2611.12296"
+   ],
+   "norm_title": "recogem a serving system for production scale generative recommendation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.12296",
+   "date": "2026-11-09",
+   "decision": "exclude",
+   "reason": "生成式推荐的工业级服务系统工程论文，属推荐系统工程，排除。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C065",
+   "title": "FraudBench: A Legal Evaluation of AI Deception",
+   "ids": [
+    "arxiv:2611.12167"
+   ],
+   "norm_title": "fraudbench a legal evaluation of ai deception",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.12167",
+   "date": "2026-11-09",
+   "decision": "exclude",
+   "reason": "FraudBench 评测 LLM 的欺诈倾向，属 AI 安全与法律评估，不涉及消费者模拟或营销方法。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C066",
+   "title": "When Do Synthetic Participants Reproduce Human Behavior? Evidence by Target, Method and Domain",
+   "ids": [
+    "doi:10.2139/ssrn.7681498",
+    "ssrn:7681498"
+   ],
+   "norm_title": "when do synthetic participants reproduce human behavior evidence by target method and domain",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7681498",
+   "date": "2026-11-10",
+   "decision": "uncertain",
+   "reason": "综述 LLM 合成受访者在不同保真目标、方法和任务领域上与真人数据的一致程度，主题贴合 B 类，但摘要未点明具体公开数据集，且是文献证据分析。",
+   "track": "public_data_simulation",
+   "llm_use": "LLMs as synthetic participants in surveys and experiments (literature synthesis)",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "按保真目标、方法和任务领域综述合成参与者与真人数据的一致性，属以效度为中心的综述，归 1.2；提出的 salience capture 只是解释机制，不构成 1.3 方法。",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "标题与作者顺序已对照 Crossref（DOI 10.2139/ssrn.7681498，创建日期 2026-11-10）；无已发表版本，无数据集。",
+   "issues": [
+    "Hoefer、Zhang 的单位无法核实，Krastev 的单位仅来自搜索结果",
+    "未能确认是否有商学院作者"
+   ],
+   "meta": {
+    "title": "When Do Synthetic Participants Reproduce Human Behavior? Evidence by Target, Method and Domain",
+    "authors": [
+     {
+      "given": "Mads",
+      "family": "Hoefer"
+     },
+     {
+      "given": "Tianwei",
+      "family": "Zhang"
+     },
+     {
+      "given": "Sekoul",
+      "family": "Krastev"
+     }
+    ],
+    "venue": "SSRN 7681498",
+    "date": "2026-11",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7681498"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Sekoul Krastev",
+     "affiliation": "The Decision Lab（咨询机构，网页称其为 managing director；非商学院，且未在论文页确认）"
+    }
+   ],
+   "business_school": null,
+   "tier": 2,
+   "anchor": "paper-when-do-synthetic-participants-reproduce-human-behavior-evidence-by-target-method-and-domain"
+  },
+  {
+   "cid": "C067",
+   "title": "OverServe: Resource Amplification Attacks on SaaS Agents via Tool--Prompt Co-Design",
+   "ids": [
+    "arxiv:2611.14808"
+   ],
+   "norm_title": "overserve resource amplification attacks on saas agents via tool prompt co design",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.14808",
+   "date": "2026-11-10",
+   "decision": "exclude",
+   "reason": "针对 SaaS 智能体的资源放大攻击，属安全与通用 agent 工程，排除。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C068",
+   "title": "Incentive-Responsive Agents: A Principal-Agent Framework, Metric Suite, and Runtime Architecture for Long-Lived Personal AI Agents",
+   "ids": [
+    "arxiv:2611.15515"
+   ],
+   "norm_title": "incentive responsive agents a principal agent framework metric suite and runtime architecture for long lived personal ai agents",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.15515",
+   "date": "2026-11-11",
+   "decision": "exclude",
+   "reason": "长期运行个人 AI agent 的委托代理激励框架，属通用 agent 论文，排除。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C069",
+   "title": "SurvEval: Listwise Re-Ranking Evaluator via Survival-Based Exposure and Multi-Objective Value Modeling",
+   "ids": [
+    "arxiv:2611.15434"
+   ],
+   "norm_title": "surveval listwise re ranking evaluator via survival based exposure and multi objective value modeling",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.15434",
+   "date": "2026-11-11",
+   "decision": "exclude",
+   "reason": "推荐系统重排序评估器（生存模型加 transformer 主干），属推荐系统工程，不涉及 LLM 营销应用。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C070",
+   "title": "SimRec: Learning to Search, Ask, and Recommend from Simulated Interaction",
+   "ids": [
+    "arxiv:2611.15426"
+   ],
+   "norm_title": "simrec learning to search ask and recommend from simulated interaction",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.15426",
+   "date": "2026-11-11",
+   "decision": "exclude",
+   "reason": "用强化学习训练工具调用型推荐 agent，LLM 用户模拟器只是训练组件，属通用 agent 与推荐系统工程，且未与真人数据对比。",
+   "track": "none",
+   "llm_use": "LLM user simulator for RL training of recommendation agent",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C071",
+   "title": "Understanding the Effects of Multi-Agent Deliberation for Human-AI Decision-Making",
+   "ids": [
+    "arxiv:2611.14901"
+   ],
+   "norm_title": "understanding the effects of multi agent deliberation for human ai decision making",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.14901",
+   "date": "2026-11-11",
+   "decision": "exclude",
+   "reason": "多智能体辩论对人机协同决策的用户研究，与消费者或营销无关。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C072",
+   "title": "Generative Design with Real-time Physics Explainability: Towards Product Definition in the Age of AI",
+   "ids": [
+    "arxiv:2611.17560"
+   ],
+   "norm_title": "generative design with real time physics explainability towards product definition in the age of ai",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.17560",
+   "date": "2026-11-12",
+   "decision": "exclude",
+   "reason": "机械工程中的生成式设计（可逆神经网络），不涉及 LLM 或营销。",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C073",
+   "title": "Efficiency Gains in Social Science Research: A Prospective Silicon Sampling Protocol for Pre-Treatment and Code Optimization",
+   "ids": [
+    "arxiv:2611.18436"
+   ],
+   "norm_title": "efficiency gains in social science research a prospective silicon sampling protocol for pre treatment and code optimization",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.18436",
+   "date": "2026-11-13",
+   "decision": "exclude",
+   "reason": "用 LLM 生成合成问卷数据来提前准备分析代码，受访者是影像科研网络成员而非消费者，也没有用公开人类回答数据集评估模拟效果，不属于任何一条路径。",
+   "track": "none",
+   "llm_use": "Sonnet 4.6, GPT 5.3 and Kimi 2.6 generate synthetic survey responses to prepare data-processing code before real data collection",
+   "human_data": "France Life Imaging network survey (not public)",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C074",
+   "title": "DOCKET: A Pluralistic Benchmark for Evaluating AI-Assisted Policy Feedback in U.S. Rulemaking",
+   "ids": [
+    "arxiv:2611.17914"
+   ],
+   "norm_title": "docket a pluralistic benchmark for evaluating ai assisted policy feedback in u s rulemaking",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.17914",
+   "date": "2026-11-13",
+   "decision": "exclude",
+   "reason": "无商学院作者且影响力不足（引用 0），作者单位：Stanford University；Cornell University；New York University。构建美国联邦规则制定公众评论数据集，并评估 LLM（含 persona）能否代表真实人类政策观点，与真人评论对比。属于政策反馈基准，是否算对人的回答分布的模拟存疑，也非营销场景，待定。",
+   "track": "public_data_simulation",
+   "llm_use": "LLMs generate feedback on proposed regulations, including persona modeling, to represent stakeholder perspectives",
+   "human_data": "DOCKET: 42.3M public comments on 22,400 U.S. federal regulations",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.4",
+   "dataset_section": "1.4",
+   "classification": "核心贡献是 DOCKET 数据集与 DOCKETBench 基准（4230 万条公众评论），数据集本身为主要贡献故归 1.4；若按主题则为 1.2 效度评估。",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "标题、作者顺序、日期已对照 arXiv 摘要页（2026-11-13 v1）；单位取自 arXiv HTML 首页，数据集链接取自 HTML 正文（未单独打开该 HF 链接）。",
+   "issues": [
+    "数据集 Hugging Face 链接未直接打开验证"
+   ],
+   "meta": {
+    "title": "DOCKET: A Pluralistic Benchmark for Evaluating AI-Assisted Policy Feedback in U.S. Rulemaking",
+    "authors": [
+     {
+      "given": "Alexander",
+      "family": "Spangher"
+     },
+     {
+      "given": "Charlotte",
+      "family": "Peale"
+     },
+     {
+      "given": "Sílvia",
+      "family": "Casacuberta"
+     },
+     {
+      "given": "Victor Y.",
+      "family": "Wu"
+     },
+     {
+      "given": "Mirac",
+      "family": "Suzgun"
+     },
+     {
+      "given": "Olivia H.",
+      "family": "Martin"
+     },
+     {
+      "given": "Dan",
+      "family": "Bateyko"
+     },
+     {
+      "given": "Cassandra",
+      "family": "Handan-Nader"
+     },
+     {
+      "given": "Diyi",
+      "family": "Yang"
+     },
+     {
+      "given": "Sanmi",
+      "family": "Koyejo"
+     },
+     {
+      "given": "Daniel E.",
+      "family": "Ho"
+     }
+    ],
+    "venue": "arXiv:2611.17914",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.17914"
+   },
+   "dataset": {
+    "description": "美国联邦规则制定通知与评论数据：2016–2026 年 44 个机构 22,400 条法规的 4230 万条公众评论（真实人类数据），含 DOCKETBench 评测",
+    "url": "https://huggingface.co/datasets/docket-dataset-bench/docket-bench"
+   },
+   "affiliations": [
+    {
+     "author": "Alexander Spangher",
+     "affiliation": "Stanford University"
+    },
+    {
+     "author": "Charlotte Peale",
+     "affiliation": "Stanford University"
+    },
+    {
+     "author": "Sílvia Casacuberta",
+     "affiliation": "Stanford University"
+    },
+    {
+     "author": "Victor Y. Wu",
+     "affiliation": "Stanford University"
+    },
+    {
+     "author": "Mirac Suzgun",
+     "affiliation": "Stanford University"
+    },
+    {
+     "author": "Olivia H. Martin",
+     "affiliation": "Stanford University"
+    },
+    {
+     "author": "Dan Bateyko",
+     "affiliation": "Cornell University"
+    },
+    {
+     "author": "Cassandra Handan-Nader",
+     "affiliation": "New York University"
+    },
+    {
+     "author": "Diyi Yang",
+     "affiliation": "Stanford University"
+    },
+    {
+     "author": "Sanmi Koyejo",
+     "affiliation": "Stanford University"
+    },
+    {
+     "author": "Daniel E. Ho",
+     "affiliation": "Stanford University"
+    }
+   ],
+   "business_school": false,
+   "tier": 2
+  },
+  {
+   "cid": "C075",
+   "title": "Aligning AI Teams",
+   "ids": [
+    "arxiv:2611.17820"
+   ],
+   "norm_title": "aligning ai teams",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.17820",
+   "date": "2026-11-13",
+   "decision": "exclude",
+   "reason": "研究多智能体 LLM 团队的对齐与安全问题，属于通用 agent 论文，与消费者模拟或营销方法无关。",
+   "track": "none",
+   "llm_use": "Multi-agent LLM teams in software and consulting tasks, studied for alignment and safety",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  }
+ ]
+}

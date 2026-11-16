@@ -18,6 +18,7 @@ INDEXED_DOCS = [
     README,
     ROOT / "docs" / "consumer-simulation-method-supplement.md",
     ROOT / "docs" / "consumer-simulation-review.md",
+    ROOT / "scan" / "removed.md",
 ]
 CONFIG_PATH = Path(__file__).resolve().parent / "scan_config.json"
 SCAN_DIR = ROOT / "scan"

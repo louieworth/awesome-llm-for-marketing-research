@@ -13,34 +13,33 @@ The prompt gives you candidate IDs (e.g. C001–C012) and an output path such as
 
 ## Calibrate first
 
-1. Read `scan/criteria.md`. It defines the three tracks this scan accepts. It is narrower than CONTRIBUTING.md, and both apply.
+1. Read `scan/criteria.md`. It defines the marketing gate and the two tracks this scan accepts. It is narrower than CONTRIBUTING.md, and both apply.
 2. Read "Scope and evidence" in `CONTRIBUTING.md`.
-3. Skim `README.md` section 1 (Consumer Simulation). Note especially the 1.4 datasets, such as OpinionQA and Twin-2K-500, to see what the collection already holds.
+3. Skim `README.md` section 1 (Consumer Simulation). Note especially the 1.4 datasets, such as Twin-2K-500, to see what the collection already holds.
 
 ## Decide for each candidate
 
 - **track**: one of
   - `consumer_simulation`
-  - `public_data_simulation`
   - `marketing_method`
   - `none`
 
   Use the definitions in `scan/criteria.md`.
 - **decision**:
-  - `include`: the paper clearly fits a track. For `marketing_method`, judge only the topic. Author affiliation is checked later, so do not exclude a paper for unknown affiliation.
-  - `uncertain`: the paper plausibly fits a track, but the abstract does not establish it. Examples: you cannot tell whether the simulated people are consumers; you cannot tell whether a public human-response dataset is used.
-  - `exclude`: track `none`, or anything in the "一律排除" (always exclude) list in `scan/criteria.md`.
+  - `include`: the paper clearly passes the marketing gate and fits a track. Author affiliation is checked later, so do not exclude a paper for unknown affiliation.
+  - `uncertain`: the paper passes the marketing gate, but the abstract leaves the LLM's role or the track unclear.
+  - `exclude`: no marketing setting in the research question, data or evaluation; track `none`; or anything in the "Always exclude" list in `scan/criteria.md`.
 
-Be strict. A typical week has only a handful of includes. Do not infer relevance from the venue or from keywords alone. If a `public_data_simulation` paper does not name its human data source in the abstract, mark it `uncertain` rather than `include`.
+Be strict. The maintainer wants to review only papers that are clearly about marketing; a typical week has a handful of includes at most, and none is normal. If the abstract does not show a marketing setting, exclude the paper rather than marking it `uncertain`. Do not infer relevance from the venue, from keywords, or from marketing being named as one possible application. General social-science, public-opinion, psychology and economic-game simulations without a consumer or marketing task are excluded.
 
 **UTD 24 journals (tier 1).** The venue may be one of the UTD 24 journals listed under `journal_sets.utd24` in `scripts/scan_config.json`. For those papers:
 
-- Mark `include` whenever an LLM, a transformer model or generative AI is the paper's research tool, research object or method component, even if it fits none of tracks A, B or C. Use `track: "utd"` in that case.
-- Mark `exclude` only if AI is mentioned in passing, or if the paper is about pre-LLM rule-based chatbots or classic machine learning. Transformer models count as LLMs, not as classic machine learning, including transformers trained on marketing data such as customer journeys or consumption sequences.
+- The venue only waives the business-school author requirement. The paper must still pass the marketing gate and fit track A or C; otherwise mark it `exclude`.
+- Also exclude it if AI is mentioned in passing, or if the paper is about pre-LLM rule-based chatbots or classic machine learning. Transformer models count as LLMs, not as classic machine learning, including transformers trained on marketing data such as customer journeys or consumption sequences.
 
-**Notable flag (tier 3).** Most papers without business-school authors are dropped later unless they are highly cited. If such a paper is exceptionally valuable for marketing research, set `notable: true` and write a one-sentence `notable_reason` in English. Examples: a dataset or benchmark the field widely uses, or a method marketing researchers clearly need. Use the flag sparingly, for perhaps one paper in fifty.
+**Notable flag (tier 3).** Most papers without business-school authors are dropped later unless they are highly cited. If such a paper passes the marketing gate and is exceptionally valuable for marketing research, set `notable: true` and write a one-sentence `notable_reason` in English. Examples: a dataset or benchmark the field widely uses, or a method marketing researchers clearly need. Use the flag sparingly, for perhaps one paper in fifty.
 
-LLM cultural or value-alignment studies are papers that use WVS, Pew or similar data to measure or align a model's own values. They are not track B. Mark them `include` with `track: "public_data_simulation"` only when they also simulate respondents' answers and evaluate that simulation against real people. Otherwise mark them `exclude`, unless you set `notable`.
+LLM cultural or value-alignment studies, which use WVS, Pew or similar data to measure or align a model's own values, are excluded, as are simulations of survey respondents on public-opinion, political or social items.
 
 ## Output
 

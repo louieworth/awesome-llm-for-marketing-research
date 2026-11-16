@@ -14,7 +14,7 @@ The prompt gives you candidate IDs and an output path such as `scan/work/classif
 ## Calibrate first (all four steps are required)
 
 1. Read the candidate's screening verdict in `scan/work/screen-*.json`, especially its `track`.
-   - `consumer_simulation` and `public_data_simulation` papers go in category 1 (1.1–1.3, plus 1.4 for datasets).
+   - `consumer_simulation` papers go in category 1 (1.1–1.3, plus 1.4 for datasets).
    - `marketing_method` papers go in category 2 or 3.
 2. Read `scan/criteria.md`.
 3. Read step 1 of "Adding a paper" and "Adding a benchmark or dataset" in `CONTRIBUTING.md`. These rules decide placement.

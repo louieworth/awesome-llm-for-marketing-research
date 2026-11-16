@@ -32,7 +32,6 @@
     "market research",
     "survey responses",
     "survey research",
-    "public opinion",
     "synthetic respondents",
     "silicon sample",
     "silicon samples",
@@ -40,7 +39,6 @@
     "digital twins",
     "persona",
     "personas",
-    "human subjects",
     "homo silicus",
     "simulate human",
     "human behavior simulation",
@@ -54,19 +52,9 @@
     "demand estimation",
     "A/B test",
     "online experiment",
-    "economic agents",
     "product reviews",
     "recommender",
-    "OpinionQA",
     "Twin-2K-500",
-    "World Values Survey",
-    "General Social Survey",
-    "ANES",
-    "American National Election",
-    "Pew",
-    "American Trends Panel",
-    "European Social Survey",
-    "Many Labs",
     "survey respondents",
     "human respondents"
   ],
@@ -78,15 +66,10 @@
     "synthetic respondents",
     "silicon sample",
     "digital twin",
-    "homo silicus",
     "willingness to pay",
     "market research",
     "brand",
-    "OpinionQA",
-    "Twin-2K-500",
-    "World Values Survey",
-    "General Social Survey",
-    "American Trends Panel"
+    "Twin-2K-500"
   ],
   "arxiv": {
     "categories": [
@@ -171,14 +154,12 @@
       "generative AI marketing",
       "homo silicus",
       "LLM conjoint willingness to pay",
-      "LLM simulate human subjects",
-      "LLM public opinion survey",
       "LLM personalization recommendation"
     ],
     "focus": {
       "human_sim": "\\b(simulat\\w*|digital twins?|synthetic (respondents?|participants?|consumers?|samples?|subjects?|panels?)|silicon (samples?|subjects?|participants?)|personas?|homo silicus|human (subjects?|participants?|respondents?)|survey (responses?|respondents?)|respondents?|replicat\\w*)\\b",
       "consumer": "\\b(consumers?|customers?|shoppers?|marketing|purchas\\w*|brands?|willingness[- ]to[- ]pay|conjoint|products?|market research|advertis\\w*|pricing|preferences?|e-commerce|choices?)\\b",
-      "public_data": "\\b(OpinionQA|Twin-2K-500|World Values Survey|General Social Survey|American National Election|ANES|American Trends Panel|Pew Research|European Social Survey|Many Labs)\\b",
+      "public_data": "\\b(Twin-2K-500)\\b",
       "marketing_core": "\\b(marketing|advertis\\w*|conjoint|willingness[- ]to[- ]pay|market research|brands?|consumer behaviou?r|consumers?)\\b"
     }
   },

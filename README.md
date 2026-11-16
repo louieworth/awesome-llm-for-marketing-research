@@ -2,9 +2,9 @@
 
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
-![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-74-4C70C8?style=for-the-badge)
+![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-77-4C70C8?style=for-the-badge)
 ![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-30-D98757?style=for-the-badge)
-![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-18-9865C6?style=for-the-badge)
+![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-19-9865C6?style=for-the-badge)
 
 </div>
 
@@ -116,6 +116,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Casero, Emilio, et al. "Customer Digital Twins in the Field: Cross-Sell Micro-Personalization at Scale." Columbia Business School research record (2026-09). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7410898)
 
+<a id="paper-green-tastes-beliefs-and-portfolios-evidence-from-synthetic-investors"></a>
+
+- He, Xindi, and Lubos Pastor. "Green Tastes, Beliefs, and Portfolios: Evidence from Synthetic Investors." SSRN 7673158 (2026-11). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7673158)
+
 ### 1.2 Validity and Limitations
 
 <a id="paper-on-the-reliability-of-individual-economic-rationality-measurements"></a>
@@ -222,6 +226,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Karetnikov, Nikita, Iyad Rahwan, and Davor Svetinovic. "Large language models as human proxies." Nature Computational Science (2026-09). [[link]](https://doi.org/10.1038/s43588-026-01060-3)
 
+<a id="paper-whose-startup-does-the-ai-back-an-algorithm-audit-of-reputation-and-demographic-signals-in-llm-assisted-crowdfunding"></a>
+
+- Baig, Mirza Samad Ahmed, and Syeda Anshrah Gillani. "Whose startup does the AI back? An algorithm audit of reputation and demographic signals in LLM-assisted crowdfunding." Journal of Business Venturing Insights 26: e00682 (2026-10). [[link]](https://doi.org/10.1016/j.jbvi.2026.e00682)
+
 <a id="paper-the-challenge-of-using-llms-to-simulate-human-behavior-a-causal-inference-perspective"></a>
 
 - Gui, George, and Olivier Toubia. "The Challenge of Using LLMs to Simulate Human Behavior: A Causal Inference Perspective." SSRN 4650172 (2023-12). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4650172)
@@ -273,6 +281,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-decision-models-as-scalable-economic-surrogates-that-capture-human-variation"></a>
 
 - Saxena, Maxime, Fabio Caccioli, and R. Maria del Rio-Chanona. "Decision Models as Scalable Economic Surrogates that Capture Human Variation." arXiv:2611.05553 (2026-11). [[link]](https://arxiv.org/abs/2611.05553)
+
+<a id="paper-structuring-survey-histories-for-llm-digital-twins-a-controlled-study-of-background-decision-procedure-and-evaluation-profiles"></a>
+
+- Ye, Iris, Tianze Deng, and Ozan Candogan. "Structuring Survey Histories for LLM Digital Twins: A Controlled Study of Background, Decision Procedure, and Evaluation Profiles." arXiv:2611.08730 (2026-11). [[link]](https://arxiv.org/abs/2611.08730)
 
 ### 1.3 Methods and Improvements
 
@@ -416,6 +428,14 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Teeny, Jacob D., et al. "The Promise of Generative AI for Personalized Persuasion." Current Directions in Psychological Science (2026-05). [[link]](https://doi.org/10.1177/09637214261424859)
 
+<a id="paper-competition-and-diversity-in-generative-ai"></a>
+
+- Raghavan, Manish. "Competition and Diversity in Generative AI." Management Science (2026-10). [[link]](https://doi.org/10.1287/mnsc.2025.02761)
+
+<a id="paper-generative-ai-and-sales-productivity-field-experiments-in-online-retail"></a>
+
+- Fang, Lu, et al. "Generative Artificial Intelligence and Sales Productivity: Field Experiments in Online Retail." Management Science (2026-11). [[link]](https://doi.org/10.1287/mnsc.2026.00623)
+
 <a id="paper-ai-in-disguise-quasi-experimental-analysis-of-a-large-scale-deployment-of-ai-generated-ads"></a>
 
 - Exner, Yannick, et al. "AI in Disguise—Quasi-Experimental Analysis of a Large-Scale Deployment of AI-Generated Ads." SSRN 5096969 (2025-03). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5096969)
@@ -423,10 +443,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-knowing-me-telling-me-information-design-in-gen-ai-enabled-communication-in-digital-marketing"></a>
 
 - Hu, Lin, Xueyan Yin, and Juan Feng. "Knowing Me, Telling Me: Information Design in Gen-AI Enabled Communication in Digital Marketing." SSRN 5229032 (2025-05). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5229032)
-
-<a id="paper-generative-ai-and-sales-productivity-field-experiments-in-online-retail"></a>
-
-- Fang, Lu, et al. "Generative AI and Sales Productivity: Field Experiments in Online Retail." arXiv:2510.12049 (2025-10). [[link]](https://arxiv.org/abs/2510.12049)
 
 <a id="paper-the-impact-of-visual-generative-ai-on-advertising-effectiveness"></a>
 
@@ -447,10 +463,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-the-impact-of-google-ai-overviews-on-publisher-traffic-and-user-experience-evidence-from-a-field-experiment"></a>
 
 - Agarwal, Saharsh, and Ananya Sen. "The Impact of Google AI Overviews on Publisher Traffic and User Experience: Evidence from a Field Experiment." SSRN 6513059 (2026-04). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6513059)
-
-<a id="paper-competition-and-diversity-in-generative-ai"></a>
-
-- Raghavan, Manish. "Competition and Diversity in Generative AI." Management Science (2026-10). [[link]](https://doi.org/10.1287/mnsc.2025.02761)
 
 ### 2.2 Methods and Improvements
 
@@ -588,6 +600,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-using-llm-based-priors-to-optimize-choice-designs-in-conjoint-experiments"></a>
 
 - Eggers, Felix, and Marco Vriens. "Using LLM-Based Priors to Optimize Choice Designs in Conjoint Experiments." SSRN 6719681 (2026-05). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6719681)
+
+<a id="paper-eventgpt-next-event-pretraining-on-banking-customer-histories"></a>
+
+- Burakov, Denis. "EventGPT: Next-Event Pretraining on Banking Customer Histories." arXiv:2611.03302 (2026-11). [[link]](https://arxiv.org/abs/2611.03302)
 
 ### 3.3 Benchmarks and Datasets
 

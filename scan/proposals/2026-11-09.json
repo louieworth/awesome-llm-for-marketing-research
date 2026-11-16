@@ -60,7 +60,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.1",
    "dataset_section": null,
    "classification": "Management Science 正式版，与 README 2.1 中已收的 arXiv 版 Fang 等同一工作，是 GenAI 对销售结果的现场实验因果证据，归 2.1（应与预印本合并）。",
@@ -122,7 +122,9 @@
    ],
    "business_school": true,
    "tier": 1,
-   "anchor": "paper-generative-artificial-intelligence-and-sales-productivity-field-experiments-in-online-retail"
+   "anchor": "paper-generative-artificial-intelligence-and-sales-productivity-field-experiments-in-online-retail",
+   "final_section": "2.1",
+   "final_dataset_section": null
   },
   {
    "cid": "C003",
@@ -225,7 +227,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.2",
    "dataset_section": null,
    "classification": "在 Twin-2K-500 上对比调查历史的组织方式与抽取深度并做配对统计检验，属于比较数据表示的对照研究而非新算法，类似已收的 AI-Moderated Interviews 归 1.2 而非 1.3。",
@@ -271,7 +273,9 @@
    ],
    "business_school": true,
    "tier": 2,
-   "anchor": "paper-structuring-survey-histories-for-llm-digital-twins-a-controlled-study-of-background-decision-procedure-and-evaluation-profiles"
+   "anchor": "paper-structuring-survey-histories-for-llm-digital-twins-a-controlled-study-of-background-decision-procedure-and-evaluation-profiles",
+   "final_section": "1.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C005",
@@ -334,7 +338,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.2",
    "dataset_section": null,
    "classification": "提出解码时调整 token 概率植入原生广告的生成方法，属广告内容生成的方法改进，归 2.2 而非 2.1（后者如 Ads that Talk Back 是效果证据）。",
@@ -491,7 +495,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.2",
    "dataset_section": null,
    "classification": "让七个 LLM 在人设下做众筹 conjoint 选择并审计其对创始人性别与族裔的偏好，属于 LLM 选择行为的偏差与局限研究，无新方法，归 1.2 而非 1.1。",
@@ -537,7 +541,9 @@
    ],
    "business_school": null,
    "tier": 2,
-   "anchor": "paper-whose-startup-does-the-ai-back-an-algorithm-audit-of-reputation-and-demographic-signals-in-llm-assisted-crowdfunding"
+   "anchor": "paper-whose-startup-does-the-ai-back-an-algorithm-audit-of-reputation-and-demographic-signals-in-llm-assisted-crowdfunding",
+   "final_section": "1.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C010",
@@ -558,7 +564,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "3.2",
    "dataset_section": null,
    "classification": "Operations Research 论文提出 GenAI 与数学优化结合的 4I 设计框架，属决策与预测方法类，归 3.2，但为概念性论述，无明确更贴切的小节（3.1 亦可）。",
@@ -1264,7 +1270,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "3.2",
    "dataset_section": null,
    "classification": "在银行客户事件序列上预训练 transformer 做下一事件与产品预测，属顾客行为预测方法，归 3.2；仅发布代码和权重，使用的是公开 MBD-mini，不另列数据集。",
@@ -1292,7 +1298,9 @@
    "affiliations": [],
    "business_school": null,
    "tier": 2,
-   "anchor": "paper-eventgpt-next-event-pretraining-on-banking-customer-histories"
+   "anchor": "paper-eventgpt-next-event-pretraining-on-banking-customer-histories",
+   "final_section": "3.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C040",
@@ -1758,7 +1766,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.2",
    "dataset_section": null,
    "classification": "检验默认选项与社会影响助推对非生成式决策模型购物选择的影响并与此前人类和 LLM 结果对照，属于 AI 代理行为与真人差异的行为研究，归 1.2 而非 1.1。",
@@ -1879,7 +1887,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.1",
    "dataset_section": null,
    "classification": "用 LLM 作为合成投资者受访者引出绿色偏好、信念与组合配置并做跨年重构，属于模拟问卷的应用展示，没有提出新估计方法也不是系统的真人效度检验，类似 Horton 的 Homo Silicus，归 1.1 而非 1.2/1.3。",
@@ -1920,7 +1928,9 @@
    ],
    "business_school": true,
    "tier": 2,
-   "anchor": "paper-green-tastes-beliefs-and-portfolios-evidence-from-synthetic-investors"
+   "anchor": "paper-green-tastes-beliefs-and-portfolios-evidence-from-synthetic-investors",
+   "final_section": "1.1",
+   "final_dataset_section": null
   },
   {
    "cid": "C065",

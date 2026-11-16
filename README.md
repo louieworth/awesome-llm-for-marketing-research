@@ -270,10 +270,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Netzer, Oded, and Rajan Sambandam. "Synthetic Data in Marketing Research: How to Evaluate and When to Trust." arXiv:2609.13995 (2026-09). [[link]](https://arxiv.org/abs/2609.13995)
 
-<a id="paper-measuring-the-digital-twin-separating-individuation-from-population-regularity-in-llm-survey-twins"></a>
-
-- Miller, Moses. "Measuring the Digital Twin: Separating Individuation from Population Regularity in LLM Survey Twins." Working paper, Reichman University (2026), no public copy yet; link goes to its citation in Netzer and Sambandam, arXiv 2609.13995 [[link]](https://arxiv.org/pdf/2609.13995#page=31)
-
 <a id="paper-seeing-is-not-perceiving-when-synthetic-consumers-can-and-cannot-pretest-visual-marketing"></a>
 
 - Tsai, Yi-Lin, and Yung-Hsiu Lai. "Seeing Is Not Perceiving: When Synthetic Consumers Can and Cannot Pretest Visual Marketing." arXiv:2609.25677 (2026-09). [[link]](https://arxiv.org/abs/2609.25677)
@@ -285,6 +281,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-structuring-survey-histories-for-llm-digital-twins-a-controlled-study-of-background-decision-procedure-and-evaluation-profiles"></a>
 
 - Ye, Iris, Tianze Deng, and Ozan Candogan. "Structuring Survey Histories for LLM Digital Twins: A Controlled Study of Background, Decision Procedure, and Evaluation Profiles." arXiv:2611.08730 (2026-11). [[link]](https://arxiv.org/abs/2611.08730)
+
+<a id="paper-measuring-the-digital-twin-separating-individuation-from-population-regularity-in-llm-survey-twins"></a>
+
+- Miller, Moses. "Measuring the Digital Twin: Separating Individuation from Population Regularity in LLM Survey Twins." Working paper, Reichman University (2026), no public copy yet; link goes to its citation in Netzer and Sambandam, arXiv 2609.13995 [[link]](https://arxiv.org/pdf/2609.13995#page=31)
 
 ### 1.3 Methods and Improvements
 
@@ -490,6 +490,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Ellickson, Paul B., et al. "Evaluating Novel Unstructured Treatments with Generative AI: A Causal Prediction Framework." Journal of Marketing Research (2026-08). [[link]](https://doi.org/10.1177/00222437261476639)
 
+<a id="paper-leveraging-generative-artificial-intelligence-to-create-visual-content-in-digital-advertising"></a>
+
+- Daviet, Remi, and Yohei Nishimura. "Leveraging Generative Artificial Intelligence to Create Visual Content in Digital Advertising." Marketing Science 45(5): 893–912 (2026-09). [[link]](https://doi.org/10.1287/mksc.2024.1130)
+
 <a id="paper-causal-alignment-augmenting-language-models-with-a-b-tests"></a>
 
 - Angelopoulos, Panagiotis, Kevin Lee, and Sanjog Misra. "Causal Alignment: Augmenting Language Models with A/B Tests." SSRN 4781850 (2024-04). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4781850)
@@ -500,7 +504,7 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 <a id="paper-generative-personalization-with-textual-and-non-textual-data"></a>
 
-- Yin, Mingzhang, Ruijiang Gao, and Ziwei Cong. "Generative Personalization with Textual and Non-textual Data." SSRN 5329729 (2025-06). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5329729)
+- Yin, Mingzhang, Ruijiang Gao, and Ziwei Cong. "Personalizing Language Models for Generative Targeting." SSRN 5329729 (2025-06). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5329729)
 
 <a id="paper-slm4offer-personalized-marketing-offer-generation-using-contrastive-learning-based-fine-tuning"></a>
 
@@ -509,10 +513,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-offline-to-online-creative-optimization-with-generative-models-and-adaptive-testing"></a>
 
 - Lee, Kevin, et al. "Offline-to-Online Creative Optimization with Generative Models and Adaptive Testing." arXiv:2607.23696 (2026-07). [[link]](https://arxiv.org/abs/2607.23696)
-
-<a id="paper-leveraging-generative-artificial-intelligence-to-create-visual-content-in-digital-advertising"></a>
-
-- Daviet, Remi, and Yohei Nishimura. "Leveraging Generative Artificial Intelligence to Create Visual Content in Digital Advertising." Marketing Science 45(5): 893–912 (2026-09). [[link]](https://doi.org/10.1287/mksc.2024.1130)
 
 ### 2.3 Benchmarks and Datasets
 

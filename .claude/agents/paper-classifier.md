@@ -45,13 +45,13 @@ Write a JSON array to the output path:
     "cid": "C001",
     "section": "1.2",
     "dataset_section": null,
-    "rationale": "核心是检验 LLM 受访者与真人在 WTP 上的统计一致性，没有提出新估计方法，归 1.2 而非 1.3。",
+    "rationale": "Tests whether LLM respondents match humans statistically on WTP and proposes no new estimator, so 1.2 rather than 1.3.",
     "confidence": "high"
   }
 ]
 ```
 
-- `rationale`: one sentence in 简体中文. When the call is close, name the rejected alternative.
+- `rationale`: one sentence in English. When the call is close, name the rejected alternative.
 - `confidence`: `high`, `medium`, or `low`.
 
 Write only the output file. End with one line listing cid → section.

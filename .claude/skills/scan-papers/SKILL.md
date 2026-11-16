@@ -70,7 +70,7 @@ git add scan/proposals/$DATE.*   # .json, plus .md when the sheet was too long f
 git commit -m "Paper scan $DATE: <N> proposed, <M> excluded"
 git push -u origin "$BRANCH"
 python3 scripts/gh_rest.py open-pr --head "$BRANCH" \
-  --title "论文扫描 $DATE：建议收录 <N> 篇" \
+  --title "Paper scan $DATE: <N> proposed" \
   --body-file scan/work/pr_body.md --label paper-scan
 ```
 

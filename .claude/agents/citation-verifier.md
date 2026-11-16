@@ -51,7 +51,7 @@ Write a JSON array to the output path:
     "dataset": null,
     "affiliations": [{"author": "Ali Goli", "affiliation": "Foster School of Business, University of Washington"}],
     "business_school": true,
-    "checks": "标题、作者顺序、卷期页码已对照 Crossref 与 INFORMS 页面；日期取首次在线发表月。",
+    "checks": "Title, author order and volume, issue and pages checked against Crossref and the INFORMS page; date is the first online publication month.",
     "issues": [],
     "evidence": "abstract-only"
   }
@@ -71,8 +71,8 @@ Field rules:
   - Journal: the DOI URL.
   - arXiv: `https://arxiv.org/abs/<id>`.
   - SSRN: `https://papers.ssrn.com/sol3/papers.cfm?abstract_id=<id>`.
-- `checks`: one sentence in 简体中文 on what you verified against which source.
-- `issues`: only problems the maintainer must resolve before accepting the entry, each one short phrase in 简体中文, e.g. "月份无法核实（Crossref 仅有年份）" or "作者名拼写两处来源不一致". Normal findings are not issues: "no published version", "no dataset", "abstract-only", a landing page that refused access but was confirmed elsewhere. Put those in `checks` or leave them out. Empty list if none.
+- `checks`: one sentence in English on what you verified against which source.
+- `issues`: only problems the maintainer must resolve before accepting the entry, each one short phrase in English, e.g. "Month cannot be verified (Crossref has the year only)" or "Author name spelled differently in two sources". Normal findings are not issues: "no published version", "no dataset", "abstract-only", a landing page that refused access but was confirmed elsewhere. Put those in `checks` or leave them out. Empty list if none.
 - `evidence`: `full-text` only if you actually read the paper body.
 
 Write only the output file. End with one line listing cid → venue (date).

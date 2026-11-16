@@ -64,12 +64,12 @@ If nothing was ticked, there is no README change: commit only the proposals JSON
 
 ## 6. Report on the PR
 
-Write `scan/work/apply_summary.md` in 简体中文:
+Write `scan/work/apply_summary.md` in English, since collaborators read the PR:
 
-- 已写入 README 的论文（cid · 小节 · 标题）;
-- 拒绝数量;
-- 每条 warning，以及需要手动处理的事项，例如缺少数据集链接;
-- 最后一句：请在 Files changed 中检查 diff，确认后 merge。
+- papers added to the README (cid · section · title);
+- the number rejected;
+- each warning, and anything that needs manual follow-up, such as a missing dataset link;
+- a final sentence: Please check the diff under Files changed, then merge.
 
 Then:
 

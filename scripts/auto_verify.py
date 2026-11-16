@@ -106,13 +106,13 @@ def verify(c, arxiv_rec):
         for rec in crossref_by_title(c["title"]):
             if rec["type"] in PUBLISHED_TYPES and titles_match(nt, normalize_title(rec["title"])):
                 published = rec
-                checks.append(f"Crossref 标题匹配到已发表版本 {rec['doi']}")
+                checks.append(f"Crossref title match to published version {rec['doi']}")
                 break
         time.sleep(1)
     if published:
         out = from_crossref(published, True)
         if not out["date"]:
-            issues.append("发表月份缺失")
+            issues.append("Publication month missing")
     elif arxiv_rec:
         aid = c["venue"].removeprefix("arXiv:")
         out = {
@@ -121,10 +121,10 @@ def verify(c, arxiv_rec):
             "venue": f"arXiv:{aid}", "date": arxiv_rec["first_posted"][:7],
             "url": f"https://arxiv.org/abs/{aid}", "published": False, "affiliations": [],
         }
-        checks.append("arXiv API（首次提交月）")
-        issues.append("作者姓/名由 arXiv 全名自动拆分")
+        checks.append("arXiv API (first submission month)")
+        issues.append("Given and family names split automatically from arXiv full names")
         if arxiv_rec.get("journal_ref"):
-            issues.append(f"arXiv 标注已发表但未找到 DOI：{arxiv_rec['journal_ref']}")
+            issues.append(f"arXiv lists a journal reference but no DOI was found: {arxiv_rec['journal_ref']}")
     else:
         ssrn = next((i[4:] for i in c["ids"] if i.startswith("doi:10.2139/")), None)
         out = from_crossref(crossref_by_doi(ssrn), False) if ssrn else None
@@ -134,7 +134,7 @@ def verify(c, arxiv_rec):
             return None
     out.update(cid=c["cid"], other_versions=[v["url"] for v in c.get("versions", []) if v["url"] != out["url"]],
                dataset=None, business_school=None,
-               checks="自动核验：" + "；".join(checks), issues=issues, evidence="abstract-only")
+               checks="Automatic check: " + "; ".join(checks), issues=issues, evidence="abstract-only")
     return out
 
 

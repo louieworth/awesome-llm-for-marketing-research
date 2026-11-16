@@ -17,10 +17,9 @@ from common import (
     make_anchor, normalize_title,
 )
 
-CONFIDENCE_ZH = {"high": "高", "medium": "中", "low": "低"}
-TRACK_ZH = {"consumer_simulation": "A 消费者模拟", "public_data_simulation": "B 公开数据人类模拟",
-            "marketing_method": "C 营销方法", "utd": "UTD 期刊"}
-TIER_ZH = {1: "第一层 UTD 期刊", 2: "第二层 商学院作者", 3: "第三层 高影响力"}
+TRACK_LABEL = {"consumer_simulation": "A consumer simulation", "public_data_simulation": "B public-data human simulation",
+               "marketing_method": "C marketing method", "utd": "UTD journal"}
+TIER_LABEL = {1: "tier 1 UTD journal", 2: "tier 2 business-school author", 3: "tier 3 high impact"}
 
 
 def load_agent_files(pattern):
@@ -68,22 +67,22 @@ def apply_tier_rules(item, cfg):
         return False
     if influential(item, cfg) or item.get("notable"):
         item["tier"] = 3
-        why = f"引用 {item.get('citations') or 0}" if influential(item, cfg) else f"特别有价值：{item.get('notable_reason', '')}"
-        item["issues"] = item["issues"] + [f"无商学院作者，按第三层收录（{why}）"]
+        why = f"{item.get('citations') or 0} citations" if influential(item, cfg) else f"notable: {item.get('notable_reason', '')}"
+        item["issues"] = item["issues"] + [f"No business-school author; included under tier 3 ({why})"]
         return False
     if item["business_school"] is False:
         item.update(status="excluded", decision="exclude",
-                    reason=f"无商学院作者且影响力不足（引用 {item.get('citations') or 0}），"
-                           f"作者单位：{affiliation_summary(item) or '未知'}。{item['reason']}")
+                    reason=f"No business-school author and limited impact ({item.get('citations') or 0} citations); "
+                           f"affiliations: {affiliation_summary(item) or 'unknown'}. {item['reason']}")
         return True
     item["decision"] = "uncertain"
-    item["issues"] = item["issues"] + ["未能确认是否有商学院作者"]
+    item["issues"] = item["issues"] + ["Business-school authorship not confirmed"]
     return False
 
 
 def affiliation_summary(item, limit=4):
     seen = list(dict.fromkeys(a.get("affiliation") or "?" for a in item.get("affiliations", [])))
-    return "；".join(seen[:limit]) + ("…" if len(seen) > limit else "")
+    return "; ".join(seen[:limit]) + ("…" if len(seen) > limit else "")
 
 
 def build(candidates_doc):
@@ -129,8 +128,8 @@ def build(candidates_doc):
         meta = ({k: v[k] for k in ("title", "authors", "venue", "date", "url")} if v else fallback_meta(c))
         item["verified"] = bool(v)
         item["published"] = bool(v and v.get("published"))
-        item["verification"] = v.get("checks", "") if v else "未核验：引用信息来自抓取的原始记录"
-        item["issues"] = v.get("issues", []) if v else ["未经 citation-verifier 核验"]
+        item["verification"] = v.get("checks", "") if v else "Not verified: citation details come from the raw fetched record"
+        item["issues"] = v.get("issues", []) if v else ["Not checked by citation-verifier"]
         if v and v.get("evidence"):
             item["evidence"] = v["evidence"]
         item["meta"] = meta
@@ -142,7 +141,7 @@ def build(candidates_doc):
             item["business_school"] = affil[cid].get("business_school")
         if is_known(set(c["ids"]) | ids_from_text(meta["url"]), normalize_title(meta["title"]), collection):
             item.update(status="excluded", decision="exclude",
-                        reason=f"README 已收录（核验后匹配到 {meta['venue'] or meta['url']}）。{item['reason']}")
+                        reason=f"Already in the README (verified match: {meta['venue'] or meta['url']}). {item['reason']}")
             items.append(item)
             continue
         if apply_tier_rules(item, cfg):
@@ -168,25 +167,26 @@ def render_entry(item):
 
 
 def section_label(sec):
-    return f"{sec} {SECTIONS[sec]}" if sec in SECTIONS else "?.? 未分类（请填写位置）"
+    return f"{sec} {SECTIONS[sec]}" if sec in SECTIONS else "?.? unclassified (fill in a section)"
 
 
 def render_item(item):
     head = f"- [ ] **{item['cid']}** · {section_label(item.get('section'))}"
     if item.get("dataset_section"):
         head += f" · +{item['dataset_section']}"
-    lines = [head, f"  - 条目：{render_entry(item).removeprefix('- ')}", f"  - 理由：{item['reason']}"]
-    bs = {True: "有商学院作者 ✓", False: "无商学院作者", None: "商学院作者未确认"}[item.get("business_school")]
-    track = TRACK_ZH.get(item.get("track"), "")
-    tier = TIER_ZH.get(item.get("tier"), "")
+    lines = [head, f"  - Entry: {render_entry(item).removeprefix('- ')}", f"  - Reason: {item['reason']}"]
+    bs = {True: "business-school author ✓", False: "no business-school author",
+          None: "business-school author unconfirmed"}[item.get("business_school")]
+    track = TRACK_LABEL.get(item.get("track"), "")
+    tier = TIER_LABEL.get(item.get("tier"), "")
     cites = item.get("citations")
-    lines.append(f"  - 路径：{track} · {tier} · 引用 {cites if cites is not None else '?'}"
-                 f" · 作者单位：{affiliation_summary(item) or '未知'}（{bs}）")
+    lines.append(f"  - Route: {track} · {tier} · citations {cites if cites is not None else '?'}"
+                 f" · affiliations: {affiliation_summary(item) or 'unknown'} ({bs})")
     if item.get("classification"):
-        lines.append(f"  - 分类：{item['classification']}（置信度：{CONFIDENCE_ZH.get(item['confidence'], item['confidence'])}）")
-    lines.append(f"  - 核验：{item['verification']} · 证据：{item['evidence']}")
+        lines.append(f"  - Classification: {item['classification']} (confidence: {item['confidence']})")
+    lines.append(f"  - Verification: {item['verification']} · evidence: {item['evidence']}")
     if item.get("issues"):
-        lines.append(f"  - ⚠️ 待确认：{'；'.join(i.rstrip('。；. ') for i in item['issues'])}")
+        lines.append(f"  - ⚠️ To confirm: {'; '.join(i.rstrip('。；;. ') for i in item['issues'])}")
     return "\n".join(lines)
 
 
@@ -200,29 +200,31 @@ def render_body(doc, over_cap):
     fetched = " · ".join(f"{k.removeprefix('fetched_')} {v}" for k, v in st.items() if k.startswith("fetched_"))
     out = [
         f"<!-- paper-scan:{doc['scan_date']} -->",
-        f"## 📚 论文扫描 {doc['scan_date']}",
+        f"## 📚 Paper scan {doc['scan_date']}",
         "",
-        f"窗口 {doc['window'][0]} → {doc['window'][1]} · 抓取 {fetched} · 关键词命中 {st.get('keyword_match', 0)}"
-        f" · 已收录 {st.get('already_in_collection', 0)} · 已审过 {st.get('already_screened', 0)}"
-        f" · agent 筛选 {st.get('to_screen', 0)}（超上限未筛 {st.get('over_cap', 0)}）",
+        f"Window {doc['window'][0]} → {doc['window'][1]} · fetched {fetched} · keyword matches {st.get('keyword_match', 0)}"
+        f" · already listed {st.get('already_in_collection', 0)} · already screened {st.get('already_screened', 0)}"
+        f" · screened by agents {st.get('to_screen', 0)} ({st.get('over_cap', 0)} over the cap, not screened)",
         "",
-        f"**建议收录 {len(inc)} · 待定 {len(unc)} · 排除 {len(exc)}**",
+        f"**Proposed {len(inc)} · uncertain {len(unc)} · excluded {len(exc)}**",
         "",
-        "**审核方法**：勾选要收录的论文；要换位置就把 `1.2` 这类编号改掉（`+1.4` 表示同时列入数据集小节，删掉即不列）；"
-        "审完给这个 PR 加 `apply` 标签。apply 会把勾选条目写进 README 并 push 到本 PR，你在 Files changed 看 diff 后 merge。"
-        "未勾选的记为拒绝，以后不再推荐。即使一篇都不收，也请 merge（保留审核记录），不要直接关掉。",
+        "**How to review**: tick the papers to include. To move a paper, edit its section number such as `1.2` "
+        "(`+1.4` also lists it in the dataset subsection; delete that to skip it). When done, add the `apply` label to "
+        "this PR. Apply writes the ticked entries into the README and pushes them to this PR; check the diff under "
+        "Files changed, then merge. Unticked papers are recorded as rejected and will not be proposed again. Merge the "
+        "PR even if nothing is included, so the review stays on record; do not just close it.",
         "",
     ]
     if inc:
-        out += [f"### ✅ 建议收录（{len(inc)}）", ""] + [render_item(i) + "\n" for i in sorted(inc, key=order)]
+        out += [f"### ✅ Proposed ({len(inc)})", ""] + [render_item(i) + "\n" for i in sorted(inc, key=order)]
     if unc:
-        out += [f"### ❓ 待定（{len(unc)}）", ""] + [render_item(i) + "\n" for i in sorted(unc, key=order)]
+        out += [f"### ❓ Uncertain ({len(unc)})", ""] + [render_item(i) + "\n" for i in sorted(unc, key=order)]
     if exc:
-        out += [f"<details><summary>❌ 排除（{len(exc)}）</summary>", ""]
+        out += [f"<details><summary>❌ Excluded ({len(exc)})</summary>", ""]
         out += [f"- {i['cid']} [{i['title']}]({i['url']}) — {i['reason']}" for i in exc]
         out += ["", "</details>", ""]
     if over_cap:
-        out += [f"<details><summary>⏭️ 超出筛选上限、未交给 agent（{len(over_cap)}）</summary>", ""]
+        out += [f"<details><summary>⏭️ Over the screening cap, not sent to agents ({len(over_cap)})</summary>", ""]
         out += [f"- [{c['title']}]({c['url']})" for c in over_cap]
         out += ["", "</details>", ""]
     return "\n".join(out)
@@ -232,16 +234,17 @@ def render_compact(doc, details_url, reason_chars=60):
     """One checkbox line per paper, grouped by section, for scans too large for a PR body."""
     items = [i for i in doc["items"] if i["decision"] != "exclude"]
     n_exc = sum(i["decision"] == "exclude" for i in doc["items"])
-    full = render_body(doc, []).split("**审核方法**", 1)
+    full = render_body(doc, []).split("**How to review**", 1)
     out = [full[0].rstrip(), "",
-           f"完整理由、作者单位、核验明细和 {n_exc} 篇排除论文见 [{doc['scan_date']}.md]({details_url})。"
-           "每篇第二行是理由摘要，⚠️ 表示有待确认项，🏫 表示有商学院作者。", "",
-           "**审核方法**" + full[1].split("\n", 1)[0], ""]
-    for label, dec in (("✅ 建议收录", "include"), ("❓ 待定", "uncertain")):
+           f"Full reasons, affiliations, verification details and the {n_exc} excluded papers are in "
+           f"[{doc['scan_date']}.md]({details_url}). The second line under each paper is a shortened reason; "
+           "⚠️ marks items to confirm and 🏫 marks a business-school author.", "",
+           "**How to review**" + full[1].split("\n", 1)[0], ""]
+    for label, dec in (("✅ Proposed", "include"), ("❓ Uncertain", "uncertain")):
         group = sorted((i for i in items if i["decision"] == dec), key=lambda i: (i.get("section") or "9", i["cid"]))
         if not group:
             continue
-        out += [f"### {label}（{len(group)}）", ""]
+        out += [f"### {label} ({len(group)})", ""]
         current = None
         for i in group:
             if i.get("section") != current:

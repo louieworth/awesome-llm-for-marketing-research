@@ -29,7 +29,7 @@ The prompt gives you candidate IDs (e.g. C001–C012) and an output path such as
 - **decision**:
   - `include`: the paper clearly fits a track. For `marketing_method`, judge only the topic. Author affiliation is checked later, so do not exclude a paper for unknown affiliation.
   - `uncertain`: the paper plausibly fits a track, but the abstract does not establish it. Examples: you cannot tell whether the simulated people are consumers; you cannot tell whether a public human-response dataset is used.
-  - `exclude`: track `none`, or anything in the "一律排除" list.
+  - `exclude`: track `none`, or anything in the "一律排除" (always exclude) list in `scan/criteria.md`.
 
 Be strict. A typical week has only a handful of includes. Do not infer relevance from the venue or from keywords alone. If a `public_data_simulation` paper does not name its human data source in the abstract, mark it `uncertain` rather than `include`.
 
@@ -38,7 +38,7 @@ Be strict. A typical week has only a handful of includes. Do not infer relevance
 - Mark `include` whenever an LLM, a transformer model or generative AI is the paper's research tool, research object or method component, even if it fits none of tracks A, B or C. Use `track: "utd"` in that case.
 - Mark `exclude` only if AI is mentioned in passing, or if the paper is about pre-LLM rule-based chatbots or classic machine learning. Transformer models count as LLMs, not as classic machine learning, including transformers trained on marketing data such as customer journeys or consumption sequences.
 
-**Notable flag (tier 3).** Most papers without business-school authors are dropped later unless they are highly cited. If such a paper is exceptionally valuable for marketing research, set `notable: true` and write a one-sentence `notable_reason` in 简体中文. Examples: a dataset or benchmark the field widely uses, or a method marketing researchers clearly need. Use the flag sparingly, for perhaps one paper in fifty.
+**Notable flag (tier 3).** Most papers without business-school authors are dropped later unless they are highly cited. If such a paper is exceptionally valuable for marketing research, set `notable: true` and write a one-sentence `notable_reason` in English. Examples: a dataset or benchmark the field widely uses, or a method marketing researchers clearly need. Use the flag sparingly, for perhaps one paper in fifty.
 
 LLM cultural or value-alignment studies are papers that use WVS, Pew or similar data to measure or align a model's own values. They are not track B. Mark them `include` with `track: "public_data_simulation"` only when they also simulate respondents' answers and evaluate that simulation against real people. Otherwise mark them `exclude`, unless you set `notable`.
 
@@ -54,14 +54,14 @@ Write a JSON array to the output path, one object per candidate, in input order:
     "track": "consumer_simulation",
     "llm_use": "GPT-4o simulates conjoint respondents",
     "human_data": "1,200-person conjoint survey (proprietary)",
-    "reason": "用 GPT-4o 模拟 conjoint 受访者，并与 1,200 名真人样本对比 WTP 估计，属于消费者 digital twin 的效度研究。",
+    "reason": "Uses GPT-4o to simulate conjoint respondents and compares WTP estimates with a 1,200-person human sample; a validity study of consumer digital twins.",
     "evidence": "abstract-only"
   }
 ]
 ```
 
 - `human_data`: the human data the simulation is compared against, as named in the abstract. Use an empty string if none or not stated.
-- `reason`: 1–2 sentences in 简体中文. Say concretely what the paper does and which track it fits, or why it fits none. The maintainer reads this on a phone.
+- `reason`: 1–2 sentences in English. Say concretely what the paper does and which track it fits, or why it fits none. The maintainer reads this on a phone.
 - `evidence`: `abstract-only`, unless you read the full text.
 
 Write only the output file. End with one line giving the counts per decision and per track.

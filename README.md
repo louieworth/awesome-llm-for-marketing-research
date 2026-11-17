@@ -2,9 +2,9 @@
 
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
-![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-60-4C70C8?style=for-the-badge)
-![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-26-D98757?style=for-the-badge)
-![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-13-9865C6?style=for-the-badge)
+![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-57-4C70C8?style=for-the-badge)
+![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-25-D98757?style=for-the-badge)
+![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-12-9865C6?style=for-the-badge)
 
 </div>
 
@@ -88,10 +88,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Ashokkumar, Ashwini, et al. "Large language models can predict the results of social science experiments." Nature 656: 115–122 (2026-07). [[link]](https://doi.org/10.1038/s41586-026-10742-x)
 
-<a id="paper-large-language-models-outperform-humans-at-estimating-societys-everyday-norms"></a>
-
-- Eriksson, Kimmo, et al. "Large language models outperform humans at estimating society’s everyday norms." Communications AI & Computing 1: 15 (2026-09). [[link]](https://doi.org/10.1038/s44488-026-00018-8)
-
 <a id="paper-large-language-models-as-simulated-economic-agents-what-can-we-learn-from-homo-silicus"></a>
 
 - Horton, John J., Apostolos Filippas, and Benjamin S. Manning. "Large Language Models as Simulated Economic Agents: What Can We Learn from Homo Silicus?" arXiv:2301.07543 (2023-01). [[link]](https://arxiv.org/abs/2301.07543)
@@ -174,10 +170,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Cui, Ziyan, Ning Li, and Huaikang Zhou. "A large-scale replication of scenario-based experiments in psychology and management using large language models." Nature Computational Science 5(8): 627–634 (2025-07). [[link]](https://doi.org/10.1038/s43588-025-00840-7)
 
-<a id="paper-six-fallacies-in-substituting-large-language-models-for-human-participants"></a>
-
-- Lin, Zhicheng. "Six Fallacies in Substituting Large Language Models for Human Participants." Advances in Methods and Practices in Psychological Science (2025-08). [[link]](https://doi.org/10.1177/25152459251357566)
-
 <a id="paper-simulating-human-well-being-with-large-language-models-systematic-validation-and-misestimation-across-64-000-individuals-from-64-countries"></a>
 
 - Pataranutaporn, Pat, et al. "Simulating human well-being with large language models: Systematic validation and misestimation across 64,000 individuals from 64 countries." PNAS 122(48): e2519394122 (2025-11). [[link]](https://doi.org/10.1073/pnas.2519394122)
@@ -189,10 +181,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-moral-stereotyping-in-large-language-models"></a>
 
 - Zewail, Aliah, et al. "Moral stereotyping in large language models." PNAS 123(10): e2519941123 (2026-03). [[link]](https://doi.org/10.1073/pnas.2519941123)
-
-<a id="paper-too-human-to-model-the-uncanny-valley-of-large-language-models-in-simulating-human-systems"></a>
-
-- Zeng, Yongchao, Calum Brown, and Mark Rounsevell. "Too human to model: the uncanny valley of large language models in simulating human systems." npj Complexity 3: 13 (2026-03). [[link]](https://doi.org/10.1038/s44260-026-00075-1)
 
 <a id="paper-evaluating-the-statistical-realism-of-llm-generated-social-science-data"></a>
 
@@ -353,10 +341,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Dubé, Jean-Pierre, and Ariel Xu. "Large Language Models and Creative Content Design: a case study of email marketing at Wine Access." Quantitative Marketing and Economics 24: Article 1 (2026-01). [[link]](https://doi.org/10.1007/s11129-025-09303-9)
 
-<a id="paper-the-promise-of-generative-ai-for-personalized-persuasion"></a>
-
-- Teeny, Jacob D., et al. "The Promise of Generative AI for Personalized Persuasion." Current Directions in Psychological Science (2026-05). [[link]](https://doi.org/10.1177/09637214261424859)
-
 <a id="paper-generative-ai-and-sales-productivity-field-experiments-in-online-retail"></a>
 
 - Fang, Lu, et al. "Generative Artificial Intelligence and Sales Productivity: Field Experiments in Online Retail." Management Science (2026-11). [[link]](https://doi.org/10.1287/mnsc.2026.00623)
@@ -481,10 +465,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-integrating-large-language-models-into-recommendation-via-mutual-augmentation-and-adaptive-aggregation"></a>
 
 - Luo, Sichun, et al. "Integrating Large Language Models Into Recommendation via Mutual Augmentation and Adaptive Aggregation." IEEE Journal of Selected Topics in Signal Processing 20(1): 77–89 (2026-01). [[link]](https://doi.org/10.1109/JSTSP.2026.3653160)
-
-<a id="paper-mining-novel-customer-needs-for-product-design-from-user-generated-content-through-large-language-model-enabled-data-augmentation-and-ensemble-learning"></a>
-
-- Huang, Shaoqin, Hu Qin, and Yue Wang. "Mining novel customer needs for product design from user-generated content through large language model-enabled data augmentation and ensemble learning." International Journal of Production Research (2026-02). [[link]](https://doi.org/10.1080/00207543.2026.2625971)
 
 <a id="paper-generative-brand-choice"></a>
 

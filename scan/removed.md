@@ -1,10 +1,10 @@
 # Removed papers
 
-Papers taken out of the collection under the Scope and evidence rules in [CONTRIBUTING.md](../CONTRIBUTING.md): no marketing setting and not human-simulation research that clears the bar (a peer-reviewed venue, or at least 100 citations or 50 a year), or an arXiv preprint under 20 pages. The paper scan treats every paper listed here as already reviewed, so it will not propose them again.
+Papers taken out of the collection under the Scope and evidence rules in [CONTRIBUTING.md](../CONTRIBUTING.md): no marketing setting and not human-simulation research that clears the bar (a peer-reviewed venue, or at least 100 citations or 50 a year), a journal article outside UTD 24, marketing and flagship journals with fewer than 100 citations (50 a year), or an arXiv preprint under 20 pages. The paper scan treats every paper listed here as already reviewed, so it will not propose them again.
 
 ## 2026-11-16 scope review (revised 2026-11-17)
 
-On 2026-11-17, 25 of the 46 papers first removed here were restored as digital-twin research (human simulation that clears the bar). The 21 below remain removed.
+On 2026-11-17, 25 of the 46 papers first removed here were restored as digital-twin research (human simulation that clears the bar); three of them were removed again under the journal rule below. The 21 below remain removed.
 
 | Former section | Paper | Reason |
 | --- | --- | --- |
@@ -40,3 +40,13 @@ On 2026-11-17, 25 of the 46 papers first removed here were restored as digital-t
 | 1.4 | Li, Han, et al. ["SimGym: A Framework for A/B Test Simulation in E-Commerce with Traffic-Grounded VLM Agents"](https://arxiv.org/abs/2605.19219). arXiv:2605.19219 (2026) | Only 18 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. |
 | 2.2 | Challapalli, Vedasamhitha, et al. ["SLM4Offer: Personalized Marketing Offer Generation Using Contrastive Learning Based Fine-Tuning"](https://arxiv.org/abs/2508.15471). arXiv:2508.15471 (2025) | Only 10 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. |
 | 2.2 | Lee, Kevin, et al. ["Offline-to-Online Creative Optimization with Generative Models and Adaptive Testing"](https://arxiv.org/abs/2607.23696). arXiv:2607.23696 (2026) | Only 10 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. |
+
+## 2026-11-17 journal rule
+
+| Former section | Paper | Reason |
+| --- | --- | --- |
+| 1.1 | Eriksson, Kimmo, et al. ["Large language models outperform humans at estimating society’s everyday norms"](https://doi.org/10.1038/s44488-026-00018-8). Communications AI & Computing 1: 15 (2026) | Published in Communications AI & Computing, a journal outside marketing, with 3 citations (about 6 a year); such papers need at least 100, or 50 a year. |
+| 1.2 | Lin, Zhicheng. ["Six Fallacies in Substituting Large Language Models for Human Participants"](https://doi.org/10.1177/25152459251357566). Advances in Methods and Practices in Psychological Science (2025) | Published in Advances in Methods and Practices in Psychological Science, a journal outside marketing, with 64 citations (about 46 a year); such papers need at least 100, or 50 a year. |
+| 1.2 | Zeng, Yongchao, Calum Brown, and Mark Rounsevell. ["Too human to model: the uncanny valley of large language models in simulating human systems"](https://doi.org/10.1038/s44260-026-00075-1). npj Complexity 3: 13 (2026) | Published in npj Complexity, a journal outside marketing, with 12 citations (about 17 a year); such papers need at least 100, or 50 a year. |
+| 2.1 | Teeny, Jacob D., et al. ["The Promise of Generative AI for Personalized Persuasion"](https://doi.org/10.1177/09637214261424859). Current Directions in Psychological Science (2026) | Published in Current Directions in Psychological Science, a journal outside marketing, with 4 citations (about 8 a year); such papers need at least 100, or 50 a year. |
+| 3.2 | Huang, Shaoqin, Hu Qin, and Yue Wang. ["Mining novel customer needs for product design from user-generated content through large language model-enabled data augmentation and ensemble learning"](https://doi.org/10.1080/00207543.2026.2625971). International Journal of Production Research (2026) | Published in International Journal of Production Research, a journal outside marketing, with 7 citations (about 9 a year); such papers need at least 100, or 50 a year. |

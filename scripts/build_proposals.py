@@ -108,6 +108,55 @@ def apply_tier_rules(item, cfg):
     return False
 
 
+PREPRINT_VENUE = re.compile(r"^(arXiv|SSRN|Research Square|Working paper|OSF|PsyArXiv|SocArXiv|medRxiv|bioRxiv|NBER)|research record", re.I)
+CONFERENCE_VENUE = re.compile(
+    r"(Proceedings|Conference|Findings of|Workshop|Symposium|Lecture Notes|Advances in Neural Information Processing|"
+    r"\b(ICML|NeurIPS|ICLR|COLM|CHI|CSCW|AAAI|IJCAI|ACL|EMNLP|NAACL|EACL|COLING|LREC|KDD|WWW|WSDM|SIGIR|RecSys|CIKM|"
+    r"CVPR|ICCV|ECCV|WACV|UAI|AISTATS|ICWSM|ICDM|FAccT|AIES|PMLR)\b)")
+
+
+def journal_class(venue, cfg):
+    """scan/criteria.md "Journals": utd24, marketing, flagship, general_business or other; None if not a journal article."""
+    v = html.unescape(venue or "").strip()
+    if not v or PREPRINT_VENUE.search(v) or CONFERENCE_VENUE.search(v):
+        return None
+    if is_utd(v, cfg):
+        return "utd24"
+    rule = cfg["journal_rule"]
+    name = re.split(r"\s+\d|\s*\(|,|:", v)[0].strip().removeprefix("The ").strip()
+    low = name.lower()
+    if re.search(rule["marketing_pattern"], name, re.I):
+        return "marketing"
+    if low in {n.lower() for n in rule["flagship"]} or (
+            low.startswith("nature ") and not any(low.startswith(x.lower()) for x in rule["nature_branded_excluded"])):
+        return "flagship"
+    if low in {n.lower() for n in rule["general_business"]}:
+        return "general_business"
+    return "other"
+
+
+def apply_journal_rule(item, cfg):
+    """scan/criteria.md "Journals": a journal outside UTD 24, marketing and the flagship list needs citations.
+
+    Returns True when excluded. Conference papers, SSRN and arXiv preprints are not affected.
+    """
+    kind = journal_class(item["meta"]["venue"], cfg)
+    if kind == "general_business":
+        item["decision"] = "uncertain"
+        item["issues"] = item["issues"] + ["General business journal: keep only if clearly important for marketing research"]
+        return False
+    if kind != "other":
+        return False
+    inf = cfg["influence"]
+    if influential(item, cfg):
+        item["issues"] = item["issues"] + [f"Non-marketing journal, kept on citations ({item.get('citations') or 0})"]
+        return False
+    item.update(status="excluded", decision="exclude",
+                reason=f"Published in a journal outside marketing; such papers need at least {inf['min_citations']} citations "
+                       f"({inf['min_citations_per_year']} a year), and this has {item.get('citations') or 0}. {item['reason']}")
+    return True
+
+
 def apply_length_rule(item, pages, cfg):
     """scan/criteria.md "Length": arXiv preprints need a minimum page count. Returns True when excluded.
 
@@ -194,7 +243,7 @@ def build(candidates_doc):
                         reason=f"Already in the README (verified match: {meta['venue'] or meta['url']}). {item['reason']}")
             items.append(item)
             continue
-        if apply_length_rule(item, pages.get(cid), cfg) or apply_tier_rules(item, cfg):
+        if apply_length_rule(item, pages.get(cid), cfg) or apply_journal_rule(item, cfg) or apply_tier_rules(item, cfg):
             items.append(item)
             continue
 

@@ -40,6 +40,16 @@ Unpublished preprints and working papers below the citation bar are excluded, ho
 
 An arXiv preprint needs at least **20 pages** in its full PDF, references and appendices included (`min_pages` in `scripts/scan_config.json`). `scripts/page_count.py` counts the pages after screening, and arXiv papers below the minimum are excluded automatically. Published journal articles and SSRN working papers are exempt.
 
+## Journals
+
+Review capacity is limited, so a published journal article must also clear a venue rule, whatever its track or tier. It passes if the journal is:
+
+- a UTD 24 journal (`journal_sets.utd24` in `scripts/scan_config.json`);
+- a marketing journal: marketing, consumer research, advertising, retailing or services, such as IJRM, JAMS, JCP, Journal of Retailing, JRCS, Journal of Advertising, JAR, JIM, Psychology & Marketing, JSR, QME, Marketing Letters or EJM;
+- a flagship multidisciplinary journal: Nature, Science, PNAS, PNAS Nexus, or a Nature-branded research journal such as Nature Human Behaviour, Nature Computational Science or Nature Machine Intelligence. npj, Communications and Scientific Reports journals do not count.
+
+An article in any other journal needs at least 100 citations or 50 a year (`influence` in `scan_config.json`); otherwise it is excluded, even with a business-school author. General business journals such as the Journal of Business Research are marked uncertain and decided case by case. The maintainer may keep a clearly important exception. `scripts/build_proposals.py` applies this rule after citation verification (`journal_rule` in `scan_config.json`). Conference papers, SSRN working papers and arXiv preprints are not affected.
+
 ## Tracks
 
 ### A. `consumer_simulation`: consumer digital twins and consumer simulation → category 1

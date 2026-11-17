@@ -23,6 +23,10 @@ These do **not** pass the gate on their own:
 
 If the abstract does not show a marketing setting, **exclude** the paper. Do not mark it uncertain.
 
+## Length
+
+An arXiv preprint needs at least **20 pages** in its full PDF, references and appendices included (`min_pages` in `scripts/scan_config.json`). `scripts/page_count.py` counts the pages after screening, and arXiv papers below the minimum are excluded automatically. Published journal articles and SSRN working papers are exempt.
+
 ## Tracks
 
 ### A. `consumer_simulation`: consumer digital twins and consumer simulation → category 1

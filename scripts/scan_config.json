@@ -192,6 +192,9 @@
     }
   },
   "genai_regex": "\\b(large language models?|LLMs?|GPT-?\\d\\w*|ChatGPT|Claude|Gemini|Llama|generative (AI|artificial intelligence|models?|agents?)|GenAI|AI[- ]generated|chatbots?|conversational (AI|agents?)|foundation models?|transformers?|language models?|text-to-image|diffusion models?|AI agents?|agentic AI|synthetic (respondents?|consumers?|data))\\b",
+  "min_pages": {
+    "arxiv": 20
+  },
   "influence": {
     "min_citations": 100,
     "min_citations_per_year": 50

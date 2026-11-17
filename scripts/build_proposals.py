@@ -80,6 +80,26 @@ def apply_tier_rules(item, cfg):
     return False
 
 
+def apply_length_rule(item, pages, cfg):
+    """scan/criteria.md "Length": arXiv preprints need a minimum page count. Returns True when excluded.
+
+    Journal articles and SSRN working papers are exempt. `pages` comes from scripts/page_count.py.
+    """
+    if not item["meta"]["venue"].startswith("arXiv:"):
+        return False
+    need = cfg["min_pages"]["arxiv"]
+    item["pages"] = pages
+    if pages is None:
+        item["issues"] = item["issues"] + [f"Page count not checked (arXiv papers need at least {need} pages)"]
+        return False
+    if pages < need:
+        item.update(status="excluded", decision="exclude",
+                    reason=f"Only {pages} pages in the arXiv PDF, references and appendices included; "
+                           f"arXiv papers need at least {need}. {item['reason']}")
+        return True
+    return False
+
+
 def affiliation_summary(item, limit=4):
     seen = list(dict.fromkeys(a.get("affiliation") or "?" for a in item.get("affiliations", [])))
     return "; ".join(seen[:limit]) + ("…" if len(seen) > limit else "")
@@ -92,6 +112,8 @@ def build(candidates_doc):
     affil = load_agent_files("affil-*.json")
     cites_file = WORK_DIR / "citations.json"
     cites = json.loads(cites_file.read_text()) if cites_file.exists() else {}
+    pages_file = WORK_DIR / "pages.json"
+    pages = json.loads(pages_file.read_text()) if pages_file.exists() else {}
     cfg = load_config()
     collection = collection_index()
     used = set(collection["anchors"])
@@ -144,7 +166,7 @@ def build(candidates_doc):
                         reason=f"Already in the README (verified match: {meta['venue'] or meta['url']}). {item['reason']}")
             items.append(item)
             continue
-        if apply_tier_rules(item, cfg):
+        if apply_length_rule(item, pages.get(cid), cfg) or apply_tier_rules(item, cfg):
             items.append(item)
             continue
 
@@ -180,7 +202,8 @@ def render_item(item):
     track = TRACK_LABEL.get(item.get("track"), "")
     tier = TIER_LABEL.get(item.get("tier"), "")
     cites = item.get("citations")
-    lines.append(f"  - Route: {track} · {tier} · citations {cites if cites is not None else '?'}"
+    pages = f" · {item['pages']} pages" if item.get("pages") else ""
+    lines.append(f"  - Route: {track} · {tier} · citations {cites if cites is not None else '?'}{pages}"
                  f" · affiliations: {affiliation_summary(item) or 'unknown'} ({bs})")
     if item.get("classification"):
         lines.append(f"  - Classification: {item['classification']} (confidence: {item['confidence']})")

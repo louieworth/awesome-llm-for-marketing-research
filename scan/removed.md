@@ -1,6 +1,6 @@
 # Removed papers
 
-Papers taken out of the collection because they have no marketing setting in their research question, data or evaluation (see Scope and evidence in [CONTRIBUTING.md](../CONTRIBUTING.md)). The paper scan treats every paper listed here as already reviewed, so it will not propose them again.
+Papers taken out of the collection under the Scope and evidence rules in [CONTRIBUTING.md](../CONTRIBUTING.md): no marketing setting in the research question, data or evaluation, or an arXiv preprint under 20 pages. The paper scan treats every paper listed here as already reviewed, so it will not propose them again.
 
 ## 2026-11-16 scope review
 
@@ -52,3 +52,14 @@ Papers taken out of the collection because they have no marketing setting in the
 | 3.2 | Ludwig, Jens, Sendhil Mullainathan, and Ashesh Rambachan. ["Large Language Models: An Applied Econometric Framework"](https://doi.org/10.1146/annurev-economics-120925-105620). Annual Review of Economics 18: 283–316 (2026) | Econometrics of LLM use in economics; no marketing task. |
 | 3.2 | Xu, Shirong, and Will Wei Sun. ["Do More Predictions Improve Statistical Inference? Filtered Prediction-Powered Inference"](https://arxiv.org/abs/2602.10464). arXiv:2602.10464 (2026) | General statistics method; no marketing task. |
 | 3.3 | Wang, Zhefan, et al. ["Human vs. Agent in Task-Oriented Conversations"](https://arxiv.org/abs/2509.17619). arXiv:2509.17619 (2025) | User simulation for conversational systems; no marketing task. |
+
+## 2026-11-17 length rule
+
+| Former section | Paper | Reason |
+| --- | --- | --- |
+| 1.2 | Chen, Zihan, Di Zhu, and Lei Nico Zheng. ["When Synthetic Users Fail: A Cross-Domain Benchmark of LLM-Simulated Human Survey Responses"](https://arxiv.org/abs/2607.26348). arXiv:2607.26348 (2026) | Only 19 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. |
+| 1.2 | Ye, Iris, Tianze Deng, and Ozan Candogan. ["Structuring Survey Histories for LLM Digital Twins: A Controlled Study of Background, Decision Procedure, and Evaluation Profiles"](https://arxiv.org/abs/2611.08730). arXiv:2611.08730 (2026) | Only 10 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. |
+| 1.3 | Huang, Chengpiao, and Kaizheng Wang. ["LLM-Powered Virtual Population for Demand Simulation and Pricing"](https://arxiv.org/abs/2606.16183). arXiv:2606.16183 (2026) | Only 18 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. |
+| 1.4 | Li, Han, et al. ["SimGym: A Framework for A/B Test Simulation in E-Commerce with Traffic-Grounded VLM Agents"](https://arxiv.org/abs/2605.19219). arXiv:2605.19219 (2026) | Only 18 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. |
+| 2.2 | Challapalli, Vedasamhitha, et al. ["SLM4Offer: Personalized Marketing Offer Generation Using Contrastive Learning Based Fine-Tuning"](https://arxiv.org/abs/2508.15471). arXiv:2508.15471 (2025) | Only 10 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. |
+| 2.2 | Lee, Kevin, et al. ["Offline-to-Online Creative Optimization with Generative Models and Adaptive Testing"](https://arxiv.org/abs/2607.23696). arXiv:2607.23696 (2026) | Only 10 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. |

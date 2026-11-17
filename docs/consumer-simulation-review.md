@@ -47,8 +47,8 @@
 | 62 | [Generative Augmented Inference.](../README.md#paper-generative-augmented-inference) | 1.3 | 已确认的严格方法清单，具体方法对象见上表。 |
 | 66 | [Valid Survey Simulations with Limited Human Data: The Roles of Prompting, Fine-Tuning, and Rectification.](consumer-simulation-method-supplement.md#paper-valid-survey-simulations-with-limited-human-data-the-roles-of-prompting-fine-tuning-and-rectification) | 方法补充列表 | A general panel-survey study, retained as supporting methodology outside the confirmed ten-paper list. |
 | 51 | [Synthetic Personalities: How Well Can LLMs Mimic Individual Respondents Using Socio-Economic Microdata?](https://arxiv.org/abs/2606.04592) | 1.2 | 构建条件及数据深度的经验比较。 |
-| 67 | [LLM-Powered Virtual Population for Demand Simulation and Pricing.](../README.md#paper-llm-powered-virtual-population-for-demand-simulation-and-pricing) | 1.3 | 已确认的严格方法清单，具体方法对象见上表。 |
-| 56 | [SimGym: A Framework for A/B Test Simulation in E-Commerce with Traffic-Grounded VLM Agents.](../README.md#paper-simgym-a-framework-for-a-b-test-simulation-in-e-commerce-with-traffic-grounded-vlm-agents) | 1.4 | 按用户指定归入 benchmark 与测试框架。 |
+| 67 | [LLM-Powered Virtual Population for Demand Simulation and Pricing.](https://arxiv.org/abs/2606.16183) | 1.3 | 已确认的严格方法清单，具体方法对象见上表。 |
+| 56 | [SimGym: A Framework for A/B Test Simulation in E-Commerce with Traffic-Grounded VLM Agents.](https://arxiv.org/abs/2605.19219) | 1.4 | 按用户指定归入 benchmark 与测试框架。 |
 | 52 | [SYN-DIGITS: A Synthetic Control Framework for Calibrated Digital Twin Simulation.](../README.md#paper-syn-digits-a-synthetic-control-framework-for-calibrated-digital-twin-simulation) | 1.3 | 已确认的严格方法清单，具体方法对象见上表。 |
 | 63 | [Rectification Difficulty and Optimal Sample Allocation in LLM-Augmented Surveys.](../README.md#paper-rectification-difficulty-and-optimal-sample-allocation-in-llm-augmented-surveys) | 1.3 | 已确认的严格方法清单，具体方法对象见上表。 |
 | 64 | [Allocating Human Oversight in AI-Enabled Analytics.](../README.md#paper-allocating-human-oversight-in-ai-enabled-analytics) | 1.3 | 已确认的严格方法清单，具体方法对象见上表。 |

@@ -2,8 +2,8 @@
 
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
-![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-39-4C70C8?style=for-the-badge)
-![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-28-D98757?style=for-the-badge)
+![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-35-4C70C8?style=for-the-badge)
+![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-26-D98757?style=for-the-badge)
 ![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-13-9865C6?style=for-the-badge)
 
 </div>
@@ -130,9 +130,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Gui, George, and Olivier Toubia. "The Challenge of Using LLMs to Simulate Human Behavior: A Causal Inference Perspective." SSRN 4650172 (2023-12). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4650172)
 
-<a id="paper-when-synthetic-users-fail-a-cross-domain-benchmark-of-llm-simulated-human-survey-responses"></a>
-
-- Chen, Zihan, Di Zhu, and Lei Nico Zheng. "When Synthetic Users Fail: A Cross-Domain Benchmark of LLM-Simulated Human Survey Responses." arXiv:2607.26348 (2026-07). [[link]](https://arxiv.org/abs/2607.26348)
 
 <a id="paper-synthetic-data-and-digital-twins-the-hype-the-facts-the-promise"></a>
 
@@ -154,9 +151,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Saxena, Maxime, Fabio Caccioli, and R. Maria del Rio-Chanona. "Decision Models as Scalable Economic Surrogates that Capture Human Variation." arXiv:2611.05553 (2026-11). [[link]](https://arxiv.org/abs/2611.05553)
 
-<a id="paper-structuring-survey-histories-for-llm-digital-twins-a-controlled-study-of-background-decision-procedure-and-evaluation-profiles"></a>
-
-- Ye, Iris, Tianze Deng, and Ozan Candogan. "Structuring Survey Histories for LLM Digital Twins: A Controlled Study of Background, Decision Procedure, and Evaluation Profiles." arXiv:2611.08730 (2026-11). [[link]](https://arxiv.org/abs/2611.08730)
 
 <a id="paper-measuring-the-digital-twin-separating-individuation-from-population-regularity-in-llm-survey-twins"></a>
 
@@ -200,9 +194,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Ye, Zikun, Jiameng Lyu, and Rui Tao. "Allocating Human Oversight in AI-Enabled Analytics." arXiv:2604.12497 (2026-04). [[link]](https://arxiv.org/abs/2604.12497)
 
-<a id="paper-llm-powered-virtual-population-for-demand-simulation-and-pricing"></a>
-
-- Huang, Chengpiao, and Kaizheng Wang. "LLM-Powered Virtual Population for Demand Simulation and Pricing." arXiv:2606.16183 (2026-06). [[link]](https://arxiv.org/abs/2606.16183)
 
 <a id="paper-distributionally-robust-llm-augmentation-of-discrete-choice-models"></a>
 
@@ -229,9 +220,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Toubia, Olivier, et al. "Database Report: Twin-2K-500: A Data Set for Building Digital Twins of over 2,000 People Based on Their Answers to over 500 Questions." Marketing Science 44(6): 1446–1455 (2025-08). [[link]](https://doi.org/10.1287/mksc.2025.0262). Four-wave surveys of 2,058 US participants, plus LLM responses. [[data]](https://huggingface.co/datasets/LLM-Digital-Twin/Twin-2K-500/tree/main)
 
-<a id="paper-simgym-a-framework-for-a-b-test-simulation-in-e-commerce-with-traffic-grounded-vlm-agents"></a>
-
-- Li, Han, et al. "SimGym: A Framework for A/B Test Simulation in E-Commerce with Traffic-Grounded VLM Agents." arXiv:2605.19219 (2026-05). [[link]](https://arxiv.org/abs/2605.19219). A/B-test data from 50 e-commerce storefronts.
 
 <a id="paper-matraix-simulating-the-world-with-8-3-billion-persona-agents"></a>
 <a id="dataset-matraix-persona-1m"></a>
@@ -341,13 +329,7 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Yin, Mingzhang, Ruijiang Gao, and Ziwei Cong. "Personalizing Language Models for Generative Targeting." SSRN 5329729 (2025-06). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5329729)
 
-<a id="paper-slm4offer-personalized-marketing-offer-generation-using-contrastive-learning-based-fine-tuning"></a>
 
-- Challapalli, Vedasamhitha, et al. "SLM4Offer: Personalized Marketing Offer Generation Using Contrastive Learning Based Fine-Tuning." arXiv:2508.15471 (2025-08). [[link]](https://arxiv.org/abs/2508.15471)
-
-<a id="paper-offline-to-online-creative-optimization-with-generative-models-and-adaptive-testing"></a>
-
-- Lee, Kevin, et al. "Offline-to-Online Creative Optimization with Generative Models and Adaptive Testing." arXiv:2607.23696 (2026-07). [[link]](https://arxiv.org/abs/2607.23696)
 
 ### 2.3 Benchmarks and Datasets
 

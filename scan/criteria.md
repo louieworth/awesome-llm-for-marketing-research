@@ -4,9 +4,13 @@ This file sets the standard for papers the automatic scan proposes. It is **narr
 
 In this file, LLM includes transformer models, such as customer-journey or consumption-sequence transformers trained on marketing data.
 
-## The marketing gate (every paper, every tier)
+## Scope: the marketing gate, or the human-simulation bar
 
-Propose a paper only if a **marketing setting** is part of its research question, its data or its evaluation. A marketing setting means at least one of:
+Propose a paper only if it passes the **marketing gate** (tracks A and C), or if it is human-simulation research that clears the **bar** under track B.
+
+### The marketing gate (tracks A and C)
+
+A **marketing setting** must be part of the paper's research question, its data or its evaluation. A marketing setting means at least one of:
 
 - consumers or customers choosing, buying, rating or reacting to products, brands or services;
 - preferences, choice, conjoint, willingness to pay, pricing or demand;
@@ -16,12 +20,21 @@ Propose a paper only if a **marketing setting** is part of its research question
 
 These do **not** pass the gate on their own:
 
-- general social-science, political, psychological or economic-game simulation, such as public opinion polls, GSS, ANES, WVS or Pew items, values, moral judgments, norms, well-being, ultimatum or 11–20 games;
-- general LLM methods, benchmarks, persona collections or agents with no marketing task;
+- general social-science, political, psychological or economic-game simulation, such as public opinion polls, GSS, ANES, WVS or Pew items, values, moral judgments, norms, well-being, ultimatum or 11–20 games (these can still qualify under track B);
+- general LLM methods, persona collections or agents with no marketing task and no simulation of people;
 - naming marketing as one possible application;
 - the venue: a UTD 24 journal does not make a paper a marketing paper.
 
-If the abstract does not show a marketing setting, **exclude** the paper. Do not mark it uncertain.
+If the abstract shows neither a marketing setting nor LLM simulation of people, **exclude** the paper. Do not mark it uncertain.
+
+### The human-simulation bar (track B)
+
+Papers in which LLMs simulate people without a marketing setting are treated as digital-twin research and are in scope, but only if they clear a bar. The paper must:
+
+- be published in a peer-reviewed venue: a journal, or the main proceedings or Findings of a major conference (workshops, companion proceedings and proceedings series do not count), **or**
+- be highly cited: at least 100 citations, or at least 50 a year (`influence` in `scripts/scan_config.json`).
+
+Unpublished preprints and working papers below the citation bar are excluded, however relevant they look. `scripts/build_proposals.py` applies the bar after citation verification, using the verified venue and the citation count. The bar replaces the business-school author tiers for track B; the length rule still applies.
 
 ## Length
 
@@ -44,11 +57,20 @@ Forms include digital twins, synthetic respondents, silicon samples and personas
 
 Meets the CONTRIBUTING.md requirements for category 2 (content generation and personalization) or category 3 (model and algorithm augmentation), with a marketing task in the data or the evaluation.
 
-The former track B, LLM simulation of people from public survey data without a marketing setting, is retired.
+### B. `human_simulation`: LLM simulation of people outside marketing → category 1, with the bar
+
+LLMs simulate people, and the paper compares the simulation with human data or examines whether it is valid. No marketing setting is needed, but the bar above is. For example:
+
+- survey and opinion-poll responses, such as GSS, ANES, WVS, Pew, OpinionQA or census items;
+- psychology, social-science and economic-game experiments, and their replication;
+- cultural or moral values, norms, well-being and personality, measured against human data;
+- general human-behavior simulation benchmarks, and digital twins of individuals.
+
+Not track B: value-alignment papers whose aim is to align or steer the model itself rather than to stand in for people, general machine-learning papers such as model collapse or training on synthetic data, statistics methods that do not simulate people, persona collections built only as training data, and papers that study LLMs as a market or product.
 
 ## Tiers: where the paper comes from and who wrote it
 
-Every tier requires the marketing gate and track A or C.
+Tiers apply to tracks A and C, and every tier requires the marketing gate. Track B uses the bar above instead of the tiers.
 
 - **Tier 1, UTD 24 journals** (listed under `journal_sets.utd24` in `scripts/scan_config.json`): propose regardless of author affiliation.
 - **Tier 2, other sources** (arXiv, SSRN, conferences, other journals): at least one author must be from a business school.
@@ -59,8 +81,8 @@ Every tier requires the marketing gate and track A or C.
 
 ## Decisions
 
-- `include`: clearly passes the gate and fits track A or C.
-- `uncertain`: passes the gate, but the abstract leaves the LLM's role or the track unclear. Never use uncertain because the marketing setting is unclear.
+- `include`: clearly passes the marketing gate and fits track A or C, or clearly fits track B (the bar is applied later, by script).
+- `uncertain`: in scope, but the abstract leaves the LLM's role or the track unclear. Never use uncertain because the marketing setting is unclear: a paper without one is track B if it simulates people, and excluded otherwise.
 - `exclude`: everything else.
 
 Expect a handful of proposals a week at most. A week with none is normal.

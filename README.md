@@ -2,7 +2,7 @@
 
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
-![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-35-4C70C8?style=for-the-badge)
+![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-60-4C70C8?style=for-the-badge)
 ![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-26-D98757?style=for-the-badge)
 ![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-13-9865C6?style=for-the-badge)
 
@@ -68,6 +68,14 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Argyle, Lisa P., et al. "Out of One, Many: Using Language Models to Simulate Human Samples." Political Analysis 31(3): 337–351 (2023-02). [[link]](https://doi.org/10.1017/pan.2023.2)
 
+<a id="paper-can-ai-language-models-replace-human-participants"></a>
+
+- Dillion, Danica, et al. "Can AI language models replace human participants?" Trends in Cognitive Sciences 27(7): 597–600 (2023-05). [[link]](https://doi.org/10.1016/j.tics.2023.04.008)
+
+<a id="paper-using-large-language-models-to-simulate-multiple-humans-and-replicate-human-subject-studies"></a>
+
+- Aher, Gati V., Rosa I. Arriaga, and Adam Tauman Kalai. "Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies." ICML 2023, PMLR 202: 337–371 (2023-07). [[link]](https://proceedings.mlr.press/v202/aher23a.html)
+
 <a id="paper-frontiers-determining-the-validity-of-large-language-models-for-automated-perceptual-analysis"></a>
 
 - Li, Peiyao, et al. "Frontiers: Determining the Validity of Large Language Models for Automated Perceptual Analysis." Marketing Science 43(2): 254–266 (2024-01). [[link]](https://doi.org/10.1287/mksc.2023.0454)
@@ -79,6 +87,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-large-language-models-can-predict-the-results-of-social-science-experiments"></a>
 
 - Ashokkumar, Ashwini, et al. "Large language models can predict the results of social science experiments." Nature 656: 115–122 (2026-07). [[link]](https://doi.org/10.1038/s41586-026-10742-x)
+
+<a id="paper-large-language-models-outperform-humans-at-estimating-societys-everyday-norms"></a>
+
+- Eriksson, Kimmo, et al. "Large language models outperform humans at estimating society’s everyday norms." Communications AI & Computing 1: 15 (2026-09). [[link]](https://doi.org/10.1038/s44488-026-00018-8)
 
 <a id="paper-large-language-models-as-simulated-economic-agents-what-can-we-learn-from-homo-silicus"></a>
 
@@ -110,13 +122,81 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Goli, Ali, and Amandeep Singh. "Frontiers: Can Large Language Models Capture Human Preferences?" Marketing Science 43(4): 709–722 (2024-04). [[link]](https://doi.org/10.1287/mksc.2023.0306)
 
+<a id="paper-synthetic-replacements-for-human-survey-data-the-perils-of-large-language-models"></a>
+
+- Bisbee, James, et al. "Synthetic Replacements for Human Survey Data? The Perils of Large Language Models." Political Analysis 32(4): 401–416 (2024-05). [[link]](https://doi.org/10.1017/pan.2024.5)
+
+<a id="paper-the-illusion-of-artificial-inclusion"></a>
+
+- Agnew, William, et al. "The Illusion of Artificial Inclusion." CHI 2024 (2024-05). [[link]](https://doi.org/10.1145/3613904.3642703)
+
+<a id="paper-perils-and-opportunities-in-using-large-language-models-in-psychological-research"></a>
+
+- Abdurahman, Suhaib, et al. "Perils and opportunities in using large language models in psychological research." PNAS Nexus 3(7): pgae245 (2024-07). [[link]](https://doi.org/10.1093/pnasnexus/pgae245)
+
+<a id="paper-cultural-bias-and-cultural-alignment-of-large-language-models"></a>
+
+- Tao, Yan, et al. "Cultural bias and cultural alignment of large language models." PNAS Nexus 3(9): pgae346 (2024-09). [[link]](https://doi.org/10.1093/pnasnexus/pgae346)
+
+<a id="paper-towards-measuring-the-representation-of-subjective-global-opinions-in-language-models"></a>
+
+- Durmus, Esin, et al. "Towards Measuring the Representation of Subjective Global Opinions in Language Models." COLM 2024 (2024-10). [[link]](https://openreview.net/forum?id=zl16jLb91v)
+
+<a id="paper-questioning-the-survey-responses-of-large-language-models"></a>
+
+- Dominguez-Olmedo, Ricardo, Moritz Hardt, and Celestine Mendler-Dünner. "Questioning the Survey Responses of Large Language Models." NeurIPS 2024 (2024-12). [[link]](https://proceedings.neurips.cc/paper_files/paper/2024/hash/515c62809e0a29729d7eec26e2916fc0-Abstract-Conference.html)
+
+<a id="paper-large-language-models-display-human-like-social-desirability-biases-in-big-five-personality-surveys"></a>
+
+- Salecha, Aadesh, et al. "Large language models display human-like social desirability biases in Big Five personality surveys." PNAS Nexus 3(12): pgae533 (2024-12). [[link]](https://doi.org/10.1093/pnasnexus/pgae533)
+
+<a id="paper-large-language-models-that-replace-human-participants-can-harmfully-misportray-and-flatten-identity-groups"></a>
+
+- Wang, Angelina, Jamie Morgenstern, and John P. Dickerson. "Large language models that replace human participants can harmfully misportray and flatten identity groups." Nature Machine Intelligence 7: 400–411 (2025-02). [[link]](https://doi.org/10.1038/s42256-025-00986-z)
+
+<a id="paper-machine-bias-how-do-generative-language-models-answer-opinion-polls"></a>
+
+- Boelaert, Julien, et al. "Machine Bias. How Do Generative Language Models Answer Opinion Polls?" Sociological Methods & Research 54(3): 1156–1196 (2025-04). [[link]](https://doi.org/10.1177/00491241251330582)
+
 <a id="paper-prompt-architecture-induces-methodological-artifacts-in-large-language-models"></a>
 
 - Brucks, Melanie, and Olivier Toubia. "Prompt architecture induces methodological artifacts in large language models." PLOS ONE 20(4): e0319159 (2025-04). [[link]](https://doi.org/10.1371/journal.pone.0319159)
 
+<a id="paper-large-language-models-assume-people-are-more-rational-than-we-really-are"></a>
+
+- Liu, Ryan, et al. "Large Language Models Assume People are More Rational than We Really are." ICLR 2025 (2025-04). [[link]](https://proceedings.iclr.cc/paper_files/paper/2025/hash/7cdb411d07bdf6cd43ddf1254fae98cd-Abstract-Conference.html)
+
+<a id="paper-take-caution-in-using-llms-as-human-surrogates"></a>
+
+- Gao, Yuan, et al. "Take caution in using LLMs as human surrogates." PNAS 122(24): e2501660122 (2025-06). [[link]](https://doi.org/10.1073/pnas.2501660122)
+
+<a id="paper-a-large-scale-replication-of-scenario-based-experiments-in-psychology-and-management-using-large-language-models"></a>
+
+- Cui, Ziyan, Ning Li, and Huaikang Zhou. "A large-scale replication of scenario-based experiments in psychology and management using large language models." Nature Computational Science 5(8): 627–634 (2025-07). [[link]](https://doi.org/10.1038/s43588-025-00840-7)
+
+<a id="paper-six-fallacies-in-substituting-large-language-models-for-human-participants"></a>
+
+- Lin, Zhicheng. "Six Fallacies in Substituting Large Language Models for Human Participants." Advances in Methods and Practices in Psychological Science (2025-08). [[link]](https://doi.org/10.1177/25152459251357566)
+
+<a id="paper-simulating-human-well-being-with-large-language-models-systematic-validation-and-misestimation-across-64-000-individuals-from-64-countries"></a>
+
+- Pataranutaporn, Pat, et al. "Simulating human well-being with large language models: Systematic validation and misestimation across 64,000 individuals from 64 countries." PNAS 122(48): e2519394122 (2025-11). [[link]](https://doi.org/10.1073/pnas.2519394122)
+
 <a id="paper-llm-generated-persona-is-a-promise-with-a-catch"></a>
 
 - Li, Ang, Haozhe Chen, Hongseok Namkoong, and Tianyi Peng. "LLM Generated Persona is a Promise with a Catch." NeurIPS 2025, Position Paper Track, Advances in Neural Information Processing Systems 38 (2025-12). [[link]](https://proceedings.neurips.cc/paper_files/paper/2025/hash/5fc150b75e8b509735564de16bc3527b-Abstract-Position_Paper_Track.html)
+
+<a id="paper-moral-stereotyping-in-large-language-models"></a>
+
+- Zewail, Aliah, et al. "Moral stereotyping in large language models." PNAS 123(10): e2519941123 (2026-03). [[link]](https://doi.org/10.1073/pnas.2519941123)
+
+<a id="paper-too-human-to-model-the-uncanny-valley-of-large-language-models-in-simulating-human-systems"></a>
+
+- Zeng, Yongchao, Calum Brown, and Mark Rounsevell. "Too human to model: the uncanny valley of large language models in simulating human systems." npj Complexity 3: 13 (2026-03). [[link]](https://doi.org/10.1038/s44260-026-00075-1)
+
+<a id="paper-evaluating-the-statistical-realism-of-llm-generated-social-science-data"></a>
+
+- Xie, Yueqi, et al. "Evaluating the statistical realism of LLM-generated social science data." PNAS 123(19): e2538145123 (2026-05). [[link]](https://doi.org/10.1073/pnas.2538145123)
 
 <a id="paper-digital-twins-are-funhouse-mirrors-five-systematic-distortions"></a>
 
@@ -126,10 +206,17 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Oetzel, Sebastian, and Tobias Maiberger. "How price sensitive is AI? Benchmarking LLM-generated willingness to pay in pricing analytics." Journal of Marketing Analytics (2026-09). [[link]](https://doi.org/10.1057/s41270-026-00542-7)
 
+<a id="paper-large-language-models-as-human-proxies"></a>
+
+- Karetnikov, Nikita, Iyad Rahwan, and Davor Svetinovic. "Large language models as human proxies." Nature Computational Science (2026-09). [[link]](https://doi.org/10.1038/s43588-026-01060-3)
+
 <a id="paper-the-challenge-of-using-llms-to-simulate-human-behavior-a-causal-inference-perspective"></a>
 
 - Gui, George, and Olivier Toubia. "The Challenge of Using LLMs to Simulate Human Behavior: A Causal Inference Perspective." SSRN 4650172 (2023-12). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4650172)
 
+<a id="paper-this-human-study-did-not-involve-human-subjects-validating-llm-simulations-as-behavioral-evidence"></a>
+
+- Hullman, Jessica, et al. "This human study did not involve human subjects: Validating LLM simulations as behavioral evidence." arXiv:2602.15785 (2026-02). [[link]](https://arxiv.org/abs/2602.15785)
 
 <a id="paper-synthetic-data-and-digital-twins-the-hype-the-facts-the-promise"></a>
 
@@ -150,7 +237,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-decision-models-as-scalable-economic-surrogates-that-capture-human-variation"></a>
 
 - Saxena, Maxime, Fabio Caccioli, and R. Maria del Rio-Chanona. "Decision Models as Scalable Economic Surrogates that Capture Human Variation." arXiv:2611.05553 (2026-11). [[link]](https://arxiv.org/abs/2611.05553)
-
 
 <a id="paper-measuring-the-digital-twin-separating-individuation-from-population-regularity-in-llm-survey-twins"></a>
 
@@ -194,7 +280,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Ye, Zikun, Jiameng Lyu, and Rui Tao. "Allocating Human Oversight in AI-Enabled Analytics." arXiv:2604.12497 (2026-04). [[link]](https://arxiv.org/abs/2604.12497)
 
-
 <a id="paper-distributionally-robust-llm-augmentation-of-discrete-choice-models"></a>
 
 - Liu, Tianming, et al. "Distributionally Robust LLM Augmentation of Discrete Choice Models." SSRN 7500939 (2026-09). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7500939)
@@ -205,6 +290,16 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="dataset-camera-conjoint"></a>
 
 - Allenby, Greg M., et al. "Economic valuation of product features." Quantitative Marketing and Economics 12(4): 421-456 (2014-08). [[link]](https://doi.org/10.1007/s11129-014-9150-x). Digital-camera choices: 332 respondents, 16 tasks each. [[data]](https://cran.r-project.org/package=bayesm)
+
+<a id="paper-many-labs-2-investigating-variation-in-replicability-across-samples-and-settings"></a>
+<a id="dataset-many-labs-2"></a>
+
+- Klein, Richard A., et al. "Many Labs 2: Investigating Variation in Replicability Across Samples and Settings." Advances in Methods and Practices in Psychological Science 1(4): 443-490 (2018-12). [[link]](https://doi.org/10.1177/2515245918810225). 28 psychology replications; 15,305 participants across 36 countries/territories. [[data]](https://osf.io/8cd4r/)
+
+<a id="paper-using-large-scale-experiments-and-machine-learning-to-discover-theories-of-human-decision-making"></a>
+<a id="dataset-choices13k"></a>
+
+- Peterson, Joshua C., et al. "Using large-scale experiments and machine learning to discover theories of human decision-making." Science 372(6547): 1209-1214 (2021-06). [[link]](https://doi.org/10.1126/science.abe2629). Choices13k: human choice frequencies for 13,006 risky-choice problems. [[data]](https://github.com/jcpeterson/choices13k)
 
 <a id="dataset-opinionqa"></a>
 
@@ -220,6 +315,9 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Toubia, Olivier, et al. "Database Report: Twin-2K-500: A Data Set for Building Digital Twins of over 2,000 People Based on Their Answers to over 500 Questions." Marketing Science 44(6): 1446–1455 (2025-08). [[link]](https://doi.org/10.1287/mksc.2025.0262). Four-wave surveys of 2,058 US participants, plus LLM responses. [[data]](https://huggingface.co/datasets/LLM-Digital-Twin/Twin-2K-500/tree/main)
 
+<a id="paper-simbench-benchmarking-the-ability-of-large-language-models-to-simulate-human-behaviors"></a>
+
+- Hu, Tiancheng, et al. "SimBench: Benchmarking the Ability of Large Language Models to Simulate Human Behaviors." ICLR 2026 (2026-04). [[link]](https://proceedings.iclr.cc/paper_files/paper/2026/hash/2fc4d6a6400addda7493b9db258c34e0-Abstract-Conference.html). 20 datasets of human decisions and self-assessments. [[data]](https://huggingface.co/datasets/pitehu/SimBench/tree/main)
 
 <a id="paper-matraix-simulating-the-world-with-8-3-billion-persona-agents"></a>
 <a id="dataset-matraix-persona-1m"></a>
@@ -328,8 +426,6 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-generative-personalization-with-textual-and-non-textual-data"></a>
 
 - Yin, Mingzhang, Ruijiang Gao, and Ziwei Cong. "Personalizing Language Models for Generative Targeting." SSRN 5329729 (2025-06). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5329729)
-
-
 
 ### 2.3 Benchmarks and Datasets
 

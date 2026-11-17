@@ -17,9 +17,11 @@ from common import (
     make_anchor, normalize_title,
 )
 
-TRACK_LABEL = {"consumer_simulation": "A consumer simulation", "public_data_simulation": "B public-data human simulation",
+TRACK_LABEL = {"consumer_simulation": "A consumer simulation", "human_simulation": "B human simulation (digital twin)",
+               "public_data_simulation": "B public-data human simulation",
                "marketing_method": "C marketing method", "utd": "UTD journal"}
-TIER_LABEL = {1: "tier 1 UTD journal", 2: "tier 2 business-school author", 3: "tier 3 high impact"}
+TIER_LABEL = {1: "tier 1 UTD journal", 2: "tier 2 business-school author", 3: "tier 3 high impact",
+              "B-published": "bar: peer-reviewed", "B-cited": "bar: highly cited"}
 
 
 def load_agent_files(pattern):
@@ -55,13 +57,39 @@ def influential(item, cfg):
     return cites >= inf["min_citations"] or cites / years >= inf["min_citations_per_year"]
 
 
+MINOR_VENUE = re.compile(r"\b(workshops?|companion|lecture notes|extended abstracts?|doctoral consortium)\b", re.I)
+
+
+def apply_human_sim_bar(item, cfg):
+    """scan/criteria.md track B: human simulation without a marketing setting. Returns True when excluded.
+
+    The paper must be published in a peer-reviewed venue (verified; workshops, companion proceedings and
+    proceedings series do not count) or be influential (citations). The bar replaces the business-school
+    author tiers for this track.
+    """
+    if item["published"] and not MINOR_VENUE.search(item["meta"]["venue"]):
+        item["tier"] = "B-published"
+        return False
+    if influential(item, cfg):
+        item["tier"] = "B-cited"
+        return False
+    inf = cfg["influence"]
+    item.update(status="excluded", decision="exclude",
+                reason=f"Human simulation without a marketing setting needs a peer-reviewed venue or at least "
+                       f"{inf['min_citations']} citations ({inf['min_citations_per_year']} a year); this is unpublished "
+                       f"with {item.get('citations') or 0} citations. {item['reason']}")
+    return True
+
+
 def apply_tier_rules(item, cfg):
-    """scan/criteria.md tiers. Returns True when the item was excluded.
+    """scan/criteria.md tiers (tracks A and C; track B uses apply_human_sim_bar). Returns True when excluded.
 
     Tier 1: UTD 24 journal papers pass regardless of affiliation.
     Tier 2: other papers need a business-school author.
     Tier 3: without one, only influential (citations) or screener-flagged notable papers pass.
     """
+    if item.get("track") == "human_simulation":
+        return apply_human_sim_bar(item, cfg)
     item["tier"] = 1 if is_utd(item["meta"]["venue"], cfg) else 2
     if item["tier"] == 1 or item["business_school"] is True:
         return False

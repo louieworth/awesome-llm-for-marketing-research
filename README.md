@@ -2,7 +2,7 @@
 
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
-![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-79-4C70C8?style=for-the-badge)
+![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-80-4C70C8?style=for-the-badge)
 ![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-45-D98757?style=for-the-badge)
 ![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-21-9865C6?style=for-the-badge)
 
@@ -257,6 +257,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-decision-models-as-scalable-economic-surrogates-that-capture-human-variation"></a>
 
 - Saxena, Maxime, Fabio Caccioli, and R. Maria del Rio-Chanona. "Decision Models as Scalable Economic Surrogates that Capture Human Variation." arXiv:2611.05553 (2026-11). [[link]](https://arxiv.org/abs/2611.05553)
+
+<a id="paper-the-limits-of-behavioral-simulation-with-ai"></a>
+
+- Graeber, Thomas W., and Christopher Roth. "The Limits of Behavioral Simulation With AI." CESifo Working Paper (2026-11). [[link]](https://doi.org/10.65864/upkfydxfud)
 
 <a id="paper-measuring-the-digital-twin-separating-individuation-from-population-regularity-in-llm-survey-twins"></a>
 

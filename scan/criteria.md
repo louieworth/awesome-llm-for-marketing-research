@@ -2,6 +2,8 @@
 
 本文件定义自动扫描推荐论文的标准。它比 CONTRIBUTING.md 的收录范围**更窄**，两者同时适用；分类和引用格式以 CONTRIBUTING.md 为准。修改本文件后，下一次扫描立即生效。
 
+本文件中的 LLM 包括 transformer 模型，例如在营销数据上训练的顾客旅程或消费序列 transformer。
+
 ## 第一层：UTD 24 期刊，基本都收
 
 论文发表在 UTD 24 期刊上（列表见 `scripts/scan_config.json` 的 `journal_sets.utd24`），并且 LLM 或生成式 AI 是它的研究工具、研究对象或方法组件，就推荐。这一层**不限下面的三条路径，也不限作者单位**，按 CONTRIBUTING.md 分类即可。
@@ -9,7 +11,7 @@
 以下情况不算：
 
 - 只在文中顺带提到 AI；
-- 研究的是 LLM 出现之前的规则型 chatbot 或传统机器学习。
+- 研究的是 LLM 出现之前的规则型 chatbot 或传统机器学习（transformer 模型不算传统机器学习）。
 
 ## 第二层：其他来源，要求商学院作者
 

@@ -431,7 +431,7 @@
    "citations": 178,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": "2.3",
    "classification": "The core is a performance comparison of AI-generated and human-made marketing images with ad-deployment evidence, which belongs to the market effects in 2.1; it also releases GenImageNet, so the dataset is listed separately in 2.3.",
@@ -585,7 +585,7 @@
    "citations": 3,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": null,
    "classification": "Studies market outcomes of generative AI images such as consumer preference and WTP; placed in 2.1.",
@@ -1117,7 +1117,7 @@
    "citations": 7,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.1",
    "dataset_section": "1.4",
    "classification": "A resource and application that builds and evaluates persona simulations from public survey data, with no new estimation method, placed in 1.1; the persona set is reusable and is also listed in 1.4.",
@@ -1686,7 +1686,7 @@
    "citations": 6,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.1",
    "dataset_section": null,
    "classification": "A framework demonstration of consumer simulation; the abstract shows no calibration against human data and no new method, so it goes in 1.1.",
@@ -2020,7 +2020,7 @@
    "citations": 1,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.2",
    "dataset_section": "1.4",
    "classification": "The core is evaluating the validity of LLMs as digital consumers and releasing a benchmark; primary placement 1.2, also listed in 1.4 as a benchmark.",
@@ -2052,7 +2052,10 @@
     "date": "2026-05",
     "url": "https://arxiv.org/abs/2605.17079"
    },
-   "dataset": null,
+   "dataset": {
+    "description": "ConsumerSimBench: 1,553 Chinese social-media topics with 23,122 rule-audited consumer-reaction criteria.",
+    "url": "https://huggingface.co/datasets/wty500/ConsumerSimBench"
+   },
    "affiliations": [
     {
      "author": "Tianyu Wang",
@@ -2071,7 +2074,9 @@
    "tier": 2,
    "anchor": "paper-can-llms-think-like-consumers-benchmarking-crowd-level-reaction-reconstruction-with-consumersimbench",
    "dataset_anchor": "dataset-can-llms-think-like-consumers-benchmarking-crowd-level-reaction-reconstruction-with-consumersimbench",
-   "pages": 32
+   "pages": 32,
+   "final_section": "1.2",
+   "final_dataset_section": "1.4"
   },
   {
    "cid": "C053",
@@ -2222,7 +2227,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.2",
    "dataset_section": null,
    "classification": "A pipeline for generating personalized ad creatives; placed in 2.2.",
@@ -2406,7 +2411,7 @@
    "citations": 16,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.3",
    "dataset_section": null,
    "classification": "Proposes model-agnostic Shapley attribution as a computational evaluation method, validated in two applications; placed in 1.3, with 1.2 as an alternative.",
@@ -2439,7 +2444,9 @@
    "business_school": true,
    "tier": 2,
    "anchor": "paper-explaining-large-language-models-decisions-using-shapley-values",
-   "pages": 30
+   "pages": 30,
+   "final_section": "1.3",
+   "final_dataset_section": null
   },
   {
    "cid": "C063",
@@ -3302,7 +3309,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": "2.3",
    "classification": "The core is evidence and a benchmark on how ad placement and disclosure affect user preferences; primarily 2.1, also listed in 2.3 as a benchmark.",
@@ -4699,7 +4706,7 @@
    "citations": 4,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.2",
    "dataset_section": null,
    "classification": "Examines whether LLM surrogate consumers reproduce human pricing heuristics and biases; a behavioral validity and limitations study, placed in 1.2.",
@@ -4740,7 +4747,9 @@
    "business_school": true,
    "tier": 2,
    "anchor": "paper-shopping-by-algorithm-how-agentic-ai-deploys-human-heuristics-as-a-surrogate-consumer",
-   "pages": 58
+   "pages": 58,
+   "final_section": "1.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C111",
@@ -5015,7 +5024,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.3",
    "dataset_section": null,
    "classification": "The core contribution is a new method of conditioning virtual personas on backstories, with ATP validation; a clear methodological innovation, placed in 1.3.",
@@ -5072,7 +5081,8 @@
     }
    ],
    "business_school": false,
-   "tier": "B-published"
+   "tier": "B-published",
+   "anchor": "paper-virtual-personas-for-language-models-via-an-anthology-of-backstories"
   },
   {
    "cid": "C118",
@@ -5178,7 +5188,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.2",
    "dataset_section": null,
    "classification": "A generation method for e-commerce product descriptions, validated by platform deployment; placed in 2.2.",
@@ -5246,7 +5256,9 @@
    ],
    "business_school": null,
    "tier": 2,
-   "anchor": "paper-ipl-leveraging-multimodal-large-language-models-for-intelligent-product-listing"
+   "anchor": "paper-ipl-leveraging-multimodal-large-language-models-for-intelligent-product-listing",
+   "final_section": "2.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C121",
@@ -6357,7 +6369,7 @@
    "citations": 2,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.3",
    "dataset_section": null,
    "classification": "Proposes clear methodological innovations, including a preference-learning paradigm, a mean-field mechanism and multi-agent discussion; placed under methods and improvements.",
@@ -6472,7 +6484,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.2",
    "dataset_section": null,
    "classification": "Mainly an empirical evaluation of the generalization and fairness of subgroup value simulation; fine-tuning is only a comparison device and does not count as a clear methodological innovation.",
@@ -6549,7 +6561,8 @@
     }
    ],
    "business_school": false,
-   "tier": "B-published"
+   "tier": "B-published",
+   "anchor": "paper-can-persona-prompted-llms-emulate-subgroup-values-an-empirical-analysis-of-generalisability-and-fairness-in-cultural-alignment"
   },
   {
    "cid": "C148",
@@ -7375,7 +7388,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": null,
    "classification": "Tests how the clarity and persuasiveness of LLM-generated text affect market outcomes.",
@@ -9816,7 +9829,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.2",
    "dataset_section": null,
    "classification": "The core is a new method for causal attribution and creative optimization of the input configuration of LLM-generated ads, placed in 2.2.",
@@ -9839,12 +9852,8 @@
       "family": "Jiang"
      },
      {
-      "given": "",
-      "family": " Zhiqiang"
-     },
-     {
-      "given": "",
-      "family": " Zheng"
+      "given": "Zhiqiang",
+      "family": "Zheng"
      }
     ],
     "venue": "arXiv:2610.23025",
@@ -9861,7 +9870,9 @@
    "business_school": true,
    "tier": 2,
    "anchor": "paper-causal-value-attribution-of-marketing-labels-in-llm-generated-ads-a-deconfounder-approach",
-   "pages": 74
+   "pages": 74,
+   "final_section": "2.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C223",
@@ -9882,7 +9893,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.3",
    "dataset_section": "2.3",
    "classification": "The main contributions are a benchmark and dataset that evaluate LLM generation of brand response content; placed in 2.3.",
@@ -10783,7 +10794,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.2",
    "dataset_section": null,
    "classification": "If included, it concerns generating and optimizing visual ad creatives, placed in 2.2.",
@@ -10885,7 +10896,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": null,
    "classification": "If it provides evidence on how an LLM conversational assistant affects consumer decisions, place in 2.1.",
@@ -11771,7 +11782,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.2",
    "dataset_section": null,
    "classification": "The core is a method for improving marketing content generation; placed in 2.2.",
@@ -11813,7 +11824,9 @@
    ],
    "business_school": true,
    "tier": 2,
-   "anchor": "paper-why-it-works-can-llm-hypotheses-improve-ai-generated-marketing-content"
+   "anchor": "paper-why-it-works-can-llm-hypotheses-improve-ai-generated-marketing-content",
+   "final_section": "2.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C284",
@@ -12522,7 +12535,7 @@
    "citations": 16,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.2",
    "dataset_section": "2.3",
    "classification": "The core is LLM rewriting of product content to optimize exposure in generative engines, placed under methods and improvements for content generation, with a dataset release as well.",
@@ -12561,7 +12574,10 @@
     "date": "2025-11",
     "url": "https://arxiv.org/abs/2511.20867"
    },
-   "dataset": null,
+   "dataset": {
+    "description": "13,746 consumer product queries, each paired with 10 retrieved Amazon listings.",
+    "url": "https://huggingface.co/datasets/psbagga17/E-GEO"
+   },
    "affiliations": [
     {
      "author": "Vivek F. Farias",
@@ -12576,7 +12592,9 @@
    "tier": 2,
    "anchor": "paper-e-geo-a-testbed-for-generative-engine-optimization-in-e-commerce",
    "dataset_anchor": "dataset-e-geo-a-testbed-for-generative-engine-optimization-in-e-commerce",
-   "pages": 45
+   "pages": 45,
+   "final_section": "2.2",
+   "final_dataset_section": "2.3"
   },
   {
    "cid": "C306",
@@ -12660,7 +12678,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.3",
    "dataset_section": null,
    "classification": "Proposes a new estimator with theoretical proofs and validation, a clear methodological innovation, placed in Methods and Improvements.",
@@ -12701,7 +12719,9 @@
    "business_school": true,
    "tier": 2,
    "anchor": "paper-from-model-choice-to-model-belief-establishing-a-new-measure-for-llm-based-research",
-   "pages": 38
+   "pages": 38,
+   "final_section": "1.3",
+   "final_dataset_section": null
   },
   {
    "cid": "C310",
@@ -13086,7 +13106,7 @@
    "citations": 4,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.3",
    "dataset_section": null,
    "classification": "The core contribution is a new representation-layer identity injection method validated with survey data, assigned to methods and improvements.",
@@ -13147,7 +13167,8 @@
     }
    ],
    "business_school": false,
-   "tier": "B-published"
+   "tier": "B-published",
+   "anchor": "paper-parametric-social-identity-injection-and-diversification-in-public-opinion-simulation"
   },
   {
    "cid": "C325",
@@ -14573,7 +14594,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.3",
    "dataset_section": null,
    "classification": "Proposes a new value-injection fine-tuning method and validates it on four tasks; a clear methodological innovation, placed in 1.3.",
@@ -14626,7 +14647,10 @@
     }
    ],
    "business_school": false,
-   "tier": "B-published"
+   "tier": "B-published",
+   "final_section": "1.3",
+   "final_dataset_section": null,
+   "anchor": "paper-from-values-to-opinions-predicting-human-behaviors-and-stances-using-value-injected-large-language-models"
   },
   {
    "cid": "C387",
@@ -14806,7 +14830,7 @@
    "citations": 6,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": null,
    "classification": "Studies the impact and boundary conditions of AI-generated fake UGC on marketing research, i.e., the market effects and limitations of content generation, placed in 2.1.",
@@ -14860,7 +14884,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.2",
    "dataset_section": null,
    "classification": "Mainly reveals biases and limitations of LLMs in persona simulation; a validity and limitations study, placed in 1.2.",
@@ -14905,7 +14929,8 @@
     }
    ],
    "business_school": false,
-   "tier": "B-published"
+   "tier": "B-published",
+   "anchor": "paper-evaluating-large-language-model-biases-in-persona-steered-generation"
   },
   {
    "cid": "C394",
@@ -15010,7 +15035,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.3",
    "dataset_section": null,
    "classification": "Proposes a measurement framework that uses an LLM to approximate consumer expectations, with two validation procedures; a clear methodological innovation, placed in 1.3.",
@@ -15059,7 +15084,9 @@
    "business_school": true,
    "tier": 2,
    "anchor": "paper-modeling-story-expectations-a-generative-framework-using-llms",
-   "pages": 45
+   "pages": 45,
+   "final_section": "1.3",
+   "final_dataset_section": null
   },
   {
    "cid": "C399",
@@ -15983,7 +16010,7 @@
    "citations": 3,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.1",
    "dataset_section": null,
    "classification": "An application demonstration of LLM agents simulating consumers' price responses; methodological innovation is not the core, so placed in 1.1.",
@@ -16311,7 +16338,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.2",
    "dataset_section": null,
    "classification": "A typical study of the behavioral validity and limitations of LLM synthetic consumers, placed in 1.2.",
@@ -16372,7 +16399,9 @@
    "business_school": true,
    "tier": 2,
    "anchor": "paper-how-human-is-the-machine-evidence-from-66-000-conversations-with-large-language-models",
-   "pages": 40
+   "pages": 40,
+   "final_section": "1.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C431",
@@ -16583,7 +16612,7 @@
    "citations": 16,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.2",
    "dataset_section": "1.4",
    "classification": "If included, it is a limitation study testing biases in LLM consumer choice, placed in 1.2; it also releases an open-source benchmark that could go in 1.4.",
@@ -17383,7 +17412,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.3",
    "dataset_section": null,
    "classification": "The core is a new evaluation framework with experimental validation on WVS; a computational-evaluation method innovation, placed in 1.3.",
@@ -17436,7 +17465,10 @@
     }
    ],
    "business_school": false,
-   "tier": "B-published"
+   "tier": "B-published",
+   "final_section": "1.3",
+   "final_dataset_section": null,
+   "anchor": "paper-beyond-marginal-distributions-a-framework-to-evaluate-the-representativeness-of-demographic-aligned-llms"
   },
   {
    "cid": "C455",
@@ -18579,7 +18611,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.3",
    "dataset_section": null,
    "classification": "The core contribution is a new individual-profile construction and evaluation pipeline (expert-agent reconstruction plus multi-agent debate); clear methodological innovation, placed in 1.3.",
@@ -18656,7 +18688,8 @@
     }
    ],
    "business_school": false,
-   "tier": "B-published"
+   "tier": "B-published",
+   "anchor": "paper-expertivs-sociological-expert-driven-individual-value-simulation-in-large-language-models"
   },
   {
    "cid": "C483",
@@ -18879,7 +18912,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.1",
    "dataset_section": null,
    "classification": "The main contribution is turning an existing framework into a usable simulation platform with case studies; an application and tool demonstration, placed in 1.1 rather than 1.3.",
@@ -18920,7 +18953,10 @@
     }
    ],
    "business_school": false,
-   "tier": "B-published"
+   "tier": "B-published",
+   "final_section": "1.1",
+   "final_dataset_section": null,
+   "anchor": "paper-anamnesis-an-open-source-platform-for-large-scale-backstory-conditioned-survey-simulation"
   },
   {
    "cid": "C491",
@@ -19167,7 +19203,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.2",
    "dataset_section": null,
    "classification": "The core is comparing how different models perform and where they apply in opinion simulation, falling under 1.2 validity and limitations.",
@@ -19220,7 +19256,10 @@
     }
    ],
    "business_school": false,
-   "tier": "B-published"
+   "tier": "B-published",
+   "final_section": "1.2",
+   "final_dataset_section": null,
+   "anchor": "paper-emulate-or-estimate-the-divergent-strengths-of-base-and-post-trained-language-models-for-opinion-simulation"
   },
   {
    "cid": "C498",
@@ -19774,7 +19813,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.2",
    "dataset_section": null,
    "classification": "The core is examining the stability and cross-model consistency of LLM preference distributions; 1.2 Validity and Limitations.",
@@ -22182,7 +22221,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.2",
    "dataset_section": null,
    "classification": "Only compares prompt formats and demographic priming approaches, which does not constitute methodological innovation; a validity and limitations study, placed in 1.2.",
@@ -22243,7 +22282,8 @@
     }
    ],
    "business_school": false,
-   "tier": "B-published"
+   "tier": "B-published",
+   "anchor": "paper-the-prompt-makes-the-person-a-a-systematic-evaluation-of-sociodemographic-persona-prompting-for-large-language-models"
   },
   {
    "cid": "C591",
@@ -22858,7 +22898,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.2",
    "dataset_section": null,
    "classification": "The core is an evaluation of the alignment validity and limitations of LLMs with global population opinion distributions, placed in 1.2; the abstract says code and data are public, but the evaluation framework is not a standalone dataset.",
@@ -22903,7 +22943,8 @@
     }
    ],
    "business_school": false,
-   "tier": "B-published"
+   "tier": "B-published",
+   "anchor": "paper-on-the-alignment-of-large-language-models-with-global-human-opinion"
   },
   {
    "cid": "C604",
@@ -25948,7 +25989,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.2",
    "dataset_section": null,
    "classification": "If included, it is a method in advertising and information design, placed in 2.2; the main risk is that it leans toward mechanism-design theory rather than marketing content generation.",
@@ -26883,7 +26924,7 @@
    "citations": 207,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.2",
    "dataset_section": null,
    "classification": "The paper tests the reproducibility and diversity of LLMs as participants, a behavioral and statistical validity study, placed in 1.2.",
@@ -28280,7 +28321,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.3",
    "dataset_section": null,
    "classification": "The core contribution is a new multi-stage reasoning framework (life-stress analysis, group personality prediction, weighted cognitive imitation) validated on the WVS; a clear methodological innovation, placed in 1.3.",
@@ -28365,7 +28406,8 @@
     }
    ],
    "business_school": false,
-   "tier": "B-published"
+   "tier": "B-published",
+   "anchor": "paper-beyond-demographics-enhancing-cultural-value-survey-simulation-with-multi-stage-personality-driven-cognitive-reasoning"
   },
   {
    "cid": "C791",
@@ -28386,7 +28428,7 @@
    "citations": 8,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.2",
    "dataset_section": null,
    "classification": "Compares LLM agent choices with real human choices (homogenization, lower diversity); leans toward a behavioral validity/limitations study, tentatively placed in 1.2.",
@@ -28830,7 +28872,7 @@
    "citations": 1,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.3",
    "dataset_section": null,
    "classification": "The core contribution is a two-stage framework that improves behavioral alignment, validated across multiple tasks and models; a clear methodological innovation, placed in 1.3.",
@@ -28849,12 +28891,8 @@
       "family": "Kong"
      },
      {
-      "given": "",
-      "family": " Qianran"
-     },
-     {
-      "given": "",
-      "family": " Jin"
+      "given": "Qianran",
+      "family": "Jin"
      },
      {
       "given": "Renyu",
@@ -28883,7 +28921,9 @@
    "business_school": true,
    "tier": 2,
    "anchor": "paper-improving-behavioral-alignment-in-llm-social-simulations-via-context-formation-and-navigation",
-   "pages": 39
+   "pages": 39,
+   "final_section": "1.3",
+   "final_dataset_section": null
   },
   {
    "cid": "C808",
@@ -30712,7 +30752,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.1",
    "dataset_section": null,
    "classification": "Mainly uses Pew survey data to show the benefits of an individual opinion-alignment method, closer to a comparison of prompting/in-context strategies and not meeting the methodological-innovation bar of 1.3, so it is placed in 1.1.",
@@ -30757,7 +30797,8 @@
     }
    ],
    "business_school": false,
-   "tier": "B-published"
+   "tier": "B-published",
+   "anchor": "paper-aligning-language-models-to-user-opinions"
   },
   {
    "cid": "C871",
@@ -30928,7 +30969,7 @@
    "citations": 78,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.2",
    "dataset_section": null,
    "classification": "The core is comparing the agreement and deviation between LLM and human voting patterns; a behavioral validity study, placed in 1.2; whether the human data is public needs verification.",
@@ -30989,7 +31030,8 @@
     }
    ],
    "business_school": false,
-   "tier": "B-published"
+   "tier": "B-published",
+   "anchor": "paper-llm-voting-human-choices-and-ai-collective-decision-making"
   },
   {
    "cid": "C875",
@@ -31095,7 +31137,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.2",
    "dataset_section": null,
    "classification": "The core is testing the deviation of LLM user simulators from real human behavior; a validity study, placed in 1.2.",
@@ -31148,7 +31190,8 @@
     }
    ],
    "business_school": false,
-   "tier": "B-published"
+   "tier": "B-published",
+   "anchor": "paper-evaluating-large-language-models-as-generative-user-simulators-for-conversational-recommendation"
   },
   {
    "cid": "C880",
@@ -34059,7 +34102,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.2",
    "dataset_section": null,
    "classification": "A position and review-style discussion of LLM survey simulation evaluation paradigms, placed in 1.2; it lacks empirical work on public data, so inclusion is uncertain.",
@@ -34136,7 +34179,10 @@
     }
    ],
    "business_school": false,
-   "tier": "B-published"
+   "tier": "B-published",
+   "final_section": "1.2",
+   "final_dataset_section": null,
+   "anchor": "paper-too-open-for-opinion-embracing-open-endedness-in-large-language-models-for-social-simulation"
   },
   {
    "cid": "C974",
@@ -38174,7 +38220,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.3",
    "dataset_section": null,
    "classification": "The core is a clear new method, FR-LLM with Marginal-Constrained Joint Projection (MCJP), placed in 1.3.",
@@ -38215,7 +38261,9 @@
    "business_school": true,
    "tier": 2,
    "anchor": "paper-simulating-respondents-not-single-questions-coherent-survey-generation-with-large-language-models",
-   "pages": 20
+   "pages": 20,
+   "final_section": "1.3",
+   "final_dataset_section": null
   },
   {
    "cid": "C1104",
@@ -38494,7 +38542,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.3",
    "dataset_section": null,
    "classification": "Proposes contrastive aggregation and explains it with a Bayesian model, an inference-organization method; if seen as only a design comparison, it could be moved down to 1.2.",
@@ -39200,7 +39248,7 @@
    "citations": 9,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.3",
    "dataset_section": null,
    "classification": "The core is a foundation model for individual simulation and the construction of its training corpus, a methodological innovation, placed in 1.3; if the dataset is public it can also be listed in 1.4.",
@@ -39269,7 +39317,10 @@
     }
    ],
    "business_school": false,
-   "tier": "B-published"
+   "tier": "B-published",
+   "final_section": "1.3",
+   "final_dataset_section": null,
+   "anchor": "paper-humanllm-towards-personalized-understanding-and-simulation-of-human-nature"
   },
   {
    "cid": "C1133",
@@ -39869,7 +39920,7 @@
    "citations": 232,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.2",
    "dataset_section": null,
    "classification": "The core is a validity test of agreement between LLM decisions and real human preferences, placed in 1.2.",
@@ -40019,7 +40070,7 @@
    "citations": 199,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.2",
    "dataset_section": null,
    "classification": "The core question is how faithfully LLM agents mimic real user behavior and where they deviate, a validity and limitations study placed in 1.2.",
@@ -40083,7 +40134,9 @@
    ],
    "business_school": null,
    "tier": 3,
-   "anchor": "paper-on-generative-agents-in-recommendation"
+   "anchor": "paper-on-generative-agents-in-recommendation",
+   "final_section": "1.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C1155",
@@ -40125,7 +40178,7 @@
    "citations": 51,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.2",
    "dataset_section": null,
    "classification": "The core is prompting methods that raise the diversity of AI idea generation; creative optimization, 2.2.",
@@ -40174,7 +40227,9 @@
    "business_school": true,
    "tier": 2,
    "anchor": "paper-prompting-diverse-ideas-increasing-ai-idea-variance",
-   "pages": 38
+   "pages": 38,
+   "final_section": "2.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C1157",
@@ -41211,7 +41266,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.4",
    "dataset_section": "1.4",
    "classification": "The core contribution is a benchmark and dataset, placed in 1.4; the dataset has been released on GitHub and Hugging Face.",
@@ -41260,7 +41315,10 @@
     "date": "2026-03",
     "url": "https://doi.org/10.1609/aaai.v40i45.41236"
    },
-   "dataset": null,
+   "dataset": {
+    "description": "Social Foundation Corpus (44K+ interview dialogues, 400K+ survey records) plus full-pipeline survey datasets for four survey-simulation tasks.",
+    "url": "https://github.com/PiLab-ZJU/AlignSurvey"
+   },
    "affiliations": [
     {
      "author": "Chenxi Lin, Weikang Yuan, Zhuoren Jiang, Biao Huang (first/third affiliation)",
@@ -41278,7 +41336,9 @@
    "business_school": null,
    "tier": "B-published",
    "anchor": "paper-alignsurvey-a-comprehensive-benchmark-for-human-preferences-alignment-in-social-surveys",
-   "dataset_anchor": "dataset-alignsurvey-a-comprehensive-benchmark-for-human-preferences-alignment-in-social-surveys"
+   "dataset_anchor": "dataset-alignsurvey-a-comprehensive-benchmark-for-human-preferences-alignment-in-social-surveys",
+   "final_section": "1.4",
+   "final_dataset_section": "1.4"
   },
   {
    "cid": "C1203",
@@ -45742,7 +45802,7 @@
    "citations": 1,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.2",
    "dataset_section": null,
    "classification": "The method centers on preference alignment and feedback-driven generation of review responses; 2.2.",
@@ -47293,7 +47353,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": null,
    "classification": "Studies consumer and market outcomes of GenAI-generated content; 2.1.",
@@ -48413,7 +48473,7 @@
    "citations": 177,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": null,
    "classification": "The abstract says only \"AI-based conversational interfaces\" and the paper was published in 2023, so the system may be a scripted or rule-based chatbot; if included, it is closest to studies of consumer outcomes of GenAI interaction.",
@@ -48488,7 +48548,7 @@
    "citations": 61,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.1",
    "dataset_section": null,
    "classification": "A conceptual framework; GenAI playing interviewer and respondent roles involves simulating people, so it is closest to the 1.1 capabilities-and-opportunities papers, though it is not a strict simulation study.",
@@ -48613,7 +48673,7 @@
    "citations": 48,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.2",
    "dataset_section": null,
    "classification": "A conceptual paper focused on the validity and limitations of GenAI-generated consumer data, placed under validity and limitations of consumer simulation; the abstract does not explicitly use the word \"simulation\", so confidence is moderate.",
@@ -48663,7 +48723,7 @@
    "citations": 1,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.1",
    "dataset_section": null,
    "classification": "The body of the paper is consumer-psychology experiments, with ChatGPT used as a tool in only one study; if included, it is closest to 1.1, where the LLM acts as a judge.",
@@ -48825,7 +48885,7 @@
    "citations": 9,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": null,
    "classification": "Studies how GenAI content disclosure affects consumer and creator outcomes; market effects of GenAI content.",
@@ -49466,7 +49526,7 @@
    "citations": 24,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.2",
    "dataset_section": null,
    "classification": "The core contribution is feedback alignment and creative optimization of a generative model toward advertising goals; belongs in 2.2; this is visual generative AI marketing research that the README allows.",
@@ -49503,7 +49563,9 @@
    "affiliations": [],
    "business_school": null,
    "tier": 1,
-   "anchor": "paper-picture-perfect-engaging-customers-with-visual-generative-ai"
+   "anchor": "paper-picture-perfect-engaging-customers-with-visual-generative-ai",
+   "final_section": "2.2",
+   "final_dataset_section": null
   },
   {
    "cid": "U099",
@@ -50577,7 +50639,7 @@
    "citations": 2,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": null,
    "classification": "Studies how AI chatbot responses affect consumers' service evaluations; the outcome variable is at the consumer level, so tentatively placed in 2.1; whether an LLM is used needs confirming from the full text.",
@@ -51076,7 +51138,7 @@
    "citations": 206,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": null,
    "classification": "The core is the effect and boundary conditions (user expertise, collaboration modality) of LLM-assisted ad-copy creation, i.e., advertising and market-outcome evidence in 2.1.",
@@ -51485,7 +51547,7 @@
    "citations": 7,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": null,
    "classification": "Studies the effect of AI-generated text assistance on customer sentiment, closest to 2.1; the experiment may predate widespread LLM use, so the full text is needed to confirm whether it uses a generative model.",
@@ -51916,7 +51978,7 @@
    "citations": 9,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.1",
    "dataset_section": null,
    "classification": "LLM simulates depositors (bank customers) reacting to communication messages; a simulation application and demonstration, placed in 1.1; slightly uncertain whether it counts as a marketing context.",
@@ -52253,7 +52315,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": null,
    "classification": "Studies the market effects of GenAI-generated content on consumers' purchase and search behavior; belongs in 2.1.",
@@ -52500,7 +52562,7 @@
    "citations": 143,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.2",
    "dataset_section": null,
    "classification": "Evaluates LLM behavioral biases and limitations in operations management decisions, belongs to 3.1; although the LLM is used as a subject, it is not compared against a public human dataset and is not a consumer simulation.",
@@ -52533,7 +52595,7 @@
       "family": "Jenkin"
      }
     ],
-    "venue": "Manufacturing &amp; Service Operations Management 27(2): 354–368",
+    "venue": "Manufacturing & Service Operations Management 27(2): 354–368",
     "date": "2025-01",
     "url": "https://doi.org/10.1287/msom.2023.0279"
    },
@@ -52562,7 +52624,9 @@
    ],
    "business_school": null,
    "tier": "B-published",
-   "anchor": "paper-a-manager-and-an-ai-walk-into-a-bar-does-chatgpt-make-biased-decisions-like-we-do"
+   "anchor": "paper-a-manager-and-an-ai-walk-into-a-bar-does-chatgpt-make-biased-decisions-like-we-do",
+   "final_section": "1.2",
+   "final_dataset_section": null
   },
   {
    "cid": "U169",
@@ -52709,7 +52773,7 @@
    "citations": 1,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": null,
    "classification": "Studies consumer adoption of AI customer service; closest to the consumer outcomes in 2.1; should be excluded if the chatbot is not an LLM.",
@@ -52933,7 +52997,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": null,
    "classification": "Uses generative AI to create controllable stimuli for studying consumer responses, closest to 2.1; the abstract is a single sentence and the type of generative model is unconfirmed.",
@@ -52992,7 +53056,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.2",
    "dataset_section": null,
    "classification": "The core contribution is a system and method for generating and personalizing marketing video assets; placed in 2.2, and it also includes 2.1-style field evidence of effects.",
@@ -53030,7 +53094,9 @@
    ],
    "business_school": null,
    "tier": 1,
-   "anchor": "paper-music-marketing-with-generative-ai"
+   "anchor": "paper-music-marketing-with-generative-ai",
+   "final_section": "2.2",
+   "final_dataset_section": null
   },
   {
    "cid": "U181",
@@ -54868,7 +54934,7 @@
    "citations": 4,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": null,
    "classification": "The core is the market (purchase intent) outcomes and limitations of LLM-generated content; placed in 2.1; the diversity mitigation methods partly belong in 2.2.",
@@ -55696,7 +55762,7 @@
    "citations": 1,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "1.1",
    "dataset_section": null,
    "classification": "Demonstration and use cases of LLMs simulating human participants, placed in 1.1; the abstract does not say whether public human datasets are used, so track is recorded as utd rather than public_data_simulation.",

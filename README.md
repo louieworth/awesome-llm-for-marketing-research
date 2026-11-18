@@ -3,8 +3,8 @@
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
 ![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-74-4C70C8?style=for-the-badge)
-![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-33-D98757?style=for-the-badge)
-![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-12-9865C6?style=for-the-badge)
+![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-45-D98757?style=for-the-badge)
+![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-21-9865C6?style=for-the-badge)
 
 </div>
 
@@ -398,9 +398,21 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Reisenbichler, Martin, et al. "Frontiers: Supporting Content Marketing with Natural Language Generation." Marketing Science 41(3): 441–452 (2022-02). [[link]](https://doi.org/10.1287/mksc.2022.1354)
 
+<a id="paper-the-caring-machine-feeling-ai-for-customer-care"></a>
+
+- Huang, Ming-Hui, and Roland T. Rust. "The Caring Machine: Feeling AI for Customer Care." Journal of Marketing 88(5): 1–23 (2024-03). [[link]](https://doi.org/10.1177/00222429231224748)
+
+<a id="paper-the-direct-effect-of-managerial-responses-when-politeness-backfires"></a>
+
+- Jin, Haofeng, Lili Wang, Yayuan Liu, and Yu Tong. "The Direct Effect of Managerial Responses: When Politeness Backfires." Production and Operations Management 34(7): 1957–1976 (2025-01). [[link]](https://doi.org/10.1177/10591478241309439)
+
 <a id="paper-frontiers-generative-ai-and-personalized-video-advertisements"></a>
 
 - Kapoor, Anuj, and Madhav Kumar. "Frontiers: Generative AI and Personalized Video Advertisements." Marketing Science 44(4): 733–747 (2025-05). [[link]](https://doi.org/10.1287/mksc.2023.0494)
+
+<a id="paper-the-impact-of-verbal-and-visual-content-on-consumer-engagement-in-social-media-marketing"></a>
+
+- Liu, Lei, Yingfei Wang, Zhen Fang, and Shaohui Wu. "The Impact of Verbal and Visual Content on Consumer Engagement in Social Media Marketing." Production and Operations Management 34(11): 3416–3437 (2025-06). [[link]](https://doi.org/10.1177/10591478251349892)
 
 <a id="paper-applying-large-language-models-to-sponsored-search-advertising"></a>
 
@@ -430,6 +442,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Hu, Lin, Xueyan Yin, and Juan Feng. "Knowing Me, Telling Me: Information Design in Gen-AI Enabled Communication in Digital Marketing." SSRN 5229032 (2025-05). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5229032)
 
+<a id="paper-comparing-llm-based-topic-modeling-and-sentiment-analysis-with-human-evaluation-of-consumer-insights"></a>
+
+- Ponnusamy, Madhumathi, Tushar Sonvani, Benjamin Traylor, and Gaurav Nanda. "Comparing Llm-Based Topic Modeling and Sentiment Analysis with Human Evaluation of Consumer Insights." SSRN 5362200 (2025-07). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5362200)
+
 <a id="paper-the-impact-of-visual-generative-ai-on-advertising-effectiveness"></a>
 
 - Lee, Hyesoo, et al. "The Impact of Visual Generative AI on Advertising Effectiveness." SSRN 5638311 (2025-11). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5638311)
@@ -450,6 +466,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Agarwal, Saharsh, and Ananya Sen. "The Impact of Google AI Overviews on Publisher Traffic and User Experience: Evidence from a Field Experiment." SSRN 6513059 (2026-04). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6513059)
 
+<a id="paper-modeling-engagement-with-brand-and-organizational-tiktok-videos-using-machine-assisted-theory-ensemble-annotation"></a>
+
+- Paekivi, Sander, and Andres Karjus. "Modeling Engagement with Brand and Organizational TikTok Videos Using Machine-Assisted Theory-Ensemble Annotation." arXiv:2606.16053 (2026-06). [[link]](https://arxiv.org/abs/2606.16053)
+
 ### 2.2 Methods and Improvements
 
 <a id="paper-ipl-leveraging-multimodal-large-language-models-for-intelligent-product-listing"></a>
@@ -459,6 +479,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-long-term-ad-memorability-understanding-generating-memorable-ads"></a>
 
 - Si, Harini, et al. "Long-Term Ad Memorability: Understanding & Generating Memorable Ads." WACV 2025 (2025-02). [[link]](https://openaccess.thecvf.com/content/WACV2025/html/Si_Long-Term_Ad_Memorability_Understanding__Generating_Memorable_Ads_WACV_2025_paper.html)
+
+<a id="paper-collaborating-with-generative-ai-in-consumer-culture-research"></a>
+
+- Epp, Amber M, and Ashlee Humphreys. "Collaborating with Generative AI in Consumer Culture Research." Journal of Consumer Research 52(1): 32–48 (2025-05). [[link]](https://doi.org/10.1093/jcr/ucaf014)
 
 <a id="paper-picture-perfect-engaging-customers-with-visual-generative-ai"></a>
 
@@ -484,9 +508,17 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Daviet, Remi, and Yohei Nishimura. "Leveraging Generative Artificial Intelligence to Create Visual Content in Digital Advertising." Marketing Science 45(5): 893–912 (2026-09). [[link]](https://doi.org/10.1287/mksc.2024.1130)
 
+<a id="paper-targeted-service-improvement-for-individualized-providers"></a>
+
+- Qin, Jindong, Pan Zheng, Xiaojun Wang, and Yusen Xia. "Targeted service improvement for individualized providers." Production and Operations Management (2026-09). [[link]](https://doi.org/10.1177/10591478261485796)
+
 <a id="paper-music-marketing-with-generative-ai"></a>
 
 - Roder, Benedikt, and Jochen Hartmann. "Music Marketing with Generative AI." Marketing Science (2026-10). [[link]](https://doi.org/10.1287/mksc.2025.0150)
+
+<a id="paper-catch-me-if-you-can-identifying-fraudulent-physician-reviews-with-large-language-models-using-generative-pre-trained-transformers"></a>
+
+- Shukla, Aishwarya Deep, et al. "Catch Me If You Can: Identifying Fraudulent Physician Reviews with Large Language Models Using Generative Pre-Trained Transformers." arXiv:2304.09948 (2023-04). [[link]](https://arxiv.org/abs/2304.09948)
 
 <a id="paper-prompting-diverse-ideas-increasing-ai-idea-variance"></a>
 
@@ -495,6 +527,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-causal-alignment-augmenting-language-models-with-a-b-tests"></a>
 
 - Angelopoulos, Panagiotis, Kevin Lee, and Sanjog Misra. "Causal Alignment: Augmenting Language Models with A/B Tests." SSRN 4781850 (2024-04). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4781850)
+
+<a id="paper-transforming-the-voice-of-the-customer-large-language-models-for-identifying-customer-needs"></a>
+
+- Timoshenko, Artem, Chengfeng Mao, and John R. Hauser. "Transforming the Voice of the Customer: Large Language Models for Identifying Customer Needs." arXiv:2503.01870 (2025-02). [[link]](https://arxiv.org/abs/2503.01870)
 
 <a id="paper-balancing-engagement-and-polarization-multi-objective-alignment-of-news-content-using-llms"></a>
 
@@ -511,6 +547,18 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-e-geo-a-testbed-for-generative-engine-optimization-in-e-commerce"></a>
 
 - Bagga, Puneet S., et al. "E-GEO: A Testbed for Generative Engine Optimization in E-Commerce." arXiv:2511.20867 (2025-11). [[link]](https://arxiv.org/abs/2511.20867)
+
+<a id="paper-from-reviews-to-actionable-insights-an-llm-based-approach-for-attribute-and-feature-extraction"></a>
+
+- Boughanmi, Khaled, Kamel Jedidi, and Nour Jedidi. "From Reviews to Actionable Insights: An LLM-Based Approach for Attribute and Feature Extraction." SSRN 5599772 (2025-11). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5599772)
+
+<a id="paper-extracting-consumer-insight-from-text-a-large-language-model-approach-to-emotion-and-evaluation-measurement"></a>
+
+- Ludwig, Stephan, et al. "Extracting Consumer Insight from Text: A Large Language Model Approach to Emotion and Evaluation Measurement." arXiv:2602.15312 (2026-02). [[link]](https://arxiv.org/abs/2602.15312)
+
+<a id="paper-a-neural-topic-method-using-a-large-language-model-in-the-loop-for-business-research"></a>
+
+- Ludwig, Stephan, Peter J. Danaher, and Xiaohao Yang. "A Neural Topic Method Using a Large-Language-Model-in-the-Loop for Business Research." arXiv:2603.03623 (2026-03). [[link]](https://arxiv.org/abs/2603.03623)
 
 <a id="paper-causal-value-attribution-of-marketing-labels-in-llm-generated-ads-a-deconfounder-approach"></a>
 
@@ -553,6 +601,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Fioretti, Maria Lucia, et al. "How Powerful are LLMs to Support Multimodal Recommendation? A Reproducibility Study of LLMRec." RecSys 2025: 774–782 (2025-09). [[link]](https://doi.org/10.1145/3705328.3748154)
 
+<a id="paper-language-of-images-classifying-marketing-images-with-transformers-and-vision-language-models"></a>
+
+- Witte, Maximilian, Mark Heitmann, Jochen Hartmann, and Keno Tetzlaff. "Language of images: Classifying marketing images with transformers and vision language models." International Journal of Research in Marketing 43(3): 827–846 (2026-01). [[link]](https://doi.org/10.1016/j.ijresmar.2026.01.001)
+
 <a id="paper-jump-start-or-false-start-a-theoretical-and-empirical-evaluation-of-llm-initialized-bandits"></a>
 
 - Bayley, Adam, et al. "Jump Start or False Start? A Theoretical and Empirical Evaluation of LLM-initialized Bandits." arXiv:2604.02527 (2026-04). [[link]](https://arxiv.org/abs/2604.02527)
@@ -571,13 +623,45 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Ye, Zikun, Hema Yoganarasimhan, and Yufeng Zheng. "LOLA: LLM-Assisted Online Learning Algorithm for Content Experiments." Marketing Science 44(5): 995–1016 (2025-03). [[link]](https://pubsonline.informs.org/doi/10.1287/mksc.2024.0990)
 
+<a id="paper-leadre-multi-faceted-knowledge-enhanced-llm-empowered-display-advertisement-recommender-system"></a>
+
+- Li, Fengxin, et al. "LEADRE: Multi-Faceted Knowledge Enhanced LLM Empowered Display Advertisement Recommender System." Proceedings of the VLDB Endowment 18(12): 4763–4776 (2025-09). [[link]](https://doi.org/10.14778/3750601.3750602)
+
 <a id="paper-integrating-large-language-models-into-recommendation-via-mutual-augmentation-and-adaptive-aggregation"></a>
 
 - Luo, Sichun, et al. "Integrating Large Language Models Into Recommendation via Mutual Augmentation and Adaptive Aggregation." IEEE Journal of Selected Topics in Signal Processing 20(1): 77–89 (2026-01). [[link]](https://doi.org/10.1109/JSTSP.2026.3653160)
 
+<a id="paper-adgazer-improving-contextual-advertising-with-theory-informed-machine-learning"></a>
+
+- Ye, Jianping, Michel Wedel, and Rik Pieters. "AdGazer: Improving Contextual Advertising with Theory-Informed Machine Learning." Journal of Marketing 90(4): 122–144 (2026-03). [[link]](https://doi.org/10.1177/00222429251396114)
+
+<a id="paper-interpretable-recommendations-and-parameter-grounded-llm-explanations-with-multigraph-attention"></a>
+
+- Leng, Yan, Xiao Liu, and Rodrigo Ruiz. "Interpretable Recommendations and Parameter-Grounded LLM Explanations with Multigraph Attention." Information Systems Research (2026-07). [[link]](https://doi.org/10.1287/isre.2023.0549)
+
+<a id="paper-predicting-consumer-in-store-purchase-through-real-time-video-analytics-an-advanced-computer-vision-and-deep-learning-approach"></a>
+
+- Li, Rubing, et al. "Predicting Consumer In-Store Purchase Through Real-Time Video Analytics: An Advanced Computer Vision and Deep Learning Approach." Information Systems Research (2026-07). [[link]](https://doi.org/10.1287/isre.2023.0432)
+
+<a id="paper-express-behavioral-research-through-interpretable-dimensionality-reduced-generative-ai-embeddings-bridge-a-method-to-incorporate-real-world-stimuli-in-consumer-experiments"></a>
+
+- Mukherjee, Anirban, Hannah H. Chang, and Sachin Gupta. "EXPRESS: Behavioral Research Through Interpretable, Dimensionality-reduced Generative AI Embeddings (BRIDGE): A Method to Incorporate Real-World Stimuli in Consumer Experiments." Journal of Marketing Research (2026-09). [[link]](https://doi.org/10.1177/00222437261484068)
+
+<a id="paper-express-from-chit-chat-to-conversion-cost-efficient-conversational-recommendation-via-retrospective-learning-and-isolated-reflection"></a>
+
+- Wang, Jiahui, et al. "EXPRESS: From Chit-Chat to Conversion: Cost-Efficient Conversational Recommendation via Retrospective Learning and Isolated Reflection." Production and Operations Management (2026-10). [[link]](https://doi.org/10.1177/10591478261502836)
+
+<a id="paper-creating-synthetic-experts-with-generative-artificial-intelligence"></a>
+
+- Ringel, Daniel. "Creating Synthetic Experts with Generative Artificial Intelligence." SSRN 4542949 (2023-08). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4542949)
+
 <a id="paper-generative-brand-choice"></a>
 
 - Lee, Kevin. "Generative Brand Choice." (2025-05). [[link]](https://leekevin.io/jmp.pdf)
+
+<a id="paper-infusing-organizational-memory-in-marketing-analytics-with-llm-enhanced-automl"></a>
+
+- Lei, Lin, et al. "Infusing Organizational Memory in Marketing Analytics with LLM-Enhanced AutoML." SSRN 5648891 (2025-10). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5648891)
 
 <a id="paper-using-llm-based-priors-to-optimize-choice-designs-in-conjoint-experiments"></a>
 

@@ -2,8 +2,8 @@
 
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
-![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-57-4C70C8?style=for-the-badge)
-![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-25-D98757?style=for-the-badge)
+![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-74-4C70C8?style=for-the-badge)
+![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-33-D98757?style=for-the-badge)
 ![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-12-9865C6?style=for-the-badge)
 
 </div>
@@ -88,6 +88,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Ashokkumar, Ashwini, et al. "Large language models can predict the results of social science experiments." Nature 656: 115–122 (2026-07). [[link]](https://doi.org/10.1038/s41586-026-10742-x)
 
+<a id="paper-anamnesis-an-open-source-platform-for-large-scale-backstory-conditioned-survey-simulation"></a>
+
+- Yu, Song-Ze, Joseph Suh, Serina Chang, and David M. Chan. "Anamnesis: An Open-Source Platform for Large-Scale Backstory-Conditioned Survey Simulation." Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing: System Demonstrations: 456–465 (2026-10). [[link]](https://doi.org/10.18653/2026.emnlp-demos.44)
+
 <a id="paper-large-language-models-as-simulated-economic-agents-what-can-we-learn-from-homo-silicus"></a>
 
 - Horton, John J., Apostolos Filippas, and Benjamin S. Manning. "Large Language Models as Simulated Economic Agents: What Can We Learn from Homo Silicus?" arXiv:2301.07543 (2023-01). [[link]](https://arxiv.org/abs/2301.07543)
@@ -130,6 +134,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Abdurahman, Suhaib, et al. "Perils and opportunities in using large language models in psychological research." PNAS Nexus 3(7): pgae245 (2024-07). [[link]](https://doi.org/10.1093/pnasnexus/pgae245)
 
+<a id="paper-on-generative-agents-in-recommendation"></a>
+
+- Zhang, An, et al. "On Generative Agents in Recommendation." Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval: 1807–1817 (2024-07). [[link]](https://doi.org/10.1145/3626772.3657844)
+
 <a id="paper-cultural-bias-and-cultural-alignment-of-large-language-models"></a>
 
 - Tao, Yan, et al. "Cultural bias and cultural alignment of large language models." PNAS Nexus 3(9): pgae346 (2024-09). [[link]](https://doi.org/10.1093/pnasnexus/pgae346)
@@ -145,6 +153,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-large-language-models-display-human-like-social-desirability-biases-in-big-five-personality-surveys"></a>
 
 - Salecha, Aadesh, et al. "Large language models display human-like social desirability biases in Big Five personality surveys." PNAS Nexus 3(12): pgae533 (2024-12). [[link]](https://doi.org/10.1093/pnasnexus/pgae533)
+
+<a id="paper-a-manager-and-an-ai-walk-into-a-bar-does-chatgpt-make-biased-decisions-like-we-do"></a>
+
+- Chen, Yang, et al. "A Manager and an AI Walk into a Bar: Does ChatGPT Make Biased Decisions Like We Do?" Manufacturing & Service Operations Management 27(2): 354–368 (2025-01). [[link]](https://doi.org/10.1287/msom.2023.0279)
 
 <a id="paper-large-language-models-that-replace-human-participants-can-harmfully-misportray-and-flatten-identity-groups"></a>
 
@@ -182,6 +194,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Zewail, Aliah, et al. "Moral stereotyping in large language models." PNAS 123(10): e2519941123 (2026-03). [[link]](https://doi.org/10.1073/pnas.2519941123)
 
+<a id="paper-too-open-for-opinion-embracing-open-endedness-in-large-language-models-for-social-simulation"></a>
+
+- Ma, Bolei, et al. "Too Open for Opinion? Embracing Open-Endedness in Large Language Models for Social Simulation." Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers): 1998–2016 (2026-03). [[link]](https://doi.org/10.18653/v1/2026.eacl-long.89)
+
 <a id="paper-evaluating-the-statistical-realism-of-llm-generated-social-science-data"></a>
 
 - Xie, Yueqi, et al. "Evaluating the statistical realism of LLM-generated social science data." PNAS 123(19): e2538145123 (2026-05). [[link]](https://doi.org/10.1073/pnas.2538145123)
@@ -198,13 +214,25 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Karetnikov, Nikita, Iyad Rahwan, and Davor Svetinovic. "Large language models as human proxies." Nature Computational Science (2026-09). [[link]](https://doi.org/10.1038/s43588-026-01060-3)
 
+<a id="paper-emulate-or-estimate-the-divergent-strengths-of-base-and-post-trained-language-models-for-opinion-simulation"></a>
+
+- Grief-Albert, Seth, Jessica Bo, Difan Jiao, and Ashton Anderson. "Emulate or Estimate? The Divergent Strengths of Base and Post-Trained Language Models for Opinion Simulation." Findings of the Association for Computational Linguistics: EMNLP 2026: 29311–29320 (2026-10). [[link]](https://doi.org/10.18653/2026.findings-emnlp.1379)
+
 <a id="paper-the-challenge-of-using-llms-to-simulate-human-behavior-a-causal-inference-perspective"></a>
 
 - Gui, George, and Olivier Toubia. "The Challenge of Using LLMs to Simulate Human Behavior: A Causal Inference Perspective." SSRN 4650172 (2023-12). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4650172)
 
+<a id="paper-how-human-is-the-machine-evidence-from-66-000-conversations-with-large-language-models"></a>
+
+- Stamatogiannakis, Antonios, et al. "How human is the machine? Evidence from 66,000 Conversations with Large Language Models." arXiv:2510.07321 (2025-08). [[link]](https://arxiv.org/abs/2510.07321)
+
 <a id="paper-this-human-study-did-not-involve-human-subjects-validating-llm-simulations-as-behavioral-evidence"></a>
 
 - Hullman, Jessica, et al. "This human study did not involve human subjects: Validating LLM simulations as behavioral evidence." arXiv:2602.15785 (2026-02). [[link]](https://arxiv.org/abs/2602.15785)
+
+<a id="paper-can-llms-think-like-consumers-benchmarking-crowd-level-reaction-reconstruction-with-consumersimbench"></a>
+
+- Wang, Tianyu, Jiajun Li, and Jianghao Lin. "Can LLMs Think Like Consumers? Benchmarking Crowd-Level Reaction Reconstruction with ConsumerSimBench." arXiv:2605.17079 (2026-05). [[link]](https://arxiv.org/abs/2605.17079)
 
 <a id="paper-synthetic-data-and-digital-twins-the-hype-the-facts-the-promise"></a>
 
@@ -222,6 +250,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Tsai, Yi-Lin, and Yung-Hsiu Lai. "Seeing Is Not Perceiving: When Synthetic Consumers Can and Cannot Pretest Visual Marketing." arXiv:2609.25677 (2026-09). [[link]](https://arxiv.org/abs/2609.25677)
 
+<a id="paper-shopping-by-algorithm-how-agentic-ai-deploys-human-heuristics-as-a-surrogate-consumer"></a>
+
+- Wadi, Davood, and Yu Ma. "Shopping by algorithm: How agentic AI deploys human heuristics as a surrogate consumer." arXiv:2609.28372 (2026-09). [[link]](https://arxiv.org/abs/2609.28372)
+
 <a id="paper-decision-models-as-scalable-economic-surrogates-that-capture-human-variation"></a>
 
 - Saxena, Maxime, Fabio Caccioli, and R. Maria del Rio-Chanona. "Decision Models as Scalable Economic Surrogates that Capture Human Variation." arXiv:2611.05553 (2026-11). [[link]](https://arxiv.org/abs/2611.05553)
@@ -232,6 +264,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 ### 1.3 Methods and Improvements
 
+<a id="paper-from-values-to-opinions-predicting-human-behaviors-and-stances-using-value-injected-large-language-models"></a>
+
+- Kang, Dongjun, Joonsuk Park, Yohan Jo, and JinYeong Bak. "From Values to Opinions: Predicting Human Behaviors and Stances Using Value-Injected Large Language Models." Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: 15539–15559 (2023-12). [[link]](https://doi.org/10.18653/v1/2023.emnlp-main.961)
+
 <a id="paper-a-foundation-model-to-predict-and-capture-human-cognition"></a>
 
 - Binz, Marcel, et al. "A foundation model to predict and capture human cognition." Nature 644: 1002–1009 (2025-07). [[link]](https://doi.org/10.1038/s41586-025-09215-4)
@@ -240,17 +276,41 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Wang, Mengxin, Dennis J. Zhang, and Heng Zhang. "Large Language Models for Market Research: A Data-Augmentation Approach." Marketing Science 45(4): 728–751 (2026-03). [[link]](https://doi.org/10.1287/mksc.2025.0009)
 
+<a id="paper-humanllm-towards-personalized-understanding-and-simulation-of-human-nature"></a>
+
+- Lei, Yuxuan, et al. "HumanLLM: Towards Personalized Understanding and Simulation of Human Nature." Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1: 621–632 (2026-04). [[link]](https://doi.org/10.1145/3770854.3780294)
+
 <a id="paper-generative-augmented-inference"></a>
 
 - Lu, Cheng, et al. "Generative Augmented Inference." ICML 2026, PMLR 306: 81730–81751 (2026-07). [[link]](https://proceedings.mlr.press/v306/lu26am.html)
+
+<a id="paper-beyond-marginal-distributions-a-framework-to-evaluate-the-representativeness-of-demographic-aligned-llms"></a>
+
+- Williams, Tristan, Franziska Weeber, Sebastian Padó, and Alan Akbik. "Beyond Marginal Distributions: A Framework to Evaluate the Representativeness of Demographic-Aligned LLMs." Findings of the Association for Computational Linguistics: ACL 2026: 4806–4826 (2026-07). [[link]](https://doi.org/10.18653/v1/2026.findings-acl.236)
 
 <a id="paper-reducing-disparity-between-llms-and-humans-optimal-llm-sample-calibration"></a>
 
 - Leng, Yan, Yunxin Sang, and Ashish Agarwal. "Frontiers: Reducing Disparity Between LLMs and Humans: Optimal LLM Sample Calibration." Marketing Science (2026-10). [[link]](https://doi.org/10.1287/mksc.2024.0983)
 
+<a id="paper-explaining-large-language-models-decisions-using-shapley-values"></a>
+
+- Mohammadi, Behnam. "Explaining Large Language Models Decisions Using Shapley Values." arXiv:2404.01332 (2024-03). [[link]](https://arxiv.org/abs/2404.01332)
+
+<a id="paper-modeling-story-expectations-a-generative-framework-using-llms"></a>
+
+- Fong, Hortense, George Gui, and Bo Yang. "Modeling Story Expectations: A Generative Framework using LLMs." arXiv:2412.15239 (2024-12). [[link]](https://arxiv.org/abs/2412.15239)
+
 <a id="paper-llms-reproduce-human-purchase-intent-via-semantic-similarity-elicitation-of-likert-ratings"></a>
 
 - Maier, Benjamin F., et al. "LLMs Reproduce Human Purchase Intent via Semantic Similarity Elicitation of Likert Ratings." arXiv:2510.08338 (2025-10). [[link]](https://arxiv.org/abs/2510.08338)
+
+<a id="paper-from-model-choice-to-model-belief-establishing-a-new-measure-for-llm-based-research"></a>
+
+- Sun, Hongshen, and Juanjuan Zhang. "From Model Choice to Model Belief: Establishing a New Measure for LLM-Based Research." arXiv:2512.23184 (2025-12). [[link]](https://arxiv.org/abs/2512.23184)
+
+<a id="paper-improving-behavioral-alignment-in-llm-social-simulations-via-context-formation-and-navigation"></a>
+
+- Kong, Letian, Qianran Jin, and Renyu Zhang. "Improving Behavioral Alignment in LLM Social Simulations via Context Formation and Navigation." arXiv:2601.01546 (2026-01). [[link]](https://arxiv.org/abs/2601.01546)
 
 <a id="paper-llm-saa-llm-persona-generated-distributions-for-decision-making"></a>
 
@@ -271,6 +331,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-distributionally-robust-llm-augmentation-of-discrete-choice-models"></a>
 
 - Liu, Tianming, et al. "Distributionally Robust LLM Augmentation of Discrete Choice Models." SSRN 7500939 (2026-09). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7500939)
+
+<a id="paper-simulating-respondents-not-single-questions-coherent-survey-generation-with-large-language-models"></a>
+
+- Huang, Ji, Mengfei Li, and Shuai Shao. "Simulating Respondents, Not Single Questions: Coherent Survey Generation with Large Language Models." arXiv:2609.34828 (2026-09). [[link]](https://arxiv.org/abs/2609.34828)
 
 ### 1.4 Benchmarks and Datasets
 
@@ -303,9 +367,18 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Toubia, Olivier, et al. "Database Report: Twin-2K-500: A Data Set for Building Digital Twins of over 2,000 People Based on Their Answers to over 500 Questions." Marketing Science 44(6): 1446–1455 (2025-08). [[link]](https://doi.org/10.1287/mksc.2025.0262). Four-wave surveys of 2,058 US participants, plus LLM responses. [[data]](https://huggingface.co/datasets/LLM-Digital-Twin/Twin-2K-500/tree/main)
 
+<a id="paper-alignsurvey-a-comprehensive-benchmark-for-human-preferences-alignment-in-social-surveys"></a>
+<a id="dataset-alignsurvey-a-comprehensive-benchmark-for-human-preferences-alignment-in-social-surveys"></a>
+
+- Lin, Chenxi, et al. "AlignSurvey: A Comprehensive Benchmark for Human Preferences Alignment in Social Surveys." Proceedings of the AAAI Conference on Artificial Intelligence 40(45): 38908–38916 (2026-03). [[link]](https://doi.org/10.1609/aaai.v40i45.41236). Social Foundation Corpus (44K+ interview dialogues, 400K+ survey records) plus full-pipeline survey datasets for four survey-simulation tasks. [[data]](https://github.com/PiLab-ZJU/AlignSurvey)
+
 <a id="paper-simbench-benchmarking-the-ability-of-large-language-models-to-simulate-human-behaviors"></a>
 
 - Hu, Tiancheng, et al. "SimBench: Benchmarking the Ability of Large Language Models to Simulate Human Behaviors." ICLR 2026 (2026-04). [[link]](https://proceedings.iclr.cc/paper_files/paper/2026/hash/2fc4d6a6400addda7493b9db258c34e0-Abstract-Conference.html). 20 datasets of human decisions and self-assessments. [[data]](https://huggingface.co/datasets/pitehu/SimBench/tree/main)
+
+<a id="dataset-can-llms-think-like-consumers-benchmarking-crowd-level-reaction-reconstruction-with-consumersimbench"></a>
+
+- Wang, Tianyu, Jiajun Li, and Jianghao Lin. "[Can LLMs Think Like Consumers? Benchmarking Crowd-Level Reaction Reconstruction with ConsumerSimBench](#paper-can-llms-think-like-consumers-benchmarking-crowd-level-reaction-reconstruction-with-consumersimbench)." arXiv:2605.17079 (2026-05). [[link]](https://arxiv.org/abs/2605.17079). ConsumerSimBench: 1,553 Chinese social-media topics with 23,122 rule-audited consumer-reaction criteria. [[data]](https://huggingface.co/datasets/wty500/ConsumerSimBench)
 
 <a id="paper-matraix-simulating-the-world-with-8-3-billion-persona-agents"></a>
 <a id="dataset-matraix-persona-1m"></a>
@@ -341,6 +414,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Dubé, Jean-Pierre, and Ariel Xu. "Large Language Models and Creative Content Design: a case study of email marketing at Wine Access." Quantitative Marketing and Economics 24: Article 1 (2026-01). [[link]](https://doi.org/10.1007/s11129-025-09303-9)
 
+<a id="paper-frontiers-chatgpt-referrals-to-e-commerce-websites-how-do-llms-compare-against-traditional-channels"></a>
+
+- Kaiser, Maximilian, and Christian Schulze. "Frontiers: ChatGPT Referrals to E-Commerce Websites: How Do LLMs Compare Against Traditional Channels?" Marketing Science 45(4): 699–715 (2026-04). [[link]](https://doi.org/10.1287/mksc.2025.0489)
+
 <a id="paper-generative-ai-and-sales-productivity-field-experiments-in-online-retail"></a>
 
 - Fang, Lu, et al. "Generative Artificial Intelligence and Sales Productivity: Field Experiments in Online Retail." Management Science (2026-11). [[link]](https://doi.org/10.1287/mnsc.2026.00623)
@@ -375,9 +452,17 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 ### 2.2 Methods and Improvements
 
+<a id="paper-ipl-leveraging-multimodal-large-language-models-for-intelligent-product-listing"></a>
+
+- Chen, Kang, et al. "IPL: Leveraging Multimodal Large Language Models for Intelligent Product Listing." Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing: Industry Track: 697–711 (2024-11). [[link]](https://doi.org/10.18653/v1/2024.emnlp-industry.52)
+
 <a id="paper-long-term-ad-memorability-understanding-generating-memorable-ads"></a>
 
 - Si, Harini, et al. "Long-Term Ad Memorability: Understanding & Generating Memorable Ads." WACV 2025 (2025-02). [[link]](https://openaccess.thecvf.com/content/WACV2025/html/Si_Long-Term_Ad_Memorability_Understanding__Generating_Memorable_Ads_WACV_2025_paper.html)
+
+<a id="paper-picture-perfect-engaging-customers-with-visual-generative-ai"></a>
+
+- Heitmann, Mark, Tijmen P.J. Jansen, Martin Reisenbichler, and David A. Schweidel. "Picture Perfect: Engaging Customers with Visual Generative AI." Journal of Marketing 90(4): 74–96 (2026-01). [[link]](https://doi.org/10.1177/00222429251356993)
 
 <a id="paper-gravity-a-framework-for-personalized-text-generation-via-profile-grounded-synthetic-preferences"></a>
 
@@ -399,6 +484,14 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Daviet, Remi, and Yohei Nishimura. "Leveraging Generative Artificial Intelligence to Create Visual Content in Digital Advertising." Marketing Science 45(5): 893–912 (2026-09). [[link]](https://doi.org/10.1287/mksc.2024.1130)
 
+<a id="paper-music-marketing-with-generative-ai"></a>
+
+- Roder, Benedikt, and Jochen Hartmann. "Music Marketing with Generative AI." Marketing Science (2026-10). [[link]](https://doi.org/10.1287/mksc.2025.0150)
+
+<a id="paper-prompting-diverse-ideas-increasing-ai-idea-variance"></a>
+
+- Meincke, Lennart, Ethan R. Mollick, and Christian Terwiesch. "Prompting Diverse Ideas: Increasing AI Idea Variance." arXiv:2402.01727 (2024-01). [[link]](https://arxiv.org/abs/2402.01727)
+
 <a id="paper-causal-alignment-augmenting-language-models-with-a-b-tests"></a>
 
 - Angelopoulos, Panagiotis, Kevin Lee, and Sanjog Misra. "Causal Alignment: Augmenting Language Models with A/B Tests." SSRN 4781850 (2024-04). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4781850)
@@ -410,6 +503,18 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-generative-personalization-with-textual-and-non-textual-data"></a>
 
 - Yin, Mingzhang, Ruijiang Gao, and Ziwei Cong. "Personalizing Language Models for Generative Targeting." SSRN 5329729 (2025-06). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5329729)
+
+<a id="paper-why-it-works-can-llm-hypotheses-improve-ai-generated-marketing-content"></a>
+
+- Wang, Tong, K. Sudhir, and Hengguang Zhou. "Why it Works: Can LLM Hypotheses Improve AI Generated Marketing Content?" SSRN 5437276 (2025-09). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5437276)
+
+<a id="paper-e-geo-a-testbed-for-generative-engine-optimization-in-e-commerce"></a>
+
+- Bagga, Puneet S., et al. "E-GEO: A Testbed for Generative Engine Optimization in E-Commerce." arXiv:2511.20867 (2025-11). [[link]](https://arxiv.org/abs/2511.20867)
+
+<a id="paper-causal-value-attribution-of-marketing-labels-in-llm-generated-ads-a-deconfounder-approach"></a>
+
+- You, Danhong, Wei Jiang, and Zhiqiang Zheng. "Causal Value Attribution of Marketing Labels in LLM-Generated Ads: A Deconfounder Approach." arXiv:2610.23025 (2026-10). [[link]](https://arxiv.org/abs/2610.23025)
 
 ### 2.3 Benchmarks and Datasets
 
@@ -431,6 +536,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="dataset-criteo-uplift"></a>
 
 - Diemert, Eustache, et al. "A Large Scale Benchmark for Individual Treatment Effect Prediction and Uplift Modeling." arXiv:2111.10106 (2021-11). [[link]](https://arxiv.org/abs/2111.10106). Criteo Uplift: 14M ad-trial records with treatment, exposure, visits, and conversions. [[data]](https://huggingface.co/datasets/criteo/criteo-uplift/tree/main)
+
+<a id="dataset-e-geo-a-testbed-for-generative-engine-optimization-in-e-commerce"></a>
+
+- Bagga, Puneet S., et al. "[E-GEO: A Testbed for Generative Engine Optimization in E-Commerce](#paper-e-geo-a-testbed-for-generative-engine-optimization-in-e-commerce)." arXiv:2511.20867 (2025-11). [[link]](https://arxiv.org/abs/2511.20867). 13,746 consumer product queries, each paired with 10 retrieved Amazon listings. [[data]](https://huggingface.co/datasets/psbagga17/E-GEO)
 
 ---
 

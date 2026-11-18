@@ -32,11 +32,12 @@ On 2026-11-17, 25 of the 46 papers first removed here were restored as digital-t
 
 ## 2026-11-17 length rule
 
+On 2026-11-18 the maintainer restored Huang and Wang, "LLM-Powered Virtual Population for Demand Simulation and Pricing" (arXiv:2606.16183), as an exception to the length rule.
+
 | Former section | Paper | Reason |
 | --- | --- | --- |
 | 1.2 | Chen, Zihan, Di Zhu, and Lei Nico Zheng. ["When Synthetic Users Fail: A Cross-Domain Benchmark of LLM-Simulated Human Survey Responses"](https://arxiv.org/abs/2607.26348). arXiv:2607.26348 (2026) | Only 19 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. |
 | 1.2 | Ye, Iris, Tianze Deng, and Ozan Candogan. ["Structuring Survey Histories for LLM Digital Twins: A Controlled Study of Background, Decision Procedure, and Evaluation Profiles"](https://arxiv.org/abs/2611.08730). arXiv:2611.08730 (2026) | Only 10 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. |
-| 1.3 | Huang, Chengpiao, and Kaizheng Wang. ["LLM-Powered Virtual Population for Demand Simulation and Pricing"](https://arxiv.org/abs/2606.16183). arXiv:2606.16183 (2026) | Only 18 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. |
 | 1.4 | Li, Han, et al. ["SimGym: A Framework for A/B Test Simulation in E-Commerce with Traffic-Grounded VLM Agents"](https://arxiv.org/abs/2605.19219). arXiv:2605.19219 (2026) | Only 18 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. |
 | 2.2 | Challapalli, Vedasamhitha, et al. ["SLM4Offer: Personalized Marketing Offer Generation Using Contrastive Learning Based Fine-Tuning"](https://arxiv.org/abs/2508.15471). arXiv:2508.15471 (2025) | Only 10 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. |
 | 2.2 | Lee, Kevin, et al. ["Offline-to-Online Creative Optimization with Generative Models and Adaptive Testing"](https://arxiv.org/abs/2607.23696). arXiv:2607.23696 (2026) | Only 10 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. |

@@ -2,7 +2,7 @@
 
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
-![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-74-4C70C8?style=for-the-badge)
+![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-79-4C70C8?style=for-the-badge)
 ![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-45-D98757?style=for-the-badge)
 ![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-21-9865C6?style=for-the-badge)
 
@@ -288,6 +288,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Williams, Tristan, Franziska Weeber, Sebastian Padó, and Alan Akbik. "Beyond Marginal Distributions: A Framework to Evaluate the Representativeness of Demographic-Aligned LLMs." Findings of the Association for Computational Linguistics: ACL 2026: 4806–4826 (2026-07). [[link]](https://doi.org/10.18653/v1/2026.findings-acl.236)
 
+<a id="paper-adaptive-querying-with-ai-persona-priors"></a>
+
+- Wang, Kaizheng, Yuhang Wu, and Assaf Zeevi. "Adaptive Querying with AI Persona Priors." ICML 2026, PMLR 306: 131279–131302 (2026-07). [[link]](https://proceedings.mlr.press/v306/wang26jb.html)
+
 <a id="paper-reducing-disparity-between-llms-and-humans-optimal-llm-sample-calibration"></a>
 
 - Leng, Yan, Yunxin Sang, and Ashish Agarwal. "Frontiers: Reducing Disparity Between LLMs and Humans: Optimal LLM Sample Calibration." Marketing Science (2026-10). [[link]](https://doi.org/10.1287/mksc.2024.0983)
@@ -300,6 +304,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 - Fong, Hortense, George Gui, and Bo Yang. "Modeling Story Expectations: A Generative Framework using LLMs." arXiv:2412.15239 (2024-12). [[link]](https://arxiv.org/abs/2412.15239)
 
+<a id="paper-how-many-human-survey-respondents-is-a-large-language-model-worth-an-uncertainty-quantification-perspective"></a>
+
+- Huang, Chengpiao, Yuhang Wu, and Kaizheng Wang. "How Many Human Survey Respondents is a Large Language Model Worth? An Uncertainty Quantification Perspective." arXiv:2502.17773 (2025-02). [[link]](https://arxiv.org/abs/2502.17773)
+
 <a id="paper-llms-reproduce-human-purchase-intent-via-semantic-similarity-elicitation-of-likert-ratings"></a>
 
 - Maier, Benjamin F., et al. "LLMs Reproduce Human Purchase Intent via Semantic Similarity Elicitation of Likert Ratings." arXiv:2510.08338 (2025-10). [[link]](https://arxiv.org/abs/2510.08338)
@@ -307,6 +315,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-from-model-choice-to-model-belief-establishing-a-new-measure-for-llm-based-research"></a>
 
 - Sun, Hongshen, and Juanjuan Zhang. "From Model Choice to Model Belief: Establishing a New Measure for LLM-Based Research." arXiv:2512.23184 (2025-12). [[link]](https://arxiv.org/abs/2512.23184)
+
+<a id="paper-model-free-assessment-of-simulator-fidelity-via-quantile-curves"></a>
+
+- Iyengar, Garud, Yu-Shiou Willy Lin, and Kaizheng Wang. "Model-Free Assessment of Simulator Fidelity via Quantile Curves." arXiv:2512.05024 (2025-12). [[link]](https://arxiv.org/abs/2512.05024)
 
 <a id="paper-improving-behavioral-alignment-in-llm-social-simulations-via-context-formation-and-navigation"></a>
 
@@ -327,6 +339,14 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-allocating-human-oversight-in-ai-enabled-analytics"></a>
 
 - Ye, Zikun, Jiameng Lyu, and Rui Tao. "Allocating Human Oversight in AI-Enabled Analytics." arXiv:2604.12497 (2026-04). [[link]](https://arxiv.org/abs/2604.12497)
+
+<a id="paper-llm-powered-virtual-population-for-demand-simulation-and-pricing"></a>
+
+- Huang, Chengpiao, and Kaizheng Wang. "LLM-Powered Virtual Population for Demand Simulation and Pricing." arXiv:2606.16183 (2026-06). [[link]](https://arxiv.org/abs/2606.16183)
+
+<a id="paper-learning-a-size-weight-frontier-for-synthetic-augmented-inference"></a>
+
+- Huang, Chengpiao, and Kaizheng Wang. "Learning a Size-Weight Frontier for Synthetic-Augmented Inference." arXiv:2608.28576 (2026-08). [[link]](https://arxiv.org/abs/2608.28576)
 
 <a id="paper-distributionally-robust-llm-augmentation-of-discrete-choice-models"></a>
 

@@ -1181,7 +1181,7 @@
    "citations": 2,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.2",
    "dataset_section": null,
    "classification": "A new method that uses an LLM to measure emotions in consumer text; placed in 3.2 under customer text and measurement methods. Moved from 3.2 to 2.2 under the section rule of 2026-11-18: a content-generation or content-analysis method whose end goal is the consumer or content insight.",
@@ -1250,7 +1250,9 @@
    "business_school": true,
    "tier": 2,
    "anchor": "paper-extracting-consumer-insight-from-text-a-large-language-model-approach-to-emotion-and-evaluation-measurement",
-   "pages": 67
+   "pages": 67,
+   "final_section": "2.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C034",
@@ -1457,7 +1459,7 @@
    "citations": 10,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "3.2",
    "dataset_section": null,
    "classification": "An advertising recommendation method, placed in 3.2; it leans toward general recommender-system engineering, so inclusion depends on the later author-affiliation check.",
@@ -1539,7 +1541,9 @@
    ],
    "business_school": true,
    "tier": 2,
-   "anchor": "paper-leadre-multi-faceted-knowledge-enhanced-llm-empowered-display-advertisement-recommender-system"
+   "anchor": "paper-leadre-multi-faceted-knowledge-enhanced-llm-empowered-display-advertisement-recommender-system",
+   "final_section": "3.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C039",
@@ -1848,7 +1852,7 @@
    "citations": 6,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.2",
    "dataset_section": null,
    "classification": "A tutorial on research methods and measurement tools; tentatively placed in 3.2 (measurement methods), with 2.2 as an alternative; inclusion depends on the maintainer's stance on tutorial papers. Moved from 3.2 to 2.2 under the section rule of 2026-11-18: a content-generation or content-analysis method whose end goal is the consumer or content insight.",
@@ -2543,7 +2547,7 @@
    "citations": 4,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.2",
    "dataset_section": null,
    "classification": "A customer-text analysis and measurement method, 3.2. Moved from 3.2 to 2.2 under the section rule of 2026-11-18: a content-generation or content-analysis method whose end goal is the consumer or content insight.",
@@ -2592,7 +2596,9 @@
    "business_school": true,
    "tier": 2,
    "anchor": "paper-transforming-the-voice-of-the-customer-large-language-models-for-identifying-customer-needs",
-   "pages": 51
+   "pages": 51,
+   "final_section": "2.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C065",
@@ -3471,7 +3477,7 @@
    "citations": 10,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "3.2",
    "dataset_section": null,
    "classification": "Customer text classification/measurement method, placed in 3.2.",
@@ -3501,7 +3507,9 @@
    ],
    "business_school": true,
    "tier": 2,
-   "anchor": "paper-creating-synthetic-experts-with-generative-artificial-intelligence"
+   "anchor": "paper-creating-synthetic-experts-with-generative-artificial-intelligence",
+   "final_section": "3.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C081",
@@ -4065,7 +4073,7 @@
    "citations": 3,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "3.1",
    "dataset_section": null,
    "classification": "Mainly a comparison of VLM marketing-image classification performance across 18 datasets with a discussion of limitations; placed in 3.1.",
@@ -4111,7 +4119,9 @@
    ],
    "business_school": true,
    "tier": 2,
-   "anchor": "paper-language-of-images-classifying-marketing-images-with-transformers-and-vision-language-models"
+   "anchor": "paper-language-of-images-classifying-marketing-images-with-transformers-and-vision-language-models",
+   "final_section": "3.1",
+   "final_dataset_section": null
   },
   {
    "cid": "C096",
@@ -5976,7 +5986,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "3.2",
    "dataset_section": null,
    "classification": "Conversational recommendation method that incorporates consumer-type modeling, placed among the recommendation methods.",
@@ -11395,7 +11405,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.1",
    "dataset_section": null,
    "classification": "If included, it is a performance evaluation of customer-text analysis, placed in 3.1. Moved from 3.1 to 2.1 under the section rule of 2026-11-18: evidence on how marketing or customer content affects outcomes, or on the limits of LLM content analysis.",
@@ -11439,7 +11449,9 @@
    ],
    "business_school": null,
    "tier": 2,
-   "anchor": "paper-comparing-llm-based-topic-modeling-and-sentiment-analysis-with-human-evaluation-of-consumer-insights"
+   "anchor": "paper-comparing-llm-based-topic-modeling-and-sentiment-analysis-with-human-evaluation-of-consumer-insights",
+   "final_section": "2.1",
+   "final_dataset_section": null
   },
   {
    "cid": "C274",
@@ -12315,7 +12327,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "3.2",
    "dataset_section": null,
    "classification": "An LLM-enhanced online-learning and ad-keyword decision method, placed under Methods and Improvements of Model and Algorithm Augmentation.",
@@ -12379,7 +12391,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "3.2",
    "dataset_section": null,
    "classification": "A prediction and modeling method for marketing analytics; placed under methods and improvements in model and algorithm augmentation; judged from the title only.",
@@ -12429,7 +12441,9 @@
    ],
    "business_school": true,
    "tier": 2,
-   "anchor": "paper-infusing-organizational-memory-in-marketing-analytics-with-llm-enhanced-automl"
+   "anchor": "paper-infusing-organizational-memory-in-marketing-analytics-with-llm-enhanced-automl",
+   "final_section": "3.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C298",
@@ -16709,7 +16723,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "3.2",
    "dataset_section": null,
    "classification": "A measurement and prediction method for customer survey text; placed in 3.2.",
@@ -16988,7 +17002,7 @@
    "citations": 2,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.2",
    "dataset_section": null,
    "classification": "A customer-text measurement method, placed in 3.2. Moved from 3.2 to 2.2 under the section rule of 2026-11-18: a content-generation or content-analysis method whose end goal is the consumer or content insight.",
@@ -17030,7 +17044,9 @@
    ],
    "business_school": true,
    "tier": 2,
-   "anchor": "paper-from-reviews-to-actionable-insights-an-llm-based-approach-for-attribute-and-feature-extraction"
+   "anchor": "paper-from-reviews-to-actionable-insights-an-llm-based-approach-for-attribute-and-feature-extraction",
+   "final_section": "2.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C446",
@@ -17132,7 +17148,7 @@
    "citations": 2,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "3.1",
    "dataset_section": "3.3",
    "classification": "If included, it is an evaluation of LLM agents in a recommendation setting, placed in 3.1; it also releases a benchmark that could go in 3.3.",
@@ -20174,7 +20190,7 @@
    "citations": 6,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.2",
    "dataset_section": null,
    "classification": "Mainly uses LLMs to classify and measure online review text, placed in 3.2 as a customer-text method. Moved from 3.2 to 2.2 under the section rule of 2026-11-18: a content-generation or content-analysis method whose end goal is the consumer or content insight.",
@@ -20243,7 +20259,9 @@
    "business_school": true,
    "tier": 2,
    "anchor": "paper-catch-me-if-you-can-identifying-fraudulent-physician-reviews-with-large-language-models-using-generative-pre-trained-transformers",
-   "pages": 35
+   "pages": 35,
+   "final_section": "2.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C528",
@@ -25234,7 +25252,7 @@
    "citations": 2,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.1",
    "dataset_section": null,
    "classification": "LLM-assisted content annotation and engagement modeling; measurement method in 3.2. Moved from 3.2 to 2.1 under the section rule of 2026-11-18: evidence on how marketing or customer content affects outcomes, or on the limits of LLM content analysis.",
@@ -25275,7 +25293,9 @@
    "business_school": true,
    "tier": 2,
    "anchor": "paper-modeling-engagement-with-brand-and-organizational-tiktok-videos-using-machine-assisted-theory-ensemble-annotation",
-   "pages": 25
+   "pages": 25,
+   "final_section": "2.1",
+   "final_dataset_section": null
   },
   {
    "cid": "C691",
@@ -29072,7 +29092,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.2",
    "dataset_section": null,
    "classification": "A topic-measurement method for customer review text in which the LLM is a substantive component; 3.2 (customer-text methods). Moved from 3.2 to 2.2 under the section rule of 2026-11-18: a content-generation or content-analysis method whose end goal is the consumer or content insight.",
@@ -29117,7 +29137,9 @@
    "business_school": true,
    "tier": 2,
    "anchor": "paper-a-neural-topic-method-using-a-large-language-model-in-the-loop-for-business-research",
-   "pages": 25
+   "pages": 25,
+   "final_section": "2.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C815",
@@ -44436,7 +44458,7 @@
    "citations": 2,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.2",
    "dataset_section": null,
    "classification": "A customer-text analysis method, closest to 3.2; the pretrained language model may be only an encoder (e.g., BERT-type), so whether an LLM is used substantively is unclear. Moved from 3.2 to 2.2 under the section rule of 2026-11-18: a content-generation or content-analysis method whose end goal is the consumer or content insight.",
@@ -46244,7 +46266,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": null,
    "classification": "If it counts as a language model, it belongs in 3.2 as a text-measurement method; a BERT-type encoder alone does not establish LLM use, so the full text needs checking. Moved from 3.2 to 2.1 under the section rule of 2026-11-18: evidence on how marketing or customer content affects outcomes, or on the limits of LLM content analysis.",
@@ -46619,7 +46641,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "3.2",
    "dataset_section": null,
    "classification": "A recommendation method that includes LLM explanation generation, placed in 3.2.",
@@ -46665,7 +46687,9 @@
    ],
    "business_school": null,
    "tier": 1,
-   "anchor": "paper-interpretable-recommendations-and-parameter-grounded-llm-explanations-with-multigraph-attention"
+   "anchor": "paper-interpretable-recommendations-and-parameter-grounded-llm-explanations-with-multigraph-attention",
+   "final_section": "3.2",
+   "final_dataset_section": null
   },
   {
    "cid": "U049",
@@ -46686,7 +46710,7 @@
    "citations": 7,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "3.1",
    "dataset_section": null,
    "classification": "Evaluates the biases and risks of GenAI in pricing decisions; 3.1.",
@@ -46753,7 +46777,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "3.2",
    "dataset_section": null,
    "classification": "If the vision language model is a substantive component, it belongs in 3.2 for prediction and targeting; the main body is currently conventional CV and deep learning, so the full text needs checking.",
@@ -46815,7 +46839,9 @@
    ],
    "business_school": null,
    "tier": 1,
-   "anchor": "paper-predicting-consumer-in-store-purchase-through-real-time-video-analytics-an-advanced-computer-vision-and-deep-learning-approach"
+   "anchor": "paper-predicting-consumer-in-store-purchase-through-real-time-video-analytics-an-advanced-computer-vision-and-deep-learning-approach",
+   "final_section": "3.2",
+   "final_dataset_section": null
   },
   {
    "cid": "U051",
@@ -48623,7 +48649,7 @@
    "citations": 21,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.2",
    "dataset_section": null,
    "classification": "Practical methods for using GenAI to analyze qualitative and text data; placed under LLM-based text analysis methods; closer to a methods guide than an algorithmic innovation. Moved from 3.2 to 2.2 under the section rule of 2026-11-18: a content-generation or content-analysis method whose end goal is the consumer or content insight.",
@@ -48652,7 +48678,9 @@
    "affiliations": [],
    "business_school": null,
    "tier": 1,
-   "anchor": "paper-collaborating-with-generative-ai-in-consumer-culture-research"
+   "anchor": "paper-collaborating-with-generative-ai-in-consumer-culture-research",
+   "final_section": "2.2",
+   "final_dataset_section": null
   },
   {
    "cid": "U080",
@@ -49305,7 +49333,7 @@
    "citations": 323,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.1",
    "dataset_section": null,
    "classification": "Assesses GenAI's capability limits and technical challenges in customer care; closest to the evaluation and limitations in 3.1. Moved from 3.1 to 2.1 under the section rule of 2026-11-18: evidence on how marketing or customer content affects outcomes, or on the limits of LLM content analysis.",
@@ -49334,7 +49362,9 @@
    "affiliations": [],
    "business_school": null,
    "tier": 1,
-   "anchor": "paper-the-caring-machine-feeling-ai-for-customer-care"
+   "anchor": "paper-the-caring-machine-feeling-ai-for-customer-care",
+   "final_section": "2.1",
+   "final_dataset_section": null
   },
   {
    "cid": "U093",
@@ -49376,7 +49406,7 @@
    "citations": 8,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.2",
    "dataset_section": null,
    "classification": "A customer-text emotion measurement method; if its emoji-prediction model is indeed a language model it belongs in 3.2, but the abstract does not confirm this, hence uncertain. Moved from 3.2 to 2.2 under the section rule of 2026-11-18: a content-generation or content-analysis method whose end goal is the consumer or content insight.",
@@ -49586,7 +49616,7 @@
    "citations": 2,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "3.2",
    "dataset_section": null,
    "classification": "The multimodal LLM is a component of the prediction and ad-matching method, placed in 3.2; the LLM is only one module, so confidence is moderate.",
@@ -49619,7 +49649,9 @@
    "affiliations": [],
    "business_school": null,
    "tier": 1,
-   "anchor": "paper-adgazer-improving-contextual-advertising-with-theory-informed-machine-learning"
+   "anchor": "paper-adgazer-improving-contextual-advertising-with-theory-informed-machine-learning",
+   "final_section": "3.2",
+   "final_dataset_section": null
   },
   {
    "cid": "U100",
@@ -49920,7 +49952,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "3.2",
    "dataset_section": null,
    "classification": "Generative-AI embeddings are the core component of the measurement and experimental-design method, 3.2; the abstract does not name the specific model, so confidence is moderate.",
@@ -49953,7 +49985,9 @@
    "affiliations": [],
    "business_school": null,
    "tier": 1,
-   "anchor": "paper-express-behavioral-research-through-interpretable-dimensionality-reduced-generative-ai-embeddings-bridge-a-method-to-incorporate-real-world-stimuli-in-consumer-experiments"
+   "anchor": "paper-express-behavioral-research-through-interpretable-dimensionality-reduced-generative-ai-embeddings-bridge-a-method-to-incorporate-real-world-stimuli-in-consumer-experiments",
+   "final_section": "3.2",
+   "final_dataset_section": null
   },
   {
    "cid": "U108",
@@ -54060,7 +54094,7 @@
    "citations": 10,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.1",
    "dataset_section": null,
    "classification": "The LLM serves as a tool to measure text style (politeness), an application of LLMs to customer-text analysis, placed in 3.2; the LLM is only one of the measurement methods, so confidence is moderate. Moved from 3.2 to 2.1 under the section rule of 2026-11-18: evidence on how marketing or customer content affects outcomes, or on the limits of LLM content analysis.",
@@ -54114,7 +54148,9 @@
    ],
    "business_school": null,
    "tier": 1,
-   "anchor": "paper-the-direct-effect-of-managerial-responses-when-politeness-backfires"
+   "anchor": "paper-the-direct-effect-of-managerial-responses-when-politeness-backfires",
+   "final_section": "2.1",
+   "final_dataset_section": null
   },
   {
    "cid": "U198",
@@ -54285,7 +54321,7 @@
    "citations": 17,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.1",
    "dataset_section": null,
    "classification": "The LLM is one of the measurement tools used to construct the image-text incongruence measure, an application of LLMs to text analysis, placed in 3.2; it is a method component rather than the research focus, so confidence is moderate. Moved from 3.2 to 2.1 under the section rule of 2026-11-18: evidence on how marketing or customer content affects outcomes, or on the limits of LLM content analysis.",
@@ -54339,7 +54375,9 @@
    ],
    "business_school": null,
    "tier": 1,
-   "anchor": "paper-the-impact-of-verbal-and-visual-content-on-consumer-engagement-in-social-media-marketing"
+   "anchor": "paper-the-impact-of-verbal-and-visual-content-on-consumer-engagement-in-social-media-marketing",
+   "final_section": "2.1",
+   "final_dataset_section": null
   },
   {
    "cid": "U201",
@@ -55025,7 +55063,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "2.2",
    "dataset_section": null,
    "classification": "A method that uses review text for measurement and suggestion generation, placed in 3.2; the LLM is only one component, so confidence is moderate. Moved from 3.2 to 2.2 under the section rule of 2026-11-18: a content-generation or content-analysis method whose end goal is the consumer or content insight.",
@@ -55079,7 +55117,9 @@
    ],
    "business_school": null,
    "tier": 1,
-   "anchor": "paper-targeted-service-improvement-for-individualized-providers"
+   "anchor": "paper-targeted-service-improvement-for-individualized-providers",
+   "final_section": "2.2",
+   "final_dataset_section": null
   },
   {
    "cid": "U215",
@@ -55154,7 +55194,7 @@
    "citations": 0,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "3.2",
    "dataset_section": null,
    "classification": "A methodological improvement in LLM-based recommendation; placed in 3.2.",
@@ -55195,7 +55235,9 @@
    "affiliations": [],
    "business_school": null,
    "tier": 1,
-   "anchor": "paper-express-from-chit-chat-to-conversion-cost-efficient-conversational-recommendation-via-retrospective-learning-and-isolated-reflection"
+   "anchor": "paper-express-from-chit-chat-to-conversion-cost-efficient-conversational-recommendation-via-retrospective-learning-and-isolated-reflection",
+   "final_section": "3.2",
+   "final_dataset_section": null
   },
   {
    "cid": "U217",

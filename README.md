@@ -46,6 +46,8 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 
 ## Selected Foundational Papers
 
+- Reisenbichler, Martin, et al. "[Frontiers: Supporting Content Marketing with Natural Language Generation](#paper-frontiers-supporting-content-marketing-with-natural-language-generation)." Marketing Science 41(3): 441–452 (2022-02). [[link]](https://doi.org/10.1287/mksc.2022.1354)
+
 - Brand, James, Ayelet Israeli, and Donald Ngwe. "[Using LLMs for Market Research](docs/consumer-simulation-method-supplement.md#paper-using-llms-for-market-research)." SSRN 4395751 (2023-03). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4395751)
 
 - Goli, Ali, and Amandeep Singh. "[Frontiers: Can Large Language Models Capture Human Preferences?](#paper-frontiers-can-large-language-models-capture-human-preferences)" Marketing Science 43(4): 709–722 (2024-04). [[link]](https://doi.org/10.1287/mksc.2023.0306)

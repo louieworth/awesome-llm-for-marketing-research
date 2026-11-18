@@ -19,8 +19,8 @@ Search and filter the collection, with short paper summaries, at **[louieworth.g
 Browse by research direction:
 
 - 🧑 **[1. Consumer Simulation](#consumer-simulation)** — consumer responses, behavioral fidelity, and market insights.
-- ✨ **[2. Content Generation and Personalization](#content-generation-and-personalization)** — personalized content, advertising effects, and marketing outcomes.
-- 🔬 **[3. Model and Algorithm Augmentation](#model-and-algorithm-augmentation)** — algorithm performance, synthetic training signals, and improved learning methods.
+- ✨ **[2. Content Generation and Personalization](#content-generation-and-personalization)** — personalized content, advertising effects, marketing outcomes, and LLM analysis of marketing and customer content.
+- 🔬 **[3. Model and Algorithm Augmentation](#model-and-algorithm-augmentation)** — LLMs that augment marketing models and algorithms: choice, demand and pricing models, recommenders, ad algorithms, and measurement that feeds them.
 
 Suggestions and corrections are welcome; see [Contributing](#contributing).
 

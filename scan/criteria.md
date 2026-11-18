@@ -63,9 +63,14 @@ LLMs simulate consumers or customers in a marketing setting, for example:
 
 Forms include digital twins, synthetic respondents, silicon samples and personas. Simulation methods, validity tests and limitation studies all count, with public or private data. A public human-response dataset counts only when the simulated outcomes are consumer or marketing outcomes, such as the pricing and product questions in Twin-2K-500.
 
-### C. `marketing_method`: marketing content generation or algorithm augmentation → categories 2 and 3
+### C. `marketing_method`: marketing content generation and analysis, or model augmentation → categories 2 and 3
 
-Meets the CONTRIBUTING.md requirements for category 2 (content generation and personalization) or category 3 (model and algorithm augmentation), with a marketing task in the data or the evaluation.
+Meets the CONTRIBUTING.md requirements for category 2 or category 3, with a marketing task in the data or the evaluation:
+
+- category 2, content generation and content analysis: LLMs that create or personalize marketing content, or that analyze marketing or consumer-generated content to produce insight (customer needs, emotions or sentiment, review attributes, topics, engagement drivers);
+- category 3, model and algorithm augmentation: the LLM enhances an existing marketing model or algorithm (choice, demand, conjoint or pricing models, recommenders, ad targeting, bidding or keyword algorithms, bandits, inference with LLM outputs), or is a measurement instrument whose output feeds such a model.
+
+For LLM labeling or measurement, the purpose decides: a general measurement tool feeding downstream models is category 3; insight as the end goal is category 2. A paper that fits neither category is excluded.
 
 ### B. `human_simulation`: LLM simulation of people outside marketing → category 1, with the bar
 

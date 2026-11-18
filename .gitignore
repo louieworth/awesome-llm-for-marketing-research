@@ -27,6 +27,7 @@
 !/scan/proposals/
 !/scan/README.md
 !/scan/criteria.md
+!/scan/removed.md
 
 # Workflow that tells the website to rebuild when the README changes.
 !/.github/

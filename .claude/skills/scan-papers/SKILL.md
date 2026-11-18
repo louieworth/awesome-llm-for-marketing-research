@@ -11,7 +11,7 @@ Produces one review PR per run. The maintainer approves papers in the PR; `/appl
 
 - Run `git status --porcelain` and `git rev-parse --abbrev-ref HEAD`. The working tree must be clean and on the default branch (`main`), up to date with `origin`. In a local session, stop and tell the user if it is not. In a cloud run the clone is already clean.
 - `DATE=$(date -u +%F)`. This is the scan date.
-- Remove stale agent output: `rm -f scan/work/screen-*.json scan/work/classify-*.json scan/work/verify-*.json`.
+- Remove stale agent output: `rm -f scan/work/screen-*.json scan/work/classify-*.json scan/work/verify-*.json scan/work/pages.json`.
 
 ## 1. Fetch candidates
 
@@ -44,6 +44,14 @@ This prints the cids screened `include` or `uncertain`. If there are none, skip 
 
 Both read the candidates file themselves. Pass only the cids and the output path.
 
+Then count arXiv pages:
+
+```bash
+python3 scripts/page_count.py
+```
+
+This downloads the arXiv PDF of each passed paper whose verified version is an arXiv preprint and writes `scan/work/pages.json`. The next step excludes arXiv papers under 20 pages (scan/criteria.md, "Length"). If a download fails, continue: that paper is shown with "Page count not checked".
+
 ## 4. Build the review sheet
 
 ```bash
@@ -70,7 +78,7 @@ git add scan/proposals/$DATE.*   # .json, plus .md when the sheet was too long f
 git commit -m "Paper scan $DATE: <N> proposed, <M> excluded"
 git push -u origin "$BRANCH"
 python3 scripts/gh_rest.py open-pr --head "$BRANCH" \
-  --title "论文扫描 $DATE：建议收录 <N> 篇" \
+  --title "Paper scan $DATE: <N> proposed" \
   --body-file scan/work/pr_body.md --label paper-scan
 ```
 

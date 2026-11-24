@@ -2,7 +2,7 @@
 
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
-![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-80-4C70C8?style=for-the-badge)
+![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-81-4C70C8?style=for-the-badge)
 ![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-45-D98757?style=for-the-badge)
 ![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-21-9865C6?style=for-the-badge)
 
@@ -361,6 +361,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-simulating-respondents-not-single-questions-coherent-survey-generation-with-large-language-models"></a>
 
 - Huang, Ji, Mengfei Li, and Shuai Shao. "Simulating Respondents, Not Single Questions: Coherent Survey Generation with Large Language Models." arXiv:2609.34828 (2026-09). [[link]](https://arxiv.org/abs/2609.34828)
+
+<a id="paper-bias-geometry-and-the-value-of-auxiliary-data"></a>
+
+- Jasin, Stefanus, Meichun Lin, and Zijin Zhang. "Bias Geometry and the Value of Auxiliary Data." SSRN 7734298 (2026-11). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7734298)
 
 ### 1.4 Benchmarks and Datasets
 

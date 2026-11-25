@@ -1,0 +1,2452 @@
+{
+ "scan_date": "2026-11-23",
+ "window": [
+  "2026-11-14",
+  "2026-11-23"
+ ],
+ "stats": {
+  "mode": "weekly",
+  "fetched_arxiv": 159,
+  "fetched_ssrn": 3038,
+  "fetched_journals": 58,
+  "abstracts_missing": 3,
+  "abstracts_filled": 2,
+  "keyword_match": 102,
+  "already_in_collection": 0,
+  "already_screened": 4,
+  "new": 93,
+  "to_screen": 80,
+  "over_cap": 13
+ },
+ "items": [
+  {
+   "cid": "C001",
+   "title": "Answering the persona, not the person: Over-determination in the construction of synthetic respondents",
+   "ids": [
+    "arxiv:2611.27449"
+   ],
+   "norm_title": "answering the persona not the person over determination in the construction of synthetic respondents",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.27449",
+   "date": "2026-11-20",
+   "decision": "exclude",
+   "reason": "Human simulation without a marketing setting needs a peer-reviewed venue or at least 100 citations (50 a year); this is unpublished with 0 citations. Tests how persona-prompted LLMs generate synthetic survey responses and shows they track individual respondents poorly (over-determination). Validity study of synthetic respondents and digital twins with no marketing setting, so track B.",
+   "track": "human_simulation",
+   "llm_use": "Gemini 2.5 Flash and GPT-5-mini answer 15 attitude questions as persona-prompted synthetic respondents",
+   "human_data": "European Social Survey Round 11, 14,000 respondents across 28 countries",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "Validity study of persona-prompted synthetic respondents against ESS individual and conditional-mean answers with no new estimator, so 1.2 rather than 1.3 (closest existing entry: Questioning the Survey Responses of Large Language Models).",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "Title, authors and first posting date (2026-11-20) checked against the arXiv API record and the PDF first page; no Crossref record or journal version found.",
+   "issues": [
+    "Family name spelled Flores in arXiv metadata but Florès in the PDF; PDF form used",
+    "Suchecki affiliation not stated and not found",
+    "arXiv comment points to a Zenodo replication package (doi 10.5281/zenodo.24286641) that could not be opened, so dataset left null"
+   ],
+   "meta": {
+    "title": "Answering the persona, not the person: Over-determination in the construction of synthetic respondents",
+    "authors": [
+     {
+      "given": "Konrad",
+      "family": "Suchecki"
+     },
+     {
+      "given": "Laurent",
+      "family": "Florès"
+     }
+    ],
+    "venue": "arXiv:2611.27449",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.27449"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Konrad Suchecki",
+     "affiliation": "Not stated on paper (email only)"
+    },
+    {
+     "author": "Laurent Florès",
+     "affiliation": "Université Paris-Panthéon-Assas and FlashInsight"
+    }
+   ],
+   "business_school": null,
+   "pages": 66
+  },
+  {
+   "cid": "C002",
+   "title": "Does a Bulgarian Language Model Simulate Bulgarians Better? A Pre-registered Test of LLM Survey Respondents against the European Social Survey",
+   "ids": [
+    "doi:10.2139/ssrn.7708278",
+    "ssrn:7708278"
+   ],
+   "norm_title": "does a bulgarian language model simulate bulgarians better a pre registered test of llm survey respondents against the european social survey",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7708278",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Human simulation without a marketing setting needs a peer-reviewed venue or at least 100 citations (50 a year); this is unpublished with 0 citations. Pre-registered test of whether a Bulgarian-adapted LLM simulates Bulgarian survey respondents better than other models. Silicon-sample validity against real survey answers, with no marketing setting, so track B. SSRN working paper, so the bar is checked later.",
+   "track": "human_simulation",
+   "llm_use": "BgGPT, its base Gemma models and Claude Sonnet 5 answer ESS questions in Bulgarian given 5-fact demographic personas",
+   "human_data": "European Social Survey Round 11, 2,239 Bulgarian respondents",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "Pre-registered comparison of a Bulgarian-adapted model with base models and Claude against ESS answers is a model comparison and validity test, not a new method, so 1.2 rather than 1.3.",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "Title, author and date checked against the Crossref record for the SSRN DOI 10.2139/ssrn.7708278 (created 2026-11-19); SSRN page not reachable.",
+   "issues": [
+    "Author affiliation not found (Crossref empty, web search found nothing)"
+   ],
+   "meta": {
+    "title": "Does a Bulgarian Language Model Simulate Bulgarians Better? A Pre-registered Test of LLM Survey Respondents against the European Social Survey",
+    "authors": [
+     {
+      "given": "Ivaylo",
+      "family": "Sakelariev"
+     }
+    ],
+    "venue": "SSRN 7708278",
+    "date": "2026-11",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7708278"
+   },
+   "dataset": null,
+   "affiliations": [],
+   "business_school": null
+  },
+  {
+   "cid": "C003",
+   "title": "Can Activation Steering Substitute for Prompt-Based Affective Priming in LLM Digital Twins?",
+   "ids": [
+    "arxiv:2611.22738"
+   ],
+   "norm_title": "can activation steering substitute for prompt based affective priming in llm digital twins",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.22738",
+   "date": "2026-11-17",
+   "decision": "exclude",
+   "reason": "Human simulation without a marketing setting needs a peer-reviewed venue or at least 100 citations (50 a year); this is unpublished with 0 citations. Tests whether activation steering can replace the writing task that induces emotional states in LLM digital twins, comparing effects with the original human results in the Twin-2K-500 study. Validity of digital twins in a psychology experiment, so track B.",
+   "track": "human_simulation",
+   "llm_use": "Llama-3.1-8B-Instruct digital twins of 100 personas, with activation steering compared with prompt-based affective priming",
+   "human_data": "Twin-2K-500 Mega Study (J2) human and digital-twin priming effects",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "Tests whether activation steering can substitute for prompt priming in digital twins and finds validity is measure-dependent against Twin-2K-500 human effects, so 1.2; 1.3 rejected because it compares induction paths rather than proposing a validated new method.",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "Title, author and submission date (17 Nov 2026) checked on the arXiv abstract page and PDF first page; the PDF shows no code or data links.",
+   "issues": [
+    "School within USC not stated; business-school status unverified"
+   ],
+   "meta": {
+    "title": "Can Activation Steering Substitute for Prompt-Based Affective Priming in LLM Digital Twins?",
+    "authors": [
+     {
+      "given": "Junyi",
+      "family": "Fan"
+     }
+    ],
+    "venue": "arXiv:2611.22738",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.22738"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Junyi Fan",
+     "affiliation": "University of Southern California (school or department not stated)"
+    }
+   ],
+   "business_school": null,
+   "pages": 24
+  },
+  {
+   "cid": "C004",
+   "title": "A four-level executable validation protocol for evaluating LLM-generated topology specifications of physics-based HVAC digital twins",
+   "ids": [
+    "arxiv:2611.25471"
+   ],
+   "norm_title": "a four level executable validation protocol for evaluating llm generated topology specifications of physics based hvac digital twins",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.25471",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Engineering digital twins of HVAC systems. No consumers and no simulation of people.",
+   "track": "none",
+   "llm_use": "LLMs write HVAC digital-twin specifications",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C005",
+   "title": "Necessary for What? Auditing Demographic Disclosure to LLM Synthetic Respondents",
+   "ids": [
+    "arxiv:2611.20606"
+   ],
+   "norm_title": "necessary for what auditing demographic disclosure to llm synthetic respondents",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.20606",
+   "date": "2026-11-16",
+   "decision": "exclude",
+   "reason": "Human simulation without a marketing setting needs a peer-reviewed venue or at least 100 citations (50 a year); this is unpublished with 0 citations. Audits which demographic fields synthetic survey respondents need, and whether group comparisons from them are sound, against real panelist answers and a statistical baseline. Survey-simulation validity with no marketing setting, so track B.",
+   "track": "human_simulation",
+   "llm_use": "Eleven open-weight and three hosted LLMs answer surveys as synthetic respondents given demographic profiles",
+   "human_data": "Two U.S. surveys with real panelist answers",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "Audits demographic disclosure to synthetic respondents and group-comparison validity against real panelists; the outlined audit is secondary to the validity findings, so 1.2 rather than 1.3.",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "Title, authors and first posting date (2026-11-16) checked against the arXiv API and HTML version; code released on GitHub but no new dataset (respondent-level data withheld, public Pew/ISSP sources used); arXiv comment says 29 pages.",
+   "issues": [],
+   "meta": {
+    "title": "Necessary for What? Auditing Demographic Disclosure to LLM Synthetic Respondents",
+    "authors": [
+     {
+      "given": "Aspen",
+      "family": "Wang"
+     },
+     {
+      "given": "Yen Yu",
+      "family": "Shan"
+     },
+     {
+      "given": "Lun-Wei",
+      "family": "Ku"
+     }
+    ],
+    "venue": "arXiv:2611.20606",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.20606"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Aspen Wang",
+     "affiliation": "Institute of Information Science, Academia Sinica"
+    },
+    {
+     "author": "Yen Yu Shan",
+     "affiliation": "Institute of Information Science, Academia Sinica"
+    },
+    {
+     "author": "Lun-Wei Ku",
+     "affiliation": "Institute of Information Science, Academia Sinica"
+    }
+   ],
+   "business_school": false,
+   "pages": 29
+  },
+  {
+   "cid": "C006",
+   "title": "When the Manager Builds the Tool: AI-Assisted Decision Support, Margin Visibility and Advertising Efficiency in a Small E-commerce Firm",
+   "ids": [
+    "doi:10.2139/ssrn.7706598",
+    "ssrn:7706598"
+   ],
+   "norm_title": "when the manager builds the tool ai assisted decision support margin visibility and advertising efficiency in a small e commerce firm",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7706598",
+   "date": "2026-11-18",
+   "decision": "uncertain",
+   "reason": "One-firm, one-month before/after case study of an AI-built tool that improves advertising efficiency (ROAS). The marketing setting is clear, but the abstract does not say what the LLM does, so it may be mostly rule-based and the evidence is thin.",
+   "track": "marketing_method",
+   "llm_use": "A manager-built decision-support tool combines rules with calls to a language model to allocate Amazon ad spend",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.1",
+   "dataset_section": null,
+   "classification": "One-firm before/after evaluation of an LLM-assisted ad-spend allocation tool is closest to an evaluation of an augmented advertising algorithm (3.1), but the LLM role is unclear and 2.1 is the rejected alternative.",
+   "confidence": "low",
+   "verified": true,
+   "published": false,
+   "verification": "Title and author checked against Crossref (DOI 10.2139/ssrn.7706598, created 2026-11-18); SSRN page not reachable and a web search found no affiliation.",
+   "issues": [
+    "Author affiliation unknown (no university page found); the paper describes a firm manager's own tool, so he may be a practitioner",
+    "Business-school authorship not confirmed"
+   ],
+   "meta": {
+    "title": "When the Manager Builds the Tool: AI-Assisted Decision Support, Margin Visibility and Advertising Efficiency in a Small E-commerce Firm",
+    "authors": [
+     {
+      "given": "Aqib",
+      "family": "Noor"
+     }
+    ],
+    "venue": "SSRN 7706598",
+    "date": "2026-11",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7706598"
+   },
+   "dataset": null,
+   "affiliations": [],
+   "business_school": null,
+   "tier": 2,
+   "anchor": "paper-when-the-manager-builds-the-tool-ai-assisted-decision-support-margin-visibility-and-advertising-efficiency-in-a-small-e-commerce-firm"
+  },
+  {
+   "cid": "C007",
+   "title": "From Facts to Personas: Interpretable Role Unlearning in LLMs via Mixture-of-Experts",
+   "ids": [
+    "arxiv:2611.19393"
+   ],
+   "norm_title": "from facts to personas interpretable role unlearning in llms via mixture of experts",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.19393",
+   "date": "2026-11-14",
+   "decision": "exclude",
+   "reason": "General NLP unlearning method for role-play personas. No marketing task and no simulation of people compared with human data.",
+   "track": "none",
+   "llm_use": "Role unlearning in LLMs via mixture-of-experts",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C008",
+   "title": "A Crowd-Audited Atlas of Implicit Bias in LLM-Powered Agents",
+   "ids": [
+    "arxiv:2611.21376"
+   ],
+   "norm_title": "a crowd audited atlas of implicit bias in llm powered agents",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.21376",
+   "date": "2026-11-16",
+   "decision": "exclude",
+   "reason": "Audits implicit bias in persona-endowed LLM agents, using a crowd of 500 to prioritize the biased scenarios. The LLM is not compared with human behavior as a stand-in, and there is no marketing setting.",
+   "track": "none",
+   "llm_use": "LLM agents given sociodemographic personas make decisions in 506 ATUS-based scenarios",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C009",
+   "title": "Thinking Harder Doesn't Lead to Better Choices: Reasoning Effort Increases the Confidence but Not the Correctness of LLM Shopping Agents",
+   "ids": [
+    "arxiv:2611.22033",
+    "doi:10.2139/ssrn.7717078",
+    "ssrn:7717078"
+   ],
+   "norm_title": "thinking harder doesn t lead to better choices reasoning effort increases the confidence but not the correctness of llm shopping agents",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7717078",
+   "date": "2026-11-20",
+   "decision": "exclude",
+   "reason": "Benchmarks LLM shopping agents' decision quality, confidence and calibration. It studies the LLM as a product or agent, and does not simulate consumers or augment a marketing method.",
+   "track": "none",
+   "llm_use": "Ten frontier LLMs act as shopping agents choosing products on WebShop, SQID and WANDS",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C010",
+   "title": "B2G-Agent: An LLM-Based Multi-Agent Tool for End-to-End Building-Grid Interactions",
+   "ids": [
+    "arxiv:2611.19036"
+   ],
+   "norm_title": "b2g agent an llm based multi agent tool for end to end building grid interactions",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.19036",
+   "date": "2026-11-14",
+   "decision": "exclude",
+   "reason": "Energy-systems engineering tool. No marketing setting and no simulation of people.",
+   "track": "none",
+   "llm_use": "Multi-agent LLM tool for building-grid interaction",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C011",
+   "title": "CECAR: Cache & Expert Co-Aware Routing Accelerates On-Device Inference of MoE LLMs",
+   "ids": [
+    "arxiv:2611.20119"
+   ],
+   "norm_title": "cecar cache expert co aware routing accelerates on device inference of moe llms",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.20119",
+   "date": "2026-11-15",
+   "decision": "exclude",
+   "reason": "Systems paper on on-device inference efficiency. No marketing setting and no simulation of people.",
+   "track": "none",
+   "llm_use": "MoE LLM inference acceleration",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C012",
+   "title": "Conditional Asset Pricing Transformer",
+   "ids": [
+    "arxiv:2611.19783"
+   ],
+   "norm_title": "conditional asset pricing transformer",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.19783",
+   "date": "2026-11-15",
+   "decision": "exclude",
+   "reason": "Finance asset-pricing model. No marketing setting and no simulation of people.",
+   "track": "none",
+   "llm_use": "Transformer for asset-return forecasting",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C013",
+   "title": "Beyond Access: Four Dimensions of Students' Relationship with Generative AI, and their Stratification in Higher Education in India",
+   "ids": [
+    "doi:10.2139/ssrn.7693999",
+    "ssrn:7693999"
+   ],
+   "norm_title": "beyond access four dimensions of students relationship with generative ai and their stratification in higher education in india",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7693999",
+   "date": "2026-11-16",
+   "decision": "exclude",
+   "reason": "Conceptual framework on students' relationship with generative AI in Indian higher education; no marketing setting and no LLM simulation of people.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C014",
+   "title": "Towards Microphone-Invariant Speech Representations for Transformer-Based Voice Disorder Detection",
+   "ids": [
+    "arxiv:2611.21140"
+   ],
+   "norm_title": "towards microphone invariant speech representations for transformer based voice disorder detection",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.21140",
+   "date": "2026-11-16",
+   "decision": "exclude",
+   "reason": "Speech-transformer robustness for voice disorder detection; no marketing and no simulation of people.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C015",
+   "title": "Network-Exposed Configuration Attacks on LLM-Controlled Social Robots",
+   "ids": [
+    "arxiv:2611.22761"
+   ],
+   "norm_title": "network exposed configuration attacks on llm controlled social robots",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.22761",
+   "date": "2026-11-17",
+   "decision": "exclude",
+   "reason": "Security analysis of configuration attacks on LLM-controlled social robots; no marketing setting or people simulation.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C016",
+   "title": "Sample-efficient Personalization of Large Language Model Alignment with Multidimensional User Preference Data",
+   "ids": [
+    "arxiv:2611.22210"
+   ],
+   "norm_title": "sample efficient personalization of large language model alignment with multidimensional user preference data",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.22210",
+   "date": "2026-11-17",
+   "decision": "exclude",
+   "reason": "Online preference alignment algorithm (DPO) for personalizing LLMs; model alignment, not simulation of people or a marketing task.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C017",
+   "title": "Unpacking AI Productivity Paradox and the Hidden Costs of AI-Assisted Writing on Workers and Consumers",
+   "ids": [
+    "doi:10.2139/ssrn.7698658",
+    "doi:10.2139/ssrn.7717919",
+    "ssrn:7698658",
+    "ssrn:7717919"
+   ],
+   "norm_title": "unpacking ai productivity paradox and the hidden costs of ai assisted writing on workers and consumers",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7698658",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Experiment on human-AI collaboration modes in professional writing and worker experience; no marketing task and no LLM simulation of people.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C018",
+   "title": "Writing with Generative AI: Competition in Online Marketplaces",
+   "ids": [
+    "doi:10.2139/ssrn.7704778",
+    "doi:10.2139/ssrn.7711599",
+    "ssrn:7704778",
+    "ssrn:7711599"
+   ],
+   "norm_title": "writing with generative ai competition in online marketplaces",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7704778",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Empirical study of the effect of Amazon's seller-facing generative-AI listing tools on marketplace competition; treats the LLM tool as the object of study, not a simulation or a marketing method.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C019",
+   "title": "The Geometry of Lies: Knowledge and Persona Directions for Detecting Deception in Large Language Models",
+   "ids": [
+    "arxiv:2611.26545"
+   ],
+   "norm_title": "the geometry of lies knowledge and persona directions for detecting deception in large language models",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.26545",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Interpretability of LLM deception detection with persona directions; no simulation of people or marketing.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C020",
+   "title": "Asuka-FM: A System-Architectural Co-Design Framework for Efficient Text-to-Image Pretraining on Consumer Hardware",
+   "ids": [
+    "arxiv:2611.26437"
+   ],
+   "norm_title": "asuka fm a system architectural co design framework for efficient text to image pretraining on consumer hardware",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.26437",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Efficient text-to-image pretraining on consumer GPUs; no marketing setting or people simulation.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C021",
+   "title": "Perfumer: A Large Language Model-based Agentic Framework Accelerating Structural Relaxation and Electronic Band Prediction for First-Principle Calculation",
+   "ids": [
+    "arxiv:2611.26349"
+   ],
+   "norm_title": "perfumer a large language model based agentic framework accelerating structural relaxation and electronic band prediction for first principle calculation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.26349",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "LLM agent for materials first-principles calculations; unrelated to marketing or people simulation.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C022",
+   "title": "Dual Active Learning for Reinforcement Learning from Human Feedback",
+   "ids": [
+    "doi:10.1287/opre.2025.1837"
+   ],
+   "norm_title": "dual active learning for reinforcement learning from human feedback",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/opre.2025.1837",
+   "date": "2026-11-20",
+   "decision": "exclude",
+   "reason": "Active learning algorithm for RLHF reward learning in Operations Research; model alignment, no marketing task or simulation of people.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C023",
+   "title": "Mens-Corpus-Sana Making an Exercise App with Two Frontier LLM Systems: A Case Study for the Non-Programmer",
+   "ids": [
+    "doi:10.2139/ssrn.7720198",
+    "ssrn:7720198"
+   ],
+   "norm_title": "mens corpus sana making an exercise app with two frontier llm systems a case study for the non programmer",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7720198",
+   "date": "2026-11-20",
+   "decision": "exclude",
+   "reason": "Essay on building an exercise app with LLM coding assistants; no marketing research task or simulation of people.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C024",
+   "title": "Toward a digital twin of the ICU patient: Forecasting and treatment response in a generative event model",
+   "ids": [
+    "arxiv:2611.27028"
+   ],
+   "norm_title": "toward a digital twin of the icu patient forecasting and treatment response in a generative event model",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.27028",
+   "date": "2026-11-20",
+   "decision": "exclude",
+   "reason": "Clinical transformer 'digital twin' of ICU patients from EHR data; medical setting, not consumers or human behavior simulation.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C025",
+   "title": "Real-World End-to-End Product Entity Resolution",
+   "ids": [
+    "arxiv:2611.19418"
+   ],
+   "norm_title": "real world end to end product entity resolution",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.19418",
+   "date": "2026-11-14",
+   "decision": "exclude",
+   "reason": "E-commerce data-matching engineering (entity resolution) with no marketing task or consumer simulation; fits neither category 2 nor 3.",
+   "track": "none",
+   "llm_use": "LLM verification step in product entity resolution pipelines",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C026",
+   "title": "Corporate Stances on Societal Issues in the US",
+   "ids": [
+    "arxiv:2611.19068"
+   ],
+   "norm_title": "corporate stances on societal issues in the us",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.19068",
+   "date": "2026-11-14",
+   "decision": "exclude",
+   "reason": "Uses LLMs to code corporate political stances for a political-economy study; not consumer or marketing content analysis and no people simulation.",
+   "track": "none",
+   "llm_use": "LLMs extract corporate stances from news articles",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C027",
+   "title": "Paying Creators for Training Data Can Increase AI Displacement",
+   "ids": [
+    "arxiv:2611.20204",
+    "doi:10.2139/ssrn.5719862",
+    "ssrn:5719862"
+   ],
+   "norm_title": "paying creators for training data can increase ai displacement",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.20204",
+   "date": "2026-11-15",
+   "decision": "exclude",
+   "reason": "Analytical model of creator compensation and generative AI; the LLM is only the market or product studied.",
+   "track": "none",
+   "llm_use": "none (game-theoretic model)",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C028",
+   "title": "Regularizing Treatment Leakage for LLM-based Uplift Estimation",
+   "ids": [
+    "arxiv:2611.20794"
+   ],
+   "norm_title": "regularizing treatment leakage for llm based uplift estimation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.20794",
+   "date": "2026-11-16",
+   "decision": "exclude",
+   "reason": "Only 7 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. Augments an uplift/pricing model with LLM text features and tests it on a pricing RCT and an online A/B test; category 3 marketing method. Authors likely from industry, so tier 3 applies.",
+   "track": "marketing_method",
+   "llm_use": "Frozen LLM encoder gives text features to an uplift model, with a leakage regularizer",
+   "human_data": "Industrial pricing randomized controlled trial and online A/B test",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "Proposes the LULR regularizer for LLM-feature uplift/pricing models, validated on a pricing RCT and online A/B test, similar to LOLA and LEADRE as a method augmenting a marketing model.",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "Title, authors and v1 date (16 Nov 2026) checked on the arXiv abstract page; affiliations from the arXiv HTML version; the industrial RCT data is internal and no release is stated.",
+   "issues": [
+    "arXiv paper withdrawn permanently by v4 (20 Nov 2026) because not all co-authors consented; PDF unavailable",
+    "Lookup script hit an arXiv HTTP 429 error"
+   ],
+   "meta": {
+    "title": "Regularizing Treatment Leakage for LLM-based Uplift Estimation",
+    "authors": [
+     {
+      "given": "Bojing",
+      "family": "Feng"
+     },
+     {
+      "given": "Jinqiu",
+      "family": "Deng"
+     },
+     {
+      "given": "Zihan",
+      "family": "Hong"
+     },
+     {
+      "given": "Yuan",
+      "family": "Xue"
+     },
+     {
+      "given": "Wenqi",
+      "family": "Xiang"
+     },
+     {
+      "given": "Shuhan",
+      "family": "Wang"
+     },
+     {
+      "given": "Feng",
+      "family": "Xiao"
+     },
+     {
+      "given": "Shiwei",
+      "family": "Wang"
+     },
+     {
+      "given": "Zijiang",
+      "family": "Liu"
+     },
+     {
+      "given": "Shaomin",
+      "family": "Li"
+     },
+     {
+      "given": "Yongzhi",
+      "family": "Qi"
+     }
+    ],
+    "venue": "arXiv:2611.20794",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.20794"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "All eleven authors",
+     "affiliation": "Supply Chain Tech Team Y, JD.com, Beijing, China"
+    }
+   ],
+   "business_school": false,
+   "pages": 7
+  },
+  {
+   "cid": "C029",
+   "title": "Do AI Shopping Advisors Respond to Price Presentation as People Do? A Preregistered Audit with a Human Benchmark",
+   "ids": [
+    "doi:10.2139/ssrn.7701758",
+    "ssrn:7701758"
+   ],
+   "norm_title": "do ai shopping advisors respond to price presentation as people do a preregistered audit with a human benchmark",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7701758",
+   "date": "2026-11-17",
+   "decision": "uncertain",
+   "reason": "Tests whether LLM judgments of offers show the same price-presentation effects as consumers, compared against a 1,601-person human sample; a validity study of LLMs as consumer stand-ins.",
+   "track": "consumer_simulation",
+   "llm_use": "Four LLMs act as shopping advisors rating offers with different price presentations",
+   "human_data": "1,601 UK adults shown the same offers (preregistered human benchmark)",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "Pre-registered audit of whether LLM shopping advisors show human price-presentation effects against a 1,601-person benchmark is a behavioral validity study, similar to Shopping by algorithm, so 1.2.",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "Title and author checked against Crossref (DOI 10.2139/ssrn.7701758, created 2026-11-17); SSRN page not reachable and a web search found nothing on the paper or author.",
+   "issues": [
+    "Author affiliation unknown",
+    "No dataset release verified (the study has 424 frozen prompts and 1,601 UK adults, but no download link found)",
+    "Business-school authorship not confirmed"
+   ],
+   "meta": {
+    "title": "Do AI Shopping Advisors Respond to Price Presentation as People Do? A Preregistered Audit with a Human Benchmark",
+    "authors": [
+     {
+      "given": "Claudius",
+      "family": "Thelen"
+     }
+    ],
+    "venue": "SSRN 7701758",
+    "date": "2026-11",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7701758"
+   },
+   "dataset": null,
+   "affiliations": [],
+   "business_school": null,
+   "tier": 2,
+   "anchor": "paper-do-ai-shopping-advisors-respond-to-price-presentation-as-people-do-a-preregistered-audit-with-a-human-benchmark"
+  },
+  {
+   "cid": "C030",
+   "title": "Corporate Stances on Societal Issues in the U.S.",
+   "ids": [
+    "doi:10.2139/ssrn.7702498",
+    "ssrn:7702498"
+   ],
+   "norm_title": "corporate stances on societal issues in the u s",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7702498",
+   "date": "2026-11-18",
+   "decision": "exclude",
+   "reason": "SSRN version of C026; corporate political stance coding, not marketing content analysis or people simulation.",
+   "track": "none",
+   "llm_use": "LLMs extract corporate stances from news articles",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C031",
+   "title": "The Siege Curve: How Disruptive Technologies Are Really Adopted",
+   "ids": [
+    "doi:10.2139/ssrn.7702798",
+    "ssrn:7702798"
+   ],
+   "norm_title": "the siege curve how disruptive technologies are really adopted",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7702798",
+   "date": "2026-11-18",
+   "decision": "exclude",
+   "reason": "Conceptual essay on technology adoption curves; no LLM method or simulation.",
+   "track": "none",
+   "llm_use": "none",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C032",
+   "title": "The Window Lever: Longer Observation Windows Outweigh the Observed Effects of Data, Capacity, and Architecture in Customer Behavior Forecasting",
+   "ids": [
+    "arxiv:2611.26521"
+   ],
+   "norm_title": "the window lever longer observation windows outweigh the observed effects of data capacity and architecture in customer behavior forecasting",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.26521",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "No business-school author and limited impact (0 citations); affiliations: Amazon. Customer-behavior forecasting on commercial data with a transformer, which counts as an LLM here; the abstract mainly studies observation-window length, so whether it is a model-augmentation paper is unclear.",
+   "track": "marketing_method",
+   "llm_use": "Transformer and other sequence models forecast customer behavior from weekly history",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.1",
+   "dataset_section": null,
+   "classification": "Empirical evaluation of what drives transformer customer-behavior forecasting (window length vs data, capacity, architecture) is a performance study rather than a new method, so 3.1 rather than 3.2; the LLM link is weak.",
+   "confidence": "low",
+   "verified": true,
+   "published": false,
+   "verification": "Title, authors and v1 date (19 Nov 2026) checked on the arXiv abstract page; affiliations from the arXiv HTML version; main data is proprietary and public datasets used (Taobao, Complete Journey, CDNOW, H&M) are third-party.",
+   "issues": [
+    "Section 4.4 (code and data availability) was not read, so a possible release is unchecked"
+   ],
+   "meta": {
+    "title": "The Window Lever: Longer Observation Windows Outweigh the Observed Effects of Data, Capacity, and Architecture in Customer Behavior Forecasting",
+    "authors": [
+     {
+      "given": "Tara",
+      "family": "Sowrirajan"
+     },
+     {
+      "given": "Yanqiao",
+      "family": "Wang"
+     }
+    ],
+    "venue": "arXiv:2611.26521",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.26521"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Tara Sowrirajan",
+     "affiliation": "Amazon"
+    },
+    {
+     "author": "Yanqiao Wang",
+     "affiliation": "Amazon"
+    }
+   ],
+   "business_school": false,
+   "pages": 69,
+   "tier": 2
+  },
+  {
+   "cid": "C033",
+   "title": "From Sessions to Serving: Integrating LLM-Based Embeddings into Retrieval for Production Content Recommendation",
+   "ids": [
+    "arxiv:2611.26096"
+   ],
+   "norm_title": "from sessions to serving integrating llm based embeddings into retrieval for production content recommendation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.26096",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Only 9 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. LLM-derived embeddings improve a production content recommender on commercial site data; category 3 recommender augmentation. Authors likely from industry, so tier 3 applies.",
+   "track": "marketing_method",
+   "llm_use": "Pretrained LLM session embeddings added to the retrieval user tower of a recommender",
+   "human_data": "Production autodesk.com behavior logs (ablation)",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "Adds LLM session embeddings to a production retrieval user tower with ablation, like LEADRE and the LLM-augmented recommendation entries, so 3.2 rather than 3.1.",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "Title, author order and first posting date (19 Nov 2026) checked on the arXiv abs page; affiliations from the arXiv HTML version; no Crossref/journal version found; the paper uses proprietary autodesk.com logs with no release.",
+   "issues": [],
+   "meta": {
+    "title": "From Sessions to Serving: Integrating LLM-Based Embeddings into Retrieval for Production Content Recommendation",
+    "authors": [
+     {
+      "given": "Zhixiong",
+      "family": "Hu"
+     },
+     {
+      "given": "Meng",
+      "family": "Li"
+     },
+     {
+      "given": "Maggie",
+      "family": "Zhang"
+     },
+     {
+      "given": "Deborshi",
+      "family": "Goswami"
+     },
+     {
+      "given": "David",
+      "family": "Bailey"
+     },
+     {
+      "given": "James",
+      "family": "Bradley"
+     }
+    ],
+    "venue": "arXiv:2611.26096",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.26096"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Zhixiong Hu",
+     "affiliation": "Autodesk"
+    },
+    {
+     "author": "Meng Li",
+     "affiliation": "Autodesk"
+    },
+    {
+     "author": "Maggie Zhang",
+     "affiliation": "Autodesk"
+    },
+    {
+     "author": "Deborshi Goswami",
+     "affiliation": "Autodesk"
+    },
+    {
+     "author": "David Bailey",
+     "affiliation": "Autodesk"
+    },
+    {
+     "author": "James Bradley",
+     "affiliation": "Autodesk"
+    }
+   ],
+   "business_school": false,
+   "pages": 9
+  },
+  {
+   "cid": "C034",
+   "title": "Presence and Consistency: A Two-Component Measurement of AI Availability (The AIAS™ 2.0 Synthesis)",
+   "ids": [
+    "doi:10.2139/ssrn.7717659",
+    "ssrn:7717659"
+   ],
+   "norm_title": "presence and consistency a two component measurement of ai availability the aiastm 2 0 synthesis",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7717659",
+   "date": "2026-11-20",
+   "decision": "exclude",
+   "reason": "Measures how often LLMs name brands (AI visibility), which treats the LLM as the market; an always-exclude case.",
+   "track": "none",
+   "llm_use": "Panel of LLMs queried to count brand mentions",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C035",
+   "title": "Silent Arbitration: How Large Language Models Resolve Co-Authoritative Conflicting Instructions",
+   "ids": [
+    "arxiv:2611.27444"
+   ],
+   "norm_title": "silent arbitration how large language models resolve co authoritative conflicting instructions",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.27444",
+   "date": "2026-11-20",
+   "decision": "exclude",
+   "reason": "General instruction-following study of conflicting persona prompts; no marketing setting and no simulation of people.",
+   "track": "none",
+   "llm_use": "LLMs given conflicting persona prompts",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C036",
+   "title": "EcomWriteBench: A Real-World Benchmark for E-commerce Writing Tasks",
+   "ids": [
+    "arxiv:2611.27349"
+   ],
+   "norm_title": "ecomwritebench a real world benchmark for e commerce writing tasks",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.27349",
+   "date": "2026-11-20",
+   "decision": "exclude",
+   "reason": "No business-school author and limited impact (0 citations); affiliations: JD.com. Benchmark of LLM-generated e-commerce content (category 2) across 69 writing tasks; the abstract does not show whether the tasks are marketing content or generic e-commerce support, and it is likely industry-authored.",
+   "track": "marketing_method",
+   "llm_use": "Benchmark for LLM e-commerce writing, with human-preference-calibrated scoring",
+   "human_data": "Human pairwise preferences (88.96% agreement)",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "2.3",
+   "dataset_section": "2.3",
+   "classification": "EcomWriteBench is a released e-commerce writing benchmark whose dataset is the main contribution, so 2.3 rather than 2.2 despite the preference-calibrated scoring method; marketing-content scope is uncertain.",
+   "confidence": "low",
+   "verified": true,
+   "published": false,
+   "verification": "Title, authors and first posting date (2026-11-20) checked via the lookup script's arXiv record; affiliations from the arXiv HTML (first 100k characters); the benchmark (3,861 queries, 69 tasks, 5 languages) is stated to be released only upon acceptance, with no link yet.",
+   "issues": [],
+   "meta": {
+    "title": "EcomWriteBench: A Real-World Benchmark for E-commerce Writing Tasks",
+    "authors": [
+     {
+      "given": "Kaicheng",
+      "family": "Liang"
+     },
+     {
+      "given": "Jingyi",
+      "family": "Cui"
+     },
+     {
+      "given": "Hongwei",
+      "family": "Wen"
+     },
+     {
+      "given": "Feng",
+      "family": "Wang"
+     },
+     {
+      "given": "Simiu",
+      "family": "Gu"
+     }
+    ],
+    "venue": "arXiv:2611.27349",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.27349"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Kaicheng Liang",
+     "affiliation": "JD.com"
+    },
+    {
+     "author": "Jingyi Cui",
+     "affiliation": "JD.com"
+    },
+    {
+     "author": "Hongwei Wen",
+     "affiliation": "JD.com"
+    },
+    {
+     "author": "Feng Wang",
+     "affiliation": "JD.com"
+    },
+    {
+     "author": "Simiu Gu",
+     "affiliation": "JD.com"
+    }
+   ],
+   "business_school": false,
+   "pages": 29,
+   "tier": 2
+  },
+  {
+   "cid": "C037",
+   "title": "GNN-Based Deep Reinforcement Learning for Coastal Emergency Response under Extreme Water Levels",
+   "ids": [
+    "arxiv:2611.20268"
+   ],
+   "norm_title": "gnn based deep reinforcement learning for coastal emergency response under extreme water levels",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.20268",
+   "date": "2026-11-15",
+   "decision": "exclude",
+   "reason": "Coastal emergency response with GNN and PPO; LLMs only mentioned as future work. No marketing setting and no simulation of people.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C038",
+   "title": "Turning Errors into Successes: Designing LLM Tutoring Around Scaffolded Error Correction",
+   "ids": [
+    "arxiv:2611.20061"
+   ],
+   "norm_title": "turning errors into successes designing llm tutoring around scaffolded error correction",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.20061",
+   "date": "2026-11-15",
+   "decision": "exclude",
+   "reason": "Experiment on LLM tutoring and error correction in education. The LLM is a tutor, not a simulation of people, and there is no marketing setting.",
+   "track": "none",
+   "llm_use": "LLM as tutor",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C039",
+   "title": "Who Pays for AI?",
+   "ids": [
+    "doi:10.2139/ssrn.7693119",
+    "ssrn:7693119"
+   ],
+   "norm_title": "who pays for ai",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7693119",
+   "date": "2026-11-16",
+   "decision": "exclude",
+   "reason": "Descriptive study of who pays for AI subscriptions using banking data. The LLM is only the product studied, with no simulation or method use.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C040",
+   "title": "RESILAGENT: A Three-Pillar Architecture for Cyber-Physical Resilience in Electrical Power and Energy Systems",
+   "ids": [
+    "arxiv:2611.21480"
+   ],
+   "norm_title": "resilagent a three pillar architecture for cyber physical resilience in electrical power and energy systems",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.21480",
+   "date": "2026-11-16",
+   "decision": "exclude",
+   "reason": "Cyber-physical resilience architecture for power systems. No marketing setting and no simulation of people.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C041",
+   "title": "Cava's Future: Growth Strategies for a Sparkling Wine at a Crossroads",
+   "ids": [
+    "doi:10.2139/ssrn.7694619",
+    "ssrn:7694619"
+   ],
+   "norm_title": "cava s future growth strategies for a sparkling wine at a crossroads",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7694619",
+   "date": "2026-11-17",
+   "decision": "exclude",
+   "reason": "Strategic case analysis of Cava wine markets with no substantive LLM use. Generative AI appears only as a suggested label idea.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C042",
+   "title": "Worldviews in Large Language Models",
+   "ids": [
+    "arxiv:2611.22670"
+   ],
+   "norm_title": "worldviews in large language models",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.22670",
+   "date": "2026-11-17",
+   "decision": "exclude",
+   "reason": "Studies the LLMs' own worldviews and their alignment implications, not LLMs standing in for human respondents. Not a marketing setting.",
+   "track": "none",
+   "llm_use": "LLMs answer human worldview surveys",
+   "human_data": "human worldview survey norms",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C043",
+   "title": "GuardAgent: A Memory-Augmented Agentic Framework for Adaptive Detection of Adversarial Promotions in LLM-Based Recommendation",
+   "ids": [
+    "arxiv:2611.22274"
+   ],
+   "norm_title": "guardagent a memory augmented agentic framework for adaptive detection of adversarial promotions in llm based recommendation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.22274",
+   "date": "2026-11-17",
+   "decision": "exclude",
+   "reason": "Detects adversarial promotion attacks on LLM-based recommenders. This is recommender security engineering, not a marketing method or a simulation of people.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C044",
+   "title": "The Role of Artificial Intelligence in Strengthening Software Supply Chain Security Through Vulnerability Discovery and Network Threat Detection",
+   "ids": [
+    "doi:10.2139/ssrn.7706401",
+    "ssrn:7706401"
+   ],
+   "norm_title": "the role of artificial intelligence in strengthening software supply chain security through vulnerability discovery and network threat detection",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7706401",
+   "date": "2026-11-18",
+   "decision": "exclude",
+   "reason": "Review of AI for software supply-chain security. No marketing setting and no simulation of people.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C045",
+   "title": "CoMPASS: A Multi-Turn Benchmark for Measuring LLM Reinforcement of Parasocial Behavior",
+   "ids": [
+    "arxiv:2611.25109"
+   ],
+   "norm_title": "compass a multi turn benchmark for measuring llm reinforcement of parasocial behavior",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.25109",
+   "date": "2026-11-18",
+   "decision": "exclude",
+   "reason": "Benchmark of whether LLMs reinforce users' parasocial attachment. The LLM is the system being audited, with no marketing setting and no simulation of people.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C046",
+   "title": "A Foundation Model to Measure and Predict Human Behaviour",
+   "ids": [
+    "arxiv:2611.24830"
+   ],
+   "norm_title": "a foundation model to measure and predict human behaviour",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.24830",
+   "date": "2026-11-18",
+   "decision": "exclude",
+   "reason": "Human simulation without a marketing setting needs a peer-reviewed venue or at least 100 citations (50 a year); this is unpublished with 0 citations. Fine-tunes an LLM to predict individual behavior and replicate human experimental effects, and compares it with human data and frontier LLMs. Human simulation with no marketing setting (track B).",
+   "track": "human_simulation",
+   "llm_use": "Chiron, a fine-tuned LLM foundation model that measures psychological constructs, predicts individual behavior and simulates social-science experiments",
+   "human_data": "36 behavioral domains, 78 social science experiments, 288k person records, human self-reports and experimental effect sizes",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.3",
+   "dataset_section": null,
+   "classification": "Chiron is a new jointly fine-tuned foundation model (construct measurement, individual prediction, distribution alignment) validated against human data, placed with Binz et al. 'A foundation model to predict and capture human cognition' and HumanLLM in 1.3 rather than 1.2.",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "Title, author order, date (18 Nov 2026) and 48-page length checked on the arXiv abs page; affiliations and the Hugging Face data link taken from the arXiv HTML (first half only).",
+   "issues": [
+    "Dataset link and the human-vs-synthetic composition not opened directly (training data may include simulated respondents); verify before listing as a dataset",
+    "Not confirmed that the paper has a marketing setting (psychology/social-science simulation)"
+   ],
+   "meta": {
+    "title": "A Foundation Model to Measure and Predict Human Behaviour",
+    "authors": [
+     {
+      "given": "Haoran",
+      "family": "Ye"
+     },
+     {
+      "given": "Tianrui",
+      "family": "Huo"
+     },
+     {
+      "given": "Hangzhen",
+      "family": "Li"
+     },
+     {
+      "given": "Xin",
+      "family": "Zhang"
+     },
+     {
+      "given": "Guojie",
+      "family": "Song"
+     }
+    ],
+    "venue": "arXiv:2611.24830",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.24830"
+   },
+   "dataset": "Human behavioural data: 288,307 person records, 1,411,750 atomic behavioural decisions and 99,953 psychometric assessments across 36 domains and 78 social science experiments. Download: https://huggingface.co/datasets/chiron-group/chiron-data",
+   "affiliations": [
+    {
+     "author": "Haoran Ye",
+     "affiliation": "School of Intelligence Science and Technology, Peking University"
+    },
+    {
+     "author": "Tianrui Huo",
+     "affiliation": "Yuanpei College, Peking University"
+    },
+    {
+     "author": "Hangzhen Li",
+     "affiliation": "Yuanpei College, Peking University"
+    },
+    {
+     "author": "Xin Zhang",
+     "affiliation": "School of Psychological and Cognitive Sciences, Peking University"
+    },
+    {
+     "author": "Guojie Song",
+     "affiliation": "School of Intelligence Science and Technology, Peking University"
+    }
+   ],
+   "business_school": false,
+   "pages": 48
+  },
+  {
+   "cid": "C047",
+   "title": "Hi Gemini, Who Should I Vote For? The Benefits (and Problems) of Using LLMs As Voting Advice Applications",
+   "ids": [
+    "arxiv:2611.24684"
+   ],
+   "norm_title": "hi gemini who should i vote for the benefits and problems of using llms as voting advice applications",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.24684",
+   "date": "2026-11-18",
+   "decision": "exclude",
+   "reason": "Tests the LLM as a voting-advice tool for respondents, not as a stand-in for them. No marketing setting.",
+   "track": "none",
+   "llm_use": "Gemini as voting advisor",
+   "human_data": "6,022 German survey respondents",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C048",
+   "title": "OCTR2A: Real-Time RGB-to-BEV Trajectory Projection and Forecasting at Urban Intersections",
+   "ids": [
+    "arxiv:2611.24352"
+   ],
+   "norm_title": "octr2a real time rgb to bev trajectory projection and forecasting at urban intersections",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.24352",
+   "date": "2026-11-18",
+   "decision": "exclude",
+   "reason": "Computer-vision trajectory forecasting at intersections. Unrelated to marketing or simulation of people.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C049",
+   "title": "Compression Effects on Low-Resource Multilingual Translation",
+   "ids": [
+    "arxiv:2611.24043"
+   ],
+   "norm_title": "compression effects on low resource multilingual translation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.24043",
+   "date": "2026-11-18",
+   "decision": "exclude",
+   "reason": "Quantization effects on low-resource machine translation; no marketing setting and no simulation of people.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C050",
+   "title": "Reliability is a user-specific property of large language models",
+   "ids": [
+    "arxiv:2611.23732"
+   ],
+   "norm_title": "reliability is a user specific property of large language models",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.23732",
+   "date": "2026-11-18",
+   "decision": "exclude",
+   "reason": "Position paper on LLM reliability as a user-specific property; general LLM evaluation, no marketing task or people simulation.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C051",
+   "title": "Do Google Results and AI Answers Cite the Same Domains? An Exploratory Pilot on URL and Domain Overlap for B2B Software Buying Prompts",
+   "ids": [
+    "doi:10.2139/ssrn.7699880",
+    "ssrn:7699880"
+   ],
+   "norm_title": "do google results and ai answers cite the same domains an exploratory pilot on url and domain overlap for b2b software buying prompts",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7699880",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Compares domains cited by ChatGPT/Gemini with Google results for B2B software prompts; the LLM is the object studied (product/market), not a simulator or part of a marketing method.",
+   "track": "none",
+   "llm_use": "LLM answer engines studied as a citation source",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C052",
+   "title": "Evaluating LLM-Assisted Retail Trading Decisions: Design and Operational Validation of the FACET Frozen-Case Framework",
+   "ids": [
+    "doi:10.2139/ssrn.7700882",
+    "ssrn:7700882"
+   ],
+   "norm_title": "evaluating llm assisted retail trading decisions design and operational validation of the facet frozen case framework",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7700882",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Behavioural-finance evaluation framework for LLM-assisted trading decisions; no marketing setting, and the synthetic personas are not validated against human data.",
+   "track": "none",
+   "llm_use": "LLM-assisted retail trading; synthetic trader comparators",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C053",
+   "title": "Do LLM Agents Respond to Commitment? A Behavioral Experiment in Strategic Communication",
+   "ids": [
+    "doi:10.2139/ssrn.7712278",
+    "ssrn:7712278"
+   ],
+   "norm_title": "do llm agents respond to commitment a behavioral experiment in strategic communication",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7712278",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Human simulation without a marketing setting needs a peer-reviewed venue or at least 100 citations (50 a year); this is unpublished with 0 citations. Runs LLM agents in an economic game and compares them with theory and existing human lab evidence, but frames the work as evaluating AI agents rather than simulating people. Single-author SSRN paper, so it probably misses the track B bar.",
+   "track": "human_simulation",
+   "llm_use": "LLM agents play a sender-receiver commitment game",
+   "human_data": "Human experimental results from Frechette, Lizzeri and Perego (2022)",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "Behavioral comparison of LLM agents with theory and prior human lab evidence in a sender-receiver game, with no new method, so 1.2 rather than 1.1; the framing as agent evaluation rather than people simulation makes it borderline.",
+   "confidence": "low",
+   "verified": true,
+   "published": false,
+   "verification": "Title and author checked against Crossref (DOI 10.2139/ssrn.7712278, created 2026-11-19); date is the Crossref creation/first posting month; SSRN pages are not reachable.",
+   "issues": [
+    "Author affiliation unknown (Crossref empty, web search found nothing)"
+   ],
+   "meta": {
+    "title": "Do LLM Agents Respond to Commitment? A Behavioral Experiment in Strategic Communication",
+    "authors": [
+     {
+      "given": "Ebrahim",
+      "family": "Farahani"
+     }
+    ],
+    "venue": "SSRN 7712278",
+    "date": "2026-11",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7712278"
+   },
+   "dataset": null,
+   "affiliations": [],
+   "business_school": null
+  },
+  {
+   "cid": "C054",
+   "title": "Generative AI in Financial Services: A Field Experiment in Insurance Advisory",
+   "ids": [
+    "doi:10.2139/ssrn.7713698",
+    "ssrn:7713698"
+   ],
+   "norm_title": "generative ai in financial services a field experiment in insurance advisory",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7713698",
+   "date": "2026-11-19",
+   "decision": "uncertain",
+   "reason": "Randomized field experiment on an LLM sales-conversation assistant, with customer premium and purchases as outcomes; fits category 2 (LLM-generated customer-facing persuasion content). Borderline because the LLM supports brokers rather than generating marketing copy.",
+   "track": "marketing_method",
+   "llm_use": "Generative AI gives insurance brokers real-time reply suggestions in customer conversations",
+   "human_data": "Randomized field experiment, 1,070 brokers and about 165,000 customers",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "2.1",
+   "dataset_section": null,
+   "classification": "Randomized field experiment measuring market outcomes (premium, purchases) of LLM reply suggestions in customer conversations, closest to 'Generative AI and Sales Productivity: Field Experiments in Online Retail' in 2.1 rather than a 2.2 method.",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "Title and sole author checked against Crossref (posted-content DOI 10.2139/ssrn.7713698, created 2026-11-19); the AEA RCT Registry record (10.1257/rct.19915) is a trial registration, not a data release.",
+   "issues": [
+    "Author affiliation could not be verified (SSRN unreachable, web search found no faculty page)",
+    "Business-school authorship not confirmed"
+   ],
+   "meta": {
+    "title": "Generative AI in Financial Services: A Field Experiment in Insurance Advisory",
+    "authors": [
+     {
+      "given": "Yingju",
+      "family": "Ma"
+     }
+    ],
+    "venue": "SSRN 7713698",
+    "date": "2026-11",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7713698"
+   },
+   "dataset": null,
+   "affiliations": [],
+   "business_school": null,
+   "tier": 2,
+   "anchor": "paper-generative-ai-in-financial-services-a-field-experiment-in-insurance-advisory"
+  },
+  {
+   "cid": "C055",
+   "title": "Multi-View Transformer with Geometry-Guided Multi-Modal ControlNet for 3D Virtual Try-On",
+   "ids": [
+    "arxiv:2611.25979"
+   ],
+   "norm_title": "multi view transformer with geometry guided multi modal controlnet for 3d virtual try on",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.25979",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "3D virtual try-on with a multi-view transformer and diffusion; a computer-vision paper with no marketing task or people simulation.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C056",
+   "title": "GenAI-DBT: Evaluating a DBT-Informed Generative AI Platform for Mindfulness Skills Training: A Pilot Randomized Study",
+   "ids": [
+    "arxiv:2611.25428"
+   ],
+   "norm_title": "genai dbt evaluating a dbt informed generative ai platform for mindfulness skills training a pilot randomized study",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.25428",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Pilot RCT of a mindfulness chatbot for DBT skills training; a clinical/HCI study with no marketing setting and no people simulation.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C057",
+   "title": "Antom 3-in-1 Transformer: A Payment Foundation Model",
+   "ids": [
+    "arxiv:2611.25403"
+   ],
+   "norm_title": "antom 3 in 1 transformer a payment foundation model",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.25403",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Payment-risk foundation model for fraud and loss detection; not a marketing task.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C058",
+   "title": "AppSci-Bench: Can LLMs Build AI Agents and Make Them Better?",
+   "ids": [
+    "arxiv:2611.25360"
+   ],
+   "norm_title": "appsci bench can llms build ai agents and make them better",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.25360",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Benchmark of LLMs building enterprise agents; general agent engineering without a marketing outcome.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C059",
+   "title": "An Autonomous Multi-agent Architecture for Enterprise Customer Support",
+   "ids": [
+    "doi:10.2139/ssrn.7712778",
+    "ssrn:7712778"
+   ],
+   "norm_title": "an autonomous multi agent architecture for enterprise customer support",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7712778",
+   "date": "2026-11-20",
+   "decision": "exclude",
+   "reason": "Multi-agent customer-support system engineering, with no marketing research question or consumer simulation.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C060",
+   "title": "What Makes a Business Pivot Succeed? Evidence from 75 Scored Pivots, 1892-2024",
+   "ids": [
+    "doi:10.2139/ssrn.7721201",
+    "ssrn:7721201"
+   ],
+   "norm_title": "what makes a business pivot succeed evidence from 75 scored pivots 1892 2024",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7721201",
+   "date": "2026-11-20",
+   "decision": "exclude",
+   "reason": "Case-based study of business pivots; no LLM use.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C061",
+   "title": "The Assistant Persona Differs Across Languages in Activation Space",
+   "ids": [
+    "arxiv:2611.27504"
+   ],
+   "norm_title": "the assistant persona differs across languages in activation space",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.27504",
+   "date": "2026-11-20",
+   "decision": "exclude",
+   "reason": "Mechanistic study of the assistant persona direction across languages in an LLM; no marketing setting and no simulation of people.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C062",
+   "title": "No Audio, No Transcripts, No Problem: LLM-based ASR Adaptation Using Only Domain Documents",
+   "ids": [
+    "arxiv:2611.27434"
+   ],
+   "norm_title": "no audio no transcripts no problem llm based asr adaptation using only domain documents",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.27434",
+   "date": "2026-11-20",
+   "decision": "exclude",
+   "reason": "LLM-based speech recognition adaptation from domain documents; no marketing setting or people simulation.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C063",
+   "title": "Multi-Tier Edge Triage: Optimizing Latency for Safe Clinical Agents",
+   "ids": [
+    "arxiv:2611.26914"
+   ],
+   "norm_title": "multi tier edge triage optimizing latency for safe clinical agents",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.26914",
+   "date": "2026-11-20",
+   "decision": "exclude",
+   "reason": "Edge safety-screening architecture for clinical agents; no marketing task or people simulation.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C064",
+   "title": "Giving Feedback with AI: The Roles of Voice Input and AI Assistance in Shaping Engagement and Effectiveness",
+   "ids": [
+    "doi:10.2139/ssrn.7716299",
+    "ssrn:7716299"
+   ],
+   "norm_title": "giving feedback with ai the roles of voice input and ai assistance in shaping engagement and effectiveness",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7716299",
+   "date": "2026-11-21",
+   "decision": "exclude",
+   "reason": "Field experiment on voice input and AI refinement for workplace peer feedback; an organizational setting, not a marketing one, and no simulation of people.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C065",
+   "title": "From Pilot to Production: A Decision-Centred Framework for Governed AI in Manufacturing Operations",
+   "ids": [
+    "doi:10.2139/ssrn.7715961",
+    "ssrn:7715961"
+   ],
+   "norm_title": "from pilot to production a decision centred framework for governed ai in manufacturing operations",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7715961",
+   "date": "2026-11-21",
+   "decision": "exclude",
+   "reason": "Governance framework for AI in manufacturing operations; no marketing setting or people simulation.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C066",
+   "title": "Generative AI and Agentic AI in Financial Crimes Compliance",
+   "ids": [
+    "doi:10.2139/ssrn.7723839",
+    "ssrn:7723839"
+   ],
+   "norm_title": "generative ai and agentic ai in financial crimes compliance",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7723839",
+   "date": "2026-11-23",
+   "decision": "exclude",
+   "reason": "White paper on generative AI in financial-crime compliance; no marketing setting or people simulation.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C067",
+   "title": "MARS Technical Report",
+   "ids": [
+    "arxiv:2611.24006"
+   ],
+   "norm_title": "mars technical report",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.24006",
+   "date": "2026-11-18",
+   "decision": "uncertain",
+   "reason": "An LLM agent augments an industrial recommender cascade by setting per-user retrieval quotas, model selection and fusion weights, validated in two-week A/B tests on Taobao with GMV and CTR outcomes. Fits category 3 (recommender augmentation) with commercial data; likely industry authors only.",
+   "track": "marketing_method",
+   "llm_use": "Fine-tuned Qwen3-0.6B agent generates per-user configurations for a multi-stage recommendation pipeline",
+   "human_data": "",
+   "evidence": "full-text",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "A fine-tuned LLM agent orchestrates a multi-stage recommender cascade with a new training pipeline (FAPO, GRPO) and Taobao A/B tests, similar to LEADRE in 3.2 rather than an evaluation in 3.1.",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "Title and 17-author arXiv metadata list checked on the arXiv abs page and PDF; v1 posted 2026-11-18; abs page states 46 pages; no public dataset (production Taobao logs).",
+   "issues": [
+    "PDF byline reads 'MARS Team' while arXiv metadata lists 17 individuals; choose which author form to cite",
+    "Author affiliations not stated on paper (Taobao implied, not confirmed); lookup.py arXiv query failed with 429/timeouts",
+    "Business-school authorship not confirmed"
+   ],
+   "meta": {
+    "title": "MARS Technical Report",
+    "authors": [
+     {
+      "given": "Tong",
+      "family": "Liu"
+     },
+     {
+      "given": "Chaoqun",
+      "family": "Hou"
+     },
+     {
+      "given": "Longxiang",
+      "family": "Xiong"
+     },
+     {
+      "given": "Junhong",
+      "family": "Lou"
+     },
+     {
+      "given": "Jiaqi",
+      "family": "Zheng"
+     },
+     {
+      "given": "Qixin",
+      "family": "Li"
+     },
+     {
+      "given": "Zixin",
+      "family": "Zhao"
+     },
+     {
+      "given": "Yong",
+      "family": "Duan"
+     },
+     {
+      "given": "Xiannian",
+      "family": "Hu"
+     },
+     {
+      "given": "Fengze",
+      "family": "Jiang"
+     },
+     {
+      "given": "Yu",
+      "family": "Zhu"
+     },
+     {
+      "given": "Cheng",
+      "family": "Guo"
+     },
+     {
+      "given": "Xinyuan",
+      "family": "Qi"
+     },
+     {
+      "given": "Zi",
+      "family": "Zhuang"
+     },
+     {
+      "given": "Ping",
+      "family": "Liu"
+     },
+     {
+      "given": "Lv",
+      "family": "Shao"
+     },
+     {
+      "given": "Zongwei",
+      "family": "Wang"
+     }
+    ],
+    "venue": "arXiv:2611.24006",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.24006"
+   },
+   "dataset": null,
+   "affiliations": [],
+   "business_school": null,
+   "pages": 46,
+   "tier": 2,
+   "anchor": "paper-mars-technical-report"
+  },
+  {
+   "cid": "C068",
+   "title": "Personalized Language Models for One-to-Many Private Communications",
+   "ids": [
+    "arxiv:2611.19155"
+   ],
+   "norm_title": "personalized language models for one to many private communications",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.19155",
+   "date": "2026-11-14",
+   "decision": "exclude",
+   "reason": "Personalized reply prediction on Enron emails; no marketing setting and no simulation of people for validity.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C069",
+   "title": "Vibe Interventions: Can Users Personalize and Iterate Their Way to Behavior Change?",
+   "ids": [
+    "arxiv:2611.20315"
+   ],
+   "norm_title": "vibe interventions can users personalize and iterate their way to behavior change",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.20315",
+   "date": "2026-11-15",
+   "decision": "exclude",
+   "reason": "Experiment on LLM-generated behavior-change interventions with human participants; no marketing setting, and the LLM does not simulate people.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C070",
+   "title": "Reflection Is Not Always Worth It: Budgeted Reflection Allocation for Recommendation Agents",
+   "ids": [
+    "arxiv:2611.19847"
+   ],
+   "norm_title": "reflection is not always worth it budgeted reflection allocation for recommendation agents",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.19847",
+   "date": "2026-11-15",
+   "decision": "exclude",
+   "reason": "Efficiency of LLM reflection in recommendation agents; the abstract shows no commercial data or marketing outcome, so it is generic recommender engineering.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C071",
+   "title": "Data Regulation, Tailoring, and Contracting for AI Models",
+   "ids": [
+    "doi:10.2139/ssrn.7704061",
+    "ssrn:7704061"
+   ],
+   "norm_title": "data regulation tailoring and contracting for ai models",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7704061",
+   "date": "2026-11-16",
+   "decision": "exclude",
+   "reason": "Strategy study of data regulation and AI startups' model sourcing; LLMs are the product studied, with no marketing or simulation component.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C072",
+   "title": "How Developer Personality Shapes the Use of AI Coding Assistants",
+   "ids": [
+    "arxiv:2611.21240"
+   ],
+   "norm_title": "how developer personality shapes the use of ai coding assistants",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.21240",
+   "date": "2026-11-16",
+   "decision": "exclude",
+   "reason": "Survey and scoping review of developer personality and AI coding assistant perceptions; no LLM simulation of people and no marketing setting.",
+   "track": "none",
+   "llm_use": "",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C073",
+   "title": "GRACE: Parallel Best-of-N Multi-Agent Analysis of Closed-Form Questions over Dataframes with Guardrail Selection and Adaptive Retry",
+   "ids": [
+    "arxiv:2611.20983"
+   ],
+   "norm_title": "grace parallel best of n multi agent analysis of closed form questions over dataframes with guardrail selection and adaptive retry",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.20983",
+   "date": "2026-11-16",
+   "decision": "exclude",
+   "reason": "General LLM agent pipeline for dataframe question answering; no marketing setting and no simulation of people.",
+   "track": "none",
+   "llm_use": "Best-of-N multi-agent code generation over dataframes",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C074",
+   "title": "Conversing with a Conversational Agent: A Real Conversation, Not a Simulated One",
+   "ids": [
+    "arxiv:2611.20826"
+   ],
+   "norm_title": "conversing with a conversational agent a real conversation not a simulated one",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.20826",
+   "date": "2026-11-16",
+   "decision": "exclude",
+   "reason": "Philosophical essay on whether LLM conversations are real; no marketing setting and no simulation of people compared with human data.",
+   "track": "none",
+   "llm_use": "Philosophical analysis of LLM conversation",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C075",
+   "title": "Autonomous Agentic Finance: AI Agents as On-chain Market Makers and Liquidity Providers",
+   "ids": [
+    "doi:10.2139/ssrn.7691029",
+    "ssrn:7691029"
+   ],
+   "norm_title": "autonomous agentic finance ai agents as on chain market makers and liquidity providers",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7691029",
+   "date": "2026-11-17",
+   "decision": "exclude",
+   "reason": "DeFi liquidity-provision governance proposal with no results; finance, not marketing, and no simulation of people.",
+   "track": "none",
+   "llm_use": "LLM-advised on-chain market-making agents (governance proposal)",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C076",
+   "title": "Neural Spectral Dimension and the Roughness-Complexity Equivalence Theorem for American Options under Rough Stochastic Volatility",
+   "ids": [
+    "doi:10.2139/ssrn.7694798",
+    "ssrn:7694798"
+   ],
+   "norm_title": "neural spectral dimension and the roughness complexity equivalence theorem for american options under rough stochastic volatility",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7694798",
+   "date": "2026-11-17",
+   "decision": "exclude",
+   "reason": "Mathematical finance paper on Monte Carlo option pricing; not LLM-based marketing or human simulation.",
+   "track": "none",
+   "llm_use": "Neural networks for option-pricing variance reduction",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C077",
+   "title": "Theory, Experiments and the Agentic Approach",
+   "ids": [
+    "doi:10.2139/ssrn.7695318",
+    "ssrn:7695318"
+   ],
+   "norm_title": "theory experiments and the agentic approach",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7695318",
+   "date": "2026-11-17",
+   "decision": "exclude",
+   "reason": "Studies tacit collusion among LLM pricing agents for antitrust; the LLMs act as firms, not as consumers or people compared with human data, and are not a marketing method.",
+   "track": "none",
+   "llm_use": "LLM agents act as competing firms setting prices",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C078",
+   "title": "Agentic Finance: Building, Training and Governing Autonomous Agents in Financial Markets",
+   "ids": [
+    "doi:10.2139/ssrn.7697398",
+    "ssrn:7697398"
+   ],
+   "norm_title": "agentic finance building training and governing autonomous agents in financial markets",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7697398",
+   "date": "2026-11-17",
+   "decision": "exclude",
+   "reason": "Practical guide to financial trading agents; no marketing setting and no human simulation.",
+   "track": "none",
+   "llm_use": "LLM trading agents in financial markets (book)",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C079",
+   "title": "Mind the Gap: A Deployed Multi-Agent System for Documentation Maintenance",
+   "ids": [
+    "arxiv:2611.23142"
+   ],
+   "norm_title": "mind the gap a deployed multi agent system for documentation maintenance",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.23142",
+   "date": "2026-11-17",
+   "decision": "exclude",
+   "reason": "Software documentation-repair system; engineering paper with no marketing outcome and no simulation of people.",
+   "track": "none",
+   "llm_use": "Multi-agent documentation maintenance from support tickets",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C080",
+   "title": "When Do Typed Decision Models Work in Transportation? Evidence from Travel Choice and Traffic Signal Control",
+   "ids": [
+    "arxiv:2611.22926"
+   ],
+   "norm_title": "when do typed decision models work in transportation evidence from travel choice and traffic signal control",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.22926",
+   "date": "2026-11-17",
+   "decision": "exclude",
+   "reason": "Human simulation without a marketing setting needs a peer-reviewed venue or at least 100 citations (50 a year); this is unpublished with 0 citations. Compares LLM typed decision models with discrete choice models on predicting individual travel-mode choices, but the setting is transportation and half the paper is traffic signal control. Unclear whether it counts as simulating people or a choice-model setting.",
+   "track": "human_simulation",
+   "llm_use": "Typed LLM decision models predict individual travel-mode choice and control traffic signals",
+   "human_data": "Swissmetro travel-mode choice survey data",
+   "evidence": "full-text",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "Evaluates whether typed LLM decision models reproduce individual travel-mode choices against discrete choice models on Swissmetro, a validity and limitations study; 3.1 was rejected because the LLM does not enhance an existing choice model, though the transport setting and the traffic-control half make the fit weak.",
+   "confidence": "low",
+   "verified": true,
+   "published": false,
+   "verification": "Title, authors, first posting date 2026-11-17 and 22 pages checked via lookup.py arXiv record; affiliations read from the PDF first page; uses public Swissmetro data, no new dataset released.",
+   "issues": [],
+   "meta": {
+    "title": "When Do Typed Decision Models Work in Transportation? Evidence from Travel Choice and Traffic Signal Control",
+    "authors": [
+     {
+      "given": "Hongyang",
+      "family": "Zhang"
+     },
+     {
+      "given": "Boyuan",
+      "family": "Deng"
+     },
+     {
+      "given": "Siyuan",
+      "family": "Feng"
+     },
+     {
+      "given": "Kai",
+      "family": "Chen"
+     },
+     {
+      "given": "Junbo",
+      "family": "Zhang"
+     }
+    ],
+    "venue": "arXiv:2611.22926",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.22926"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Hongyang Zhang",
+     "affiliation": "Dept of Aeronautical and Aviation Engineering, The Hong Kong Polytechnic University"
+    },
+    {
+     "author": "Boyuan Deng",
+     "affiliation": "Dept of Civil and Systems Engineering, Johns Hopkins University"
+    },
+    {
+     "author": "Siyuan Feng",
+     "affiliation": "Dept of Aeronautical and Aviation Engineering and Research Centre for Low Altitude Economy, The Hong Kong Polytechnic University"
+    },
+    {
+     "author": "Kai Chen",
+     "affiliation": "Dept of Computer Science and Engineering, Hong Kong University of Science and Technology"
+    },
+    {
+     "author": "Junbo Zhang",
+     "affiliation": "JD iCity, JD Technology; JD Intelligent Cities Research"
+    }
+   ],
+   "business_school": false,
+   "pages": 22
+  }
+ ]
+}

@@ -287,7 +287,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "3.1",
    "dataset_section": null,
    "classification": "One-firm before/after evaluation of an LLM-assisted ad-spend allocation tool is closest to an evaluation of an augmented advertising algorithm (3.1), but the LLM role is unclear and 2.1 is the rejected alternative.",
@@ -883,7 +883,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "1.2",
    "dataset_section": null,
    "classification": "Pre-registered audit of whether LLM shopping advisors show human price-presentation effects against a 1,601-person benchmark is a behavioral validity study, similar to Shopping by algorithm, so 1.2.",
@@ -912,7 +912,9 @@
    "affiliations": [],
    "business_school": null,
    "tier": 2,
-   "anchor": "paper-do-ai-shopping-advisors-respond-to-price-presentation-as-people-do-a-preregistered-audit-with-a-human-benchmark"
+   "anchor": "paper-do-ai-shopping-advisors-respond-to-price-presentation-as-people-do-a-preregistered-audit-with-a-human-benchmark",
+   "final_section": "1.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C030",
@@ -1707,7 +1709,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "rejected",
    "section": "2.1",
    "dataset_section": null,
    "classification": "Randomized field experiment measuring market outcomes (premium, purchases) of LLM reply suggestions in customer conversations, closest to 'Generative AI and Sales Productivity: Field Experiments in Online Retail' in 2.1 rather than a 2.2 method.",
@@ -2013,7 +2015,7 @@
    "citations": null,
    "notable": false,
    "notable_reason": "",
-   "status": "proposed",
+   "status": "approved",
    "section": "3.2",
    "dataset_section": null,
    "classification": "A fine-tuned LLM agent orchestrates a multi-stage recommender cascade with a new training pipeline (FAPO, GRPO) and Taobao A/B tests, similar to LEADRE in 3.2 rather than an evaluation in 3.1.",
@@ -2107,7 +2109,9 @@
    "business_school": null,
    "pages": 46,
    "tier": 2,
-   "anchor": "paper-mars-technical-report"
+   "anchor": "paper-mars-technical-report",
+   "final_section": "3.2",
+   "final_dataset_section": null
   },
   {
    "cid": "C068",

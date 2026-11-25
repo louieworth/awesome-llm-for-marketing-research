@@ -2,9 +2,9 @@
 
 <img src="assets/banner.png" alt="Synthetic consumers and data networks" width="800">
 
-![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-81-4C70C8?style=for-the-badge)
+![Consumer Simulation](https://img.shields.io/badge/Consumer_Simulation-82-4C70C8?style=for-the-badge)
 ![Content Generation and Personalization](https://img.shields.io/badge/Content_Generation_and_Personalization-45-D98757?style=for-the-badge)
-![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-21-9865C6?style=for-the-badge)
+![Model and Algorithm Augmentation](https://img.shields.io/badge/Model_%26_Algorithm_Augmentation-22-9865C6?style=for-the-badge)
 
 </div>
 
@@ -263,6 +263,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-the-limits-of-behavioral-simulation-with-ai"></a>
 
 - Graeber, Thomas W., and Christopher Roth. "The Limits of Behavioral Simulation With AI." CESifo Working Paper (2026-11). [[link]](https://doi.org/10.65864/upkfydxfud)
+
+<a id="paper-do-ai-shopping-advisors-respond-to-price-presentation-as-people-do-a-preregistered-audit-with-a-human-benchmark"></a>
+
+- Thelen, Claudius. "Do AI Shopping Advisors Respond to Price Presentation as People Do? A Preregistered Audit with a Human Benchmark." SSRN 7701758 (2026-11). [[link]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7701758)
 
 <a id="paper-measuring-the-digital-twin-separating-individuation-from-population-regularity-in-llm-survey-twins"></a>
 
@@ -700,6 +704,10 @@ Suggestions and corrections are welcome; see [Contributing](#contributing).
 <a id="paper-eventgpt-next-event-pretraining-on-banking-customer-histories"></a>
 
 - Burakov, Denis. "EventGPT: Next-Event Pretraining on Banking Customer Histories." arXiv:2611.03302 (2026-11). [[link]](https://arxiv.org/abs/2611.03302)
+
+<a id="paper-mars-technical-report"></a>
+
+- Liu, Tong, et al. "MARS Technical Report." arXiv:2611.24006 (2026-11). [[link]](https://arxiv.org/abs/2611.24006)
 
 ### 3.3 Benchmarks and Datasets
 

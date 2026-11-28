@@ -1,0 +1,2655 @@
+{
+ "scan_date": "2026-11-28",
+ "window": [
+  "2026-11-19",
+  "2026-11-28"
+ ],
+ "stats": {
+  "mode": "weekly",
+  "fetched_arxiv": 147,
+  "fetched_ssrn": 1937,
+  "fetched_journals": 82,
+  "abstracts_missing": 6,
+  "abstracts_filled": 1,
+  "keyword_match": 104,
+  "already_in_collection": 0,
+  "already_screened": 34,
+  "new": 67,
+  "to_screen": 67,
+  "over_cap": 0
+ },
+ "items": [
+  {
+   "cid": "C001",
+   "title": "AI-Powered Marketing Arti cial Intelligence, Consumer Behaviour, Personalization, Trust and Brand Engagement in the Digital Era",
+   "ids": [
+    "doi:10.2139/ssrn.7724318",
+    "ssrn:7724318"
+   ],
+   "norm_title": "ai powered marketing arti cial intelligence consumer behaviour personalization trust and brand engagement in the digital era",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7724318",
+   "date": "2026-11-24",
+   "decision": "exclude",
+   "reason": "A general textbook on AI-powered marketing for students and executives with no substantive LLM research method, simulation, or empirical study.",
+   "track": "none",
+   "llm_use": "None (general AI textbook mentioning generative AI and chatbots)",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C002",
+   "title": "Training decision models for simulating human respondents",
+   "ids": [
+    "arxiv:2611.31613"
+   ],
+   "norm_title": "training decision models for simulating human respondents",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.31613",
+   "date": "2026-11-23",
+   "decision": "include",
+   "reason": "Proposes choice training for LLM decision models to reduce econometric bias in silicon sampling for market research and conjoint/discrete choice experiments, evaluated on held-out human studies including nutrition labels and consumer rights (track A).",
+   "track": "consumer_simulation",
+   "llm_use": "Choice-trains LLM decision models (KEV architectures) via conditional maximum likelihood on historical discrete choice microdata to simulate respondents",
+   "human_data": "Two training discrete choice experiments and four held-out studies (vaccines, nutrition labels, consumer rights, AI)",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "1.3",
+   "dataset_section": null,
+   "classification": "Introduces choice training to update decision-model weights via conditional maximum likelihood on historical choice microdata before inference, fitting 1.3 alongside Binz et al. (2025) and Leng, Sang, and Agarwal (2026) rather than 1.2.",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "Title, authors, and first posting date (2026-11-23) checked against arXiv metadata and arXiv HTML; no Crossref or published version found. Affiliations confirmed on arXiv HTML (both authors at Desautels Faculty of Management, McGill University). No dataset release found.",
+   "issues": [],
+   "meta": {
+    "title": "Training decision models for simulating human respondents",
+    "authors": [
+     {
+      "given": "Davood",
+      "family": "Wadi"
+     },
+     {
+      "given": "Yu",
+      "family": "Ma"
+     }
+    ],
+    "venue": "arXiv:2611.31613",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.31613"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Davood Wadi",
+     "affiliation": "Desautels Faculty of Management, McGill University"
+    },
+    {
+     "author": "Yu Ma",
+     "affiliation": "Desautels Faculty of Management, McGill University"
+    }
+   ],
+   "business_school": true,
+   "pages": 23,
+   "tier": 2,
+   "anchor": "paper-training-decision-models-for-simulating-human-respondents"
+  },
+  {
+   "cid": "C003",
+   "title": "Sánchez, Feijóo, or Abascal? Speaker Attribution and Ideological Congruence in LLM Personas Reading Posts on X of the Leaders of the Three Main Parties of the 29N General Election in Spain",
+   "ids": [
+    "arxiv:2611.29765"
+   ],
+   "norm_title": "sanchez feijoo or abascal speaker attribution and ideological congruence in llm personas reading posts on x of the leaders of the three main parties of the 29n general election in spain",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.29765",
+   "date": "2026-11-22",
+   "decision": "exclude",
+   "reason": "Human simulation without a marketing setting needs a peer-reviewed venue or at least 100 citations (50 a year); this is unpublished with 0 citations. Uses LLM personas as synthetic audiences in a political speaker-attribution experiment and validates leader rankings against 48 Spanish CIS public opinion barometers; fits track B (human simulation outside marketing).",
+   "track": "human_simulation",
+   "llm_use": "791 value-grounded LLM personas evaluate Spanish political leaders' X posts in a speaker-attribution experiment",
+   "human_data": "48 Spanish CIS public opinion barometers (2022–2026)",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "Tests whether value-grounded LLM personas replicate human source-attribution effects and candidate rank-orders across 48 Spanish CIS barometers while documenting ordinal-only alignment and cutoff drift, fitting 1.2 alongside Bisbee et al. (2024) and Boelaert et al. (2025) rather than 1.1.",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "Title, authors, and first posting date (2026-11-22) checked against arXiv metadata and arXiv HTML (v2 posted 2026-11-24); no Crossref or published version found. Affiliations confirmed on arXiv HTML. Releases code, configuration, audit artifacts, post identifiers, and derived labels (without post text) at https://github.com/VictorMYeste/spanish-political-communication.",
+   "issues": [],
+   "meta": {
+    "title": "Sánchez, Feijóo, or Abascal? Speaker Attribution and Ideological Congruence in LLM Personas Reading Posts on X of the Leaders of the Three Main Parties of the 29N General Election in Spain",
+    "authors": [
+     {
+      "given": "Víctor",
+      "family": "Yeste"
+     },
+     {
+      "given": "Candida Maria",
+      "family": "Greco"
+     },
+     {
+      "given": "Paolo",
+      "family": "Rosso"
+     },
+     {
+      "given": "Andrea",
+      "family": "Tagarelli"
+     }
+    ],
+    "venue": "arXiv:2611.29765",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.29765"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Víctor Yeste",
+     "affiliation": "PRHLT Research Center, Universitat Politècnica de València; School of Science, Engineering and Design, Universidad Europea de Valencia"
+    },
+    {
+     "author": "Candida Maria Greco",
+     "affiliation": "PRHLT Research Center, Universitat Politècnica de València"
+    },
+    {
+     "author": "Paolo Rosso",
+     "affiliation": "PRHLT Research Center, Universitat Politècnica de València; Valencian Graduate School and Research Network of Artificial Intelligence (ValgrAI)"
+    },
+    {
+     "author": "Andrea Tagarelli",
+     "affiliation": "DIMES Department, University of Calabria"
+    }
+   ],
+   "business_school": false,
+   "pages": 27
+  },
+  {
+   "cid": "C004",
+   "title": "Adaptive Electromagnetic Transient-level Digital Twins for Data Centers via In-Context Learning with LLMs",
+   "ids": [
+    "arxiv:2611.32882"
+   ],
+   "norm_title": "adaptive electromagnetic transient level digital twins for data centers via in context learning with llms",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.32882",
+   "date": "2026-11-24",
+   "decision": "exclude",
+   "reason": "Builds physical-system digital twins for data-center power transients with no marketing setting and no simulation of people.",
+   "track": "none",
+   "llm_use": "GPT-2 in-context learning for data-center electromagnetic transient prediction",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C005",
+   "title": "AI Persona Dialogue Pipeline; From Survey Report to Conversational Personas, Evaluated by LLMs and Experts",
+   "ids": [
+    "arxiv:2611.33736"
+   ],
+   "norm_title": "ai persona dialogue pipeline from survey report to conversational personas evaluated by llms and experts",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.33736",
+   "date": "2026-11-25",
+   "decision": "exclude",
+   "reason": "Human simulation without a marketing setting needs a peer-reviewed venue or at least 100 citations (50 a year); this is unpublished with 0 citations. Constructs and evaluates an LLM persona dialogue pipeline simulating Korean older adults living alone, validating realism with 30 domain experts; fits track B (human simulation outside marketing).",
+   "track": "human_simulation",
+   "llm_use": "LLMs generate persona backgrounds from a national survey report and enact 30 conversational personas of Korean older adults living alone",
+   "human_data": "National survey report and plausibility evaluations from 30 domain experts",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.1",
+   "dataset_section": null,
+   "classification": "Presents and demonstrates a portable survey-to-dialogue persona pipeline using off-the-shelf LLMs on Korean older adults without a new estimator or statistical validity benchmark, fitting 1.1 alongside Yu et al. (2026) and Park et al. (2024) rather than 1.2 or 1.3.",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "Title, authors, and first posting date (2026-11-25) checked against arXiv metadata and arXiv HTML; arXiv metadata uses a semicolon in the title while the HTML/PDF title uses a colon. No Crossref or published version found. Affiliations confirmed on arXiv HTML; Jinyoung Jeong's specific school/department at Hanyang University ERICA is unspecified. Paper releases code, 30 personas, and their dialogues at https://github.com/s1974565/Persona-Dialogue-Pipeline.",
+   "issues": [],
+   "meta": {
+    "title": "AI Persona Dialogue Pipeline; From Survey Report to Conversational Personas, Evaluated by LLMs and Experts",
+    "authors": [
+     {
+      "given": "Jinyoung",
+      "family": "Jeong"
+     },
+     {
+      "given": "Inhee",
+      "family": "Cho"
+     },
+     {
+      "given": "Byungju",
+      "family": "Kim"
+     },
+     {
+      "given": "Jiwon",
+      "family": "Baek"
+     },
+     {
+      "given": "Youngjae",
+      "family": "Yoo"
+     }
+    ],
+    "venue": "arXiv:2611.33736",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.33736"
+   },
+   "dataset": {
+    "name": "Persona-Dialogue-Pipeline",
+    "url": "https://github.com/s1974565/Persona-Dialogue-Pipeline",
+    "description": "30 LLM-generated personas of Korean older adults living alone, their simulated dialogues, and the persona dialogue pipeline code."
+   },
+   "affiliations": [
+    {
+     "author": "Jinyoung Jeong",
+     "affiliation": "Hanyang University ERICA"
+    },
+    {
+     "author": "Inhee Cho",
+     "affiliation": "hci+d lab, Seoul National University"
+    },
+    {
+     "author": "Byungju Kim",
+     "affiliation": "HCI Lab, Hanyang University"
+    },
+    {
+     "author": "Jiwon Baek",
+     "affiliation": "Independent Researcher"
+    },
+    {
+     "author": "Youngjae Yoo",
+     "affiliation": "School of Media Communication, Dankook University"
+    }
+   ],
+   "business_school": null,
+   "pages": 42
+  },
+  {
+   "cid": "C006",
+   "title": "Understanding the Prompting Effects of Chain-of-Thought on Human Collaboration with Generative AI",
+   "ids": [
+    "doi:10.1287/isre.2024.1314"
+   ],
+   "norm_title": "understanding the prompting effects of chain of thought on human collaboration with generative ai",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/isre.2024.1314",
+   "date": "2026-11-24",
+   "decision": "exclude",
+   "reason": "Studies how presenting Chain-of-Thought reasoning affects user trust in GenAI interfaces; despite being in Information Systems Research (UTD 24), it has no marketing setting and does not simulate people.",
+   "track": "none",
+   "llm_use": "Chain-of-thought reasoning displayed in GenAI interfaces as an experimental stimulus",
+   "human_data": "Online human experiments measuring user trust in GenAI",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C007",
+   "title": "Efficient and Flexible Large Language Model–Generated Content Detection",
+   "ids": [
+    "doi:10.1287/ijoc.2024.0877"
+   ],
+   "norm_title": "efficient and flexible large language model generated content detection",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/ijoc.2024.0877",
+   "date": "2026-11-24",
+   "decision": "exclude",
+   "reason": "Proposes a general AI-generated text detection method evaluated on the Human ChatGPT Comparison Corpus; despite being in INFORMS Journal on Computing (UTD 24), it has no marketing setting and no simulation of people.",
+   "track": "none",
+   "llm_use": "Detects LLM-generated text using Mahalanobis distance-based confidence scores",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C008",
+   "title": "When GenAI Increases Inequality: Evidence from a University Debating Competition",
+   "ids": [
+    "doi:10.1287/mnsc.2025.01063"
+   ],
+   "norm_title": "when genai increases inequality evidence from a university debating competition",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/mnsc.2025.01063",
+   "date": "2026-11-25",
+   "decision": "exclude",
+   "reason": "Examines how GenAI access affects human performance inequality in competitive university debating; despite being in Management Science (UTD 24), it has no marketing setting and no LLM simulation of people.",
+   "track": "none",
+   "llm_use": "GenAI tools provided to randomly assigned participants in a university debating RCT",
+   "human_data": "University debating competition participants",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C009",
+   "title": "PROSPER: LLMs as Sparse Retrievers for First-Stage Product Search",
+   "ids": [
+    "arxiv:2611.28645"
+   ],
+   "norm_title": "prosper llms as sparse retrievers for first stage product search",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.28645",
+   "date": "2026-11-21",
+   "decision": "exclude",
+   "reason": "Only 11 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. Adapts LLMs for e-commerce product search while preserving brand names and model identifiers, demonstrating revenue gains in large-scale online A/B tests; fits track C (marketing method).",
+   "track": "marketing_method",
+   "llm_use": "Uses LLMs as sparse retrievers with a literal residual network and lexical focusing window for first-stage e-commerce product search",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "Augments first-stage e-commerce product search with LLM sparse retrievers using a literal residual network and lexical focusing window, fitting 3.2 alongside Li et al. (2025) and Luo et al. (2026) rather than 3.1.",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "Title, authors, and first posting date (2026-11-21) checked against arXiv metadata and arXiv HTML. Accepted at WSDM 2027 (oral; scheduled Feb 2027, listed DOI 10.1145/3862322.3863468 not yet indexed in Crossref), so treated as unpublished arXiv preprint per CONTRIBUTING.md. Affiliations confirmed on arXiv HTML and web search (Maarten de Rijke is at Informatics Institute, Faculty of Science, University of Amsterdam). No dataset release found.",
+   "issues": [],
+   "meta": {
+    "title": "PROSPER: LLMs as Sparse Retrievers for First-Stage Product Search",
+    "authors": [
+     {
+      "given": "Hongru",
+      "family": "Song"
+     },
+     {
+      "given": "Yu-An",
+      "family": "Liu"
+     },
+     {
+      "given": "Ruqing",
+      "family": "Zhang"
+     },
+     {
+      "given": "Jiafeng",
+      "family": "Guo"
+     },
+     {
+      "given": "Maarten",
+      "family": "de Rijke"
+     },
+     {
+      "given": "Sen",
+      "family": "Li"
+     },
+     {
+      "given": "Wenjun",
+      "family": "Peng"
+     },
+     {
+      "given": "Fuyu",
+      "family": "Lv"
+     },
+     {
+      "given": "Xueqi",
+      "family": "Cheng"
+     }
+    ],
+    "venue": "arXiv:2611.28645",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.28645"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Hongru Song",
+     "affiliation": "State Key Laboratory of AI Safety, Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences"
+    },
+    {
+     "author": "Yu-An Liu",
+     "affiliation": "State Key Laboratory of AI Safety, Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences"
+    },
+    {
+     "author": "Ruqing Zhang",
+     "affiliation": "State Key Laboratory of AI Safety, Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences"
+    },
+    {
+     "author": "Jiafeng Guo",
+     "affiliation": "State Key Laboratory of AI Safety, Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences"
+    },
+    {
+     "author": "Maarten de Rijke",
+     "affiliation": "University of Amsterdam (Informatics Institute, Faculty of Science)"
+    },
+    {
+     "author": "Sen Li",
+     "affiliation": "Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Wenjun Peng",
+     "affiliation": "Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Fuyu Lv",
+     "affiliation": "Taobao & Tmall Group of Alibaba"
+    },
+    {
+     "author": "Xueqi Cheng",
+     "affiliation": "State Key Laboratory of AI Safety, Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences"
+    }
+   ],
+   "business_school": false,
+   "pages": 11
+  },
+  {
+   "cid": "C010",
+   "title": "Latent-Predisposition Personas for Heterogeneous and Reliable LLM Survey Simulation",
+   "ids": [
+    "arxiv:2611.29805"
+   ],
+   "norm_title": "latent predisposition personas for heterogeneous and reliable llm survey simulation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.29805",
+   "date": "2026-11-22",
+   "decision": "exclude",
+   "reason": "Only 17 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. Diagnoses over-constrained correlations and low test-retest reliability in LLM survey personas against three U.S. human surveys and proposes Latent-Predisposition Personas; fits track B (human simulation outside marketing).",
+   "track": "human_simulation",
+   "llm_use": "Persona-conditioned LLMs (with Latent-Predisposition Personas) simulate U.S. survey publics across three model families",
+   "human_data": "Three U.S. public-opinion surveys including human test-retest reliability benchmarks",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.3",
+   "dataset_section": null,
+   "classification": "Proposes Latent-Predisposition Personas with structured traits plus response sharpening and topline/crosstab calibration to improve correlation fit and test-retest reliability, fitting 1.3 alongside Huang, Li, and Shao (2026) and Kang et al. (2023) rather than 1.2.",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "Title, author order, arXiv ID, and first posting date (2026-11-22) verified against arXiv record and arXiv HTML. No Crossref publication found. Affiliations verified from arXiv HTML and university/author pages (ETH Zürich CS/AI student; SKKU Department of Computer Education); none is a business school. Uses existing public U.S. survey data; releases code only (https://github.com/g7199/lpp-personas), no new dataset.",
+   "issues": [],
+   "meta": {
+    "title": "Latent-Predisposition Personas for Heterogeneous and Reliable LLM Survey Simulation",
+    "authors": [
+     {
+      "given": "Geonwoo",
+      "family": "Bang"
+     },
+     {
+      "given": "Dongho",
+      "family": "Kim"
+     },
+     {
+      "given": "Moohong",
+      "family": "Min"
+     }
+    ],
+    "venue": "arXiv:2611.29805",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.29805"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Geonwoo Bang",
+     "affiliation": "ETH Zürich"
+    },
+    {
+     "author": "Dongho Kim",
+     "affiliation": "Sungkyunkwan University (Department of Computer Education / Immersive Media Engineering)"
+    },
+    {
+     "author": "Moohong Min",
+     "affiliation": "Sungkyunkwan University (Department of Computer Education, College of Education)"
+    }
+   ],
+   "business_school": false,
+   "pages": 17
+  },
+  {
+   "cid": "C011",
+   "title": "Can LLM-Simulated Respondents Pre-Test Survey Questions? Evidence From Preregistered Prospective Validation",
+   "ids": [
+    "arxiv:2611.31532"
+   ],
+   "norm_title": "can llm simulated respondents pre test survey questions evidence from preregistered prospective validation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.31532",
+   "date": "2026-11-23",
+   "decision": "exclude",
+   "reason": "Human simulation without a marketing setting needs a peer-reviewed venue or at least 100 citations (50 a year); this is unpublished with 0 citations. Conducts a preregistered prospective validation of GPT-4.1 simulated respondents for pre-testing new survey items against two waves of a local human survey; fits track B (human simulation outside marketing).",
+   "track": "human_simulation",
+   "llm_use": "GPT-4.1 conditioned on 2025 survey participants simulates responses to pre-test 22 new 2026 survey questions",
+   "human_data": "Two waves of a local human survey (2025: N = 1,271; 2026: N = 1,161)",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "Conducts a preregistered prospective validation of whether GPT-4.1 simulated respondents accurately rank new survey questions against fresh human waves without proposing a new simulation algorithm, fitting 1.2 alongside Tsai and Lai (2026) and Netzer and Sambandam (2026) rather than 1.1 or 1.3.",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "Title, author order, arXiv ID, and first posting date (2026-11-23) verified against arXiv record and PDF. No Crossref publication found. Author spelling 'Mac MacComas' matches the linked arXiv version (spelled 'Mac McComas' on JHU pages). Affiliations verified from PDF (Johns Hopkins University) and JHU departmental pages; none is a business school. Uses existing Baltimore Area Survey data and an OSF preregistration; no new dataset released.",
+   "issues": [],
+   "meta": {
+    "title": "Can LLM-Simulated Respondents Pre-Test Survey Questions? Evidence From Preregistered Prospective Validation",
+    "authors": [
+     {
+      "given": "Sristi",
+      "family": "Bafna"
+     },
+     {
+      "given": "Mac",
+      "family": "MacComas"
+     },
+     {
+      "given": "Michael",
+      "family": "Bader"
+     },
+     {
+      "given": "Kristina",
+      "family": "Gligorić"
+     }
+    ],
+    "venue": "arXiv:2611.31532",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.31532"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Sristi Bafna",
+     "affiliation": "Johns Hopkins University (Whiting School of Engineering, Data Science)"
+    },
+    {
+     "author": "Mac MacComas",
+     "affiliation": "Johns Hopkins University (21st Century Cities Initiative)"
+    },
+    {
+     "author": "Michael Bader",
+     "affiliation": "Johns Hopkins University (Department of Sociology, Krieger School of Arts and Sciences; 21st Century Cities Initiative)"
+    },
+    {
+     "author": "Kristina Gligorić",
+     "affiliation": "Johns Hopkins University (Department of Computer Science)"
+    }
+   ],
+   "business_school": false,
+   "pages": 44
+  },
+  {
+   "cid": "C012",
+   "title": "Evaluating Persona Consistency in LLM User Simulators Without External Reference Annotations",
+   "ids": [
+    "arxiv:2611.30280"
+   ],
+   "norm_title": "evaluating persona consistency in llm user simulators without external reference annotations",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.30280",
+   "date": "2026-11-23",
+   "decision": "exclude",
+   "reason": "Human simulation without a marketing setting needs a peer-reviewed venue or at least 100 citations (50 a year); this is unpublished with 0 citations. Proposes a self-anchored BFI-2 personality consistency diagnostic for LLM user simulators and validates it against community trait annotations on the Personality Database; fits track B (human simulation outside marketing).",
+   "track": "human_simulation",
+   "llm_use": "LLMs simulate user personas from chat logs and profiles, evaluated for BFI-2 personality consistency across self-reports, scenario choices, and open-ended responses",
+   "human_data": "WildChat and LMSYS user chat logs; Personality Database (PDB) community trait annotations",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.3",
+   "dataset_section": null,
+   "classification": "Proposes and validates a reference-free computational evaluation method (a self-anchored BFI-2 internal-consistency diagnostic) for LLM user simulators, fitting 1.3 alongside Williams et al. (2026) and Iyengar, Lin, and Wang (2025) rather than 1.2.",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "Title, author order, arXiv ID, and first posting date (2026-11-23) verified against arXiv record and arXiv HTML. No Crossref publication found. Five of six authors are confirmed non-business-school (Tencent, Tsinghua SIGS, CUHK-Shenzhen School of Artificial Intelligence), but Yipeng Liu's specific school/department within CUHK-Shenzhen was not stated on the paper or confirmed online, so business_school is set to null. Uses existing WildChat, LMSYS, and PDB datasets; no standalone public dataset release URL in the paper.",
+   "issues": [],
+   "meta": {
+    "title": "Evaluating Persona Consistency in LLM User Simulators Without External Reference Annotations",
+    "authors": [
+     {
+      "given": "Anping",
+      "family": "Zhang"
+     },
+     {
+      "given": "Yang",
+      "family": "Tan"
+     },
+     {
+      "given": "Yipeng",
+      "family": "Liu"
+     },
+     {
+      "given": "Clive",
+      "family": "Bai"
+     },
+     {
+      "given": "Blaze",
+      "family": "Chen"
+     },
+     {
+      "given": "Yang",
+      "family": "Li"
+     }
+    ],
+    "venue": "arXiv:2611.30280",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.30280"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Anping Zhang",
+     "affiliation": "Tencent; Tsinghua University (Shenzhen International Graduate School)"
+    },
+    {
+     "author": "Yang Tan",
+     "affiliation": "Tencent"
+    },
+    {
+     "author": "Yipeng Liu",
+     "affiliation": "Tencent; The Chinese University of Hong Kong, Shenzhen (department not confirmed)"
+    },
+    {
+     "author": "Clive Bai",
+     "affiliation": "Tencent"
+    },
+    {
+     "author": "Blaze Chen",
+     "affiliation": "Tencent"
+    },
+    {
+     "author": "Yang Li",
+     "affiliation": "The Chinese University of Hong Kong, Shenzhen (School of Artificial Intelligence)"
+    }
+   ],
+   "business_school": null,
+   "pages": 21
+  },
+  {
+   "cid": "C013",
+   "title": "Autoregressive Market Basket Transformer",
+   "ids": [
+    "doi:10.2139/ssrn.7727163",
+    "ssrn:7727163"
+   ],
+   "norm_title": "autoregressive market basket transformer",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7727163",
+   "date": "2026-11-24",
+   "decision": "include",
+   "reason": "Introduces an autoregressive transformer for retail market-basket modeling and advertising marginal effects, outperforming multivariate logit and RNN benchmarks; fits marketing_method (category 3).",
+   "track": "marketing_method",
+   "llm_use": "Autoregressive transformer trained on retail market-basket sequences with category-specific advertising",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "Introduces an autoregressive transformer for dynamic retail market-basket modeling and advertising marginal effects that outperforms multivariate logit and RNN benchmarks, fitting 3.2 alongside Lee (2025) and Burakov (2026) rather than 3.1.",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "Title, author, and SSRN 7727163 Crossref creation date (2026-11-24) verified against Crossref. No journal publication found. Author affiliation confirmed via University of Regensburg faculty pages (Chair of Marketing, Faculty of Business, Economics, and Management Information Systems; professor emeritus). Crossref also lists an earlier SSRN record (10.2139/ssrn.5362135, created 2025-07-23) with the exact same title and author.",
+   "issues": [
+    "Crossref lists an earlier SSRN posting with the same title and author (SSRN 5362135, DOI 10.2139/ssrn.5362135, created 2025-07-23); SSRN pages could not be fetched directly to compare revisions or confirm whether 2025-07 or 2026-11 should be cited as the first posting date."
+   ],
+   "meta": {
+    "title": "Autoregressive Market Basket Transformer",
+    "authors": [
+     {
+      "given": "Harald",
+      "family": "Hruschka"
+     }
+    ],
+    "venue": "SSRN 7727163",
+    "date": "2026-11",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7727163"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Harald Hruschka",
+     "affiliation": "Chair of Marketing, Faculty of Business, Economics, and Management Information Systems, University of Regensburg"
+    }
+   ],
+   "business_school": true,
+   "tier": 2,
+   "anchor": "paper-autoregressive-market-basket-transformer"
+  },
+  {
+   "cid": "C014",
+   "title": "Consumer-Time Validity in Stateful AI Runtimes: Verifying Recovered State and Deferred Authority",
+   "ids": [
+    "arxiv:2611.29004"
+   ],
+   "norm_title": "consumer time validity in stateful ai runtimes verifying recovered state and deferred authority",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.29004",
+   "date": "2026-11-21",
+   "decision": "exclude",
+   "reason": "Systems and security paper on LLM serving engines where 'consumer' refers to a software component; no marketing setting and no simulation of people.",
+   "track": "none",
+   "llm_use": "State recovery and authority verification in stateful LLM serving runtimes (vLLM)",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C015",
+   "title": "Persuasion from Within: Model-Based Insider Attacks in Multi-Agent LLM Debate and Consensus",
+   "ids": [
+    "arxiv:2611.28660"
+   ],
+   "norm_title": "persuasion from within model based insider attacks in multi agent llm debate and consensus",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.28660",
+   "date": "2026-11-21",
+   "decision": "exclude",
+   "reason": "Adversarial security study of multi-agent LLM debate and consensus games; persuasion targets other LLM agents rather than customers, with no marketing setting or human simulation.",
+   "track": "none",
+   "llm_use": "Malicious insider LLM agent trained via world models and RL to manipulate multi-agent LLM debate and consensus",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C016",
+   "title": "Precision-Aware Learning Rate Transfer Across Block Count in LLM Post-Training",
+   "ids": [
+    "arxiv:2611.31166"
+   ],
+   "norm_title": "precision aware learning rate transfer across block count in llm post training",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.31166",
+   "date": "2026-11-23",
+   "decision": "exclude",
+   "reason": "General ML optimization method for LLM post-training; no marketing setting and no simulation of people.",
+   "track": "none",
+   "llm_use": "Learning-rate transfer across transformer blocks during LLM post-training (SFT, DPO, RLVR)",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C017",
+   "title": "SARA: An Auditor-in-the-Loop LLM Recommender for Sustainability Reports",
+   "ids": [
+    "arxiv:2611.30839"
+   ],
+   "norm_title": "sara an auditor in the loop llm recommender for sustainability reports",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.30839",
+   "date": "2026-11-23",
+   "decision": "exclude",
+   "reason": "Regulatory compliance auditing assistant for corporate sustainability reports rather than a commercial or marketing setting, with no human simulation.",
+   "track": "none",
+   "llm_use": "LLM matching of corporate sustainability report passages to regulatory checklist requirements",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C018",
+   "title": "WASP: Continual Weight Adaptation for Streaming LLM Personalization",
+   "ids": [
+    "arxiv:2611.30134"
+   ],
+   "norm_title": "wasp continual weight adaptation for streaming llm personalization",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.30134",
+   "date": "2026-11-23",
+   "decision": "exclude",
+   "reason": "General LLM personalization engineering method with no commercial or marketing task stated in the abstract and no simulation of people.",
+   "track": "none",
+   "llm_use": "Hypernetwork generating personalized LoRA adapters for streaming LLM personalization",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C019",
+   "title": "Towards Realistic Evaluation of Uncertainty Quantification for LLM-Based Recommender Systems",
+   "ids": [
+    "arxiv:2611.33036"
+   ],
+   "norm_title": "towards realistic evaluation of uncertainty quantification for llm based recommender systems",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.33036",
+   "date": "2026-11-24",
+   "decision": "exclude",
+   "reason": "General recommender-system engineering benchmark for uncertainty quantification with no commercial data or marketing outcome stated in the abstract and no human simulation.",
+   "track": "none",
+   "llm_use": "Benchmarking uncertainty quantification signals for LLM-based recommender rankers",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C020",
+   "title": "C3H: Compression-to-Consensus Criteria Hijacking in Multimodal LLM Recommender Systems",
+   "ids": [
+    "arxiv:2611.32780"
+   ],
+   "norm_title": "c3h compression to consensus criteria hijacking in multimodal llm recommender systems",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.32780",
+   "date": "2026-11-24",
+   "decision": "exclude",
+   "reason": "Security and adversarial-attack paper on multimodal LLM recommenders without commercial data or a marketing outcome stated in the abstract, and no human simulation.",
+   "track": "none",
+   "llm_use": "Inference-time adversarial attack exploiting multimodal compression bias in MLLM recommender systems",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C021",
+   "title": "Learning the Platform, Not the Learner: Sequencing Shortcuts in the Offline Evaluation of Educational Recommender Systems and LLM Rankers",
+   "ids": [
+    "arxiv:2611.33240"
+   ],
+   "norm_title": "learning the platform not the learner sequencing shortcuts in the offline evaluation of educational recommender systems and llm rankers",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.33240",
+   "date": "2026-11-24",
+   "decision": "exclude",
+   "reason": "Offline evaluation of educational recommenders and LLM rankers on learning platforms; education domain rather than a commercial or marketing setting, and no human simulation.",
+   "track": "none",
+   "llm_use": "Open-weight LLM rankers evaluated on educational recommender logs from tutoring systems and MOOCs",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C022",
+   "title": "Faithful Persona Steering under Incongruity via Dual-Stream Refinement",
+   "ids": [
+    "arxiv:2611.31848",
+    "doi:10.18653/v1/2026.findings-acl.1205"
+   ],
+   "norm_title": "faithful persona steering under incongruity via dual stream refinement",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.31848",
+   "date": "2026-11-24",
+   "decision": "exclude",
+   "reason": "General NLP persona-steering method without a marketing setting and without evaluating simulated human responses against human data.",
+   "track": "none",
+   "llm_use": "Dual-stream latent refinement and adapters for persona-steered LLM QA and narrative inference",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C023",
+   "title": "Online Job Selection: Reward Rate vs. Remaining Value",
+   "ids": [
+    "doi:10.1287/mnsc.2024.09109"
+   ],
+   "norm_title": "online job selection reward rate vs remaining value",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/mnsc.2024.09109",
+   "date": "2026-11-25",
+   "decision": "exclude",
+   "reason": "Operations management theory on online job preemption and resource allocation; mentions LLM inference only in passing and has no marketing setting or human simulation.",
+   "track": "none",
+   "llm_use": "None (adaptive LLM inference mentioned only in passing as an example of capacity-constrained allocation)",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C024",
+   "title": "Correcting the Unobserved Textual Confounding Factors in Regression by BERT and Partially Linear Regression",
+   "ids": [
+    "doi:10.1287/mnsc.2024.04758"
+   ],
+   "norm_title": "correcting the unobserved textual confounding factors in regression by bert and partially linear regression",
+   "source": "journal",
+   "url": "https://doi.org/10.1287/mnsc.2024.04758",
+   "date": "2026-11-26",
+   "decision": "include",
+   "reason": "Uses BERT embeddings in a semiparametric causal-inference model to correct omitted textual confounding in online review / word-of-mouth regressions; fits marketing_method (category 3).",
+   "track": "marketing_method",
+   "llm_use": "BERT text embeddings integrated into partially linear regression / double machine learning with a Neyman-orthogonal loss to control unobserved textual confounding",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "proposed",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "Integrates BERT text embeddings into a partially linear double-machine-learning regression with a Neyman-orthogonal loss to correct textual confounding in downstream inference, fitting 3.2 alongside Mukherjee, Chang, and Gupta (2026) rather than 2.2.",
+   "confidence": "high",
+   "verified": true,
+   "published": true,
+   "verification": "Title, author order, journal name, and first online publication date (2026-11-26) verified against Crossref (DOI 10.1287/mnsc.2024.04758); advance online publication without volume, issue, or page numbers yet. Author affiliations verified from Crossref.",
+   "issues": [],
+   "meta": {
+    "title": "Correcting the Unobserved Textual Confounding Factors in Regression by BERT and Partially Linear Regression",
+    "authors": [
+     {
+      "given": "Mengke",
+      "family": "Qiao"
+     },
+     {
+      "given": "Ke-Wei",
+      "family": "Huang"
+     }
+    ],
+    "venue": "Management Science",
+    "date": "2026-11",
+    "url": "https://doi.org/10.1287/mnsc.2024.04758"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Mengke Qiao",
+     "affiliation": "Culverhouse College of Business, The University of Alabama, Tuscaloosa, Alabama 35487"
+    },
+    {
+     "author": "Ke-Wei Huang",
+     "affiliation": "School of Computing, National University of Singapore, Singapore 119077"
+    }
+   ],
+   "business_school": true,
+   "tier": 1,
+   "anchor": "paper-correcting-the-unobserved-textual-confounding-factors-in-regression-by-bert-and-partially-linear-regression"
+  },
+  {
+   "cid": "C025",
+   "title": "Measuring and Teaching Language Model Agents to Act on Delayed Consequences",
+   "ids": [
+    "arxiv:2611.28158"
+   ],
+   "norm_title": "measuring and teaching language model agents to act on delayed consequences",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.28158",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Evaluates and trains LLM agents for wholesale operations and inventory management rather than a marketing setting or human simulation. Excluded as an operations-agent benchmark outside all three tracks.",
+   "track": "none",
+   "llm_use": "LLM agents manage multi-day wholesale inventory and procurement operations in SMB Bench",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C026",
+   "title": "Can Open LLMs Clear Sanctions-Screening Alerts? A Pre-registered Test on Public Sanctions Lists with Turkish Name Variants",
+   "ids": [
+    "arxiv:2611.28914"
+   ],
+   "norm_title": "can open llms clear sanctions screening alerts a pre registered test on public sanctions lists with turkish name variants",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.28914",
+   "date": "2026-11-21",
+   "decision": "exclude",
+   "reason": "Tests open LLMs on banking compliance and sanctions-list name matching using synthetic customer records. No marketing setting and no simulation of human behavior or opinions.",
+   "track": "none",
+   "llm_use": "Open-weight LLMs disposition bank sanctions-screening alerts against written compliance policy",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C027",
+   "title": "PersonaFactory: Stylistic User Prompt Augmentation with Synthetic Persona Bank",
+   "ids": [
+    "arxiv:2611.34785"
+   ],
+   "norm_title": "personafactory stylistic user prompt augmentation with synthetic persona bank",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.34785",
+   "date": "2026-11-25",
+   "decision": "exclude",
+   "reason": "Constructs a synthetic persona bank and stylized user-prompt corpus to train general AI assistants for style adaptation. Excluded as a persona collection built for ML training data with no marketing setting.",
+   "track": "none",
+   "llm_use": "LLMs generate 740K synthetic personas and 1.24M persona-styled conversations for assistant training",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C028",
+   "title": "LLM-based Personalized Travel Planner",
+   "ids": [
+    "arxiv:2611.25531"
+   ],
+   "norm_title": "llm based personalized travel planner",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.25531",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Proposes a multi-agent travel itinerary planner evaluated on the TravelPlanner benchmark. Excluded as general agent engineering without commercial customer data or a marketing outcome.",
+   "track": "none",
+   "llm_use": "Multi-agent LLM framework plans travel itineraries using external APIs and constraint scoring",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C029",
+   "title": "BIRD-Persona: A Persona-Aware Benchmark for SQL and pandas Analytics Code Generation",
+   "ids": [
+    "arxiv:2611.28542",
+    "doi:10.18653/2026.emnlp-industry.138"
+   ],
+   "norm_title": "bird persona a persona aware benchmark for sql and pandas analytics code generation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.28542",
+   "date": "2026-11-21",
+   "decision": "exclude",
+   "reason": "Benchmarks text-to-SQL and pandas code generation across novice and expert query phrasings. Has no marketing setting and does not simulate human behavior.",
+   "track": "none",
+   "llm_use": "LLMs generate SQL and pandas analytics code from novice and expert persona-rewritten queries",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C030",
+   "title": "Tabular Foundation Models for Weighted Regression and Classification",
+   "ids": [
+    "arxiv:2611.29789"
+   ],
+   "norm_title": "tabular foundation models for weighted regression and classification",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.29789",
+   "date": "2026-11-22",
+   "decision": "exclude",
+   "reason": "General statistical ML method for weighted regression and classification with tabular foundation models, mentioning insurance pricing only in passing. Neither a marketing setting nor human simulation.",
+   "track": "none",
+   "llm_use": "Adapts a tabular foundation model (TabPFN-3.5) with weighted attention for weighted prediction",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C031",
+   "title": "Explainable Emotion and Mental Health Reasoning in Large Language Models Using Theories of Emotion",
+   "ids": [
+    "arxiv:2611.29628"
+   ],
+   "norm_title": "explainable emotion and mental health reasoning in large language models using theories of emotion",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.29628",
+   "date": "2026-11-22",
+   "decision": "exclude",
+   "reason": "Proposes a prompting strategy for general NLP emotion and mental-health text classification across 11 languages. Has no marketing setting and classifies text rather than simulating human respondents.",
+   "track": "none",
+   "llm_use": "Psychology-based Chain-of-Thought prompting improves LLM emotion, stress, and depression classification",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C032",
+   "title": "Weight Coding: Evolving Web-Scale Recommenders through Direct Weight Edits with LLM Agents",
+   "ids": [
+    "arxiv:2611.29613"
+   ],
+   "norm_title": "weight coding evolving web scale recommenders through direct weight edits with llm agents",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.29613",
+   "date": "2026-11-22",
+   "decision": "exclude",
+   "reason": "Only 10 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. Uses LLM agents to evolve Pinterest's production recommender and search models via direct weight edits, improving offline recall and online user saves by 8.4%–10.7%. Fits track C (model and algorithm augmentation).",
+   "track": "marketing_method",
+   "llm_use": "LLM agents inspect and directly edit weights of web-scale recommender and retrieval models",
+   "human_data": "Pinterest production Image Search and recommendation traffic (offline recall and online A/B tests)",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "Proposes an LLM-agent weight-editing method to evolve production web-scale recommender and retrieval models, matching existing recommender-augmentation methods in 3.2 such as Luo et al. (2026) \"Integrating Large Language Models Into Recommendation via Mutual Augmentation and Adaptive Aggregation.\"",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "Title, author order, and first posting date (2026-11-22) verified against arXiv (2611.29613); no published version in Crossref. All six author affiliations verified from arXiv HTML (https://arxiv.org/html/2611.29613).",
+   "issues": [],
+   "meta": {
+    "title": "Weight Coding: Evolving Web-Scale Recommenders through Direct Weight Edits with LLM Agents",
+    "authors": [
+     {
+      "given": "Junpeng",
+      "family": "Hou"
+     },
+     {
+      "given": "Jiaxing",
+      "family": "Qu"
+     },
+     {
+      "given": "Derek",
+      "family": "Cheng"
+     },
+     {
+      "given": "Jaewon",
+      "family": "Yang"
+     },
+     {
+      "given": "Abhinav",
+      "family": "Naikawadi"
+     },
+     {
+      "given": "Karthik",
+      "family": "Subbian"
+     }
+    ],
+    "venue": "arXiv:2611.29613",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.29613"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Junpeng Hou",
+     "affiliation": "Pinterest, Inc., San Francisco, CA, USA"
+    },
+    {
+     "author": "Jiaxing Qu",
+     "affiliation": "Pinterest, Inc., San Francisco, CA, USA"
+    },
+    {
+     "author": "Derek Cheng",
+     "affiliation": "Pinterest, Inc., San Francisco, CA, USA"
+    },
+    {
+     "author": "Jaewon Yang",
+     "affiliation": "Pinterest, Inc., San Francisco, CA, USA"
+    },
+    {
+     "author": "Abhinav Naikawadi",
+     "affiliation": "Pinterest, Inc., San Francisco, CA, USA"
+    },
+    {
+     "author": "Karthik Subbian",
+     "affiliation": "Pinterest, Inc., San Francisco, CA, USA"
+    }
+   ],
+   "business_school": false,
+   "pages": 10
+  },
+  {
+   "cid": "C033",
+   "title": "Automatic Construction of Persian E-Commerce Dialogue Datasets for Conversational Product Search",
+   "ids": [
+    "arxiv:2611.29356"
+   ],
+   "norm_title": "automatic construction of persian e commerce dialogue datasets for conversational product search",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.29356",
+   "date": "2026-11-22",
+   "decision": "exclude",
+   "reason": "Generates 1,000 synthetic Persian e-commerce dialogues from a crawled catalog using an entropy-like question-selection score and LLM verbalization, evaluated only via simulated turn counts and an LLM judge. Lacks commercial user data or a marketing outcome and does not fit tracks A, B, or C.",
+   "track": "none",
+   "llm_use": "LLM verbalizes algorithmically selected product-search questions into synthetic Persian dialogues",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C034",
+   "title": "Reproducible Social Structure Emerges From Free-Form Interaction Among LLM Agents",
+   "ids": [
+    "arxiv:2611.31543"
+   ],
+   "norm_title": "reproducible social structure emerges from free form interaction among llm agents",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.31543",
+   "date": "2026-11-23",
+   "decision": "exclude",
+   "reason": "Human simulation without a marketing setting needs a peer-reviewed venue or at least 100 citations (50 a year); this is unpublished with 0 citations. Examines the methodological validity and reproducibility of multi-agent LLM social simulations across ten repeated worlds, testing emergent dyad formation and persona/memory transplants. Fits track B (human simulation validity).",
+   "track": "human_simulation",
+   "llm_use": "Fifty persona-conditioned LLM agents with persistent memory interact across repeated social-platform simulations",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "Evaluates the cross-run reproducibility and persona/memory causal mechanisms of multi-agent LLM social simulations without introducing a new estimator or calibration objective, placing it in 1.2 rather than 1.1 or 1.3 alongside Xie et al. (2026) \"Evaluating the statistical realism of LLM-generated social science data.\"",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "Title, author order, and first posting date (2026-11-23) verified against arXiv (2611.31543); no published version in Crossref. Author affiliations verified from arXiv PDF page 1 (https://arxiv.org/pdf/2611.31543), and Robert Hawkins's Stanford University appointment (Department of Linguistics; by courtesy, Department of Psychology) confirmed via Stanford faculty page.",
+   "issues": [],
+   "meta": {
+    "title": "Reproducible Social Structure Emerges From Free-Form Interaction Among LLM Agents",
+    "authors": [
+     {
+      "given": "Tom",
+      "family": "Alisch"
+     },
+     {
+      "given": "Sonia",
+      "family": "Murthy"
+     },
+     {
+      "given": "Robert",
+      "family": "Hawkins"
+     },
+     {
+      "given": "Felix",
+      "family": "Sosa"
+     },
+     {
+      "given": "Core Francisco",
+      "family": "Park"
+     }
+    ],
+    "venue": "arXiv:2611.31543",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.31543"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Tom Alisch",
+     "affiliation": "Prior Computers, Inc."
+    },
+    {
+     "author": "Sonia Murthy",
+     "affiliation": "Prior Computers, Inc."
+    },
+    {
+     "author": "Robert Hawkins",
+     "affiliation": "Prior Computers, Inc.; Stanford University (Department of Linguistics; by courtesy, Department of Psychology)"
+    },
+    {
+     "author": "Felix Sosa",
+     "affiliation": "Prior Computers, Inc."
+    },
+    {
+     "author": "Core Francisco Park",
+     "affiliation": "Prior Computers, Inc."
+    }
+   ],
+   "business_school": false,
+   "pages": 43
+  },
+  {
+   "cid": "C035",
+   "title": "From Head to Tail: LLM-Augmented Sequential Recommendation and Trade-off Optimization",
+   "ids": [
+    "arxiv:2611.31052"
+   ],
+   "norm_title": "from head to tail llm augmented sequential recommendation and trade off optimization",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.31052",
+   "date": "2026-11-23",
+   "decision": "exclude",
+   "reason": "Only 7 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. Uses LLMs to generate synthetic interactions under a constrained optimization framework to improve long-tail performance in sequential recommendation (SASRec), evaluated on an industrial dataset and MovieLens-32M. Fits track C (model and algorithm augmentation).",
+   "track": "marketing_method",
+   "llm_use": "LLMs generate group-specific synthetic user-item interactions to augment sequential recommendation",
+   "human_data": "Industrial recommendation dataset and MovieLens-32M",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "Proposes a constrained-optimization LLM synthetic-interaction augmentation method to improve long-tail sequential recommendation (SASRec), matching existing recommender-augmentation methods in 3.2 such as Luo et al. (2026) \"Integrating Large Language Models Into Recommendation via Mutual Augmentation and Adaptive Aggregation.\"",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "Title, author order, and first posting date (2026-11-23) verified against arXiv (2611.31052). arXiv comment and PDF header note acceptance at GRAIL 2026: Workshop on Generative, Retrieval-augmented, and Agentic Intelligence for Personalization (held at CIKM 2026, Nov 8, 2026), but the paper carries a placeholder DOI (XXXXXXX.XXXXXXX) and no published proceedings record exists in Crossref, so treated as arXiv preprint. Author affiliations verified from arXiv HTML (https://arxiv.org/html/2611.31052).",
+   "issues": [],
+   "meta": {
+    "title": "From Head to Tail: LLM-Augmented Sequential Recommendation and Trade-off Optimization",
+    "authors": [
+     {
+      "given": "Adeep",
+      "family": "Hande"
+     },
+     {
+      "given": "Shaghayegh",
+      "family": "Agah"
+     },
+     {
+      "given": "Neeraj",
+      "family": "Sharma"
+     },
+     {
+      "given": "Karina",
+      "family": "Halevy"
+     },
+     {
+      "given": "Sardar",
+      "family": "Hamidian"
+     }
+    ],
+    "venue": "arXiv:2611.31052",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.31052"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Adeep Hande",
+     "affiliation": "Applied AI Research, Comcast"
+    },
+    {
+     "author": "Shaghayegh Agah",
+     "affiliation": "Applied AI Research, Comcast"
+    },
+    {
+     "author": "Neeraj Sharma",
+     "affiliation": "Applied AI Research, Comcast"
+    },
+    {
+     "author": "Karina Halevy",
+     "affiliation": "Department of Computer Science, Carnegie Mellon University"
+    },
+    {
+     "author": "Sardar Hamidian",
+     "affiliation": "Applied AI Research, Comcast"
+    }
+   ],
+   "business_school": false,
+   "pages": 7
+  },
+  {
+   "cid": "C036",
+   "title": "WeMM-Ecom: Advancing Multimodal Content Understanding for WeChat E-Commerce",
+   "ids": [
+    "arxiv:2611.30662"
+   ],
+   "norm_title": "wemm ecom advancing multimodal content understanding for wechat e commerce",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.30662",
+   "date": "2026-11-23",
+   "decision": "exclude",
+   "reason": "No business-school author and limited impact (0 citations); affiliations: WeChat Vision, Tencent Inc.. Develops and evaluates open-weight multimodal LLMs (WeMM-Ecom) for e-commerce content understanding, catalog management, multimodal product search, and livestream commerce in WeChat. Fits track C (marketing content analysis and search).",
+   "track": "marketing_method",
+   "llm_use": "Family of domain-specialized multimodal LLMs trained for e-commerce content understanding and search",
+   "human_data": "28 e-commerce benchmarks across 8 business scenarios and WeChat e-commerce production traffic",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "2.2",
+   "dataset_section": null,
+   "classification": "Develops a domain-specialized multimodal LLM family for e-commerce content understanding, catalog management, and livestream commerce rather than augmenting a specific downstream marketing model, placing it in 2.2 rather than 3.2 alongside Chen et al. (2024) \"IPL: Leveraging Multimodal Large Language Models for Intelligent Product Listing.\"",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "Title, author order, and first posting date (2026-11-23) checked against arXiv metadata and arXiv HTML; all 8 authors are affiliated with WeChat Vision, Tencent Inc. Releases model weights and code on GitHub/Hugging Face, but no public dataset release.",
+   "issues": [],
+   "meta": {
+    "title": "WeMM-Ecom: Advancing Multimodal Content Understanding for WeChat E-Commerce",
+    "authors": [
+     {
+      "given": "Binhui",
+      "family": "Xie"
+     },
+     {
+      "given": "Jinmin",
+      "family": "Li"
+     },
+     {
+      "given": "Haomiao",
+      "family": "Tang"
+     },
+     {
+      "given": "Guangting",
+      "family": "Wang"
+     },
+     {
+      "given": "Song",
+      "family": "Jin"
+     },
+     {
+      "given": "Jianwei",
+      "family": "Zhu"
+     },
+     {
+      "given": "Fengyun",
+      "family": "Rao"
+     },
+     {
+      "given": "Jing",
+      "family": "Lyu"
+     }
+    ],
+    "venue": "arXiv:2611.30662",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.30662"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Binhui Xie",
+     "affiliation": "WeChat Vision, Tencent Inc."
+    },
+    {
+     "author": "Jinmin Li",
+     "affiliation": "WeChat Vision, Tencent Inc."
+    },
+    {
+     "author": "Haomiao Tang",
+     "affiliation": "WeChat Vision, Tencent Inc."
+    },
+    {
+     "author": "Guangting Wang",
+     "affiliation": "WeChat Vision, Tencent Inc."
+    },
+    {
+     "author": "Song Jin",
+     "affiliation": "WeChat Vision, Tencent Inc."
+    },
+    {
+     "author": "Jianwei Zhu",
+     "affiliation": "WeChat Vision, Tencent Inc."
+    },
+    {
+     "author": "Fengyun Rao",
+     "affiliation": "WeChat Vision, Tencent Inc."
+    },
+    {
+     "author": "Jing Lyu",
+     "affiliation": "WeChat Vision, Tencent Inc."
+    }
+   ],
+   "business_school": false,
+   "pages": 25,
+   "tier": 2
+  },
+  {
+   "cid": "C037",
+   "title": "Oops!... I Parsed It Again: Tool-Call Smuggling Against LLM Agents",
+   "ids": [
+    "arxiv:2611.30624"
+   ],
+   "norm_title": "oops i parsed it again tool call smuggling against llm agents",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.30624",
+   "date": "2026-11-23",
+   "decision": "exclude",
+   "reason": "Computer security paper introducing tool-call smuggling attacks against LLM agent stacks. Has no marketing setting and no LLM simulation of people.",
+   "track": "none",
+   "llm_use": "Studies JSON parser discrepancies in LLM agent tool calls",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C038",
+   "title": "LogToPersona: New Benchmark and Efficient Persona Prediction through Semantic Log Filtering",
+   "ids": [
+    "arxiv:2611.33510"
+   ],
+   "norm_title": "logtopersona new benchmark and efficient persona prediction through semantic log filtering",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.33510",
+   "date": "2026-11-24",
+   "decision": "exclude",
+   "reason": "Proposes a synthetic persona-log benchmark and KV-cache log-filtering method for on-device persona prediction. Has no marketing task or commercial data and does not simulate human behavior against human data.",
+   "track": "none",
+   "llm_use": "On-device LLMs infer user persona attributes from filtered synthetic mobile activity logs",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C039",
+   "title": "\"I Do Intend to Deliver\": Will LLMs Run a Marketplace Advance-Fee Scam?",
+   "ids": [
+    "arxiv:2611.32957"
+   ],
+   "norm_title": "i do intend to deliver will llms run a marketplace advance fee scam",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.32957",
+   "date": "2026-11-24",
+   "decision": "exclude",
+   "reason": "AI safety benchmark testing whether LLMs will execute online marketplace advance-fee scams, with LLMs playing both sides. Not a marketing research study and does not validate simulated behavior against human behavioral data.",
+   "track": "none",
+   "llm_use": "Off-the-shelf LLMs role-play both seller and buyer in simulated advance-fee scam conversations",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C040",
+   "title": "Blaming the Machine, Billing the Victim? How Mock Jurors Reassign Fault from Generative AI Systems and Respond to Liability Cliffs in Tort",
+   "ids": [
+    "arxiv:2611.32188"
+   ],
+   "norm_title": "blaming the machine billing the victim how mock jurors reassign fault from generative ai systems and respond to liability cliffs in tort",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.32188",
+   "date": "2026-11-24",
+   "decision": "exclude",
+   "reason": "Legal study of how 199 human Prolific mock jurors assign tort fault when generative AI systems cause harm. Has no marketing setting and does not use LLMs to simulate people.",
+   "track": "none",
+   "llm_use": "Generative AI is only the subject of tort liability scenarios evaluated by human mock jurors",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C041",
+   "title": "Repricing by Replacement: Pricing Closed Language Models Against a Free Alternative",
+   "ids": [
+    "doi:10.2139/ssrn.7749822",
+    "ssrn:7749822"
+   ],
+   "norm_title": "repricing by replacement pricing closed language models against a free alternative",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7749822",
+   "date": "2026-11-25",
+   "decision": "exclude",
+   "reason": "Analyzes pricing dynamics of closed LLMs against open-weight alternatives using a product-line model. Always excluded because it treats LLMs only as the product or market being studied.",
+   "track": "none",
+   "llm_use": "Treats closed and open-weight LLMs only as products whose list prices are studied",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C042",
+   "title": "A Survey of Security, Privacy, and Ethics of Large Language Models in Telecom",
+   "ids": [
+    "arxiv:2611.34868",
+    "doi:10.1109/comsnets67989.2026.11418201"
+   ],
+   "norm_title": "a survey of security privacy and ethics of large language models in telecom",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.34868",
+   "date": "2026-11-25",
+   "decision": "exclude",
+   "reason": "Survey of LLM privacy, security, and ethical safeguards in telecom operations. Mentions customer service only in passing and has neither a marketing setting nor human simulation.",
+   "track": "none",
+   "llm_use": "Surveys security, privacy, and ethics risks of LLMs deployed in telecommunications",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C043",
+   "title": "From Prediction to Decision: Decision-Focused Fine-Tuning of Autoregressive Tabular Transformers for Cost-Sensitive Financial Events",
+   "ids": [
+    "arxiv:2611.34858"
+   ],
+   "norm_title": "from prediction to decision decision focused fine tuning of autoregressive tabular transformers for cost sensitive financial events",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.34858",
+   "date": "2026-11-25",
+   "decision": "exclude",
+   "reason": "Cost-sensitive fine-tuning method for tabular transformers predicting financial events such as fraud. Lacks a marketing setting and does not simulate people.",
+   "track": "none",
+   "llm_use": "Fine-tunes autoregressive tabular transformers with an expected-utility objective for financial fraud detection",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C044",
+   "title": "Auto-Features: An LLM-Assisted Corpus for Contextual Recognition of Standard and Optional Car Features",
+   "ids": [
+    "arxiv:2611.33974"
+   ],
+   "norm_title": "auto features an llm assisted corpus for contextual recognition of standard and optional car features",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.33974",
+   "date": "2026-11-25",
+   "decision": "exclude",
+   "reason": "NLP corpus and contextual named-entity recognition benchmark for detecting catalogue car features in vehicle adverts. Fits neither marketing content insight (category 2) nor marketing model augmentation (category 3).",
+   "track": "none",
+   "llm_use": "Search-grounded LLM auto-annotates car adverts and a LoRA-tuned 4B LLM performs contextual NER/entity linking",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C045",
+   "title": "Knocking on Minds Door; A Mixed-Methods Field Study of a Voice LLM Companion in Older Adults Daily Lives",
+   "ids": [
+    "arxiv:2611.33727"
+   ],
+   "norm_title": "knocking on minds door a mixed methods field study of a voice llm companion in older adults daily lives",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.33727",
+   "date": "2026-11-25",
+   "decision": "exclude",
+   "reason": "HCI eldercare field study testing a voice LLM companion with 33 older adults on loneliness and depression. Has no marketing setting and does not simulate people.",
+   "track": "none",
+   "llm_use": "Voice LLM companion initiates proactive phone calls with older adults",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C046",
+   "title": "OneQuery: Unified Sequence-to-Structure Generation for Multilingual E-commerce Query Understanding",
+   "ids": [
+    "arxiv:2611.33653"
+   ],
+   "norm_title": "onequery unified sequence to structure generation for multilingual e commerce query understanding",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.33653",
+   "date": "2026-11-25",
+   "decision": "exclude",
+   "reason": "Only 10 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. Proposes OneQuery, a generative LLM framework for multilingual e-commerce query understanding supporting search retrieval and ranking, validated in AliExpress online experiments. Passes the marketing gate and fits Track C (marketing_method).",
+   "track": "marketing_method",
+   "llm_use": "Domain-specific e-commerce LLM performs unified sequence-to-structure multilingual query understanding",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "Proposes an e-commerce LLM framework that converts multilingual search queries into structured semantic tags specifically to feed downstream retrieval and ranking pipelines, placing it in 3.2 rather than 2.2 alongside Li et al. (2025) \"LEADRE: Multi-Faceted Knowledge Enhanced LLM Empowered Display Advertisement Recommender System.\"",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "Title, author order, and first posting date (2026-11-25) checked against arXiv metadata and arXiv HTML. Comment notes acceptance to WSDM 2027 (Findings), which is not yet published in proceedings, so kept as unpublished arXiv preprint. Affiliations confirmed via arXiv HTML and web search (Alibaba Group; CS/NLP at Xiamen University and HIT Shenzhen). No public dataset release.",
+   "issues": [],
+   "meta": {
+    "title": "OneQuery: Unified Sequence-to-Structure Generation for Multilingual E-commerce Query Understanding",
+    "authors": [
+     {
+      "given": "Mingyu",
+      "family": "Zhang"
+     },
+     {
+      "given": "Jiejie",
+      "family": "Qin"
+     },
+     {
+      "given": "Jianhui",
+      "family": "Ji"
+     },
+     {
+      "given": "Rong",
+      "family": "Xiao"
+     },
+     {
+      "given": "Meishan",
+      "family": "Zhang"
+     },
+     {
+      "given": "Xiaoyi",
+      "family": "Zeng"
+     }
+    ],
+    "venue": "arXiv:2611.33653",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.33653"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Mingyu Zhang",
+     "affiliation": "Xiamen University, Xiamen, China (Computer Science / NLP)"
+    },
+    {
+     "author": "Jiejie Qin",
+     "affiliation": "Alibaba Group, Hangzhou, China"
+    },
+    {
+     "author": "Jianhui Ji",
+     "affiliation": "Alibaba Group, Hangzhou, China"
+    },
+    {
+     "author": "Rong Xiao",
+     "affiliation": "Alibaba Group, Hangzhou, China"
+    },
+    {
+     "author": "Meishan Zhang",
+     "affiliation": "Harbin Institute of Technology, Shenzhen, China (Faculty of Computing / School of Computer Science and Technology)"
+    },
+    {
+     "author": "Xiaoyi Zeng",
+     "affiliation": "Alibaba Group, Hangzhou, China"
+    }
+   ],
+   "business_school": false,
+   "pages": 10
+  },
+  {
+   "cid": "C047",
+   "title": "AI-human hybrid conversations: Can AI Agents Improve Discourse Quality?",
+   "ids": [
+    "arxiv:2611.33459"
+   ],
+   "norm_title": "ai human hybrid conversations can ai agents improve discourse quality",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.33459",
+   "date": "2026-11-24",
+   "decision": "exclude",
+   "reason": "Human simulation without a marketing setting needs a peer-reviewed venue or at least 100 citations (50 a year); this is unpublished with 0 citations. Simulates online discussions with generic and persona-conditioned LLM agents grounded in Reddit and compares their positivity, toxicity, and semantic diversity against human discussions, plus a 221-person hybrid-discussion experiment. No marketing setting, so it fits Track B (human_simulation).",
+   "track": "human_simulation",
+   "llm_use": "Generic and persona-conditioned LLM agents simulate discussion participants and interact in hybrid human-AI threads",
+   "human_data": "Reddit discussions across four domains and a pre-registered experiment with 221 human participants across nine discussion threads",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "Benchmarks generic and persona-conditioned LLM agents against human Reddit discussions on positivity, toxicity, and semantic diversity alongside a hybrid-discussion experiment, placing it in 1.2 rather than 1.1 alongside Stamatogiannakis et al. (2025) \"How human is the machine? Evidence from 66,000 Conversations with Large Language Models.\"",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "Title, author order, and first posting date (2026-11-24) checked against arXiv metadata and arXiv HTML. University affiliations stated on arXiv HTML and business-school departments confirmed via university pages (Wisconsin School of Business for Chakraborty and You; Tilburg School of Economics and Management for Banerjee). No public dataset release.",
+   "issues": [],
+   "meta": {
+    "title": "AI-human hybrid conversations: Can AI Agents Improve Discourse Quality?",
+    "authors": [
+     {
+      "given": "Ishita",
+      "family": "Chakraborty"
+     },
+     {
+      "given": "Xingjian",
+      "family": "You"
+     },
+     {
+      "given": "Shrabastee",
+      "family": "Banerjee"
+     }
+    ],
+    "venue": "arXiv:2611.33459",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.33459"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Ishita Chakraborty",
+     "affiliation": "Wisconsin School of Business, University of Wisconsin-Madison (Marketing Department)"
+    },
+    {
+     "author": "Xingjian You",
+     "affiliation": "Wisconsin School of Business, University of Wisconsin-Madison (Marketing Department)"
+    },
+    {
+     "author": "Shrabastee Banerjee",
+     "affiliation": "Tilburg School of Economics and Management (TiSEM), Tilburg University (Marketing Department)"
+    }
+   ],
+   "business_school": true,
+   "pages": 57
+  },
+  {
+   "cid": "C048",
+   "title": "The Meritocratic Origins of Informal Financing",
+   "ids": [
+    "doi:10.2139/ssrn.7705002",
+    "ssrn:7705002"
+   ],
+   "norm_title": "the meritocratic origins of informal financing",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7705002",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Corporate finance paper linking perceived upward mobility to informal financing (trade credit) using historical data and LLM-analyzed corporate texts. Has no marketing setting and no human simulation.",
+   "track": "none",
+   "llm_use": "LLMs analyze modern corporate texts to construct an upward mobility perception dataset",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C049",
+   "title": "Contracting for Volatility: Allocating U.S. Export Control Risk in Chip Design Licenses",
+   "ids": [
+    "doi:10.2139/ssrn.7710918",
+    "ssrn:7710918"
+   ],
+   "norm_title": "contracting for volatility allocating u s export control risk in chip design licenses",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7710918",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Legal analysis of U.S. export control clauses in chip-design licenses with no marketing setting, no human simulation, and no substantive LLM method.",
+   "track": "none",
+   "llm_use": "Generative AI assisted only with drafting the manuscript",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C050",
+   "title": "Prices Ahead of Forecasts: What the AI Scare Trade Repriced",
+   "ids": [
+    "doi:10.2139/ssrn.7715860",
+    "ssrn:7715860"
+   ],
+   "norm_title": "prices ahead of forecasts what the ai scare trade repriced",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7715860",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "Asset-pricing study of stock returns and analyst forecasts during the 2026 AI scare trade; lacks both a marketing setting and LLM simulation of people.",
+   "track": "none",
+   "llm_use": "Frozen LLM reads annual reports to estimate firms' revenue exposure to AI agents",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C051",
+   "title": "HALTT: A HAte Lexicon Through Time",
+   "ids": [
+    "arxiv:2611.25862"
+   ],
+   "norm_title": "haltt a hate lexicon through time",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.25862",
+   "date": "2026-11-19",
+   "decision": "exclude",
+   "reason": "NLP lexical semantic change study for hate speech detection with no marketing setting and no simulation of human respondents.",
+   "track": "none",
+   "llm_use": "LLM with masked definition-level scoring and dual-persona prompting to build a diachronic hate-speech lexicon",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C052",
+   "title": "Ideology, Patriotism and Civic Identity: Conceptual Foundations of Patriotic Education in Historical Perspective",
+   "ids": [
+    "doi:10.2139/ssrn.7710939",
+    "ssrn:7710939"
+   ],
+   "norm_title": "ideology patriotism and civic identity conceptual foundations of patriotic education in historical perspective",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7710939",
+   "date": "2026-11-20",
+   "decision": "exclude",
+   "reason": "Conceptual essay on patriotic education and ideology in Russia with no marketing setting, no human simulation, and no substantive LLM use.",
+   "track": "none",
+   "llm_use": "Claude used only for language editing and reference checking",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C053",
+   "title": "Frontier Technology in Frontier Markets? Financing Global AI Entrepreneurship",
+   "ids": [
+    "doi:10.2139/ssrn.7720318",
+    "doi:10.2139/ssrn.7733620",
+    "ssrn:7720318",
+    "ssrn:7733620"
+   ],
+   "norm_title": "frontier technology in frontier markets financing global ai entrepreneurship",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7720318",
+   "date": "2026-11-20",
+   "decision": "exclude",
+   "reason": "Empirical finance and entrepreneurship paper on global AI startup funding; treats AI as the industry studied rather than using an LLM for marketing or human simulation.",
+   "track": "none",
+   "llm_use": "None; ChatGPT is studied only as an external market event",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C054",
+   "title": "Who Speaks for the Water? Simulating Discursive Closure and Power Asymmetries in Hydrosocial Governance",
+   "ids": [
+    "arxiv:2611.28755"
+   ],
+   "norm_title": "who speaks for the water simulating discursive closure and power asymmetries in hydrosocial governance",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.28755",
+   "date": "2026-11-21",
+   "decision": "exclude",
+   "reason": "Political-ecology agent-based simulation of a local water-governance conflict; has no marketing setting and does not validate simulated responses against human outcome data.",
+   "track": "none",
+   "llm_use": "LLM agents simulate stakeholder deliberation over a reservoir proposal in a hydrosocial ABM",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C055",
+   "title": "Can Your AI Twin Meet People for You? It Can Hold a Conversation. But What Does It Need to Judge Like You?",
+   "ids": [
+    "arxiv:2611.28692"
+   ],
+   "norm_title": "can your ai twin meet people for you it can hold a conversation but what does it need to judge like you",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.28692",
+   "date": "2026-11-21",
+   "decision": "exclude",
+   "reason": "Only 9 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. Builds LLM digital twins of 710 real people from the CANDOR corpus and validates their simulated first conversations and learned appraisal judgments against real post-meeting liking ratings; fits track B (human simulation).",
+   "track": "human_simulation",
+   "llm_use": "LLM digital twins of 710 individuals conduct simulated first conversations and predict interpersonal liking",
+   "human_data": "CANDOR corpus conversations and post-meeting liking ratings of 710 real people (355 held-out pairs)",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "1.2",
+   "dataset_section": null,
+   "classification": "Empirically validates LLM digital twins of 710 people on interpersonal liking via swap controls and compares steering, LoRA, rating prompts, and a small learned appraisal head without a formal methodological derivation, placing it in 1.2 rather than 1.3 alongside Deng et al. (2026) \"AI-Moderated Interviews for Market Research and Digital Twins Calibration.\"",
+   "confidence": "medium",
+   "verified": true,
+   "published": false,
+   "verification": "Title, all 32 authors in order, first posting date (2026-11-21), and university-level affiliation superscripts checked against arXiv metadata and PDF page 1 (9 pages total). Co-corresponding authors confirmed outside business schools (Ang Li: ECE, UMD; Hanzhang Qin: ISEM, NUS College of Design and Engineering); departments/schools of the remaining 30 authors are not stated on the paper, so business_school is null. Uses existing CANDOR corpus; no new public dataset release.",
+   "issues": [],
+   "meta": {
+    "title": "Can Your AI Twin Meet People for You? It Can Hold a Conversation. But What Does It Need to Judge Like You?",
+    "authors": [
+     {
+      "given": "Wanghao",
+      "family": "Ye"
+     },
+     {
+      "given": "Sihan",
+      "family": "Chen"
+     },
+     {
+      "given": "Bowei",
+      "family": "Tian"
+     },
+     {
+      "given": "Yiting",
+      "family": "Wang"
+     },
+     {
+      "given": "Shwai",
+      "family": "He"
+     },
+     {
+      "given": "Guoheng",
+      "family": "Sun"
+     },
+     {
+      "given": "Ziyi",
+      "family": "Wang"
+     },
+     {
+      "given": "Ziyao",
+      "family": "Wang"
+     },
+     {
+      "given": "Yexiao",
+      "family": "He"
+     },
+     {
+      "given": "Zheyu",
+      "family": "Shen"
+     },
+     {
+      "given": "Meng",
+      "family": "Liu"
+     },
+     {
+      "given": "Yuning",
+      "family": "Zhang"
+     },
+     {
+      "given": "Meng",
+      "family": "Feng"
+     },
+     {
+      "given": "Yifei",
+      "family": "Dong"
+     },
+     {
+      "given": "Yanhong",
+      "family": "Qian"
+     },
+     {
+      "given": "Yang",
+      "family": "Wang"
+     },
+     {
+      "given": "Siyuan",
+      "family": "Peng"
+     },
+     {
+      "given": "Yilong",
+      "family": "Dai"
+     },
+     {
+      "given": "Zhenle",
+      "family": "Duan"
+     },
+     {
+      "given": "Joshua",
+      "family": "Liu"
+     },
+     {
+      "given": "Lang",
+      "family": "Xiong"
+     },
+     {
+      "given": "Aarosh",
+      "family": "Das"
+     },
+     {
+      "given": "Zhaoyi",
+      "family": "Liu"
+     },
+     {
+      "given": "Daeun",
+      "family": "Jung"
+     },
+     {
+      "given": "Aditya",
+      "family": "Sarkar"
+     },
+     {
+      "given": "Parastoo",
+      "family": "Pilevar"
+     },
+     {
+      "given": "Xiaochuan",
+      "family": "Gong"
+     },
+     {
+      "given": "Yancheng",
+      "family": "Zhu"
+     },
+     {
+      "given": "Yingying",
+      "family": "Fan"
+     },
+     {
+      "given": "Qiong",
+      "family": "Wang"
+     },
+     {
+      "given": "Hanzhang",
+      "family": "Qin"
+     },
+     {
+      "given": "Ang",
+      "family": "Li"
+     }
+    ],
+    "venue": "arXiv:2611.28692",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.28692"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Wanghao Ye",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Sihan Chen",
+     "affiliation": "Carnegie Mellon University"
+    },
+    {
+     "author": "Bowei Tian",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Yiting Wang",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Shwai He",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Guoheng Sun",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Ziyi Wang",
+     "affiliation": "Texas A&M University, College Station"
+    },
+    {
+     "author": "Ziyao Wang",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Yexiao He",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Zheyu Shen",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Meng Liu",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Yuning Zhang",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Meng Feng",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Yifei Dong",
+     "affiliation": "University of Washington"
+    },
+    {
+     "author": "Yanhong Qian",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Yang Wang",
+     "affiliation": "Northeastern University"
+    },
+    {
+     "author": "Siyuan Peng",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Yilong Dai",
+     "affiliation": "The University of Alabama"
+    },
+    {
+     "author": "Zhenle Duan",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Joshua Liu",
+     "affiliation": "Carnegie Mellon University"
+    },
+    {
+     "author": "Lang Xiong",
+     "affiliation": "Stanford University"
+    },
+    {
+     "author": "Aarosh Das",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Zhaoyi Liu",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Daeun Jung",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Aditya Sarkar",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Parastoo Pilevar",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Xiaochuan Gong",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Yancheng Zhu",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Yingying Fan",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Qiong Wang",
+     "affiliation": "University of Maryland, College Park"
+    },
+    {
+     "author": "Hanzhang Qin",
+     "affiliation": "Department of Industrial Systems Engineering and Management, College of Design and Engineering, National University of Singapore"
+    },
+    {
+     "author": "Ang Li",
+     "affiliation": "Department of Electrical and Computer Engineering, University of Maryland, College Park"
+    }
+   ],
+   "business_school": null,
+   "pages": 9
+  },
+  {
+   "cid": "C056",
+   "title": "MADRec: Reliable Multi-Agent Reasoning with Evidence-Grounded Debate for Recommendation",
+   "ids": [
+    "arxiv:2611.28604"
+   ],
+   "norm_title": "madrec reliable multi agent reasoning with evidence grounded debate for recommendation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.28604",
+   "date": "2026-11-21",
+   "decision": "exclude",
+   "reason": "General multi-agent recommender-system engineering paper evaluated on three unnamed datasets without stated commercial data or a marketing outcome.",
+   "track": "none",
+   "llm_use": "Multi-agent LLM debate with evidence-grounded retrieval and ranking calibration for recommendation",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C057",
+   "title": "Human-in-the-Loop Runbook Improvement with Agentic Support Automation",
+   "ids": [
+    "arxiv:2611.28441",
+    "doi:10.1109/cogmi67134.2025.00046"
+   ],
+   "norm_title": "human in the loop runbook improvement with agentic support automation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.28441",
+   "date": "2026-11-21",
+   "decision": "exclude",
+   "reason": "DevOps and software-operations study of incident-resolution runbooks; has neither a marketing setting nor LLM simulation of people.",
+   "track": "none",
+   "llm_use": "Agentic AI guides human operators through software incident runbooks and suggests edits",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C058",
+   "title": "MoR4Rec: Mixture-of-Recursion for Sequential Recommendation",
+   "ids": [
+    "arxiv:2611.29462"
+   ],
+   "norm_title": "mor4rec mixture of recursion for sequential recommendation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.29462",
+   "date": "2026-11-22",
+   "decision": "exclude",
+   "reason": "General transformer architecture engineering paper for sequential recommendation on three unnamed benchmark datasets, with no commercial data or marketing outcome stated.",
+   "track": "none",
+   "llm_use": "Shared transformer backbone with Mixture-of-Recursion routing for sequential recommendation",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C059",
+   "title": "Agentic Discovery of Simple Symbolic Inventory Policies",
+   "ids": [
+    "arxiv:2611.29440"
+   ],
+   "norm_title": "agentic discovery of simple symbolic inventory policies",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.29440",
+   "date": "2026-11-22",
+   "decision": "exclude",
+   "reason": "Operations-research paper on symbolic inventory-control policies tested on synthetic demand distributions; has no marketing setting and no human simulation.",
+   "track": "none",
+   "llm_use": "LLMs revise symbolic inventory-replenishment policy formulas",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C060",
+   "title": "Needwise: Generation-Free Conversational Recommendation from Need-Level Typed Decisions",
+   "ids": [
+    "arxiv:2611.31175"
+   ],
+   "norm_title": "needwise generation free conversational recommendation from need level typed decisions",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.31175",
+   "date": "2026-11-23",
+   "decision": "exclude",
+   "reason": "Only 19 pages in the arXiv PDF, references and appendices included; arXiv papers need at least 20. Proposes an LLM-based typed-decision conversational recommender that infers unrecorded product/venue needs from names, prices, descriptions, and customer reviews on Google Local and Yelp; fits track C (marketing method, recommender augmentation).",
+   "track": "marketing_method",
+   "llm_use": "LLM answers typed need-level questions via option probabilities to rank catalog items in conversational recommendation",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded",
+   "section": "3.2",
+   "dataset_section": null,
+   "classification": "Proposes Needwise, a generation-free typed-decision LLM method for conversational recommendation and item ranking, matching existing conversational recommender methods in 3.2 such as Wang et al. (2026) \"EXPRESS: From Chit-Chat to Conversion: Cost-Efficient Conversational Recommendation via Retrospective Learning and Isolated Reflection.\"",
+   "confidence": "high",
+   "verified": true,
+   "published": false,
+   "verification": "Title, author order, first posting date (2026-11-23), and absence of Crossref/DOI matches checked against lookup_cache.json and arXiv abs/HTML pages (https://arxiv.org/abs/2611.31175, https://arxiv.org/html/2611.31175). All four author affiliations verified on the arXiv HTML (Adobe Research / Adobe Inc.; corporate, not a business school). Paper evaluates on Google Local, Yelp, and WANDS and states code/build scripts will be released with the paper with no verified release URL.",
+   "issues": [],
+   "meta": {
+    "title": "Needwise: Generation-Free Conversational Recommendation from Need-Level Typed Decisions",
+    "authors": [
+     {
+      "given": "Sungchul",
+      "family": "Kim"
+     },
+     {
+      "given": "Weixiao",
+      "family": "Huang"
+     },
+     {
+      "given": "Mekala Raja Sekhar",
+      "family": "Reddy"
+     },
+     {
+      "given": "Amrutha",
+      "family": "Srinivasan"
+     }
+    ],
+    "venue": "arXiv:2611.31175",
+    "date": "2026-11",
+    "url": "https://arxiv.org/abs/2611.31175"
+   },
+   "dataset": null,
+   "affiliations": [
+    {
+     "author": "Sungchul Kim",
+     "affiliation": "Adobe Research, San Jose, USA"
+    },
+    {
+     "author": "Weixiao Huang",
+     "affiliation": "Adobe Inc., San Jose, USA"
+    },
+    {
+     "author": "Mekala Raja Sekhar Reddy",
+     "affiliation": "Adobe Inc., San Jose, USA"
+    },
+    {
+     "author": "Amrutha Srinivasan",
+     "affiliation": "Adobe Inc., San Jose, USA"
+    }
+   ],
+   "business_school": false,
+   "pages": 19
+  },
+  {
+   "cid": "C061",
+   "title": "Can Cities Have Personalities? Introducing the SCD City Personality Assessment",
+   "ids": [
+    "arxiv:2611.30733"
+   ],
+   "norm_title": "can cities have personalities introducing the scd city personality assessment",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.30733",
+   "date": "2026-11-23",
+   "decision": "exclude",
+   "reason": "Evaluates document-grounded LLM city personas on an urban personality assessment across model effort settings. Fits no track because there is no marketing setting and it simulates cities rather than people compared against human data.",
+   "track": "none",
+   "llm_use": "ChatGPT/GPT-6 document-grounded city personas answer a 24-statement MBTI-inspired city personality instrument",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C062",
+   "title": "ContractorFlow CLMS -Unified Enterprise Contractor Lifecycle and Automated Payroll Platform",
+   "ids": [
+    "doi:10.2139/ssrn.7726538",
+    "ssrn:7726538"
+   ],
+   "norm_title": "contractorflow clms unified enterprise contractor lifecycle and automated payroll platform",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7726538",
+   "date": "2026-11-24",
+   "decision": "exclude",
+   "reason": "Describes an enterprise contractor lifecycle management and automated payroll system for industrial and construction operations. Fits no track because it has neither a marketing setting nor LLM simulation of people.",
+   "track": "none",
+   "llm_use": "Gemini AI assists with document verification in a contractor onboarding and payroll web platform",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C063",
+   "title": "The Supply and Demand of AI Sycophancy",
+   "ids": [
+    "doi:10.2139/ssrn.7727679",
+    "ssrn:7727679"
+   ],
+   "norm_title": "the supply and demand of ai sycophancy",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7727679",
+   "date": "2026-11-24",
+   "decision": "exclude",
+   "reason": "Studies the supply and demand of LLM sycophancy and how human users value agreement from AI assistants. Excluded because it treats the LLM as the product being studied rather than simulating consumers or using an LLM as a marketing method.",
+   "track": "none",
+   "llm_use": "Leading LLMs are tested for sycophantic agreement and their outputs are evaluated by human users",
+   "human_data": "802 human users evaluating AI responses",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C064",
+   "title": "Enterprise AI Risk Program | Working paper",
+   "ids": [
+    "doi:10.2139/ssrn.7727920",
+    "ssrn:7727920"
+   ],
+   "norm_title": "enterprise ai risk program working paper",
+   "source": "ssrn",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7727920",
+   "date": "2026-11-24",
+   "decision": "exclude",
+   "reason": "Proposes an enterprise AI risk governance program for banks under regulatory guidance. Fits no track because it has no marketing setting, no human simulation, and no substantive LLM method.",
+   "track": "none",
+   "llm_use": "None; conceptual banking risk-management framework covering enterprise AI and agentic systems",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C065",
+   "title": "Who Attributes a Mind to Whom? Mutual Theory of Mind in Simulated User-Assistant Conversation",
+   "ids": [
+    "arxiv:2611.33327"
+   ],
+   "norm_title": "who attributes a mind to whom mutual theory of mind in simulated user assistant conversation",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.33327",
+   "date": "2026-11-24",
+   "decision": "exclude",
+   "reason": "Uses simulated user-assistant conversations to study mind attribution in HCI chatbots and generate hypotheses for future human studies. Excluded because there is no marketing setting and no human behavioral data validating the simulation.",
+   "track": "none",
+   "llm_use": "LLM user simulators with persona descriptions converse with AI assistants to study mutual mind attribution; an LLM judge and fine-tuned encoder score transcripts",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C066",
+   "title": "Leto: Utility-Centric Agent Memory",
+   "ids": [
+    "arxiv:2611.33005"
+   ],
+   "norm_title": "leto utility centric agent memory",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.33005",
+   "date": "2026-11-24",
+   "decision": "exclude",
+   "reason": "Introduces Leto, a general LLM agent memory system evaluated on general assistant personalization and long-horizon benchmarks (PrefEval, PERMA, MemoryArena). Excluded as general agent engineering without commercial data, a marketing outcome, or human simulation.",
+   "track": "none",
+   "llm_use": "Utility-centric external memory architecture for general LLM agents",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  },
+  {
+   "cid": "C067",
+   "title": "From Models to Services: Systematizing Security Assurance for Model-as-a-Service",
+   "ids": [
+    "arxiv:2611.34623"
+   ],
+   "norm_title": "from models to services systematizing security assurance for model as a service",
+   "source": "arxiv",
+   "url": "https://arxiv.org/abs/2611.34623",
+   "date": "2026-11-25",
+   "decision": "exclude",
+   "reason": "Systematizes security assurance research, threat models, and defenses for cloud-delivered Model-as-a-Service LLMs. Fits no track because it is a computer security survey with no marketing setting or human simulation.",
+   "track": "none",
+   "llm_use": "None; systematization of knowledge on security threats and defenses for cloud Model-as-a-Service",
+   "human_data": "",
+   "evidence": "abstract-only",
+   "citations": null,
+   "notable": false,
+   "notable_reason": "",
+   "status": "excluded"
+  }
+ ]
+}
